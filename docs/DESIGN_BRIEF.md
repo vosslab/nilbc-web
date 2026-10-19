@@ -2,11 +2,11 @@
 
 ## Your assignment
 
-You own this entire repository. Create the strongest Northern Illinois Brick Club
-website you can using MkDocs Material, with static output compatible with GitHub Pages.
-You may modify any file, reorganize the project, introduce dependencies, and make your own
-technical and visual decisions. The starter is a working starting point, not a required
-architecture. These permissions include inherited scaffolding and documentation.
+you are making a demo site for the club to consider your design. You own this entire repository. 
+Create the strongest Northern Illinois Brick Club website you can using MkDocs Material, with static 
+output compatible with GitHub Pages. You may modify any file, reorganize the project, introduce 
+dependencies, and make your own technical and visual decisions. The starter is a working starting 
+point, not a required architecture. These permissions include inherited scaffolding and documentation.
 
 Develop a distinctive, polished website. Make your own decisions about composition,
 typography, color treatment, photography, illustration, navigation, interactions, and page
