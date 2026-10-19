@@ -16,3 +16,6 @@ _temp*.?*
 # ADD YOUR CUSTOM IGNORES BELOW
 # Propagation preserves this section.
 # Template-only ignores.
+/.venv/
+/.pytest_cache/
+__pycache__/

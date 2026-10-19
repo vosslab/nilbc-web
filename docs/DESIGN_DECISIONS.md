@@ -36,3 +36,28 @@ authoritative code or contract document, rather than a person.
 
 **Owner.** <the authoritative code or contract doc>
 ```
+
+### Minimal replaceable starter
+
+**Decision.** Start with one MkDocs configuration, a default Material homepage, and a local
+copy of the approved banner. Keep source presentation materials separate from public content.
+
+**Why.** A working build provides immediate feedback without prescribing the eventual website.
+
+**Consequence.** Every file, dependency, directory, and implementation choice remains open
+to the designer. The initial font setting avoids a remote font dependency for the starter.
+
+**Owner.** [DESIGN_BRIEF.md](DESIGN_BRIEF.md) and [mkdocs.yml](../mkdocs.yml).
+
+### Mascot source and palette
+
+**Decision.** Bundle the unmodified presentation frame at 00:04:19 as a full-body Matchstick
+reference. Record the owner's working palette, including Dark Azure wings, as provisional.
+
+**Why.** The supplied presentation establishes the character's brick-built identity; lighting
+in its rendering cannot confirm actual part colors.
+
+**Consequence.** Treat the rendering as a reference, not a physical-model photograph. Preserve
+the recognizable model when adapting it, and confirm part colors from a parts list if needed.
+
+**Owner.** [ASSETS.md](ASSETS.md).

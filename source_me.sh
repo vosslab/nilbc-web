@@ -11,7 +11,9 @@ set | grep -q '^BASH_VERSION=' || exit 1
 # ~/.bashrc applies local shell setup (PATH, etc.) and resets some variables --
 # it clears PYTHONPATH (verified). Anything that sets PYTHONPATH must run after
 # this line, or ~/.bashrc would wipe it.
-source ~/.bashrc
+if [ -f "$HOME/.bashrc" ]; then
+	source "$HOME/.bashrc"
+fi
 
 # Python runtime defaults: unbuffered stdout/stderr, and no .pyc/__pycache__
 # files written on import.

@@ -1,0 +1,636 @@
+1
+00:00:00,640 --> 00:00:03,919
+Hi everyone. Before our next meeting,
+
+2
+00:00:02,480 --> 00:00:05,520
+we'd like to present the new logo
+
+3
+00:00:03,919 --> 00:00:07,680
+designs for you to consider and comment
+
+4
+00:00:05,520 --> 00:00:09,599
+on at the meeting. Note that these are
+
+5
+00:00:07,680 --> 00:00:10,960
+preliminary designs we put together, so
+
+6
+00:00:09,599 --> 00:00:12,400
+these would still go to an artist to
+
+7
+00:00:10,960 --> 00:00:16,440
+clean them up and vectorize them, but
+
+8
+00:00:12,400 --> 00:00:16,440
+they're pretty close to what we want.
+
+9
+00:00:18,240 --> 00:00:21,279
+Before we get to that though, let's
+
+10
+00:00:19,520 --> 00:00:23,279
+quickly go over the results to the poll
+
+11
+00:00:21,279 --> 00:00:24,960
+questions. Now, we only had about 10
+
+12
+00:00:23,279 --> 00:00:26,720
+responses to these questions, so if you
+
+13
+00:00:24,960 --> 00:00:29,679
+didn't vote, we assume you don't really
+
+14
+00:00:26,720 --> 00:00:31,920
+care. So, what shape should the logo be
+
+15
+00:00:29,679 --> 00:00:33,360
+from? This mostly rounds seem to be the
+
+16
+00:00:31,920 --> 00:00:35,200
+winner, but we also need to remember
+
+17
+00:00:33,360 --> 00:00:37,280
+that we do have a long rectangular
+
+18
+00:00:35,200 --> 00:00:41,719
+banner. So, round is great, but we would
+
+19
+00:00:37,280 --> 00:00:41,719
+need a banner design to go with it.
+
+20
+00:00:41,920 --> 00:00:48,399
+Not a lot of calls for a monocolor logo.
+
+21
+00:00:46,160 --> 00:00:50,079
+As for what colors, red, blue, and black
+
+22
+00:00:48,399 --> 00:00:53,680
+seem to be the most popular, though
+
+23
+00:00:50,079 --> 00:00:55,440
+hardly a runaway vote.
+
+24
+00:00:53,680 --> 00:00:58,440
+Style, something classic, but
+
+25
+00:00:55,440 --> 00:00:58,440
+minimalist.
+
+26
+00:00:58,640 --> 00:01:01,840
+things we needed to include. These were
+
+27
+00:01:00,480 --> 00:01:03,680
+the typed responses to the
+
+28
+00:01:01,840 --> 00:01:04,960
+questionnaire. Should be simple enough
+
+29
+00:01:03,680 --> 00:01:06,960
+that a four-year-old could easily draw
+
+30
+00:01:04,960 --> 00:01:09,280
+an approximation of our logo and still
+
+31
+00:01:06,960 --> 00:01:12,320
+be instantly recognizable. A Lego brick,
+
+32
+00:01:09,280 --> 00:01:13,439
+preferably 2x4. The name feel like it's
+
+33
+00:01:12,320 --> 00:01:15,200
+probably important to include Lego
+
+34
+00:01:13,439 --> 00:01:16,960
+bricks somehow. Acronym, some kind of
+
+35
+00:01:15,200 --> 00:01:19,680
+graphic, like the idea of having shapes
+
+36
+00:01:16,960 --> 00:01:21,920
+or textures of our NIBC letters
+
+37
+00:01:19,680 --> 00:01:23,920
+represent different kinds of builds,
+
+38
+00:01:21,920 --> 00:01:25,520
+buildings, characters, trains, castles,
+
+39
+00:01:23,920 --> 00:01:27,840
+etc. like the idea of train tracks
+
+40
+00:01:25,520 --> 00:01:29,759
+somewhere, plastic brick, some kind of
+
+41
+00:01:27,840 --> 00:01:31,680
+brick. Otherwise, it can look corporate
+
+42
+00:01:29,759 --> 00:01:34,799
+fast.
+
+43
+00:01:31,680 --> 00:01:37,200
+Things not to include existing trademark
+
+44
+00:01:34,799 --> 00:01:38,479
+logos. Don't make it busy. Can be brick
+
+45
+00:01:37,200 --> 00:01:40,479
+build, but we don't need cars, trains,
+
+46
+00:01:38,479 --> 00:01:42,720
+castles, or spaceships. Dollar horses
+
+47
+00:01:40,479 --> 00:01:44,640
+are okay. Not the state of Illinois or
+
+48
+00:01:42,720 --> 00:01:47,040
+anything Chicago. No mini figs, nothing
+
+49
+00:01:44,640 --> 00:01:48,960
+themed. Babies, can't trust them. Trains
+
+50
+00:01:47,040 --> 00:01:50,320
+or any specific theme. No train
+
+51
+00:01:48,960 --> 00:01:52,560
+references. We need to get away from
+
+52
+00:01:50,320 --> 00:01:54,159
+that. AI generation. Please, please,
+
+53
+00:01:52,560 --> 00:01:55,360
+please do not have any AI generation
+
+54
+00:01:54,159 --> 00:01:57,680
+with this new logo. I'm [clears throat]
+
+55
+00:01:55,360 --> 00:01:59,360
+begging you. We should avoid spoof
+
+56
+00:01:57,680 --> 00:02:03,840
+parodies of old train lines, company
+
+57
+00:01:59,360 --> 00:02:06,640
+logos, no chess, sleeping icon, etc.
+
+58
+00:02:03,840 --> 00:02:08,560
+Other things to note, design similar to
+
+59
+00:02:06,640 --> 00:02:10,160
+what we have so other clubs notes to us.
+
+60
+00:02:08,560 --> 00:02:11,920
+Can we keep the logo style and update
+
+61
+00:02:10,160 --> 00:02:13,599
+the acronym? Two to three colors at
+
+62
+00:02:11,920 --> 00:02:16,400
+most, which can be easily changed for
+
+63
+00:02:13,599 --> 00:02:17,920
+holiday or to add uniqueness. I'm fine
+
+64
+00:02:16,400 --> 00:02:19,440
+with alluding to our history as a train
+
+65
+00:02:17,920 --> 00:02:21,520
+club. Also fine with references to
+
+66
+00:02:19,440 --> 00:02:23,680
+Chicago. should resemble nothing of our
+
+67
+00:02:21,520 --> 00:02:25,680
+former logo in shape, style, or color.
+
+68
+00:02:23,680 --> 00:02:27,200
+Lego is fun. When we wear the logo, we
+
+69
+00:02:25,680 --> 00:02:29,280
+should be having fun. When people see
+
+70
+00:02:27,200 --> 00:02:30,959
+the logo, they should smile. I don't
+
+71
+00:02:29,280 --> 00:02:32,239
+think anyone building style or theme
+
+72
+00:02:30,959 --> 00:02:34,800
+should be featured. We need something
+
+73
+00:02:32,239 --> 00:02:36,319
+that represents all of our builders. I
+
+74
+00:02:34,800 --> 00:02:38,160
+really don't want us to use AI to make
+
+75
+00:02:36,319 --> 00:02:41,280
+it. I prefer something that is similar
+
+76
+00:02:38,160 --> 00:02:42,800
+in spirit to what we have.
+
+77
+00:02:41,280 --> 00:02:44,400
+So, as you may have noticed, there were
+
+78
+00:02:42,800 --> 00:02:45,840
+some contradictions in there. We're
+
+79
+00:02:44,400 --> 00:02:47,760
+doing our best, but we're not going to
+
+80
+00:02:45,840 --> 00:02:49,280
+be able to please everyone. For
+
+81
+00:02:47,760 --> 00:02:51,840
+instance, I like the idea of having the
+
+82
+00:02:49,280 --> 00:02:53,440
+shape or textures of our NALBC letters
+
+83
+00:02:51,840 --> 00:02:55,840
+represent different kinds of builds.
+
+84
+00:02:53,440 --> 00:02:57,360
+Don't make it busy. But it can be
+
+85
+00:02:55,840 --> 00:02:59,840
+brickuilt, but we don't need cars,
+
+86
+00:02:57,360 --> 00:03:01,360
+trains, castles, or spaceships. Like a
+
+87
+00:02:59,840 --> 00:03:05,800
+design similar to what we have, it
+
+88
+00:03:01,360 --> 00:03:05,800
+should resemble nothing of what we have.
+
+89
+00:03:06,640 --> 00:03:10,959
+Currently, our logo is a copy of the
+
+90
+00:03:08,800 --> 00:03:12,640
+Chicago Northwestern logo. Union Pacific
+
+91
+00:03:10,959 --> 00:03:14,319
+currently owns this and occasionally
+
+92
+00:03:12,640 --> 00:03:16,239
+trouts it out on a heritage unit to keep
+
+93
+00:03:14,319 --> 00:03:18,560
+the trademark in use. They haven't come
+
+94
+00:03:16,239 --> 00:03:22,840
+after us yet, but we don't want them to,
+
+95
+00:03:18,560 --> 00:03:22,840
+and they absolutely could. Here,
+
+96
+00:03:23,920 --> 00:03:28,480
+we tried playing around with keeping it
+
+97
+00:03:25,760 --> 00:03:31,040
+sort of similar, but it's ultimately
+
+98
+00:03:28,480 --> 00:03:32,400
+still too much of the same thing. So, we
+
+99
+00:03:31,040 --> 00:03:35,400
+we need to do something a little bit
+
+100
+00:03:32,400 --> 00:03:35,400
+different.
+
+101
+00:03:36,640 --> 00:03:41,280
+So, this chart outlines exactly how the
+
+102
+00:03:39,040 --> 00:03:43,440
+Logan committee went. We ran through a
+
+103
+00:03:41,280 --> 00:03:45,760
+ton of ideas and it all sort of went to
+
+104
+00:03:43,440 --> 00:03:47,280
+hell. We wanted something unique,
+
+105
+00:03:45,760 --> 00:03:49,920
+different from all the other clubs out
+
+106
+00:03:47,280 --> 00:03:54,159
+there.
+
+107
+00:03:49,920 --> 00:03:58,959
+So then we had the ingenious late idea.
+
+108
+00:03:54,159 --> 00:04:01,120
+What was that idea? We needed a mascot.
+
+109
+00:03:58,959 --> 00:04:02,400
+Meet Matchstick. Matchick loves to
+
+110
+00:04:01,120 --> 00:04:04,080
+travel to all the different worlds we
+
+111
+00:04:02,400 --> 00:04:05,680
+create and play in them. He plays
+
+112
+00:04:04,080 --> 00:04:08,319
+castle, he plays space, he plays
+
+113
+00:04:05,680 --> 00:04:10,159
+pirates, he plays Harry Potter. He's
+
+114
+00:04:08,319 --> 00:04:11,760
+fully buildable, so we can build copies
+
+115
+00:04:10,159 --> 00:04:14,159
+of him, dress him up, and have him
+
+116
+00:04:11,760 --> 00:04:15,680
+playing in our respective areas.
+
+117
+00:04:14,159 --> 00:04:17,359
+One of the comments that we do get from
+
+118
+00:04:15,680 --> 00:04:19,120
+time to time is our displays lack any
+
+119
+00:04:17,359 --> 00:04:21,759
+sort of cohesion, which is absolutely
+
+120
+00:04:19,120 --> 00:04:23,600
+true. Magstick helps tie things together
+
+121
+00:04:21,759 --> 00:04:27,880
+because he tells the story of him going
+
+122
+00:04:23,600 --> 00:04:27,880
+to all these different worlds to play.
+
+123
+00:04:30,400 --> 00:04:33,600
+Magic went through several design
+
+124
+00:04:31,919 --> 00:04:35,600
+iterations before finalizing on this
+
+125
+00:04:33,600 --> 00:04:37,120
+one, but he has so much personality and
+
+126
+00:04:35,600 --> 00:04:39,280
+flexibility that we can leverage him
+
+127
+00:04:37,120 --> 00:04:41,280
+heavily in our socials. He is the
+
+128
+00:04:39,280 --> 00:04:42,880
+branding for the club. We'll use him in
+
+129
+00:04:41,280 --> 00:04:45,120
+presentations. He's great for promoting
+
+130
+00:04:42,880 --> 00:04:46,639
+classes and he does have some new parts
+
+131
+00:04:45,120 --> 00:04:50,440
+in him, but once they hit PAB, he'll
+
+132
+00:04:46,639 --> 00:04:50,440
+make a great class set.
+
+133
+00:04:52,240 --> 00:04:56,000
+Once we established Matchstick, the
+
+134
+00:04:54,000 --> 00:04:58,639
+logos came almost naturally. Here's the
+
+135
+00:04:56,000 --> 00:05:00,400
+round logo,
+
+136
+00:04:58,639 --> 00:05:02,639
+and here are some banner options. For
+
+137
+00:05:00,400 --> 00:05:05,120
+these, we couldn't really settle on the
+
+138
+00:05:02,639 --> 00:05:06,479
+NILBC lettering. We therefore have a few
+
+139
+00:05:05,120 --> 00:05:08,560
+options that we want to present to the
+
+140
+00:05:06,479 --> 00:05:10,880
+club. We have our preferences, but I've
+
+141
+00:05:08,560 --> 00:05:12,960
+randomized these to not give a bias.
+
+142
+00:05:10,880 --> 00:05:15,360
+This first one is the same lettering
+
+143
+00:05:12,960 --> 00:05:18,960
+font as the round logo and the Northern
+
+144
+00:05:15,360 --> 00:05:20,720
+Illinois Brick Club text at the bottom.
+
+145
+00:05:18,960 --> 00:05:24,919
+Second, we hollow out the letters but
+
+146
+00:05:20,720 --> 00:05:24,919
+have the INL be bricks.
+
+147
+00:05:25,039 --> 00:05:29,600
+For this third option, we go with a more
+
+148
+00:05:26,720 --> 00:05:31,840
+traditional letter set. And finally, for
+
+149
+00:05:29,600 --> 00:05:33,360
+this last one, we have the same as
+
+150
+00:05:31,840 --> 00:05:35,759
+option two, but with the letters filled
+
+151
+00:05:33,360 --> 00:05:37,680
+in. I will post these up shortly and
+
+152
+00:05:35,759 --> 00:05:39,360
+have a poll for them. Again, whatever we
+
+153
+00:05:37,680 --> 00:05:41,360
+finalize will still get redrawn
+
+154
+00:05:39,360 --> 00:05:43,600
+properly. So, don't nitpick about any
+
+155
+00:05:41,360 --> 00:05:46,960
+artifacts or blurriness or misalignments
+
+156
+00:05:43,600 --> 00:05:47,919
+or anything like that.
+
+157
+00:05:46,960 --> 00:05:49,680
+Anyway, [clears throat] that's what I've
+
+158
+00:05:47,919 --> 00:05:53,080
+got for today. Thanks for listening. Go
+
+159
+00:05:49,680 --> 00:05:53,080
+pick your favorite.
+

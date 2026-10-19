@@ -1,3 +1,16 @@
+## Website assignment
+
+Read [docs/DESIGN_BRIEF.md](docs/DESIGN_BRIEF.md) and
+[docs/ASSETS.md](docs/ASSETS.md) before website work. Setup and preview commands
+are in [docs/INSTALL.md](docs/INSTALL.md).
+
+You own the entire repository. You may modify any file, restructure the project,
+change dependencies, and choose the technical and visual approach. Use MkDocs
+Material and produce static output compatible with GitHub Pages. The starter's
+structure and defaults are replaceable. This project-specific permission also
+applies to inherited scaffolding marked vendored; it takes precedence over
+inherited restrictions on which files may be edited.
+
 ## Coding Style
 See Python coding style in docs/PYTHON_STYLE.md.
 See Markdown style in docs/MARKDOWN_STYLE.md.

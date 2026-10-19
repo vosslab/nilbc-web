@@ -1,0 +1,12 @@
+site_name: Northern Illinois Brick Club
+site_description: A community of brick builders in Northern Illinois.
+site_url: https://vosslab.github.io/nilbc-web/
+docs_dir: site_src
+site_dir: output_site
+theme:
+  name: material
+  font: false
+nav:
+  - Home: index.md
+plugins:
+  - search
