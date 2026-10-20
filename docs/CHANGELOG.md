@@ -2,6 +2,8 @@
 
 ### Additions and New Features
 
+- Reworked the README for club members reviewing the designs, with direct comparison links,
+  shared visitor tasks, specific-feedback guidance, and optional developer documentation.
 - Imported four independent complete MkDocs designs for an A/B/C/D vote, with separate
   source directories, root configurations, and output URL prefixes.
 - Added a neutral comparison homepage, a combined strict build command, and one GitHub Pages

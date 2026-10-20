@@ -88,7 +88,7 @@ source source_me.sh && python3 -m pytest tests/
 
 ## GitHub Pages
 
-[pages.yml](../.github/workflows/pages.yml) builds and publishes one combined artifact on a push
+[deploy-pages.yml](../.github/workflows/deploy-pages.yml) builds and publishes one combined artifact on a push
 to `main` or a manual workflow run. Set the repository's Pages source to **GitHub Actions**.
 This is a one-time setting in [Settings > Pages](https://github.com/vosslab/nilbc-web/settings/pages).
 Every subsequent push to `main` builds, checks, and publishes all four designs automatically;

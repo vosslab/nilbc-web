@@ -30,3 +30,4 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - 2026-10-20: Keep local development on `mkdocs serve -f mkdocs_a.yml` (or b, c, d).
   Build and publish the comparison automatically on pushes to main using the latest GitHub
   Actions releases. Keep deployment simple and preserve all four designs.
+- 2026-10-20: Write the README for a club member evaluating the four website designs.
