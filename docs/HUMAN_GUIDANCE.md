@@ -27,3 +27,6 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - 2026-10-20: Each coder received DESIGN_BRIEF.md and produced an independent MkDocs repository.
   Merge the completed entries into this shared base using separate configurations such as
   mkdocs_a.yml. Keep the code in OTHER_REPOS/ unchanged.
+- 2026-10-20: Keep local development on `mkdocs serve -f mkdocs_a.yml` (or b, c, d).
+  Build and publish the comparison automatically on pushes to main using the latest GitHub
+  Actions releases. Keep deployment simple and preserve all four designs.

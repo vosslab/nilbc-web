@@ -90,7 +90,13 @@ source source_me.sh && python3 -m pytest tests/
 
 [pages.yml](../.github/workflows/pages.yml) builds and publishes one combined artifact on a push
 to `main` or a manual workflow run. Set the repository's Pages source to **GitHub Actions**.
-Local build and test commands do not publish anything.
+This is a one-time setting in [Settings > Pages](https://github.com/vosslab/nilbc-web/settings/pages).
+Every subsequent push to `main` builds, checks, and publishes all four designs automatically;
+no local combined build is required. Continue using `mkdocs serve -f mkdocs_a.yml` (or b, c, d)
+for live local development. Local build and test commands do not publish anything.
+
+If the setup check reports that Pages is not enabled, select **GitHub Actions** in that setting
+and rerun the workflow. The workflow uses GitHub's built-in token; no personal token is needed.
 
 The configured landing URL is `https://vosslab.github.io/nilbc-web/`.
 Designs live at that URL followed by `a/`, `b/`, `c/`, or `d/`.

@@ -16,6 +16,14 @@
 
 ### Developer Tests and Notes
 
+- The first GitHub Actions run passed all builds, browser checks, and artifact upload; deployment
+  failed with a 404 because Pages was not enabled. Added an early Pages setup check, updated all
+  six actions to their latest stable releases, and kept write permissions in the deployment job.
+- Documented the one-time GitHub Actions Pages source setting and automatic builds on push.
+  In-progress deployments finish before the next run; individual live-preview commands are unchanged.
+- Updated workflow passes actionlint 1.7.12. All four `mkdocs serve` commands return HTTP 200
+  at their project prefixes with file watching and LiveReload enabled; imported and original
+  source hashes still match. The revised workflow awaits a push and Pages enablement.
 - All four design configurations and the neutral landing page pass strict MkDocs builds.
 - Browser verification passes 64 desktop/phone page checks and nine integration journeys.
   All 64 fresh original/imported screenshot pairs match exactly; 16 paired interactions pass.
