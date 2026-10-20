@@ -1,0 +1,14 @@
+{% include "partials/page_intro.html" %}
+<div class="wrap shows-layout">
+  <section aria-labelledby="show-list-title">
+    <div class="gallery-heading"><h2 class="eyebrow" id="show-list-title">{{ page.meta.calendar.heading | e }}</h2><span>{{ page.meta.calendar.years | e }}</span></div>
+    {% for show in page.meta.shows %}
+    <article class="event{% if loop.first %} event-featured{% endif %}">
+      <div class="date-block"><span>{{ show.month | e }}</span><strong>{{ show.days | e }}</strong><span>{{ show.year | e }}</span></div>
+      <div class="event-copy">{% if loop.first %}<p class="eyebrow">{{ page.meta.calendar.featured_label | e }}</p>{% endif %}<h3>{{ show.venue | e }}</h3><p class="event-date">{{ show.date | e }}</p><p class="event-address">{{ show.address | e }}</p><ul class="session-list">{% for session in show.sessions %}<li>{{ session | e }}</li>{% endfor %}</ul><div class="event-links"><a class="text-link" href="{{ show.website | e }}">Venue website <span aria-hidden="true">&#8599;</span></a><a class="text-link" href="{{ show.map | e }}">Directions <span aria-hidden="true">&#8599;</span></a></div></div>
+    </article>
+    {% endfor %}
+    <p class="source-note calendar-note">{{ page.meta.calendar.source_prefix | e }}{{ page.meta.checked | e }}{{ page.meta.calendar.source_connector | e }}<a href="{{ page.meta.calendar.source_url | e }}">{{ page.meta.calendar.source_link | e }}</a>{{ page.meta.calendar.source_suffix | e }}</p>
+  </section>
+  <aside class="visitor-note"><p class="eyebrow">{{ page.meta.visitor.eyebrow | e }}</p><h2>{{ page.meta.visitor.heading_first | e }}<br>{{ page.meta.visitor.heading_second | e }}</h2><p>{{ page.meta.visitor.description | e }}</p>{% for item in page.meta.visitor.questions %}<details{% if loop.first %} open{% endif %}><summary>{{ item.question | e }}</summary><p>{{ item.answer | e }}</p></details>{% endfor %}<a class="text-link" href="{{ 'builds/' | url }}">{{ page.meta.visitor.link | e }} <span aria-hidden="true">&#8599;</span></a></aside>
+</div>

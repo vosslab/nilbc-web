@@ -1,0 +1,810 @@
+/*
+ * NILBC home page: banner-blue hero, Matchstick on a baseplate, next-show ticket,
+ * stud edge into the page, and home-only content sections.
+ */
+
+/* ---------- Full-bleed home sections ----------
+   The hero and the finale are blocks in the home page Markdown, so they sit inside the
+   content column; they reach out to the window edges and meet the header and footer. */
+.md-container {
+	overflow-x: clip;
+}
+.md-typeset .nb-hero,
+.md-typeset .nb-layout {
+	margin-inline: calc(50% - 50vw);
+}
+/* the home page drops Material's spacing above and below the content column */
+.md-main__inner:has(.nb-hero) {
+	margin-top: 0;
+}
+.md-content__inner:has(.nb-hero) {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.md-content__inner:has(.nb-hero)::before {
+	display: none;
+}
+.md-typeset .nb-hero {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.md-typeset .nb-layout {
+	margin-top: var(--nb-space-5);
+	margin-bottom: 0;
+}
+.nb-hero .headerlink,
+.nb-layout .headerlink {
+	display: none;
+}
+
+/* ---------- Hero ---------- */
+.nb-hero {
+	--hero-bg: var(--nb-banner-blue);
+	position: relative;
+	padding: var(--nb-space-4) 0 calc(var(--nb-space-4) + 0.8rem);
+	color: #FFFFFF;
+	background-color: var(--hero-bg);
+	background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.07) 0 0.42rem, transparent 0.45rem);
+	background-size: 1.9rem 1.9rem;
+	overflow: hidden;
+}
+[data-md-color-scheme="slate"] .nb-hero {
+	--hero-bg: #12325A;
+}
+/* the page below is a brick: its studs poke up into the hero */
+.nb-hero::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 0.8rem;
+	background: repeating-linear-gradient(90deg,
+		transparent 0 0.7rem,
+		var(--nb-paper) 0.7rem 2.5rem,
+		transparent 2.5rem 3.2rem);
+}
+.nb-hero__inner {
+	display: grid;
+	grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.9fr);
+	align-items: center;
+	gap: var(--nb-space-4);
+	padding: 0 1rem;
+}
+.md-typeset .nb-hero__eyebrow {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.6rem;
+	margin: 0 0 1rem;
+	font: 600 0.82rem/1.2 var(--nb-font-display);
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+.nb-hero__was {
+	padding: 0.2rem 0.55rem;
+	font-size: 0.68rem;
+	letter-spacing: 0.08em;
+	color: #13213C;
+	background: var(--nb-brick-yellow);
+	border-radius: var(--nb-radius-s);
+}
+.md-typeset .nb-hero__title {
+	margin: 0 0 1.1rem;
+	font: 700 clamp(2.5rem, 1.6rem + 4.2vw, 4.4rem)/1.0 var(--nb-font-display);
+	letter-spacing: -0.015em;
+	color: #FFFFFF;
+	text-wrap: balance;
+}
+/* the emphasized words drop to their own line in yellow */
+.md-typeset .nb-hero__title em {
+	display: block;
+	font-style: normal;
+	color: #FFE58F;
+}
+.md-typeset .nb-hero__lede {
+	max-width: 34rem;
+	margin: 0 0 1.6rem;
+	font-size: clamp(0.95rem, 0.88rem + 0.35vw, 1.12rem);
+	line-height: 1.6;
+}
+.md-typeset .nb-hero__actions {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem;
+}
+.nb-hero .md-button {
+	font-family: var(--nb-font-display);
+	font-size: 0.92rem;
+	font-weight: 600;
+	padding: 0.7em 1.4em;
+	border: 2px solid;
+	border-radius: var(--nb-radius-m);
+	transition: translate 160ms var(--nb-ease-snap), box-shadow 160ms ease;
+}
+.nb-hero .md-button--primary {
+	color: #FFFFFF;
+	background: var(--nb-mascot-red);
+	border-color: var(--nb-mascot-red);
+	box-shadow: 0 0.25rem 0 #6A0E05;
+}
+.nb-hero .md-button--primary:hover,
+.nb-hero .md-button--primary:focus-visible {
+	color: #FFFFFF;
+	background: #A31507;
+	border-color: #A31507;
+	translate: 0 -2px;
+}
+.md-typeset .nb-hero .md-button:not(.md-button--primary) {
+	color: #FFFFFF;
+	border-color: rgba(255, 255, 255, 0.85);
+}
+.md-typeset .nb-hero .md-button:not(.md-button--primary):hover,
+.md-typeset .nb-hero .md-button:not(.md-button--primary):focus-visible {
+	color: #13213C;
+	background: #FFFFFF;
+	translate: 0 -2px;
+}
+.nb-hero :focus-visible {
+	outline: 3px solid #FFE58F;
+	outline-offset: 3px;
+}
+
+/* ---------- Matchstick on a baseplate ---------- */
+.nb-hero__art {
+	position: relative;
+	display: grid;
+	justify-items: center;
+	align-items: end;
+	min-height: 18rem;
+}
+/* the tilted plate's visual center sits about 2rem up, right where his feet land */
+.nb-hero__plate {
+	position: absolute;
+	bottom: 0.2rem;
+	width: min(100%, 22rem);
+	aspect-ratio: 3 / 1;
+	border-radius: 50%;
+	background:
+		radial-gradient(circle at center, rgba(255, 255, 255, 0.35) 0 0.36rem, transparent 0.4rem) 0 0 / 1.3rem 1.3rem,
+		#4BA24A;
+	box-shadow: 0 0.6rem 0 #2E7A33, 0 1.8rem 2.4rem -0.8rem rgba(0, 0, 0, 0.45);
+	transform: perspective(30rem) rotateX(58deg);
+}
+.md-typeset .nb-hero__art .nb-hero__matchstick {
+	position: relative;
+	z-index: 1;
+	width: min(68%, 18rem);
+	margin-bottom: 2.1rem;
+}
+/* soft contact shadow where his feet meet the plate */
+.nb-hero__art::after {
+	content: "";
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	width: min(52%, 13rem);
+	height: 1.3rem;
+	translate: -50% 0;
+	border-radius: 50%;
+	background: radial-gradient(closest-side, rgba(5, 19, 29, 0.45), transparent);
+}
+.nb-hero__matchstick {
+	display: block;
+	height: auto;
+	filter: drop-shadow(0 0.5rem 0.6rem rgba(0, 0, 0, 0.3));
+	animation: nb-snap-in 700ms var(--nb-ease-snap) 120ms both;
+}
+.md-typeset .nb-hero__meet {
+	position: absolute;
+	z-index: 2;
+	/* in the open space up and to the left of his head, clear of horns, face, and wing */
+	top: 8%;
+	left: -2%;
+	padding: 0.5rem 0.8rem;
+	font: 600 0.8rem/1.1 var(--nb-font-display);
+	color: #13213C;
+	text-decoration: none;
+	background: #FFFFFF;
+	border-radius: var(--nb-radius-m) var(--nb-radius-m) 0 var(--nb-radius-m);
+	box-shadow: 0 0.3rem 0 rgba(0, 0, 0, 0.18);
+	rotate: -4deg;
+	transition: rotate 200ms var(--nb-ease-snap);
+}
+.md-typeset .nb-hero__meet:hover,
+.md-typeset .nb-hero__meet:focus-visible {
+	rotate: 0deg;
+	color: #A31507;
+}
+@keyframes nb-snap-in {
+	from {
+		opacity: 0;
+		translate: 0 -2.2rem;
+	}
+	60% {
+		opacity: 1;
+	}
+	to {
+		opacity: 1;
+		translate: 0 0;
+	}
+}
+
+/* ---------- Next show ticket ---------- */
+.md-typeset .nb-ticket {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-areas: "label when go" "label where go";
+	align-items: center;
+	gap: 0.15rem 1.1rem;
+	margin: var(--nb-space-3) 1rem 0;
+	padding: 0.85rem 1.2rem;
+	color: #13213C;
+	text-decoration: none;
+	background: #FFFFFF;
+	border-radius: var(--nb-radius-m);
+	box-shadow: 0 0.35rem 0 rgba(0, 0, 0, 0.18);
+	transition: translate 180ms var(--nb-ease-snap);
+}
+/* dark scheme: the ticket becomes a lit night-show card instead of a white slab */
+[data-md-color-scheme="slate"] .nb-ticket {
+	color: #F4EEE2;
+	background: #16263F;
+	box-shadow: 0 0.35rem 0 rgba(0, 0, 0, 0.35), 0 0 0 2px rgba(255, 216, 74, 0.4);
+}
+[data-md-color-scheme="slate"] .nb-ticket__where {
+	color: #C3CBD8;
+}
+[data-md-color-scheme="slate"] .nb-ticket__go {
+	color: #FFB4A8;
+}
+[data-md-color-scheme="slate"] .nb-ticket:hover,
+[data-md-color-scheme="slate"] .nb-ticket:focus-visible {
+	color: #FFFFFF;
+}
+.md-typeset .nb-ticket:hover,
+.md-typeset .nb-ticket:focus-visible {
+	translate: 0 -3px;
+	color: #13213C;
+}
+.nb-ticket__label {
+	grid-area: label;
+	padding: 0.45rem 0.7rem;
+	font: 600 0.72rem/1.1 var(--nb-font-display);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #B71608;
+	border-radius: var(--nb-radius-s);
+}
+.nb-ticket__when {
+	grid-area: when;
+	font: 600 1rem/1.25 var(--nb-font-display);
+}
+.nb-ticket__where {
+	grid-area: where;
+	font-size: 0.85rem;
+	color: #3D4A63;
+}
+.nb-ticket__go {
+	grid-area: go;
+	font-size: 1.5rem;
+	color: #B71608;
+}
+
+@media (max-width: 44em) {
+	.nb-hero {
+		padding-top: var(--nb-space-3);
+	}
+	.nb-hero__inner {
+		grid-template-columns: 1fr;
+		gap: var(--nb-space-2);
+	}
+	.nb-hero__art {
+		order: -1;
+		min-height: 0;
+	}
+	.md-typeset .nb-hero__art .nb-hero__matchstick {
+		width: min(46%, 11rem);
+		margin-bottom: 1.3rem;
+	}
+	.nb-hero__plate {
+		bottom: 0;
+		width: min(70%, 15rem);
+	}
+	.nb-hero__art::after {
+		bottom: 0.9rem;
+		width: min(36%, 8rem);
+		height: 0.9rem;
+	}
+	/* phones: no clear space beside him at this size; the menu links to his page */
+	.md-typeset .nb-hero__meet {
+		display: none;
+	}
+	.md-typeset .nb-ticket {
+		grid-template-columns: 1fr auto;
+		grid-template-areas: "label go" "when go" "where go";
+		justify-items: start;
+	}
+}
+
+/* ---------- World cards: each model stands on a studded plate ---------- */
+.nb-worlds {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--nb-space-2);
+	margin: var(--nb-space-4) 0 var(--nb-space-4);
+}
+@media (min-width: 40em) {
+	.nb-worlds {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: var(--nb-space-3);
+	}
+}
+@media (min-width: 60em) {
+	.nb-worlds {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: var(--nb-space-2);
+	}
+}
+/* phones: a swipeable row of world cards that snap into place */
+@media (max-width: 39.99em) {
+	.nb-worlds {
+		grid-template-columns: none;
+		grid-auto-flow: column;
+		grid-auto-columns: 72%;
+		gap: 0.9rem;
+		margin: var(--nb-space-2) -0.8rem var(--nb-space-2);
+		padding: 0.9rem 0.8rem 0.6rem;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: 0.8rem;
+		scrollbar-width: none;
+	}
+	.nb-world-card {
+		scroll-snap-align: start;
+	}
+	.nb-world-card__stage {
+		height: 9rem;
+	}
+}
+.nb-world-card {
+	--plate: #4BA24A;
+	--plate-edge: #2E7A33;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 0 var(--nb-space-2) var(--nb-space-2);
+	background: var(--nb-paper-raised);
+	border: 1px solid var(--nb-rule);
+	border-radius: var(--nb-radius-l);
+	box-shadow: var(--nb-shadow);
+	transition: translate 220ms var(--nb-ease-snap), box-shadow 220ms ease;
+}
+/* studs along the card's top edge, in the world's color */
+.nb-world-card::before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	inset: -0.6rem 0.8rem auto 0.8rem;
+	height: 0.6rem;
+	/* one stud per tile with built-in gaps; `space` repeat keeps whole studs at both ends */
+	background-image: linear-gradient(90deg, transparent 0 16%, var(--plate) 16% 84%, transparent 84%);
+	background-size: 1.8rem 100%;
+	background-repeat: space no-repeat;
+}
+.md-typeset .nb-world-card h3 {
+	line-height: 1.25;
+}
+.nb-world-card--red { --plate: #C91A09; --plate-edge: #8A1206; }
+.nb-world-card--azure { --plate: #078BC9; --plate-edge: #056594; }
+.nb-world-card--lavender { --plate: #AC78BA; --plate-edge: #7E5689; }
+.nb-world-card--grey { --plate: #6E7377; --plate-edge: #4A4E52; }
+.nb-world-card--lime { --plate: #7FA312; --plate-edge: #5A740B; }
+/* the stage is a member's build, cropped full bleed, sitting on the world's colored plate */
+.nb-world-card__stage {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 11rem;
+	margin: 0 calc(-1 * var(--nb-space-2)) var(--nb-space-2);
+	border-radius: var(--nb-radius-l) var(--nb-radius-l) 0 0;
+	background: color-mix(in srgb, var(--plate) 14%, var(--nb-paper-raised));
+	overflow: hidden;
+}
+/* Castles shows its module standard on stud-dot paper instead of a photo */
+.nb-world-card__stage--spec {
+	--chip: color-mix(in srgb, var(--plate) 14%, var(--nb-paper-raised));
+	padding: 0.8rem 0.6rem 1.5rem;
+	background:
+		radial-gradient(circle at center, rgba(255, 255, 255, 0.5) 0 0.18rem, transparent 0.2rem) 0 0 / 1rem 1rem,
+		var(--chip);
+}
+.nb-world-card__stage::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 0.9rem;
+	background: var(--plate);
+	box-shadow: inset 0 -0.25rem 0 var(--plate-edge);
+}
+.md-typeset .nb-world-card__stage img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: scale 400ms var(--nb-ease-snap);
+}
+/* dark scheme: quieter stage dots */
+[data-md-color-scheme="slate"] .nb-world-card__stage--spec {
+	--chip: color-mix(in srgb, var(--plate) 18%, var(--nb-paper-raised));
+	background:
+		radial-gradient(circle at center, rgba(255, 255, 255, 0.12) 0 0.18rem, transparent 0.2rem) 0 0 / 1rem 1rem,
+		var(--chip);
+}
+.nb-world-card:hover,
+.nb-world-card:focus-within {
+	translate: 0 -4px;
+	box-shadow: 0 1px 0 rgba(19, 33, 60, 0.08), 0 18px 32px -14px rgba(19, 33, 60, 0.45);
+}
+.nb-world-card:hover .nb-world-card__stage img,
+.nb-world-card:focus-within .nb-world-card__stage img {
+	scale: 1.06;
+}
+/* duotone: the photo takes the world's brick color, then shows true color on hover */
+.nb-world-card__stage:not(.nb-world-card__stage--spec)::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: var(--tint, var(--plate));
+	mix-blend-mode: color;
+	opacity: var(--tint-strength, 0.85);
+	pointer-events: none;
+	transition: opacity 400ms ease;
+}
+/* lime washes out light builds, so its tint uses the plate's deeper edge color */
+.nb-world-card--lime {
+	--tint: #5A740B;
+}
+/* the Paris night photo is mostly black with small lights; a lighter tint keeps its warmth */
+.nb-world-card--azure {
+	--tint-strength: 0.55;
+}
+/* touch screens never hover, so keep enough true color to read the build */
+@media (hover: none) {
+	.nb-world-card__stage:not(.nb-world-card__stage--spec)::before {
+		opacity: 0.5;
+	}
+}
+.nb-world-card:hover .nb-world-card__stage::before,
+.nb-world-card:focus-within .nb-world-card__stage::before {
+	opacity: 0;
+}
+.md-typeset .nb-world-card h3 {
+	margin: 0 0 0.35rem;
+	font-size: 1.05rem;
+}
+.md-typeset .nb-world-card p {
+	margin: 0;
+	font-size: 0.8rem;
+	color: var(--nb-ink-soft);
+}
+
+/* ---------- Locomotive feature ---------- */
+.md-content:has(.nb-hero) .nb-split {
+	margin: var(--nb-space-4) 0;
+}
+/* a club photo mounted on a white card, standing on a length of track */
+.md-typeset .nb-figure {
+	position: relative;
+	margin: var(--nb-space-3) var(--nb-space-2) 2rem;
+	padding: 0.45rem 0.45rem 0;
+	background: #FFFFFF;
+	border-radius: var(--nb-radius-m);
+	box-shadow: 0 1.2rem 2rem -1rem rgba(19, 33, 60, 0.55);
+}
+/* two rails seen from just above, laid over short brown ties */
+.nb-figure::after {
+	content: "";
+	position: absolute;
+	left: -1.2rem;
+	right: -1.2rem;
+	bottom: -1.5rem;
+	height: 1rem;
+	background:
+		linear-gradient(#8A9095, #8A9095) 0 0.12rem / 100% 0.2rem no-repeat,
+		linear-gradient(#8A9095, #8A9095) 0 0.66rem / 100% 0.2rem no-repeat,
+		repeating-linear-gradient(90deg, #6B3A1E 0 0.5rem, transparent 0.5rem 1.15rem) 0 0 / 100% 100% no-repeat;
+	-webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+	mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.md-typeset .nb-figure img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	border-radius: var(--nb-radius-s);
+}
+.md-typeset .nb-figure figcaption {
+	margin: 0;
+	padding: 0.5rem 0.2rem 0.6rem;
+	font-size: 0.74rem;
+	color: #3A4A63;
+	text-align: left;
+}
+
+/* ---------- Finale: the whole layout in miniature ---------- */
+.nb-layout {
+	position: relative;
+	/* starts right where the stud-dot paper ends, so there is no plain seam */
+	margin-top: 0;
+	padding-top: 3.2rem;
+	background: linear-gradient(#DCEBF5, #F7EFDD 78%);
+	overflow: hidden;
+}
+[data-md-color-scheme="slate"] .nb-layout {
+	--sky-top: #0B1527;
+	background: linear-gradient(#0B1527, #1B2C4A 80%);
+}
+/* the finale's studs poke up into the paper above it, like the banner edges */
+.nb-layout {
+	--sky-top: #DCEBF5;
+	overflow: visible;
+}
+.nb-layout::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -0.6rem;
+	height: 0.6rem;
+	background: repeating-linear-gradient(90deg,
+		transparent 0 0.6rem,
+		var(--sky-top) 0.6rem 2.1rem,
+		transparent 2.1rem 2.7rem);
+}
+.nb-layout__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	/* matches the content edge used by every section above */
+	padding: 0 0.8rem;
+}
+.md-typeset .nb-layout__title {
+	margin: 0;
+	font: 700 clamp(1.5rem, 1.1rem + 1.6vw, 2.3rem)/1.1 var(--nb-font-display);
+	color: var(--nb-ink);
+	text-wrap: balance;
+}
+.nb-layout .md-button {
+	font-family: var(--nb-font-display);
+	font-weight: 600;
+	color: #FFFFFF;
+	background: var(--nb-mascot-red);
+	border: 2px solid var(--nb-mascot-red);
+	border-radius: var(--nb-radius-m);
+	padding: 0.6em 1.3em;
+	font-size: 0.92rem;
+	box-shadow: 0 0.25rem 0 #6A0E05;
+}
+.nb-layout .md-button:hover,
+.nb-layout .md-button:focus-visible {
+	color: #FFFFFF;
+	background: #A31507;
+	border-color: #A31507;
+}
+/* sky above, then a green baseplate strip with the track along its front edge */
+.nb-layout__track {
+	position: relative;
+	/* the running train is clipped here, since the finale itself lets its top studs overflow */
+	overflow: hidden;
+	height: calc(var(--car-h) + 4.4rem);
+	margin-top: 1.2rem;
+	background:
+		radial-gradient(circle at center, rgba(255, 255, 255, 0.28) 0 0.3rem, transparent 0.33rem) 0 100% / 1.2rem 1.2rem repeat-x,
+		linear-gradient(transparent calc(100% - 2.6rem), #4BA24A calc(100% - 2.6rem));
+}
+/* roadbed: a grey ballast strip, brown ties across it, and the rail on top */
+.nb-layout__track::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1.3rem;
+	background:
+		linear-gradient(#C8CDD1, #C8CDD1) 0 0.18rem / 100% 0.1rem no-repeat,
+		linear-gradient(#5B6066, #5B6066) 0 0.28rem / 100% 0.22rem no-repeat,
+		repeating-linear-gradient(90deg, #6B3A1E 0 0.55rem, transparent 0.55rem 1.3rem) 0 0.5rem / 100% 0.4rem no-repeat,
+		radial-gradient(circle, #7E848A 0 0.08rem, transparent 0.1rem) 0 0 / 0.35rem 0.3rem,
+		#A3A39A;
+	box-shadow: 0 -0.15rem 0 #8A8A80;
+}
+.nb-layout__train {
+	position: absolute;
+	z-index: 1;
+	bottom: 1.02rem;
+	left: 0;
+	/* the box spans every car, so 100% below is the whole train's length */
+	width: max-content;
+	display: flex;
+	align-items: flex-end;
+	gap: 0.5rem;
+	/* drawbar between the cars, at deck height: the couplers */
+	background: linear-gradient(#2A2F36, #2A2F36) 0 calc(100% - 0.8rem) / 100% 0.22rem no-repeat;
+	/* first run: start with Matchstick (the front of the train) at 80% of the screen width,
+	   whatever the train's length, and pull off to the right; then loop in from the left.
+	   The loop is listed last, so it takes over once its delay ends, with the train off
+	   screen at both ends of the handover. */
+	animation:
+		nb-arrive var(--arrive) linear 1 both,
+		nb-run var(--loop) linear var(--arrive) infinite;
+	--arrive: 40s;
+	--loop: 70s;
+}
+.nb-layout__train--waiting {
+	animation-play-state: paused;
+}
+@keyframes nb-arrive {
+	from { translate: calc(80vw - 100%) 0; }
+	to { translate: 100vw 0; }
+}
+@keyframes nb-run {
+	from { translate: -100% 0; }
+	to { translate: 100vw 0; }
+}
+/* a flatcar: the photo rides on a dark grey deck over two wheel trucks */
+.nb-car {
+	position: relative;
+	flex: none;
+	padding-bottom: 1.25rem;
+}
+.nb-car img {
+	display: block;
+	width: calc(var(--car-h) * 1.5);
+	height: var(--car-h);
+	object-fit: cover;
+	border: 0.22rem solid #FFFFFF;
+	border-radius: 0.3rem;
+	box-shadow: 0 0.3rem 0.5rem -0.2rem rgba(5, 19, 29, 0.45);
+}
+/* deck: a thick plate with a darker lower edge, and a coupler stub at each end */
+.nb-car::before {
+	content: "";
+	position: absolute;
+	left: -0.1rem;
+	right: -0.1rem;
+	bottom: 0.55rem;
+	height: 0.7rem;
+	background: #6B7076;
+	border-radius: 0.12rem;
+	box-shadow: inset 0 -0.22rem 0 #3E4349;
+}
+/* two trucks of two wheels each, one near each end of the car */
+.nb-car::after {
+	content: "";
+	position: absolute;
+	left: 0.5rem;
+	right: 0.5rem;
+	bottom: 0.05rem;
+	height: 0.66rem;
+	--wheel: radial-gradient(circle, #13213C 0 0.25rem, #A9AFB3 0.26rem 0.3rem, transparent 0.31rem);
+	background:
+		var(--wheel) 0 0 / 0.66rem 0.66rem no-repeat,
+		var(--wheel) 0.75rem 0 / 0.66rem 0.66rem no-repeat,
+		var(--wheel) calc(100% - 0.75rem) 0 / 0.66rem 0.66rem no-repeat,
+		var(--wheel) 100% 0 / 0.66rem 0.66rem no-repeat;
+}
+/* the engine: Matchstick rides a red flatcar at the front */
+.nb-car--engine img {
+	width: auto;
+	height: calc(var(--car-h) * 1.35);
+	object-fit: contain;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	filter: drop-shadow(0 0.3rem 0.3rem rgba(5, 19, 29, 0.3));
+}
+.nb-car--engine::before {
+	background: var(--nb-mascot-red);
+}
+.nb-layout {
+	--car-h: 8rem;
+}
+@media (max-width: 44em) {
+	.nb-layout {
+		--car-h: 4.6rem;
+	}
+	/* phones: a shorter screen, so slower runs keep the same speed */
+	.nb-layout__train {
+		--arrive: 30s;
+		--loop: 50s;
+	}
+}
+/* reduced motion: the train stands still with Matchstick in view */
+@media (prefers-reduced-motion: reduce) {
+	.nb-layout__train {
+		animation: none;
+		translate: calc(85vw - 100%) 0;
+	}
+}
+
+/* ---------- Home content sections ---------- */
+.nb-section-kicker {
+	margin: 0 0 0.3rem;
+	font: 600 0.75rem/1.2 var(--nb-font-display);
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--nb-accent);
+}
+[data-md-color-scheme="slate"] .nb-section-kicker {
+	color: #FFB4A8;
+}
+.md-typeset .nb-section-kicker + h2 {
+	margin-top: 0;
+}
+.md-typeset .nb-section-kicker {
+	margin-top: var(--nb-space-5);
+}
+.md-typeset .nb-hero + .nb-section-kicker {
+	margin-top: var(--nb-space-2);
+}
+.nb-band {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+	gap: var(--nb-space-2);
+	margin: var(--nb-space-4) 0;
+	padding: var(--nb-space-3);
+	background: #13213C;
+	color: #FBF6EC;
+	border-radius: var(--nb-radius-l);
+}
+/* dark stats band: a warm lit edge so it stands off the night page */
+[data-md-color-scheme="slate"] .nb-band {
+	background: #16263F;
+	box-shadow: inset 0 0 0 1px #2D4061, 0 0 0 2px rgba(255, 216, 74, 0.35), 0 0 28px -6px rgba(255, 216, 74, 0.35);
+}
+@media (max-width: 44em) {
+	.nb-band {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+.nb-band__item {
+	display: grid;
+	align-content: start;
+	gap: 0.2rem;
+}
+.nb-band__value {
+	font: 700 clamp(1.6rem, 1.2rem + 1.5vw, 2.3rem)/1 var(--nb-font-display);
+	color: var(--nb-brick-yellow);
+}
+.nb-band__label {
+	font-size: 0.8rem;
+	line-height: 1.35;
+}
+.nb-split {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: var(--nb-space-4);
+	align-items: center;
+}
+@media (max-width: 52em) {
+	.nb-split {
+		grid-template-columns: 1fr;
+		gap: var(--nb-space-2);
+	}
+	/* stacked: a picture on its own line sits centered */
+	.md-typeset .nb-split > p:has(> img:only-child) {
+		text-align: center;
+	}
+}

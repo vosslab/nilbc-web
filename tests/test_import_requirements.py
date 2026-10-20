@@ -54,6 +54,7 @@ IMPORT_REQUIREMENT_ALIASES = {
 	"pdfminer": "pdfminer.six",
 	"pil": "pillow",
 	"pptx": "python-pptx",
+	"pymdownx": "pymdown-extensions",
 	"pytestqt": "pytest-qt",
 	"rottentomatoes": "rottentomatoes-python",
 	"screencapturekit": "pyobjc-framework-ScreenCaptureKit",

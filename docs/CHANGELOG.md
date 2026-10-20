@@ -1,3 +1,29 @@
+## 2026-10-20
+
+### Additions and New Features
+
+- Imported four independent complete MkDocs designs for an A/B/C/D vote, with separate
+  source directories, root configurations, and output URL prefixes.
+- Added a neutral comparison homepage, a combined strict build command, and one GitHub Pages
+  workflow that deploys all four sites together.
+- Added import provenance hashes and a focused browser check for navigation, assets, mobile
+  layouts, search, and galleries under the new prefixes.
+
+### Decisions and Failures
+
+- Preserve the four competing implementations; no design is selected or blended with another.
+  Keep OTHER_REPOS unchanged and independent of the integrated build.
+
+### Developer Tests and Notes
+
+- All four design configurations and the neutral landing page pass strict MkDocs builds.
+- Browser verification passes 64 desktop/phone page checks and nine integration journeys.
+  All 64 fresh original/imported screenshot pairs match exactly; 16 paired interactions pass.
+- Verified unchanged hashes for all 162 imported files and unchanged original working trees.
+  The normal repository suite passes 793 checks; an unstaged-file-inclusive scan passes 1,211.
+- Kept one focused integration browser check; removed temporary visual-comparison probes after
+  recording evidence. Live GitHub Pages deployment is not claimed.
+
 ## 2026-10-19
 
 ### Added

@@ -1,0 +1,22 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '' | url }}" aria-label="Northern Illinois Brick Club home">
+      <img src="{{ 'assets/club_logo.png' | url }}" alt="" width="64" height="64">
+      <span>Northern Illinois<span class="brand-bottom">BRICK CLUB<span class="brand-dot">.</span></span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      {% for item in nav %}
+      <a href="{{ item.url | url }}"{% if item.active %} aria-current="page"{% endif %}{% if loop.last %} class="nav-join"{% endif %}>{{ item.title | e }}{% if loop.last %} <span aria-hidden="true">&#8599;</span>{% endif %}</a>
+      {% endfor %}
+    </nav>
+    <details class="mobile-menu">
+      <summary>Menu <span aria-hidden="true">&#9776;</span></summary>
+      <nav aria-label="Mobile navigation">
+        {% for item in nav %}
+        <a href="{{ item.url | url }}"{% if item.active %} aria-current="page"{% endif %}>{{ item.title | e }} <span aria-hidden="true">&#8599;</span></a>
+        {% endfor %}
+      </nav>
+    </details>
+  </div>
+</header>

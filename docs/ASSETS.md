@@ -69,3 +69,25 @@ brand assets. Do not infer an external asset's license from the repository's gen
 
 For new photography or other external assets, record the source, credit, and permitted use.
 The [existing club website](https://niltc.org/) contains public club material to investigate.
+
+## Imported design assets
+
+The four designs retain their own asset files and public credits, without image processing,
+font substitution, deduplication, or changes to their visual treatments during integration.
+The original artwork above remains in ARTIFACTS. Import hashes are recorded in
+[design_imports.json](design_imports.json).
+
+- A: [CREDITS.md](../design_a/site_src/CREDITS.md). Its Matchstick derivative removes slide
+  debris from the supplied render while retaining the character. Club photographs retain
+  their downloaded bytes.
+- B: [credits.md](../design_b/site_src/credits.md). Its circular logo and photographs retain
+  their downloaded bytes. Barlow Condensed and DM Sans license files accompany the fonts.
+- C: [sources.md](../design_c/site_src/sources.md). Its cropped Matchstick render, club
+  photographs, and locally served Syne and Newsreader fonts retain their original entry credits.
+- D: [credits.md](../design_d/site_src/about/credits.md) and
+  [photos.yml](../design_d/data/photos.yml). Its processed mascot images, WebP photographs,
+  and Fredoka/Nunito font files retain the original entry's derivatives and license texts.
+
+This import does not establish new redistribution rights. Original per-entry asset-generation
+utilities remain in the read-only competition checkouts; the imported demos build directly from
+their supplied assets and do not require those utilities or a network connection.

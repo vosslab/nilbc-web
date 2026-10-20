@@ -1,0 +1,11 @@
+{% include "partials/page_intro.html" %}
+<section class="wrap gallery-section" aria-label="Club creations">
+  <div class="gallery-heading"><p class="eyebrow">{{ page.meta.gallery.eyebrow | e }}</p><span>{{ page.meta.gallery.description | e }}</span></div>
+  <div class="build-grid full-gallery">
+    {% set detailed = true %}
+    {% for build in page.meta.builds %}{% include "partials/build_card.html" %}{% endfor %}
+  </div>
+  <p class="source-note">{{ page.meta.gallery.source | e }}<a href="{{ 'credits/' | url }}">{{ page.meta.gallery.credits_link | e }}</a>.</p>
+</section>
+<section class="wrap callout"><div><p class="eyebrow">{{ page.meta.invitation.eyebrow | e }}</p><h2>{{ page.meta.invitation.heading | e }}</h2></div><a class="button" href="{{ 'join/' | url }}">{{ page.meta.invitation.link | e }} <span aria-hidden="true">&#8599;</span></a></section>
+{% include "partials/gallery_dialog.html" %}

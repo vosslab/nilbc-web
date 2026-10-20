@@ -1,11 +1,19 @@
-# Northern Illinois Brick Club
+# Four designs. One brick club.
 
 ![NILBC banner with Matchstick, the club's dragon mascot](assets/nilbc_banner.png)
 
-Northern Illinois Brick Club (NILBC) welcomes builders with a wide range of interests.
-We are changing our name from Northern Illinois LEGO Train Club (NILTC) to reflect
-that breadth. Trains remain part of what we build.
+Explore four independent website proposals for Northern Illinois Brick Club.
+Each designer worked from the same brief and approved club artwork.
 
-Our club brings brick creations to public exhibitions and connects people who enjoy building.
+| Design | Open the complete website |
+| --- | --- |
+| A | [Explore Design A](a/) |
+| B | [Explore Design B](b/) |
+| C | [Explore Design C](c/) |
+| D | [Explore Design D](d/) |
 
-Visit the [existing club website](https://niltc.org/) for current club and show information.
+Try the homepage, shows, creations, and joining pages in each design. Compare them on your
+phone as well as a larger screen. Use your browser's Back button to return to this page.
+
+These are design proposals for the club's A/B/C/D vote. The
+[existing club website](https://niltc.org/) remains the source for current club information.

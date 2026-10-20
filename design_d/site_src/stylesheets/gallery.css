@@ -1,0 +1,427 @@
+/*
+ * NILBC gallery: world filter chips, photo cards and grids, photo dialog.
+ */
+
+/* ---------- World gallery ---------- */
+.nb-worlds-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: var(--nb-space-2) 0 var(--nb-space-3);
+	padding: 0;
+}
+/* phones: one sideways-scrolling row of chips */
+@media (max-width: 44em) {
+	.nb-worlds-nav {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		margin-inline: -0.8rem;
+		padding: 0.3rem 0.8rem 0.6rem;
+		scrollbar-width: none;
+		/* fade at the right edge hints that the row scrolls */
+		-webkit-mask-image: linear-gradient(90deg, #000 68%, transparent);
+		mask-image: linear-gradient(90deg, #000 68%, transparent);
+	}
+	.nb-chip {
+		flex: none;
+	}
+}
+.nb-chip {
+	font: 600 0.74rem/1 var(--nb-font-display);
+	padding: 0.5rem 0.8rem;
+	color: var(--nb-ink);
+	background: var(--nb-paper-raised);
+	border: 2px solid var(--nb-rule);
+	border-radius: 999px;
+	cursor: pointer;
+	transition: translate 160ms var(--nb-ease-snap), background-color 160ms ease;
+}
+.nb-chip:hover {
+	translate: 0 -2px;
+	border-color: var(--nb-ink-soft);
+}
+.nb-chip[aria-pressed="true"] {
+	color: var(--nb-paper);
+	background: var(--nb-ink);
+	border-color: var(--nb-ink);
+}
+.nb-world[hidden] {
+	display: none;
+}
+.nb-gallery,
+.nb-mosaic {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+	gap: var(--nb-space-3);
+	/* cards in a row share one height; captions grow and credits sit on the bottom edge */
+	align-items: stretch;
+	margin: var(--nb-space-2) 0 var(--nb-space-4);
+}
+.md-typeset .nb-photo figcaption {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+.md-typeset .nb-photo .nb-photo__credit {
+	margin-top: auto;
+	padding-top: 0.3rem;
+}
+/* in feature tiles the photo takes the extra height, not the caption */
+.md-typeset .nb-gallery .nb-photo:first-child figcaption {
+	flex: none;
+}
+/* a few chosen photos stretch to fill the row instead of leaving empty columns */
+.nb-mosaic {
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+/* beside text, a mosaic is one column so its photo uses the column's full width */
+.nb-split .nb-mosaic {
+	grid-template-columns: 1fr;
+}
+/* a world shown with its module standard instead of photos; studs on top like every card */
+.nb-split.nb-split--module::before {
+	content: "";
+	position: absolute;
+	inset: -0.95rem 0.8rem auto 0.8rem;
+	height: 0.55rem;
+	background-image: linear-gradient(90deg, transparent 0 18%, #8A9095 18% 82%, transparent 82%);
+	background-size: 1.7rem 100%;
+	background-repeat: space no-repeat;
+}
+.nb-split.nb-split--module {
+	position: relative;
+	border-top: 0.45rem solid #8A9095;
+	display: grid;
+	grid-template-columns: minmax(8rem, 12rem) 1fr;
+	gap: var(--nb-space-3);
+	align-items: center;
+	margin: var(--nb-space-2) 0 var(--nb-space-4);
+	padding: var(--nb-space-3);
+	background: var(--nb-paper-raised);
+	border: 1px solid var(--nb-rule);
+	border-bottom: 0.6rem solid #4BA24A;
+	border-radius: var(--nb-radius-l) var(--nb-radius-l) var(--nb-radius-s) var(--nb-radius-s);
+	box-shadow: var(--nb-shadow);
+}
+@media (max-width: 30em) {
+	.nb-split.nb-split--module {
+		grid-template-columns: 1fr;
+	}
+}
+/* a module drawn to its standard: a 1:4 grey baseplate with dimension labels */
+.nb-module {
+	position: relative;
+	width: 100%;
+	max-width: 14rem;
+	margin: 0 auto;
+	padding: 0 0 1.4rem 1.7rem;
+	font: 600 0.72rem/1 var(--nb-font-display);
+	color: var(--nb-ink-soft);
+}
+/* a 16 x 4 stud plate: the module's true 1:4 footprint seen from above */
+.nb-module__plate {
+	position: relative;
+	display: block;
+	aspect-ratio: 4 / 1;
+	margin-top: 1.5rem;
+	background:
+		radial-gradient(circle at center, #B9BEC2 0 30%, #5B6066 32% 38%, transparent 40%) 0 0 / calc(100% / 16) 25%,
+		#8A9095;
+	border-radius: 0.2rem;
+	box-shadow: 0 0.2rem 0 #5B6066, 0 0.5rem 0.7rem -0.3rem rgba(19, 33, 60, 0.45);
+}
+/* a crenellated wall along the back edge, so the plate reads as a castle module */
+.nb-module__plate::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: calc(100% - 0.1rem);
+	height: 1.35rem;
+	background:
+		repeating-linear-gradient(90deg, #6E7377 0 calc(100% / 16), transparent calc(100% / 16) calc(100% / 8)) 0 0 / 100% 0.45rem no-repeat,
+		linear-gradient(#6E7377, #6E7377) 0 100% / 100% 0.95rem no-repeat;
+}
+/* dimension lines with the measurement centered on each */
+.nb-module__w,
+.nb-module__d {
+	position: absolute;
+	display: grid;
+	place-items: center;
+}
+.nb-module__w {
+	left: 1.7rem;
+	right: 0;
+	bottom: 0;
+	height: 1rem;
+	background: linear-gradient(currentColor, currentColor) 0 50% / 100% 1px no-repeat;
+}
+.nb-module__d {
+	left: 0;
+	top: 0;
+	bottom: 1.4rem;
+	width: 1.2rem;
+	writing-mode: vertical-rl;
+	rotate: 180deg;
+	background: linear-gradient(currentColor, currentColor) 50% 0 / 1px 100% no-repeat;
+}
+/* the label sits on a chip in the panel color, so the line breaks around it */
+.nb-module b {
+	padding: 0.15rem 0.3rem;
+	font-weight: 600;
+	background: var(--chip, var(--nb-paper-raised));
+}
+/* social links as a row of small bricks */
+.md-typeset .nb-social,
+.md-typeset .nb-social > p {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	margin: var(--nb-space-2) 0;
+}
+.md-typeset .nb-social a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	padding: 0.55rem 0.9rem;
+	font: 600 0.8rem/1 var(--nb-font-display);
+	color: var(--nb-ink);
+	text-decoration: none;
+	background: var(--nb-paper-raised);
+	border: 2px solid var(--nb-rule);
+	border-top: 0.3rem solid var(--nb-banner-blue);
+	border-radius: var(--nb-radius-s);
+	transition: translate 160ms var(--nb-ease-snap);
+}
+.md-typeset .nb-social a:hover {
+	translate: 0 -2px;
+	color: var(--nb-link-hover);
+}
+/* the first photo of each world is the feature: a 2x2 block whose image fills the height */
+.nb-gallery {
+	grid-auto-flow: dense;
+}
+/* desktop: four columns; feature 2x2 plus four photos closes a five-photo world exactly */
+@media (min-width: 60em) {
+	.nb-gallery {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+	/* seven photos: the last two share the final row */
+	.md-typeset .nb-gallery > .nb-photo:nth-child(6):nth-last-child(2),
+	.md-typeset .nb-gallery > .nb-photo:nth-child(7):last-child {
+		grid-column: span 2;
+	}
+	.md-typeset .nb-gallery > .nb-photo:nth-child(6):nth-last-child(2) .nb-photo__link,
+	.md-typeset .nb-gallery > .nb-photo:nth-child(7):last-child .nb-photo__link {
+		aspect-ratio: 16 / 7;
+	}
+	/* three photos or fewer: equal columns, no feature block */
+	.nb-gallery:not(:has(> :nth-child(4))) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+	.md-typeset .nb-gallery:not(:has(> :nth-child(4))) > .nb-photo:first-child {
+		grid-column: auto;
+		grid-row: auto;
+	}
+	.md-typeset .nb-gallery:not(:has(> :nth-child(4))) > .nb-photo:first-child .nb-photo__link {
+		flex: none;
+		aspect-ratio: 4 / 3;
+		min-height: 0;
+	}
+	.md-typeset .nb-gallery:not(:has(> :nth-child(4))) > .nb-photo:first-child img {
+		position: static;
+	}
+}
+/* phones: two compact columns so photos stay a supporting element */
+@media (max-width: 44em) {
+	.nb-gallery,
+	.nb-mosaic {
+		/* one card per row: photo on the left, caption beside it at a readable width */
+		grid-template-columns: 1fr;
+		/* rows leave room for the studs on top of each card */
+		gap: 1.2rem;
+	}
+	.md-typeset .nb-gallery .nb-photo:not(:first-child),
+	.md-typeset .nb-mosaic .nb-photo:not(:first-child) {
+		flex-direction: row;
+		align-items: stretch;
+	}
+	.md-typeset .nb-gallery .nb-photo:not(:first-child) .nb-photo__link,
+	.md-typeset .nb-mosaic .nb-photo:not(:first-child) .nb-photo__link {
+		flex: 0 0 42%;
+		aspect-ratio: 1 / 1;
+	}
+	.md-typeset .nb-photo figcaption {
+		padding: 0.55rem 0.6rem 0.65rem;
+		font-size: 0.72rem;
+	}
+	/* narrow phone cards: caption text only; the section heading names the world */
+	.md-typeset .nb-photo figcaption {
+		font-style: normal;
+		line-height: 1.35;
+	}
+	.md-typeset .nb-gallery .nb-photo .nb-photo__world,
+	.md-typeset .nb-photo .nb-photo__credit {
+		display: none;
+	}
+	.nb-gallery {
+		align-items: stretch;
+	}
+	.md-typeset .nb-gallery .nb-photo:first-child {
+		grid-column: 1 / -1;
+		grid-row: auto;
+	}
+	.md-typeset .nb-gallery .nb-photo:first-child .nb-photo__link {
+		aspect-ratio: 16 / 9;
+		min-height: 0;
+	}
+	/* a lone photo, or the lead of an odd set, takes the full width */
+	.nb-mosaic:has(> :only-child) {
+		grid-template-columns: 1fr;
+	}
+	.md-typeset .nb-mosaic > .nb-photo:first-child:nth-last-child(odd) {
+		grid-column: 1 / -1;
+	}
+}
+@media (min-width: 30em) {
+	.md-typeset .nb-gallery .nb-photo:first-child {
+		grid-column: span 2;
+		grid-row: span 2;
+		align-self: stretch;
+	}
+	.md-typeset .nb-gallery .nb-photo:first-child .nb-photo__link {
+		position: relative;
+		flex: 1 1 auto;
+		aspect-ratio: auto;
+		min-height: 14rem;
+	}
+	/* the image fills the block instead of setting its height */
+	.md-typeset .nb-gallery .nb-photo:first-child img {
+		position: absolute;
+		inset: 0;
+	}
+}
+/* Material sizes figures to fit their content; gallery figures fill their grid area */
+.md-typeset .nb-photo {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: none;
+	margin: 0;
+	background: var(--nb-paper-raised);
+	border: 1px solid var(--nb-rule);
+	border-radius: var(--nb-radius-m);
+	overflow: hidden;
+	box-shadow: var(--nb-shadow);
+	transition: translate 200ms var(--nb-ease-snap);
+}
+.md-typeset .nb-photo:hover,
+.md-typeset .nb-photo:focus-within {
+	translate: 0 -3px;
+}
+/* photo cards are bricks too: a world-colored top edge with studs standing on it */
+.md-typeset .nb-photo {
+	position: relative;
+	overflow: visible;
+	margin-top: 0.55rem;
+	border-top: 0.4rem solid var(--world-color, var(--nb-banner-blue));
+	border-radius: var(--nb-radius-s) var(--nb-radius-s) var(--nb-radius-m) var(--nb-radius-m);
+}
+.md-typeset .nb-photo::before {
+	content: "";
+	position: absolute;
+	inset: -0.95rem 0.6rem auto 0.6rem;
+	height: 0.55rem;
+	background-image: linear-gradient(90deg, transparent 0 18%, var(--world-color, var(--nb-banner-blue)) 18% 82%, transparent 82%);
+	background-size: 1.7rem 100%;
+	background-repeat: space no-repeat;
+}
+.nb-photo[data-world="trains"] { --world-color: var(--nb-mascot-red); }
+.nb-photo[data-world="city"] { --world-color: var(--nb-mascot-azure); }
+.nb-photo[data-world="screen"] { --world-color: var(--nb-mascot-lavender); }
+.nb-photo[data-world="creatures"] { --world-color: #7FA312; }
+.nb-photo[data-world="club"] { --world-color: var(--nb-banner-blue); }
+/* overflow is clipped so portrait photos cannot stretch the 4:3 frame */
+.nb-photo__link {
+	display: block;
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	background: var(--nb-paper-sunk);
+}
+.nb-photo__link:focus-visible {
+	outline-offset: -4px;
+}
+.md-typeset .nb-photo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.md-typeset .nb-photo figcaption {
+	margin: 0;
+	padding: 0.75rem 0.9rem 0.85rem;
+	max-width: none;
+	font-size: 0.78rem;
+	line-height: 1.45;
+	text-align: left;
+	color: var(--nb-ink);
+}
+.nb-photo__world {
+	display: block;
+	margin-bottom: 0.2rem;
+	font: 600 0.68rem/1.2 var(--nb-font-display);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--nb-link);
+}
+.nb-photo__credit {
+	display: block;
+	margin-top: 0.3rem;
+	font-size: 0.68rem;
+	color: var(--nb-ink-soft);
+}
+
+/* ---------- Photo dialog (progressive enhancement from worlds.js) ---------- */
+.nb-lightbox {
+	width: min(64rem, 94vw);
+	max-height: 94vh;
+	padding: 0;
+	color: #F4EEE2;
+	background: #0B1527;
+	border: 0;
+	border-radius: var(--nb-radius-l);
+	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+.nb-lightbox::backdrop {
+	background: rgba(8, 14, 26, 0.82);
+}
+.nb-lightbox img {
+	display: block;
+	width: 100%;
+	max-height: 78vh;
+	object-fit: contain;
+	background: #000;
+}
+.nb-lightbox p {
+	margin: 0;
+	padding: 0.9rem 1.2rem 1.1rem;
+	font-size: 0.85rem;
+}
+.nb-lightbox__close {
+	position: absolute;
+	top: 0.6rem;
+	right: 0.6rem;
+	width: 2.6rem;
+	height: 2.6rem;
+	font: 700 1.3rem/1 var(--nb-font-display);
+	color: #13213C;
+	background: #FFFFFF;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.nb-lightbox__close:focus-visible {
+	outline: 3px solid #FFD15C;
+	outline-offset: 2px;
+}
+

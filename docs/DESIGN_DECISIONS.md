@@ -61,3 +61,17 @@ in its rendering cannot confirm actual part colors.
 the recognizable model when adapting it, and confirm part colors from a parts list if needed.
 
 **Owner.** [ASSETS.md](ASSETS.md).
+
+### Four independent voting demos
+
+**Decision.** Import each completed entry under its own `design_*` directory and build it with
+`mkdocs_a.yml`, `mkdocs_b.yml`, `mkdocs_c.yml`, or `mkdocs_d.yml`. Keep the root configuration
+for a neutral comparison homepage. Build that homepage first, then all four child sites.
+
+**Why.** The competition compares independent designs. Combining their features or theme
+architectures would change the entries, and sharing an output directory would overwrite them.
+
+**Consequence.** Preserve each design's source and behavior. Adapt only paths required for
+relocation. Keep OTHER_REPOS read-only and deploy one artifact containing all four outputs.
+
+**Owner.** [DESIGNS.md](DESIGNS.md), [build_sites.py](../build_sites.py), and the five MkDocs configs.

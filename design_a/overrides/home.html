@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{# Seven Markdown sections, divided by ordinary horizontal rules. Copy lives in index.md. #}
+{% block content %}
+{% set sections = page.content.split('<hr />') %}
+<section class="club-hero">
+  <div class="club-hero-copy">{{ sections[0] }}</div>
+  <div class="club-identity">
+    <span class="club-stud stud-one" aria-hidden="true"></span>
+    <span class="club-stud stud-two" aria-hidden="true"></span>
+    <span class="club-stud stud-three" aria-hidden="true"></span>
+    {{ sections[1] }}
+  </div>
+</section>
+<section class="club-event club-markdown-event">{{ sections[2] }}</section>
+<section class="club-discover club-markdown-discover">
+  <div class="club-section-heading">{{ sections[3] }}</div>
+  <div class="club-theme-strip">{{ sections[4] }}</div>
+</section>
+<section class="club-invitation">
+  <div>{{ sections[5] }}</div>
+  <div class="club-note">{{ sections[6] }}</div>
+</section>
+{% for section in sections[7:] %}
+<section class="club-editor-section">{{ section }}</section>
+{% endfor %}
+{% endblock %}

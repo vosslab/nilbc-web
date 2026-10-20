@@ -1,0 +1,27 @@
+{% set home_file = pages | selectattr("src_uri", "equalto", "index.md") | first %}
+{% set footer = home_file.page.meta.footer %}
+{% set join_file = pages | selectattr("src_uri", "equalto", "join.md") | first %}
+{% set contact = join_file.page.meta.contact %}
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div>
+      <a class="footer-name" href="{{ '' | url }}">{{ footer.name[0] | e }}<br>{{ footer.name[1] | e }}<span>.</span></a>
+      <p>{{ footer.tagline | e }}</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="{{ 'builds/' | url }}">{{ footer.builds_link | e }}</a>
+      <a href="{{ 'shows/' | url }}">{{ footer.shows_link | e }}</a>
+      <a href="{{ 'join/' | url }}">{{ footer.join_link | e }}</a>
+    </nav>
+    <div class="footer-contact">
+      <span class="eyebrow">{{ footer.contact_label | e }}</span>
+      <a href="mailto:{{ contact | e }}">{{ contact | e }}</a>
+      <a href="https://niltc.org/">{{ footer.existing_site_link | e }} <span aria-hidden="true">&#8599;</span></a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>{{ footer.demo_label | e }} <span aria-hidden="true">/</span> {{ footer.date | e }}</span>
+    <a href="{{ 'credits/' | url }}">{{ footer.credits_link | e }}</a>
+    <span>{{ footer.independence | e }}</span>
+  </div>
+</footer>

@@ -1,9 +1,9 @@
-/goal Implement docs/DESIGN_BRIEF.md so NILBC has a distinctive, polished, accessible MkDocs Material 
-website compatible with GitHub Pages that showcases real member creations, welcomes builders across 
-themes including trains, and makes exhibitions and membership easy to discover. The complete, editable 
-website expresses your independent creative judgment across the whole repository while preserving the 
-approved NILBC branding and Matchstick's recognizable brick-built identity. docs/DESIGN_BRIEF.md is 
-the primary source for scope and implementation detail, supported by docs/HUMAN_GUIDANCE.md and 
-docs/ASSETS.md. Use the skills $vosslab-skills:css-creative-expert $vosslab-skills:svg-creator-expert 
+/goal Implement docs/DESIGN_BRIEF.md so NILBC has a distinctive, polished, accessible MkDocs Material
+website compatible with GitHub Pages that showcases real member creations, welcomes builders across
+themes including trains, and makes exhibitions and membership easy to discover. The complete, editable
+website expresses your independent creative judgment across the whole repository while preserving the
+approved NILBC branding and Matchstick's recognizable brick-built identity. docs/DESIGN_BRIEF.md is
+the primary source for scope and implementation detail, supported by docs/HUMAN_GUIDANCE.md and
+docs/ASSETS.md. Use the skills $vosslab-skills:css-creative-expert $vosslab-skills:svg-creator-expert
 when needed
 

@@ -1,0 +1,9 @@
+{% include "partials/page_intro.html" %}
+<section class="wrap story-grid" aria-labelledby="story-title">
+  <div class="story-copy"><p class="eyebrow">{{ page.meta.story.eyebrow | e }}</p><h2 id="story-title">{{ page.meta.story.heading_first | e }}<br>{{ page.meta.story.heading_second | e }}</h2><p>{{ page.meta.story.beginning | e }}</p><p>{{ page.meta.story.interests | e }}</p><p>{{ page.meta.story.rename_prefix | e }}<strong>{{ page.meta.story.rename_name | e }}</strong>{{ page.meta.story.rename_suffix | e }}</p><a class="text-link" href="{{ 'join/' | url }}">{{ page.meta.story.link | e }} <span aria-hidden="true">&#8599;</span></a></div>
+  <aside class="matchstick-card" aria-labelledby="matchstick-title"><img src="{{ 'assets/club_logo.png' | url }}" alt="{{ page.meta.mascot.image_alt | e }}" width="886" height="874"><p class="eyebrow">{{ page.meta.mascot.eyebrow | e }}</p><h2 id="matchstick-title">{{ page.meta.mascot.heading | e }}</h2><p>{{ page.meta.mascot.description | e }}</p><p class="source-note">{{ page.meta.mascot.source | e }}</p></aside>
+</section>
+<section class="wrap community-note" aria-labelledby="together-title">
+  <figure><img src="{{ 'assets/photos/club_builders.webp' | url }}" alt="{{ page.meta.community.image_alt | e }}" width="958" height="701" loading="lazy"><figcaption>{{ page.meta.community.caption | e }}</figcaption></figure>
+  <div><p class="eyebrow">{{ page.meta.community.eyebrow | e }}</p><h2 id="together-title">{{ page.meta.community.heading | e }}</h2><p>{{ page.meta.community.description | e }}</p><a class="text-link" href="{{ 'shows/' | url }}">{{ page.meta.community.link | e }} <span aria-hidden="true">&#8599;</span></a></div>
+</section>

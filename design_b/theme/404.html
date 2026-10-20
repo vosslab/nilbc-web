@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block content %}
+<section class="wrap page-intro missing-piece">
+  <p class="eyebrow"><span class="square" aria-hidden="true"></span>404 / A missing piece</p>
+  <h1>This brick went astray.</h1>
+  <p class="lead">The page you're looking for isn't here. There's plenty more to explore.</p>
+  <div class="actions"><a class="button" href="{{ '' | url }}">Back to the club <span aria-hidden="true">&#8599;</span></a><a class="text-link" href="{{ 'builds/' | url }}">Explore the builds <span aria-hidden="true">&#8594;</span></a></div>
+</section>
+{% endblock %}

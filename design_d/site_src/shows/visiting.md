@@ -1,0 +1,76 @@
+---
+hide:
+  - toc
+title: Visiting a show
+art: teacup
+band: lavender
+kicker: For families
+peek: false
+description: What families and first-time visitors can expect at a Northern Illinois Brick Club exhibition.
+---
+
+# Visiting a show
+
+A brick show is a museum where everything is built from the same small parts. Here is how
+to get the most out of it, whether you are five or fifty-five.
+
+/// steps
+
+1. **Walk the whole table first**
+   Layouts are long. Take one lap to see everything, then come back to your favorite scene.
+   Trains keep moving, so a second look always shows something new.
+2. **Get low and look closely**
+   Crouch to minifigure eye level. Builders hide small stories in their scenes: a cyclist
+   tumbling over a railing, a bear surprising travelers in the woods.
+3. **Ask a builder**
+   The people behind the tables built what you are looking at. Ask how long it took,
+   which part was hardest, or how the trains are powered.
+
+///
+
+## Good to know
+
+/// cards
+
+### :material-hand-back-left-off-outline: Look with your eyes
+
+Displays are built from thousands of loose parts and many are fragile. Please keep hands
+outside the barriers and help little ones do the same.
+
+### :material-camera-outline: Photos
+
+Take photos of the layout if the host venue allows it. Ask before photographing people.
+
+### :material-ticket-outline: Admission and access
+
+Admission, parking, and accessibility are set by each host venue. Check the venue's
+website before you go.
+
+### :material-clock-outline: Timing
+
+Sunday hours are often shorter. Check the times on [upcoming shows](index.md) before you
+leave home.
+
+///
+
+## Things to look for
+
+- **Running trains.** Most of our layouts use powered track running through scenery.
+  Builders follow shared [track and train standards](../join/standards.md) so modules from
+  different members connect.
+- **Chicago in miniature.** Commuter locomotives, skylines, and local landmarks such as a
+  replica of the DuPage County Historical Museum.
+- **Lights.** Some displays are wired with lights. A lit skyline or the Eiffel Tower
+  glowing at dusk is worth staying for.
+- **Every other world.** Starships, cartoon towns, castles, and creatures. Ask the builder
+  which one they are proudest of.
+
+/// callout | From Matchstick
+
+![](../assets/mascot/matchstick_full_320.webp)
+
+Matchstick visits every world the club builds. He is fully buildable, so members can make
+copies of him, dress him up, and place him in their own displays. Watch for him at
+future shows.
+
+///

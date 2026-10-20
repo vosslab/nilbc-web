@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block header %}
+<a class="club-skip" href="#club-content">Skip to content</a>
+<header class="club-header">
+  <a class="club-logo" href="{{ '.' | url }}" aria-label="Northern Illinois Brick Club home">
+    <img src="{{ 'assets/nilbc_banner.png' | url }}" width="1402" height="420" alt="NILBC - Northern Illinois Brick Club">
+  </a>
+  <nav class="club-nav" aria-label="Primary navigation">
+    {% for item in nav if item.title != 'Credits' %}
+    <a href="{{ item.url | url }}"{% if item.active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+  <details class="club-menu">
+    <summary>Menu</summary>
+    <nav aria-label="Mobile navigation">
+      {% for item in nav if item.title != 'Credits' %}
+      <a href="{{ item.url | url }}"{% if item.active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </details>
+</header>
+{% endblock %}
+{% block tabs %}{% endblock %}
+{% block site_nav %}{% endblock %}
+{% block container %}
+<article id="club-content" tabindex="-1" class="club-page md-typeset" data-club-page="{{ page.file.src_uri if page else '' }}">
+{% block content %}
+{% for section in page.content.split('<hr />') %}
+  {% if loop.first %}
+  <header class="page-intro">{{ section }}</header>
+  {% elif page.file.src_uri == 'VISIT.md' and loop.index == 2 %}
+  <section class="visit-ticket club-markdown-event">{{ section }}</section>
+  {% else %}
+  <section class="club-editor-section">{{ section }}</section>
+  {% endif %}
+{% endfor %}
+{% endblock %}
+</article>
+{% endblock %}
+{% block footer %}
+<footer class="club-footer">
+{% for home in nav.pages if home.is_homepage %}
+{% set footer = home.meta.footer %}
+  <div><p class="club-footer-title">{{ footer.heading | e }}</p>
+  <p>{{ footer.name | e }}<br>{{ footer.heritage | e }}</p></div>
+  <nav aria-label="Footer navigation">
+    {% for link in footer.links %}
+    <a href="{{ link.url | url }}">{{ link.label | e }}</a>
+    {% endfor %}
+  </nav>
+  <p class="club-demo">{{ footer.notice | e }}</p>
+{% endfor %}
+</footer>
+{% endblock %}
+{% block scripts %}{% endblock %}

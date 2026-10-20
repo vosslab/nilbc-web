@@ -1,0 +1,604 @@
+/*
+ * NILBC components: brick cards, instruction steps, part callouts, status tags,
+ * show cards, buttons, world gallery, photo dialog, Matchstick swatches.
+ */
+
+/* ---------- Buttons ---------- */
+.md-typeset .md-button {
+	font-family: var(--nb-font-display);
+	font-weight: 600;
+	border-radius: var(--nb-radius-m);
+	border-width: 2px;
+	padding: 0.6em 1.3em;
+	text-decoration: none;
+	color: var(--nb-link);
+	border-color: currentColor;
+	transition: translate 160ms var(--nb-ease-snap), box-shadow 160ms ease;
+}
+.md-typeset .md-button--primary {
+	background: var(--nb-accent);
+	border-color: var(--nb-accent);
+	color: var(--nb-accent-ink);
+	box-shadow: 0 0.25rem 0 #7A1006;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus-visible {
+	translate: 0 -2px;
+	color: var(--nb-link-hover);
+	background: transparent;
+	border-color: currentColor;
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus-visible {
+	background: #A31507;
+	border-color: #A31507;
+	color: #FFFFFF;
+	box-shadow: 0 0.35rem 0 #6A0E05;
+}
+.md-typeset .md-button:active {
+	translate: 0 2px;
+	box-shadow: 0 0 0 transparent;
+}
+
+/* ---------- Brick cards: a 2xN brick seen from the side ---------- */
+.nb-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 15.5rem), 1fr));
+	gap: var(--nb-space-3);
+	margin: var(--nb-space-3) 0;
+}
+@media (min-width: 40em) {
+	.nb-cards--3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+.nb-brick {
+	--brick: var(--nb-banner-blue);
+	position: relative;
+	padding: var(--nb-space-3) var(--nb-space-3) var(--nb-space-2);
+	margin-top: 0.55rem;
+	background: var(--nb-paper-raised);
+	border: 1px solid var(--nb-rule);
+	border-top: 0.45rem solid var(--brick);
+	border-radius: var(--nb-radius-s) var(--nb-radius-s) var(--nb-radius-m) var(--nb-radius-m);
+	box-shadow: var(--nb-shadow);
+	transition: translate 200ms var(--nb-ease-snap);
+}
+/* studs along the top edge: each tile is one stud with its own side gaps,
+   and `space` repeat fits whole tiles, so both ends finish on a full stud */
+.nb-brick::before {
+	content: "";
+	position: absolute;
+	inset: -0.95rem 0.6rem auto 0.6rem;
+	height: 0.55rem;
+	background-image: linear-gradient(90deg, transparent 0 18%, var(--brick) 18% 82%, transparent 82%);
+	background-size: 1.7rem 100%;
+	background-repeat: space no-repeat;
+}
+.nb-brick:hover {
+	translate: 0 -3px;
+}
+.nb-brick--red { --brick: var(--nb-mascot-red); }
+.nb-brick--azure { --brick: var(--nb-mascot-azure); }
+.nb-brick--lavender { --brick: var(--nb-mascot-lavender); }
+.nb-brick--tan { --brick: #C9A96A; }
+.nb-brick--yellow { --brick: #E0B414; }
+.md-typeset .nb-brick h3 {
+	margin-top: 0;
+}
+.md-typeset .nb-brick p:last-child {
+	margin-bottom: 0;
+}
+.md-typeset .nb-brick__icon {
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	margin-bottom: 0.5rem;
+	color: var(--brick);
+}
+.md-typeset .nb-brick__icon .twemoji {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.md-typeset .nb-brick__icon svg {
+	width: 100%;
+	height: 100%;
+	max-height: none;
+	fill: currentColor;
+}
+/* the heading link covers the whole card, so the card is one big target */
+.md-typeset .nb-card-link h3 a {
+	color: var(--nb-ink);
+	text-decoration: none;
+}
+.md-typeset .nb-card-link h3 a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+}
+.md-typeset .nb-card-link:hover h3 a {
+	color: var(--nb-link-hover);
+	text-decoration: underline;
+}
+.md-typeset .nb-card-link:focus-within {
+	outline: 3px solid var(--nb-focus);
+	outline-offset: 3px;
+}
+.md-typeset .nb-card-link h3 a:focus-visible {
+	outline: none;
+}
+
+/* ---------- Instruction steps ---------- */
+/* inner pages: one column, steps joined by a dashed line like an instruction booklet */
+.md-typeset ol.nb-steps {
+	counter-reset: nb-step;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: var(--nb-space-3);
+	padding: 0;
+	margin: var(--nb-space-3) 0;
+	list-style: none;
+}
+.md-typeset .nb-steps > li:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	left: 1.35rem;
+	top: 3.1rem;
+	bottom: calc(-1 * var(--nb-space-3) + 0.4rem);
+	border-left: 2px dashed var(--nb-rule);
+}
+/* home, wide screens: three steps side by side, badges on top joined by a dashed line */
+@media (min-width: 48em) {
+	.md-content:has(.nb-hero) ol.nb-steps {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+	.md-content:has(.nb-hero) .nb-steps > li {
+		padding: 3.7rem 0 0;
+	}
+	.md-content:has(.nb-hero) .nb-steps > li:not(:last-child)::after {
+		top: 1.35rem;
+		bottom: auto;
+		left: 3.3rem;
+		right: calc(-1 * var(--nb-space-3) + 0.4rem);
+		border-left: 0;
+		border-top: 2px dashed var(--nb-rule);
+	}
+}
+/* a link that ends a step (tagged by the steps block) */
+.md-typeset .nb-steps .nb-step-link {
+	display: block;
+	width: fit-content;
+	margin-top: 0.4rem;
+	font-weight: 700;
+}
+.md-typeset .nb-steps > li {
+	counter-increment: nb-step;
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 3.6rem;
+}
+.md-typeset .nb-steps > li::before {
+	content: counter(nb-step);
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: grid;
+	place-items: center;
+	width: 2.7rem;
+	height: 2.7rem;
+	font-family: var(--nb-font-display);
+	font-size: 1.45rem;
+	font-weight: 700;
+	color: var(--nb-paper);
+	background: var(--nb-ink);
+	border-radius: var(--nb-radius-s);
+	box-shadow: 0.2rem 0.2rem 0 var(--nb-mascot-azure);
+}
+/* timeline: the badge is a wide brick carrying the year instead of a step number */
+.md-typeset .nb-steps--timeline > li {
+	padding-left: 5.4rem;
+}
+.md-typeset .nb-steps--timeline > li::before {
+	content: attr(data-year);
+	width: 4.4rem;
+	height: 2.4rem;
+	font-size: 1rem;
+	color: #13213C;
+	background: var(--nb-brick-yellow);
+	box-shadow: 0.2rem 0.2rem 0 var(--nb-mascot-red);
+}
+.md-typeset .nb-steps--timeline > li:not(:last-child)::after {
+	left: 2.2rem;
+	top: 2.8rem;
+}
+.md-typeset .nb-steps > li > strong:first-child {
+	display: block;
+	font-family: var(--nb-font-display);
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+/* ---------- Part callout: the boxed parts list from an instruction step ---------- */
+.nb-callout {
+	position: relative;
+	margin: var(--nb-space-3) 0;
+	padding: var(--nb-space-2) var(--nb-space-3);
+	background: var(--nb-paper-raised);
+	border: 2px solid var(--nb-ink);
+	border-radius: var(--nb-radius-m);
+	box-shadow: 0.35rem 0.35rem 0 var(--nb-paper-sunk);
+}
+.nb-callout__label {
+	display: inline-block;
+	margin-bottom: 0.4rem;
+	padding: 0.1rem 0.55rem;
+	font-family: var(--nb-font-display);
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--nb-paper);
+	background: var(--nb-ink);
+	border-radius: var(--nb-radius-s);
+}
+.md-typeset .nb-callout > :last-child {
+	margin-bottom: 0;
+}
+.md-typeset .nb-callout dl {
+	display: grid;
+	grid-template-columns: minmax(7rem, auto) 1fr;
+	gap: 0.55rem 1.2rem;
+	margin: 0.5rem 0 0;
+}
+.md-typeset .nb-callout dt {
+	font-family: var(--nb-font-display);
+	font-weight: 600;
+}
+.md-typeset .nb-callout dd {
+	margin: 0;
+}
+.md-typeset .nb-callout dd p {
+	margin: 0;
+}
+@media (max-width: 30em) {
+	.md-typeset .nb-callout dl {
+		grid-template-columns: 1fr;
+		gap: 0.1rem;
+	}
+	.md-typeset .nb-callout dd {
+		margin-bottom: 0.5rem;
+	}
+}
+.nb-callout--matchstick {
+	display: grid;
+	grid-template-columns: 4.5rem 1fr;
+	gap: var(--nb-space-2);
+	align-items: center;
+}
+.nb-callout--matchstick img {
+	width: 4.5rem;
+	height: auto;
+}
+/* phones: a small picture floats beside the opening lines and the text wraps under it */
+@media (max-width: 30em) {
+	.nb-callout--matchstick {
+		display: block;
+	}
+	.md-typeset .nb-callout--matchstick > img {
+		float: left;
+		width: 3.4rem;
+		margin: 0 0.8rem 0.4rem 0;
+	}
+	.nb-callout--matchstick::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+/* ---------- Status tags ---------- */
+.nb-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3em;
+	padding: 0.1rem 0.55rem;
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	border-radius: 999px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.nb-tag--listed {
+	background: var(--nb-tag-confirmed-bg);
+	color: var(--nb-tag-confirmed-ink);
+}
+.nb-tag--check {
+	background: var(--nb-tag-check-bg);
+	color: var(--nb-tag-check-ink);
+}
+.nb-tag--past {
+	background: var(--nb-tag-past-bg);
+	color: var(--nb-tag-past-ink);
+}
+/* Material Design icons drawn as masks in the text color (star, clock, map marker) */
+.nb-tag--star::before,
+.nb-tag--clock::before,
+.md-typeset .nb-map-link::before {
+	content: "";
+	display: inline-block;
+	width: 1.1em;
+	height: 1.1em;
+	background-color: currentColor;
+	-webkit-mask: var(--nb-icon) center / contain no-repeat;
+	mask: var(--nb-icon) center / contain no-repeat;
+}
+.nb-tag--star {
+	--nb-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21z"/></svg>');
+}
+.nb-tag--clock {
+	--nb-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>');
+}
+.md-typeset .nb-map-link {
+	--nb-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>');
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25em;
+}
+.md-typeset .nb-map-link::before {
+	color: var(--nb-mascot-red);
+}
+
+/* ---------- Show cards ---------- */
+.nb-shows {
+	display: grid;
+	gap: var(--nb-space-3);
+	margin: var(--nb-space-3) 0;
+}
+.nb-show {
+	display: grid;
+	grid-template-columns: 6rem 1fr;
+	gap: var(--nb-space-3);
+	padding: var(--nb-space-3);
+	background: var(--nb-paper-raised);
+	border: 1px solid var(--nb-rule);
+	border-radius: var(--nb-radius-l);
+	box-shadow: var(--nb-shadow);
+}
+/* the date block is a 2x2 brick: studs on top, month and days below */
+.nb-show__date {
+	position: relative;
+	align-self: start;
+	display: grid;
+	place-items: center;
+	padding: 0.7rem 0.3rem 0.6rem;
+	margin-top: 0.5rem;
+	text-align: center;
+	color: #FFFFFF;
+	background: var(--nb-mascot-red);
+	border-radius: var(--nb-radius-s);
+	box-shadow: inset 0 -0.3rem 0 rgba(0, 0, 0, 0.18);
+	font-family: var(--nb-font-display);
+	line-height: 1.1;
+}
+.nb-show__date::before {
+	content: "";
+	position: absolute;
+	inset: -0.45rem 0.9rem auto 0.9rem;
+	height: 0.45rem;
+	background: repeating-linear-gradient(90deg,
+		transparent 0 0.2rem,
+		var(--nb-mascot-red) 0.2rem 1.45rem,
+		transparent 1.45rem 1.85rem);
+	border-radius: 0.15rem 0.15rem 0 0;
+}
+.nb-show__month {
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.nb-show__days {
+	font-size: 1.55rem;
+	font-weight: 700;
+}
+.nb-show__year {
+	font-size: 0.72rem;
+	opacity: 0.9;
+}
+.md-typeset .nb-show h3 {
+	margin: 0 0 0.3rem;
+}
+.md-typeset .nb-show dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0.2rem 0.9rem;
+	margin: 0.6rem 0;
+}
+.md-typeset .nb-show dt {
+	font-weight: 700;
+	color: var(--nb-ink-soft);
+}
+.md-typeset .nb-show dd {
+	margin: 0;
+}
+.nb-show--next {
+	border: 2px solid var(--nb-mascot-red);
+}
+@media (max-width: 30em) {
+	/* phones: the date brick sits above the details, which run full width */
+	.nb-show {
+		grid-template-columns: 1fr;
+		gap: 0.6rem;
+		padding: var(--nb-space-2);
+	}
+	.nb-show__date {
+		justify-self: start;
+		display: flex;
+		align-items: baseline;
+		gap: 0.45rem;
+		padding: 0.55rem 0.9rem 0.5rem;
+	}
+	.nb-show__days {
+		font-size: 1.25rem;
+	}
+	.md-typeset .nb-show dl {
+		grid-template-columns: 1fr;
+	}
+	.md-typeset .nb-show dt {
+		margin-top: 0.3rem;
+	}
+}
+
+/* ---------- Matchstick palette swatches ---------- */
+.nb-swatches {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 10.5rem), 1fr));
+	gap: var(--nb-space-2);
+	margin: var(--nb-space-3) 0;
+	padding: 0;
+	list-style: none;
+}
+.md-typeset .nb-swatches li {
+	margin: 0;
+	padding: 0.7rem;
+	background: var(--nb-paper-raised);
+	border: 1px solid var(--nb-rule);
+	border-radius: var(--nb-radius-m);
+	font-size: 0.76rem;
+	line-height: 1.35;
+}
+/* each swatch is a 2x2 brick top view: four studs on a colored plate */
+.nb-swatch__chip {
+	display: block;
+	height: 3.6rem;
+	margin-bottom: 0.55rem;
+	border-radius: var(--nb-radius-s);
+	background-color: var(--chip);
+	background-image: radial-gradient(circle, rgba(255, 255, 255, 0.28) 0 0.62rem, rgba(0, 0, 0, 0.12) 0.66rem 0.74rem, transparent 0.76rem);
+	background-size: 50% 50%;
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+/* eye swatch: a 2x2 tile like the others, white studs with near-black pupils */
+.md-typeset .nb-swatch__chip--eye {
+	background-color: #FFFFFF;
+	background-image: radial-gradient(circle, #05131D 0 0.32rem, #FFFFFF 0.34rem 0.62rem, rgba(0, 0, 0, 0.18) 0.66rem 0.74rem, transparent 0.76rem);
+	background-size: 50% 50%;
+}
+/* parts callout: big diagram beside a compact numbered legend */
+.nb-split.nb-split--parts {
+	display: grid;
+	grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+	gap: var(--nb-space-3);
+	align-items: center;
+	margin: var(--nb-space-3) 0;
+}
+@media (max-width: 52em) {
+	.nb-split.nb-split--parts {
+		grid-template-columns: 1fr;
+	}
+}
+.md-typeset ol.nb-parts {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+	gap: 0.5rem;
+	margin: 0;
+	counter-reset: nb-part;
+}
+.md-typeset .nb-parts li {
+	counter-increment: nb-part;
+	position: relative;
+	min-height: 3.8rem;
+	padding: 0.55rem 0.6rem 0.55rem 3.9rem;
+}
+.md-typeset .nb-parts .nb-swatch__chip {
+	position: absolute;
+	top: 0.6rem;
+	left: 0.6rem;
+	width: 2.6rem;
+	height: 2.6rem;
+	margin: 0;
+	background-size: 50% 50%;
+}
+.md-typeset .nb-parts li::before {
+	content: counter(nb-part);
+	position: absolute;
+	top: -0.35rem;
+	left: -0.35rem;
+	display: grid;
+	place-items: center;
+	width: 1.6rem;
+	height: 1.6rem;
+	font: 700 0.85rem/1 var(--nb-font-display);
+	color: var(--nb-paper);
+	background: var(--nb-ink);
+	border-radius: 50%;
+	z-index: 1;
+}
+.md-typeset .nb-parts li strong {
+	display: block;
+	font-family: var(--nb-font-display);
+	font-size: 0.9rem;
+}
+.md-typeset .nb-anatomy-figure {
+	width: 100%;
+	max-width: 30rem;
+	margin: 0 auto;
+}
+.nb-anatomy {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.md-typeset .nb-figure-plain {
+	margin: 0 auto;
+	text-align: center;
+}
+.md-typeset .nb-figure-plain img {
+	filter: drop-shadow(0 0.5rem 0.8rem rgba(0, 0, 0, 0.2));
+}
+.md-typeset .nb-figure-plain figcaption {
+	font-size: 0.75rem;
+	color: var(--nb-ink-soft);
+}
+.nb-swatch__hex {
+	display: block;
+	margin-top: 0.15rem;
+	font-family: var(--md-code-font-family, ui-monospace, monospace);
+	font-size: 0.72rem;
+	color: var(--nb-ink-soft);
+}
+
+/* ---------- Credits list: thumbnail plus one line of source details ---------- */
+.md-typeset ul.nb-credit-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+	gap: 0.6rem 1.2rem;
+	margin: var(--nb-space-2) 0;
+	padding: 0;
+	list-style: none;
+}
+.md-typeset .nb-credit-list li {
+	display: grid;
+	grid-template-columns: 4rem 1fr;
+	gap: 0.7rem;
+	align-items: start;
+	margin: 0;
+	font-size: 0.74rem;
+	line-height: 1.4;
+}
+.md-typeset .nb-credit-list img {
+	width: 4rem;
+	height: 3rem;
+	object-fit: cover;
+	border-radius: var(--nb-radius-s);
+}
+.md-typeset .nb-credit-list strong {
+	display: block;
+	font-weight: 700;
+}
+.nb-credit-list__meta {
+	color: var(--nb-ink-soft);
+}

@@ -1,78 +1,102 @@
-# Install and preview
+# Install, preview, and publish
 
-Read [DESIGN_BRIEF.md](DESIGN_BRIEF.md) for the assignment and [ASSETS.md](ASSETS.md)
-for approved references. All starter files and technical choices can evolve with the website.
+The repository contains four independent website proposals and a neutral landing page.
+See [DESIGNS.md](DESIGNS.md) for the A/B/C/D mapping and source boundaries.
 
 ## Install
 
-Use Bash and an existing Python 3.12 installation on macOS. From the repository directory:
+Use Bash and Python 3.12 on macOS or Python 3.13 on Debian:
 
 ```bash
-bash
-source source_me.sh && python3 --version
 source source_me.sh && python3 -m pip install -r pip_requirements.txt
 ```
 
-If Python 3.12 is missing, install it with `brew install python@3.12` and put its commands
-on this Bash session's path:
+All website assets are local. Builds do not download assets or read `OTHER_REPOS/`.
+
+## Build all four
 
 ```bash
-export PATH="$(brew --prefix python@3.12)/libexec/bin:$PATH"
-source source_me.sh && python3 --version
+source source_me.sh && python3 build_sites.py
 ```
 
-If the interpreter rejects package installation as externally managed, use a local virtual
-environment as a last resort. Source the repository environment first, then activate it:
+This strictly builds the landing page first, followed by all four designs, into `output_site/`.
+Do not run the root `mkdocs build` afterward: its clean step removes the child outputs.
+A single design's build cleans only that design's output.
+
+Preview the complete voting site:
 
 ```bash
-source source_me.sh && python3 -m venv .venv
-source source_me.sh && source .venv/bin/activate && python3 -m pip install -r pip_requirements.txt
+source source_me.sh && python3 -m http.server 8000 --bind 127.0.0.1 --directory output_site
 ```
 
-For subsequent commands in that case, activate `.venv` after sourcing `source_me.sh`.
-The startup script optionally reads your own Bash configuration; no other checkout or
-machine-specific Python path is required. Check the reported interpreter if your Bash
-configuration changes PATH.
+Open [the comparison homepage](http://127.0.0.1:8000/), then follow A, B, C, or D.
+This static server previews the root mount; the browser check below also exercises the actual
+GitHub Pages project prefix, including design-specific 404 pages.
 
-## Preview and build
+## Preview one design
+
+Run commands from this repository's root. Substitute `b`, `c`, or `d` for `a`:
 
 ```bash
-source source_me.sh && python3 -m mkdocs serve --strict
+source source_me.sh && python3 -m mkdocs serve --strict -f mkdocs_a.yml
 ```
 
-Open [the local preview](http://127.0.0.1:8000/nilbc-web/). Stop the server with Ctrl-C.
+Open [Design A](http://127.0.0.1:8000/nilbc-web/a/). The other configurations serve at
+`/nilbc-web/b/`, `/nilbc-web/c/`, and `/nilbc-web/d/`.
+For simultaneous previews, add a different `--dev-addr 127.0.0.1:8001` port to each command.
+
+Build a design independently:
 
 ```bash
-source source_me.sh && python3 -m mkdocs build --strict
+source source_me.sh && python3 -m mkdocs build --strict -f mkdocs_a.yml
 ```
 
-The starter reads [mkdocs.yml](../mkdocs.yml), renders [site_src/index.md](../site_src/index.md),
-and writes the ignored `output_site/` directory. Maintainer documents and source presentation files
-are outside the published content. The default Material theme is an operational placeholder.
+Each design retains its own editing model. Edit the corresponding `design_*/` directory;
+the original competition entries in `OTHER_REPOS/` remain untouched.
 
-## GitHub Pages compatibility
+## Verify the integration
 
-The starter's `site_url` is `https://vosslab.github.io/nilbc-web/`; change it to the actual
-publication URL when needed. MkDocs uses its path for the local preview too. The built
-directory is a static site suitable for a GitHub Pages artifact; this starter does not
-publish anything or require hosting credentials.
-
-Upload the built site directory when configuring deployment, not the source repository.
-See the [MkDocs configuration documentation](https://www.mkdocs.org/user-guide/configuration/)
-and [GitHub Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
-
-## Repository checks
-
-The inherited maintainer suite has extra dependencies, separate from website installation:
+Node 22.12 or newer is needed only for browser verification:
 
 ```bash
-source source_me.sh && python3 -m pip install -r pip_requirements-dev.txt
+npm ci
+npx playwright install chromium --only-shell
+npm test
+```
+
+`npm test` rebuilds all five sites, then checks every generated HTML route at desktop and
+phone widths, local links and assets, prefix isolation, mobile menus, both image viewers,
+and both search implementations. Any failure must be resolved before publishing the artifact.
+Results go to ignored `output_checks/designs_report.json`.
+
+To capture the four homepages at desktop and phone widths:
+
+```bash
+npm test -- --capture
+```
+
+Screenshots go to ignored `output_checks/screenshots/`; no original screenshots are overwritten.
+If the machine uses a custom Playwright cache, set its standard `PLAYWRIGHT_BROWSERS_PATH`
+variable when installing and running Chromium. On Linux, `--with-deps` also installs required
+browser libraries.
+
+The existing repository checks remain separate:
+
+```bash
 source source_me.sh && python3 -m pytest tests/
 ```
 
-An extracted source archive omits Git history. If running the inherited repository checks
-from such a copy, initialize its own local repository first with `git init`; the checks
-locate their root through Git. Website installation and preview do not require Git metadata.
+## GitHub Pages
 
-For the suite's scope, see [tests/TESTS_README.md](../tests/TESTS_README.md).
-Document the commands and checks appropriate to your completed website.
+[pages.yml](../.github/workflows/pages.yml) builds and publishes one combined artifact on a push
+to `main` or a manual workflow run. Set the repository's Pages source to **GitHub Actions**.
+Local build and test commands do not publish anything.
+
+The configured landing URL is `https://vosslab.github.io/nilbc-web/`.
+Designs live at that URL followed by `a/`, `b/`, `c/`, or `d/`.
+If the deployment address changes, update `site_url` in all five root configurations.
+Keep each design's final letter segment.
+
+Publish the complete `output_site/` directory. Do not deploy a design's output on its own.
+The entries retain their original demo content and dated event records. No voting form,
+vote storage, or winner selection is included.

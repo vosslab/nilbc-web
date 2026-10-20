@@ -1,0 +1,11 @@
+<figure class="build-card">
+  <a class="gallery-link" href="{{ build.image | url | e }}" data-title="{{ build.title | e }}" aria-label="Enlarge {{ build.title | e }}">
+    <img src="{{ build.image | url | e }}" alt="{{ build.alt | e }}" width="900" height="600" loading="lazy">
+    <span class="enlarge" aria-hidden="true"><span class="enlarge-label">Full image</span> &#8599;</span>
+  </a>
+  <figcaption>
+    <span class="eyebrow">{{ build.category | e }}</span>
+    <h3>{{ build.title | e }}</h3>
+    {% if detailed %}<p>{{ build.description | e }}</p>{% endif %}
+  </figcaption>
+</figure>

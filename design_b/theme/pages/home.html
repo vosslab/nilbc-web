@@ -1,0 +1,61 @@
+{% set shows_file = pages | selectattr("src_uri", "equalto", "shows.md") | first %}
+{% set shows = shows_file.page.meta.shows %}
+{% set show = shows[0] if shows else none %}
+<section class="home-hero wrap" aria-labelledby="home-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="square" aria-hidden="true"></span>{{ page.meta.eyebrow | e }}</p>
+    <h1 id="home-title">{{ page.meta.headline[0] | e }}<br><span>{{ page.meta.headline[1] | e }}</span></h1>
+    <div class="lead">{{ page.content }}</div>
+    <div class="actions">
+      <a class="button" href="{{ 'builds/' | url }}">{{ page.meta.invitation.builds_link | e }} <span aria-hidden="true">&#8599;</span></a>
+      <a class="text-link" href="{{ 'shows/' | url }}">{{ page.meta.invitation.shows_link | e }} <span aria-hidden="true">&#8594;</span></a>
+    </div>
+    {% if show %}
+    <aside class="hero-event" aria-label="Featured show">
+      <div class="hero-event-date"><span>{{ show.month | e }}</span><strong>{{ show.days | e }}</strong><span>{{ show.year | e }}</span></div>
+      <div><p class="eyebrow">{{ page.meta.invitation.show_label | e }}</p><h2>{{ show.venue | e }}</h2><a class="text-link" href="{{ 'shows/' | url }}">{{ page.meta.invitation.visit_link | e }} <span aria-hidden="true">&#8594;</span></a></div>
+    </aside>
+    {% endif %}
+  </div>
+  <div class="hero-poster">
+    <p class="eyebrow poster-kicker">{{ page.meta.poster.eyebrow | e }}</p>
+    <div class="poster-emblem">
+      <span class="brick-stack brick-stack-left" aria-hidden="true"><i></i><i></i><i></i></span>
+      <img src="{{ 'assets/club_logo.png' | url }}" alt="{{ page.meta.poster.logo_alt | e }}" width="240" height="240">
+      <span class="brick-stack brick-stack-right" aria-hidden="true"><i></i><i></i><i></i></span>
+    </div>
+    <p class="poster-type">{{ page.meta.poster.tagline_first | e }}<br><span>{{ page.meta.poster.tagline_second | e }}</span></p>
+    <div class="poster-bottom"><span>{{ page.meta.poster.name_first | e }}<br>{{ page.meta.poster.name_second | e }}</span><span>{{ page.meta.poster.invitation | e }}</span></div>
+  </div>
+</section>
+<section class="section wrap home-gallery" aria-labelledby="builds-title">
+  <div class="section-heading">
+    <div><p class="eyebrow">{{ page.meta.gallery.eyebrow | e }}</p><h2 id="builds-title">{{ page.meta.gallery.heading | e }}</h2></div>
+    <a class="text-link" href="{{ 'builds/' | url }}">{{ page.meta.gallery.link | e }} <span aria-hidden="true">&#8599;</span></a>
+  </div>
+  <p class="section-lead">{{ page.meta.gallery.description | e }}</p>
+  <div class="interest-grid">
+    <a class="interest-tile interest-architecture" href="{{ 'builds/' | url }}">
+      <span class="interest-motif" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="eyebrow">{{ page.meta.interests.architecture.eyebrow | e }}</span><h3>{% for line in page.meta.interests.architecture.heading %}{{ line | e }}{% if not loop.last %}<br>{% endif %}{% endfor %}</h3><span class="interest-arrow" aria-hidden="true">&#8599;</span>
+    </a>
+    <a class="interest-tile interest-worlds" href="{{ 'builds/' | url }}">
+      <span class="interest-motif" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="eyebrow">{{ page.meta.interests.worlds.eyebrow | e }}</span><h3>{% for line in page.meta.interests.worlds.heading %}{{ line | e }}{% if not loop.last %}<br>{% endif %}{% endfor %}</h3><span class="interest-arrow" aria-hidden="true">&#8599;</span>
+    </a>
+    <a class="interest-tile interest-trains" href="{{ 'builds/' | url }}">
+      <span class="interest-motif" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="eyebrow">{{ page.meta.interests.trains.eyebrow | e }}</span><h3>{% for line in page.meta.interests.trains.heading %}{{ line | e }}{% if not loop.last %}<br>{% endif %}{% endfor %}</h3><span class="interest-arrow" aria-hidden="true">&#8599;</span>
+    </a>
+  </div>
+</section>
+<section class="community" aria-labelledby="community-title">
+  <div class="wrap community-grid">
+    <div><p class="eyebrow">{{ page.meta.community.eyebrow | e }}</p><h2 id="community-title">{{ page.meta.community.heading_first | e }}<br>{{ page.meta.community.heading_second | e }}</h2></div>
+    <div class="community-copy"><p>{{ page.meta.community.description | e }}</p><a class="button button-light" href="{{ 'join/' | url }}">{{ page.meta.community.link | e }} <span aria-hidden="true">&#8599;</span></a></div>
+  </div>
+</section>
+<section class="wrap mascot-note">
+  <div><p class="eyebrow">{{ page.meta.story.eyebrow | e }}</p><h2>{{ page.meta.story.heading | e }}</h2><p>{{ page.meta.story.description | e }}</p></div>
+  <a class="text-link" href="{{ 'about/' | url }}">{{ page.meta.story.link | e }} <span aria-hidden="true">&#8599;</span></a>
+</section>

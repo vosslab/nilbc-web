@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 46">
+  <title>Four bricks in the working mascot colors</title>
+  <desc>One course of four bricks. Red, tan, dark azure, and medium lavender are working color estimates, not a parts list.</desc>
+  <defs>
+    <g id="stud">
+      <circle cx="0" cy="0" r="6.2" fill="#164468"/>
+      <circle cx="0" cy="-0.7" r="5"/>
+      <circle cx="-1.6" cy="-2.4" r="1.4" fill="#ffffff" opacity="0.55"/>
+    </g>
+  </defs>
+  <g id="red" fill="#C91A09">
+    <rect x="0" y="16" width="40" height="30" fill="#164468"/>
+    <rect x="2" y="18" width="36" height="26"/>
+    <rect x="4" y="20" width="32" height="5" fill="#ffffff" opacity="0.28"/>
+    <use href="#stud" x="12" y="13"/>
+    <use href="#stud" x="28" y="13"/>
+  </g>
+  <g id="tan" fill="#E4CD9E">
+    <rect x="40" y="16" width="40" height="30" fill="#164468"/>
+    <rect x="42" y="18" width="36" height="26"/>
+    <rect x="44" y="20" width="32" height="5" fill="#ffffff" opacity="0.28"/>
+    <use href="#stud" x="52" y="13"/>
+    <use href="#stud" x="68" y="13"/>
+  </g>
+  <g id="azure" fill="#078BC9">
+    <rect x="80" y="16" width="40" height="30" fill="#164468"/>
+    <rect x="82" y="18" width="36" height="26"/>
+    <rect x="84" y="20" width="32" height="5" fill="#ffffff" opacity="0.28"/>
+    <use href="#stud" x="92" y="13"/>
+    <use href="#stud" x="108" y="13"/>
+  </g>
+  <g id="lavender" fill="#AC78BA">
+    <rect x="120" y="16" width="40" height="30" fill="#164468"/>
+    <rect x="122" y="18" width="36" height="26"/>
+    <rect x="124" y="20" width="32" height="5" fill="#ffffff" opacity="0.28"/>
+    <use href="#stud" x="132" y="13"/>
+    <use href="#stud" x="148" y="13"/>
+  </g>
+</svg>

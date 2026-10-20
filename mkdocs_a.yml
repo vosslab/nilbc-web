@@ -1,0 +1,27 @@
+site_name: Northern Illinois Brick Club
+site_description: A community of brick builders in Northern Illinois.
+site_url: https://vosslab.github.io/nilbc-web/a/
+docs_dir: design_a/site_src
+site_dir: output_site/a
+theme:
+  name: material
+  font: false
+  favicon: assets/favicon.png
+  custom_dir: design_a/overrides
+nav:
+  - Home: index.md
+  - Our builds: BUILDS.md
+  - Visit a show: VISIT.md
+  - Join the club: JOIN.md
+  - About: ABOUT.md
+  - Credits: CREDITS.md
+plugins: []
+exclude_docs: |
+  includes/
+extra_css:
+  - stylesheets/club.css
+markdown_extensions:
+  - attr_list
+  - pymdownx.snippets:
+      base_path: [design_a/site_src]
+      check_paths: true

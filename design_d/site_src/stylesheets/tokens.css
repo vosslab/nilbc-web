@@ -1,0 +1,136 @@
+/*
+ * NILBC design tokens.
+ * Self-hosted fonts, color roles for light (default) and dark (slate) schemes,
+ * and the mapping from those roles onto Material for MkDocs variables.
+ * Mascot colors are reserved for accents; interface roles carry text and surfaces.
+ */
+
+/* ---------- Fonts (SIL Open Font License, see assets/fonts/OFL_*.txt) ---------- */
+@font-face {
+	font-family: "Fredoka";
+	src: url("../assets/fonts/fredoka_variable.woff2") format("woff2");
+	font-weight: 300 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Nunito";
+	src: url("../assets/fonts/nunito_variable.woff2") format("woff2");
+	font-weight: 200 1000;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Nunito";
+	src: url("../assets/fonts/nunito_variable_italic.woff2") format("woff2");
+	font-weight: 200 1000;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* ---------- Shared tokens ---------- */
+:root {
+	/* Matchstick working palette (provisional, see docs/ASSETS.md) */
+	--nb-mascot-red: #C91A09;
+	--nb-mascot-tan: #E4CD9E;
+	--nb-mascot-azure: #078BC9;
+	--nb-mascot-lavender: #AC78BA;
+	--nb-mascot-pupil: #05131D;
+
+	/* banner blue sampled from the approved NILBC banner */
+	--nb-banner-blue: #2768A5;
+	--nb-brick-yellow: #F2CD37;
+
+	--nb-font-display: "Fredoka", "Avenir Next Rounded", "Arial Rounded MT Bold", system-ui, sans-serif;
+	--nb-font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+	--nb-radius-s: 0.375rem;
+	--nb-radius-m: 0.75rem;
+	--nb-radius-l: 1.25rem;
+	--nb-space-1: 0.5rem;
+	--nb-space-2: 1rem;
+	--nb-space-3: 1.5rem;
+	--nb-space-4: 2.5rem;
+	--nb-space-5: 4rem;
+	--nb-stud: 1.25rem;
+	/* Material scales the root font up to 20px on wide screens, so 61rem caps near 1220px */
+	--nb-shell: 61rem;
+	--nb-ease-snap: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ---------- Light scheme: instruction-booklet paper ---------- */
+[data-md-color-scheme="default"] {
+	--nb-paper: #FBF6EC;
+	--nb-paper-raised: #FFFFFF;
+	--nb-paper-sunk: #F3E9D4;
+	--nb-ink: #13213C;
+	--nb-ink-soft: #3D4A63;
+	--nb-rule: #D9CBAE;
+	--nb-link: #1D5791;
+	--nb-link-hover: #A31507;
+	--nb-accent: #B71608;
+	--nb-accent-ink: #FFFFFF;
+	--nb-focus: #A31507;
+	--nb-header: var(--nb-banner-blue);
+	--nb-header-ink: #FFFFFF;
+	--nb-stud-tint: rgba(19, 33, 60, 0.05);
+	--nb-shadow: 0 1px 0 rgba(19, 33, 60, 0.08), 0 8px 24px -12px rgba(19, 33, 60, 0.35);
+	--nb-tag-confirmed-bg: #DCEFDB;
+	--nb-tag-confirmed-ink: #1E5B22;
+	--nb-tag-check-bg: #FCEFC7;
+	--nb-tag-check-ink: #6B4A00;
+	--nb-tag-past-bg: #E6E3DC;
+	--nb-tag-past-ink: #4A4A48;
+}
+
+/* ---------- Dark scheme: navy baseplate under show lights ---------- */
+[data-md-color-scheme="slate"] {
+	--nb-paper: #0E1A2D;
+	--nb-paper-raised: #16263F;
+	--nb-paper-sunk: #0A1424;
+	--nb-ink: #F4EEE2;
+	--nb-ink-soft: #C3CBD8;
+	--nb-rule: #2D4061;
+	--nb-link: #8EC5F5;
+	--nb-link-hover: #FFB4A8;
+	--nb-accent: #C91A09;
+	--nb-accent-ink: #FFFFFF;
+	--nb-focus: #FFD15C;
+	--nb-header: #12325A;
+	--nb-header-ink: #FFFFFF;
+	--nb-stud-tint: rgba(142, 197, 245, 0.06);
+	--nb-shadow: 0 1px 0 rgba(0, 0, 0, 0.4), 0 10px 28px -12px rgba(0, 0, 0, 0.7);
+	--nb-tag-confirmed-bg: #1D3B24;
+	--nb-tag-confirmed-ink: #B9E8BC;
+	--nb-tag-check-bg: #43360F;
+	--nb-tag-check-ink: #FFE29A;
+	--nb-tag-past-bg: #2A3140;
+	--nb-tag-past-ink: #D2D6DE;
+}
+
+/* ---------- Material variable mapping ---------- */
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+	--md-default-bg-color: var(--nb-paper);
+	--md-default-fg-color: var(--nb-ink);
+	--md-default-fg-color--light: var(--nb-ink-soft);
+	--md-default-fg-color--lighter: var(--nb-rule);
+	--md-default-fg-color--lightest: var(--nb-paper-sunk);
+	--md-primary-fg-color: var(--nb-header);
+	--md-primary-fg-color--light: var(--nb-banner-blue);
+	--md-primary-fg-color--dark: #1B4F80;
+	--md-primary-bg-color: var(--nb-header-ink);
+	--md-primary-bg-color--light: rgba(255, 255, 255, 0.82);
+	--md-accent-fg-color: var(--nb-link-hover);
+	--md-accent-fg-color--transparent: rgba(201, 26, 9, 0.1);
+	--md-accent-bg-color: #FFFFFF;
+	--md-typeset-color: var(--nb-ink);
+	--md-typeset-a-color: var(--nb-link);
+	--md-code-bg-color: var(--nb-paper-sunk);
+	--md-code-fg-color: var(--nb-ink);
+	--md-footer-bg-color: #13213C;
+	--md-footer-bg-color--dark: #0B1527;
+	--md-footer-fg-color: #FFFFFF;
+	--md-footer-fg-color--light: #D5DCE8;
+	--md-footer-fg-color--lighter: #AEB9CC;
+	--md-text-font-family: var(--nb-font-body);
+	--md-text-font: var(--nb-font-body);
+}

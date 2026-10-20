@@ -49,7 +49,11 @@ collect_ignore = ["e2e", "playwright"]
 #       "ascii_compliance": ["human_readable-*.html"],
 #       "pyflakes_code_lint": ["devel/scratch_*.py"],
 #   }
-REPO_HYGIENE_FILTERS = {}
+# The comparison links point to separately built sites, not Markdown source files.
+# tests/playwright/designs_smoke.mjs verifies those published destinations over HTTP.
+REPO_HYGIENE_FILTERS = {
+	'markdown_links': ['site_src/index.md'],
+}
 
 
 # === OPTIONAL_HELPERS_MENU ===

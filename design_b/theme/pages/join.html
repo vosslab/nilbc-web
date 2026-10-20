@@ -1,0 +1,6 @@
+{% include "partials/page_intro.html" %}
+<section class="wrap join-grid" aria-labelledby="contact-title">
+  <div class="join-card"><p class="eyebrow">{{ page.meta.invitation.eyebrow | e }}</p><h2 id="contact-title">{{ page.meta.invitation.heading | e }}</h2><p>{{ page.meta.invitation.description | e }}</p><a class="button" href="mailto:{{ page.meta.contact | e }}?subject=Hello%20from%20a%20prospective%20builder">{{ page.meta.invitation.link | e }} <span aria-hidden="true">&#8599;</span></a><a class="email-address" href="mailto:{{ page.meta.contact | e }}">{{ page.meta.contact | e }}</a><p class="small-print">{{ page.meta.invitation.note | e }}</p></div>
+  <ol class="join-steps">{% for step in page.meta.steps %}<li><span class="step-number" aria-hidden="true">{{ "%02d" | format(loop.index) }}</span><div><h2>{{ step.heading | e }}</h2><p>{{ step.description | e }}</p></div></li>{% endfor %}</ol>
+</section>
+<aside class="wrap callout family-invitation"><div><p class="eyebrow">{{ page.meta.family.eyebrow | e }}</p><h2>{{ page.meta.family.heading | e }}</h2><p>{{ page.meta.family.description | e }}</p></div><a class="button button-blue" href="{{ 'shows/' | url }}">{{ page.meta.family.link | e }} <span aria-hidden="true">&#8599;</span></a></aside>

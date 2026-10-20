@@ -1,0 +1,30 @@
+site_name: Northern Illinois Brick Club
+site_description: Adult brick builders in northern Illinois. Trains stay, and every other build is welcome.
+site_url: https://vosslab.github.io/nilbc-web/c/
+docs_dir: design_c/site_src
+site_dir: output_site/c
+theme:
+  name: material
+  custom_dir: design_c/site_theme
+  font: false
+  favicon: assets/brand/favicon.png
+  features: []
+nav:
+  - Home: index.md
+  - Shows: shows.md
+  - Builds: builds.md
+  - Club: club.md
+  - Join: join.md
+  - Sources: sources.md
+plugins:
+  - search
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: false
+extra_css:
+  - assets/stylesheets/site.css
+extra_javascript:
+  - assets/javascripts/site.js

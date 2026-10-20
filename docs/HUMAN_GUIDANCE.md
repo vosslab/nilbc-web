@@ -24,3 +24,6 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   a cream-colored belly, compact proportions, and a curled tail.
 - Use Red #C91A09, Tan #E4CD9E, Dark Azure #078BC9, and Medium Lavender #AC78BA as Matchstick's
   working digital palette. This remains a visual estimate pending actual parts identification.
+- 2026-10-20: Each coder received DESIGN_BRIEF.md and produced an independent MkDocs repository.
+  Merge the completed entries into this shared base using separate configurations such as
+  mkdocs_a.yml. Keep the code in OTHER_REPOS/ unchanged.
