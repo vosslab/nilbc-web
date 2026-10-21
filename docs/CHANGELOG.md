@@ -2,6 +2,8 @@
 
 ### Additions and New Features
 
+- Removed the landing page's sidebar navigation so visitors choose A, B, C, or D from the
+  central links. Labeled the section "Choose a design" to describe its purpose accurately.
 - Reworked the README for club members reviewing the designs, with direct comparison links,
   shared visitor tasks, specific-feedback guidance, and optional developer documentation.
 - Imported four independent complete MkDocs designs for an A/B/C/D vote, with separate

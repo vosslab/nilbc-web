@@ -7,5 +7,5 @@ theme:
   name: material
   font: false
 nav:
-  - Compare the designs: index.md
+  - Overview: index.md
 plugins: []

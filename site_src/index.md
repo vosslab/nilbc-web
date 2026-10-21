@@ -1,9 +1,17 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Four designs. One brick club.
 
 ![NILBC banner with Matchstick, the club's dragon mascot](assets/nilbc_banner.png)
 
 Explore four independent website proposals for Northern Illinois Brick Club.
 Each designer worked from the same brief and approved club artwork.
+
+## Choose a design
 
 | Design | Open the complete website |
 | --- | --- |

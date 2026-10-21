@@ -31,3 +31,4 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   Build and publish the comparison automatically on pushes to main using the latest GitHub
   Actions releases. Keep deployment simple and preserve all four designs.
 - 2026-10-20: Write the README for a club member evaluating the four website designs.
+- 2026-10-20: Remove the comparison navigation link; let visitors choose a design from the center.
