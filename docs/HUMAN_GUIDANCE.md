@@ -32,3 +32,30 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
   Actions releases. Keep deployment simple and preserve all four designs.
 - 2026-10-20: Write the README for a club member evaluating the four website designs.
 - 2026-10-20: Remove the comparison navigation link; let visitors choose a design from the center.
+
+- 2026-10-26: I agree with Adam that the blue studded backgrounds create too much visual noise.
+- 2026-10-26: Make two slight variations of D and label them D&alpha; and D&beta;.
+- 2026-10-26: Bring useful content from A, B, and C into the D revisions. The club seems to
+  particularly like "Many interests. One club."
+- 2026-10-26: Use the humanizer skill for the wording and create a printable club flyer.
+- 2026-10-26: Implement the approved plan, retaining the original four proposals and sharing
+  content between the two D revisions.
+
+- 2026-10-27: This is primarily a visual page; keep the prose tight and retain the MkDocs
+  Material frame while using CSS creatively.
+- 2026-10-27: D&alpha; should be conservative, D&beta; middle of the road, and D&gamma;
+  kitchen-sink creative chaos. Combine the workbench collage, miniature display world,
+  and loud club-poster ideas in gamma.
+
+- 2026-10-27: Use image treatments selectively: soft edge blending, Polaroids with short
+  handwritten captions, picture frames, and background-removed models. "Portrait" meant
+  putting a photograph in a picture frame. Approved the conservative/beta/gamma distribution.
+
+- 2026-10-27: Older NILTC archive photographs are fine to use; the collection also includes
+  more recent images pulled from Instagram. The frog does not need a special uncertainty label.
+- 2026-10-27: Complete safe, defined work autonomously. Plan milestones must not wait for
+  human review; use independent assessments and automated behavior checks. Stop for missing
+  information, risky or irreversible actions, or changes to the requested outcome.
+- 2026-10-27: Approved replacing the Castles card diagram with a real club photograph,
+  shortening gamma's mobile category photos, and presenting beta as the suggested direction
+  with restrained alpha and playful gamma alternatives.

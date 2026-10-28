@@ -4,14 +4,28 @@ hide:
   - toc
 ---
 
-# Four designs. One brick club.
+# Northern Illinois Brick Club website designs
 
 ![NILBC banner with Matchstick, the club's dragon mascot](assets/nilbc_banner.png)
 
-Explore four independent website proposals for Northern Illinois Brick Club.
-Each designer worked from the same brief and approved club artwork.
+Explore three revisions of Design D, followed by the four original proposals.
+All use the same club brief and approved artwork.
 
-## Choose a design
+## The D revisions
+
+All three use "Many interests. One club.", tighter copy, and the same club photographs.
+They remove the Christmas lights and keep the familiar navigation and light/dark controls.
+
+| Design | Visual direction | Open the website |
+| --- | --- | --- |
+| D&beta; | Suggested direction: solid backgrounds, larger photographs, handwritten captions | [Explore Design D&beta;](d-beta/) |
+| D&alpha; | Restrained: familiar D layout, faint banner studs, calm body backgrounds | [Explore Design D&alpha;](d-alpha/) |
+| D&gamma; | Playful: a miniature exhibition meets a colorful club-poster collage | [Explore Design D&gamma;](d-gamma/) |
+
+Start with D&beta;, then compare all three in the same color mode and try the other mode.
+Which details would you keep, and which would you change? Check them on a phone too.
+
+## Original proposals
 
 | Design | Open the complete website |
 | --- | --- |
@@ -23,5 +37,5 @@ Each designer worked from the same brief and approved club artwork.
 Try the homepage, shows, creations, and joining pages in each design. Compare them on your
 phone as well as a larger screen. Use your browser's Back button to return to this page.
 
-These are design proposals for the club's A/B/C/D vote. The
+These are design proposals for club review. The
 [existing club website](https://niltc.org/) remains the source for current club information.

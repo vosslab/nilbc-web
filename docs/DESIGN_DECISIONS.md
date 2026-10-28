@@ -75,3 +75,60 @@ architectures would change the entries, and sharing an output directory would ov
 relocation. Keep OTHER_REPOS read-only and deploy one artifact containing all four outputs.
 
 **Owner.** [DESIGNS.md](DESIGNS.md), [build_sites.py](../build_sites.py), and the five MkDocs configs.
+
+### Shared D revisions
+
+**Decision.** Preserve A-D and share revised D content across alpha, beta, and gamma.
+Alpha retains the conservative layout. Beta and gamma inherit alpha's configuration separately,
+adding a final stylesheet for photographic emphasis or the exhibition/poster collage.
+
+**Why.** The owner expanded the initial texture comparison on 2026-10-27 into three levels
+of visual experimentation. Shared wording keeps the club's comparison focused on presentation.
+
+**Consequence.** Content fixes reach all revisions. Style overrides live in their variant;
+no duplicated content tree or new JavaScript framework is needed. Phone layouts simplify
+rotations and overlaps. Existing theme, search, gallery, and reduced-motion behavior remains.
+
+**Owner.** `design_d_revised/` and the three `mkdocs_d_*.yml` revision configurations.
+
+### Editable evergreen flyer
+
+**Decision.** Keep one self-contained SVG master with live text, embedded fonts and logo,
+and a vector QR code. Export a US Letter PDF from that SVG with the existing browser tooling.
+
+**Why.** Kerbear requested printable marketing material and Joel suggested blue type on white.
+Neil approved a flyer. The existing browser supports the embedded fonts; this machine's
+`inkscape` command is a stub, so it cannot provide a native export.
+
+**Consequence.** The SVG owns the wording and layout. PDF and preview files are generated in
+`output/pdf/`, independently of the website build. Omit dates and dues. The QR code points to
+`https://niltc.org/`, with the old name explained on the page.
+
+**Owner.** [../marketing/README.md](../marketing/README.md) and
+`tests/playwright/export_flyer.mjs`.
+
+### Selected photo treatments
+
+**Decision.** Keep original photographs and full-image links. Add stable photo identifiers
+and optional editorial notes to the shared figure output. Alpha keeps simple borders;
+beta and gamma share paper frames and locally hosted Kalam handwriting for selected pictures.
+Gamma adds wood-style frames and a soft edge mask to a few gallery images.
+
+**Why.** The owner requested a personal scrapbook feel without treating every photograph alike.
+Captions remain selectable text, and frame effects are CSS rather than baked into originals.
+
+**Consequence.** Shared photo notes live in the manifest. Variant styles choose presentation;
+photo credits and descriptive captions remain visible. Asset derivatives retain their source credits.
+
+**Owner.** `design_d_revised/data/photos.yml`, `site_hooks/data_blocks.py`, and variant stylesheets.
+
+## 2026-10-27 review refinements
+
+Gamma's existing 44em mobile breakpoint now reduces category photo stages from 11rem to
+7rem, retaining stacked cards, full copy, and colored frames. Desktop photo heights stay
+unchanged. The comparison page leads with beta and invites feedback on individual details.
+
+The castle photograph replacement is blocked on a verified club image. The shared manifest,
+original design assets, and earlier Instagram-source records contain no suitable photograph;
+the club's castle page contains module diagrams. Keep the current diagram until a suitable
+source is available rather than substitute an unrelated build.

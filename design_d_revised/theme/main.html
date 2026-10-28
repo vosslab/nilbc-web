@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{#- Layout only: page banners, peeking Matchstick, announcement bar, head tags.
+    Page text comes from the Markdown pages in site_src/ and their front matter; the only
+    words here are the peeking Matchstick's alt text and tooltip. -#}
+
+{% block extrahead %}
+	<link rel="apple-touch-icon" href="{{ 'assets/mascot/apple_touch_icon.png' | url }}">
+	<meta name="theme-color" content="#2768A5">
+{% endblock %}
+
+{#- Inner pages get a full-width banner from their front matter: the `band` color, the
+    `kicker` line, the page title, and the `art` club photo mounted like a set-box picture
+    (`art: matchstick` shows the mascot render standing on a plate instead). -#}
+{% block tabs %}
+	{{ super() }}
+	{% if page.meta and page.meta.art %}
+		{% set is_mascot = page.meta.art == "matchstick" %}
+		<section class="nb-page-hero {{ 'nb-page-hero--matchstick' if is_mascot else 'nb-page-hero--photo' }} nb-band--{{ page.meta.band or 'blue' }}">
+			<div class="md-grid nb-page-hero__inner">
+				<div class="nb-page-hero__copy">
+					{% if page.meta.kicker %}<p class="nb-page-hero__kicker">{{ page.meta.kicker }}</p>{% endif %}
+					<h1 class="nb-page-hero__title">{{ page.title }}</h1>
+				</div>
+				<div class="nb-page-hero__art" aria-hidden="true">
+					{% if is_mascot %}
+						<img src="{{ 'assets/mascot/matchstick_render_320.webp' | url }}" alt="">
+					{% else %}
+						<img src="{{ ('assets/photos/' ~ page.meta.art ~ '_thumb.webp') | url }}" alt="" width="720" height="480">
+					{% endif %}
+				</div>
+			</div>
+		</section>
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+	{{ super() }}
+	{#- "Find Matchstick": he peeks over the bottom edge of the content (`peek: false` opts out) -#}
+	{% if not (page.meta and page.meta.peek == false) %}
+		<img class="nb-peek" src="{{ 'assets/mascot/matchstick_render_320.webp' | url }}"
+			alt="Matchstick peeking in. You found him!" title="You found Matchstick!" loading="lazy">
+	{% endif %}
+{% endblock %}
+
+{#- the announcement text lives in the home page front matter (`announcement:`) -#}
+{% block announce %}
+	{% set note = config.extra.announcement %}
+	<p class="nb-announce">
+		<strong>{{ note.title }}</strong>
+		<span class="nb-announce__more">{{ note.text }}</span>
+		<a href="{{ note.link | url }}">{{ note.link_text }}</a>
+	</p>
+{% endblock %}

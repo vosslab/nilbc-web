@@ -1,0 +1,12 @@
+INHERIT: mkdocs_d_alpha.yml
+site_url: https://vosslab.github.io/nilbc-web/d-beta/
+site_dir: output_site/d-beta
+extra_css:
+  - stylesheets/tokens.css
+  - stylesheets/base.css
+  - stylesheets/components.css
+  - stylesheets/gallery.css
+  - stylesheets/home.css
+  - stylesheets/pages.css
+  - stylesheets/photo-frames.css
+  - stylesheets/beta.css

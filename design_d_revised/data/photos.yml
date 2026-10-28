@@ -1,0 +1,172 @@
+# Club photo manifest.
+# Every photo on the website comes from the public NILTC website (niltc.org) media library.
+# devel/fetch_club_photos.py downloads source_url into data/photo_sources/;
+# devel/build_site_assets.py writes WebP derivatives to site_src/assets/photos/.
+# Fields: id (file stem), source_url, source_page, theme, credit, caption, alt.
+# Captions describe only what is visible or stated on niltc.org; builders stay unnamed
+# because niltc.org does not credit individual photos or models.
+# Themes: trains, city, screen (film, TV, games), creatures (characters and critters),
+# club (people and shows).
+
+# the world name shown on photo captions and credits for each theme
+themes:
+  trains: Rail yards
+  city: Cities and landmarks
+  screen: Screen and story
+  creatures: Creatures and characters
+  club: The club
+
+photos:
+  - id: club_group_2026
+    note: Yes, those are bricks.
+    source_url: https://niltc.org/wp-content/uploads/2026/06/IMG_2459.webp
+    source_page: https://niltc.org/
+    theme: club
+    credit: NILTC / niltc.org
+    caption: Members with brick-built guitars and vehicles at a recent show.
+    alt: About a dozen smiling club members in black shirts stand behind three large brick-built electric guitars and a red brick pickup truck.
+  - id: brick_days_2026
+    source_url: https://niltc.org/wp-content/uploads/2026/06/IMG_2454.webp
+    source_page: https://niltc.org/
+    theme: club
+    credit: NILTC / niltc.org
+    caption: Members at Nebraska Brick Days.
+    alt: Nine club members pose around a small table holding a trophy in front of a Nebraska Brick Days backdrop.
+  - id: cantigny_group_2016
+    source_url: https://niltc.org/wp-content/uploads/2008/02/Group.jpg
+    source_page: https://niltc.org/about/
+    theme: club
+    credit: NILTC / niltc.org
+    caption: The club behind its train layout at Cantigny Park, December 2016.
+    alt: Roughly twenty-five members stand behind a long row of brick-built passenger and freight trains, with the club banner hanging behind them.
+  - id: library_layout
+    source_url: https://niltc.org/wp-content/uploads/2017/02/img_0272.jpg
+    source_page: https://niltc.org/
+    theme: trains
+    credit: NILTC / niltc.org
+    caption: A full show layout in a library meeting room, with a village, farm, and several train lines.
+    alt: A long table display of brick-built houses, shops, trees, and a farm, with several parallel train tracks along the front edge.
+  - id: layout_2009
+    source_url: https://niltc.org/wp-content/uploads/2011/01/IMG_1133.jpg
+    source_page: https://niltc.org/
+    theme: trains
+    credit: NILTC / niltc.org
+    caption: A 2009 layout with stacked train loops around a brick Chicago skyline.
+    alt: A brick city of tall buildings, including a black Sears Tower, surrounded by several loops of track carrying trains.
+  - id: metra_locomotive
+    source_url: https://niltc.org/wp-content/uploads/2017/02/metra-1.jpg
+    source_page: https://niltc.org/
+    theme: trains
+    credit: NILTC / niltc.org
+    caption: A brick-built Metra commuter locomotive, a familiar sight for Chicago-area visitors.
+    alt: Close-up of a blue brick-built Metra locomotive with red and white striped nose and a silver passenger car behind it.
+  - id: caboose
+    source_url: https://niltc.org/wp-content/uploads/2017/02/caboose.jpg
+    source_page: https://niltc.org/
+    theme: trains
+    credit: NILTC / niltc.org
+    caption: A red New Haven caboose, built down to the lettering.
+    alt: Side view of a bright red brick-built caboose lettered New Haven C-528 on brick track.
+  - id: vintage_steam
+    source_url: https://niltc.org/wp-content/uploads/2017/02/26293716221_5b6ae4f475_o.jpg
+    source_page: https://niltc.org/
+    theme: trains
+    credit: NILTC / niltc.org
+    caption: A small steam locomotive on a grassy display base.
+    alt: A black brick-built steam locomotive with red wheels sits on a short track among brick grass and plants.
+  # the first photo of each theme leads its world as the large feature tile
+  - id: paris_night
+    source_url: https://niltc.org/wp-content/uploads/2017/02/Brickworld_2016_wol.jpg
+    source_page: https://niltc.org/
+    theme: city
+    credit: NILTC / niltc.org
+    caption: A lit Eiffel Tower over a Paris street scene at Brickworld 2016.
+    alt: A brick-built Eiffel Tower strung with white lights rises above a plaza of Parisian buildings at night.
+  - id: night_skyline
+    source_url: https://niltc.org/wp-content/uploads/2017/02/night_skyline.jpg
+    source_page: https://niltc.org/
+    theme: city
+    # crop toward the lit skyline instead of the dark ceiling
+    focus: 50% 88%
+    credit: NILTC / niltc.org
+    caption: The skyscraper display lit for a night show, June 2015.
+    alt: Brick-built skyscrapers with glowing windows and a lit billboard in a darkened exhibit hall.
+  - id: skyscrapers
+    source_url: https://niltc.org/wp-content/uploads/2014/03/NILTC_Skyscrapers.jpg
+    source_page: https://niltc.org/standards/skyscrapers/
+    theme: city
+    credit: NILTC / niltc.org
+    caption: The collaborative skyscraper display, built to shared city-block standards. The black tower is Roger's Sears Tower, 9 feet tall with its antenna.
+    alt: A cluster of tall white, grey, black, and red brick-built skyscrapers on modular city blocks.
+  - id: prairie_bungalow
+    source_url: https://niltc.org/wp-content/uploads/2017/02/praire-bungalow.jpg
+    source_page: https://niltc.org/
+    theme: city
+    credit: NILTC / niltc.org
+    caption: Prairie-style houses with low roofs and long horizontal lines.
+    alt: Two tan brick-built prairie-style houses with low hipped roofs, wide eaves, and landscaped front steps.
+  - id: museum_replica
+    source_url: https://niltc.org/wp-content/uploads/2017/02/14619643672_993e1cb6d7_o.jpg
+    source_page: https://niltc.org/
+    theme: city
+    credit: NILTC / niltc.org
+    caption: A brick replica of the DuPage County Historical Museum.
+    alt: Brick-built model of a cream Victorian building with a dark red roof, a corner turret, and green plantings.
+  - id: gazebo
+    source_url: https://niltc.org/wp-content/uploads/2017/02/gazebo.jpg
+    source_page: https://niltc.org/
+    theme: city
+    credit: NILTC / niltc.org
+    caption: A bandstand gazebo with minifigure musicians inside.
+    alt: A white and yellow brick-built gazebo with a domed roof and small figures standing under it.
+  - id: teacup
+    source_url: https://niltc.org/wp-content/uploads/2017/02/head_over_teacup_595.jpg
+    source_page: https://niltc.org/
+    theme: city
+    credit: NILTC / niltc.org
+    caption: A tiny scene hidden in a city layout. Look closely at shows for moments like this.
+    alt: A minifigure cyclist flips head over heels across a white bridge railing.
+  - id: springfield
+    source_url: https://niltc.org/wp-content/uploads/2017/02/14225718238_c464489249_o.jpg
+    source_page: https://niltc.org/
+    theme: screen
+    credit: NILTC / niltc.org
+    caption: A cartoon-town street of colorful storefronts beside the train line.
+    alt: Wide view of a brick town with brightly colored shops, parked cars, and a train track along the front.
+  - id: falcon_bay
+    source_url: https://niltc.org/wp-content/uploads/2017/02/falcon_bay_595.jpg
+    source_page: https://niltc.org/
+    theme: screen
+    credit: NILTC / niltc.org
+    caption: A famous starship parked in a brick-built hangar bay.
+    alt: A large grey saucer-shaped starship inside a white hangar, surrounded by small vehicles and figures.
+  - id: jet
+    source_url: https://niltc.org/wp-content/uploads/2017/02/jet.jpg
+    source_page: https://niltc.org/
+    theme: screen
+    credit: NILTC / niltc.org
+    caption: A sleek red jet displayed above a train layout.
+    alt: A long red brick-built jet aircraft with swept wings mounted above a display table.
+  - id: unikitty
+    source_url: https://niltc.org/wp-content/uploads/2017/02/IMG_9462.jpg
+    source_page: https://niltc.org/
+    theme: creatures
+    credit: NILTC / niltc.org
+    caption: A brick-built Unikitty, all smiles.
+    alt: A red and white brick-built cat-unicorn character with a striped horn and a wide happy face.
+  - id: frog
+    cutout: frog_cutout.webp
+    note: A very good frog.
+    source_url: https://niltc.org/wp-content/uploads/2017/02/frog.jpg
+    source_page: https://niltc.org/
+    theme: creatures
+    credit: NILTC / niltc.org
+    caption: A lime-green frog with red eyes.
+    alt: A lime green brick-built frog with large red eyes crouches on long legs.
+  - id: bear_woods
+    source_url: https://niltc.org/wp-content/uploads/2017/02/bear_in_the_woods_595.jpg
+    source_page: https://niltc.org/
+    theme: creatures
+    credit: NILTC / niltc.org
+    caption: A pink bear surprises travelers in a brick pine forest.
+    alt: A pink bear figure stands among dense green brick pine trees near minifigures on a small vehicle.

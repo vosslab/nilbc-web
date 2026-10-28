@@ -1,8 +1,8 @@
 # Independent design integration
 
-The four entries are complete alternatives for an A/B/C/D design vote. They remain separate
-websites, with their own content, templates, styling, assets, and browser behavior. No winner
-is selected and no visual or content synthesis is part of this integration.
+The four original entries remain separate websites with their own content, templates, styling,
+assets, and browser behavior. Two later revisions of D share one new source tree and incorporate
+selected content from A-C. The originals remain available for comparison.
 
 ## Source and configuration
 
@@ -49,19 +49,19 @@ can be installed together; their implementations do not share content or theme c
 
 ## Combined output
 
-[build_sites.py](../build_sites.py) builds the neutral homepage first, then A through D.
+[build_sites.py](../build_sites.py) builds the comparison homepage first, then A-D and three
+D revisions.
 This order matters: MkDocs cleans its configured output directory before building. Building the
-homepage last would remove the four child outputs. Any failed build stops the combined build
+homepage last would remove all child outputs. Any failed build stops the combined build
 and prevents the workflow from uploading or deploying an incomplete artifact.
 
-The result is `output_site/index.html` plus `output_site/a/` through `output_site/d/`.
-For this GitHub Pages project, the public prefix is `/nilbc-web/`, so the actual demo addresses
-are `/nilbc-web/a/`, `/nilbc-web/b/`, `/nilbc-web/c/`, and `/nilbc-web/d/`. A custom domain at the
-site root can use `/a/` through `/d/` after updating all five configurations' `site_url` values.
+The result is `output_site/index.html` plus `a/`, `b/`, `c/`, `d/`, `d-alpha/`,
+`d-beta/`, and `d-gamma/` beneath `output_site/`. Published URLs use the `/nilbc-web/` project prefix.
+A custom domain at the site root requires updating all eight configurations' `site_url` values.
 
-The neutral landing page labels only A, B, C, and D. It adds no voting backend and changes
-none of the entries' navigation or visual elements. One Pages workflow uploads and deploys
-the entire output directory. Original per-entry deployment workflows are not imported.
+The comparison landing page links to D&alpha;, D&beta;, and D&gamma; first, followed by the original
+A-D proposals. It adds no voting backend. One Pages workflow uploads and deploys the entire
+output directory. Original per-entry deployment workflows are not imported.
 
 See [INSTALL.md](INSTALL.md) for independent previews, the combined build, and deployment setup.
 See [ASSETS.md](ASSETS.md) for brand provenance and the designs' individual credits.
@@ -79,3 +79,22 @@ See [ASSETS.md](ASSETS.md) for brand provenance and the designs' individual cred
   files passes 1,211 checks; it makes no changes to the Git index.
 - Verification is local Chromium evidence. The GitHub Actions deployment has not been run from
   this working tree. The workflow checks the combined build before uploading its Pages artifact.
+
+## D revisions added on 2026-10-26
+
+`design_d_revised/` is the single source for D&alpha;, D&beta;, and D&gamma;. It began as a copy of D,
+including its local assets and hooks. Its hook-relative manifest and show paths therefore
+resolve to the revised content, independently of original D.
+
+- `mkdocs_d_alpha.yml` builds that source at `/nilbc-web/d-alpha/`.
+- `mkdocs_d_beta.yml` inherits alpha, overrides its URL/output directory, and adds `beta.css`.
+- `mkdocs_d_gamma.yml` inherits alpha independently and adds `gamma.css`.
+- Alpha is conservative, beta emphasizes photographs, and gamma combines a poster and collage.
+  They share prose, fonts, photographs, navigation, and light/dark controls.
+- The import manifest remains the historical receipt for A-D. It does not describe the revisions.
+- The combined build contains eight sites: the landing page, A-D, and three revisions.
+  The browser check crawls all seven designs and exercises each D version's interactions.
+
+The homepage uses B's preferred slogan, A's guitar feature (with D's existing photograph),
+and C's explicit membership checklist on the joining page. The
+[wording review](active_plans/reports/D_REVISIONS_WORDING.md) records the prose changes.

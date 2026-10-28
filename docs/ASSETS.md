@@ -91,3 +91,31 @@ The original artwork above remains in ARTIFACTS. Import hashes are recorded in
 This import does not establish new redistribution rights. Original per-entry asset-generation
 utilities remain in the read-only competition checkouts; the imported demos build directly from
 their supplied assets and do not require those utilities or a network connection.
+
+## D revisions and flyer
+
+D&alpha; and D&beta; share the copied assets and photo manifest in `design_d_revised/`.
+The guitar photograph featured on their homepage is D's existing `club_group_2026.webp`,
+derived from the same club photograph used by A, B, and C. Existing credits remain with it.
+
+The [flyer master](../marketing/nilbc_club_flyer.svg) embeds the unchanged approved circular
+logo from ARTIFACTS and B's Barlow Condensed Bold and DM Sans Regular/Bold font bytes.
+The source fonts and SIL Open Font License files remain in `design_b/site_src/assets/fonts/`.
+Its QR code is new vector artwork encoding `https://niltc.org/`. The SVG is editable; the PDF
+and raster previews are generated outputs. See [../marketing/README.md](../marketing/README.md).
+
+### Selected photo treatments, 2026-10-27
+
+Kalam Bold and `OFL_KALAM.txt` were downloaded unchanged from the Google Fonts `ofl/kalam`
+directory. The font is loaded locally only by beta and gamma's shared photo-frame stylesheet.
+The frames, feathered edge, and captions are CSS/live text; original photographs are unchanged.
+
+`frog_cutout.webp` derives from the existing `frog.webp`, whose source is
+`https://niltc.org/wp-content/uploads/2017/02/frog.jpg`. That URL indicates an archive upload
+folder, not a verified creation date or builder. The owner confirmed that older archive photographs are appropriate alongside more recent
+Instagram images. Public captions describe the models without a special age warning.
+
+The cutout was made with the installed rembg CLI, `isnet-general-use`, followed by alpha-mask
+cleanup and trimming in ImageMagick. No model parts were generated. The original photo stays
+unchanged and is still the gallery-link destination. The failed u2net frog and Unikitty
+experiments are not published. Build/deploy needs neither rembg nor its model weights.

@@ -1,7 +1,7 @@
 {
   "name": "nilbc-website-checks",
   "private": true,
-  "description": "Browser verification for the four independent NILBC demos",
+  "description": "Browser verification for the NILBC demos and D revisions",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"
@@ -9,7 +9,8 @@
   "scripts": {
     "build": "bash -c 'source source_me.sh && python3 build_sites.py'",
     "pretest": "npm run build",
-    "test": "node tests/playwright/designs_smoke.mjs"
+    "test": "node tests/playwright/designs_smoke.mjs",
+    "flyer": "node tests/playwright/export_flyer.mjs"
   },
   "devDependencies": {
     "playwright": "1.64.1"

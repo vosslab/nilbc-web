@@ -1,0 +1,53 @@
+/* Selected snapshots share one paper frame and a locally hosted handwritten font. */
+@font-face {
+	font-family: "Kalam";
+	src: url("../assets/fonts/kalam_bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+.md-typeset .nb-figure,
+.md-typeset .nb-photo:has(.nb-photo-note) {
+	padding: 0.65rem 0.65rem 0;
+	background: #FFFFFF;
+	border: 1px solid #D5D1C9;
+	border-radius: 0.12rem;
+	box-shadow: 0.15rem 0.3rem 0.7rem #00000030;
+}
+.md-typeset .nb-photo:has(.nb-photo-note)::before {
+	display: none;
+}
+.md-typeset .nb-figure img {
+	border-radius: 0;
+}
+.md-typeset .nb-figure figcaption,
+.nb-photo-note {
+	display: block;
+	padding: 0.8rem 0.3rem 1rem;
+	font: 700 1.2rem/1.3 "Kalam", cursive;
+	color: #182334;
+	text-align: center;
+}
+.md-typeset .nb-photo:has(.nb-photo-note) figcaption {
+	color: #182334;
+	padding: 0 0.3rem 0.8rem;
+}
+.nb-photo:has(.nb-photo-note) .nb-photo__credit {
+	color: #3D4A63;
+}
+.nb-photo:has(.nb-photo-note) .nb-photo__world {
+	color: #2768A5;
+}
+/* Selected snapshots retain a photo-above-caption layout on narrow screens. */
+.md-typeset .nb-gallery .nb-photo:has(.nb-photo-note),
+.md-typeset .nb-mosaic .nb-photo:has(.nb-photo-note) {
+	flex-direction: column;
+}
+.md-typeset .nb-gallery .nb-photo:has(.nb-photo-note) .nb-photo__link,
+.md-typeset .nb-mosaic .nb-photo:has(.nb-photo-note) .nb-photo__link {
+	flex: 0 0 auto;
+	aspect-ratio: 4 / 3;
+}
+.md-typeset .nb-photo:has(.nb-photo-note) .nb-photo__credit {
+	display: block;
+}

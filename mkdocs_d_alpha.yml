@@ -1,0 +1,125 @@
+site_name: Northern Illinois Brick Club
+site_description: >-
+  Northern Illinois Brick Club (NILBC, formerly NILTC) is an adult club of brick builders
+  who exhibit trains, cities, and every other world they build at public shows
+  across northern Illinois.
+site_url: https://vosslab.github.io/nilbc-web/d-alpha/
+site_author: Northern Illinois Brick Club
+copyright: >-
+  &copy; 2026 Northern Illinois Brick Club. LEGO&reg; is a trademark of the LEGO Group,
+  which does not sponsor, authorize, or endorse this site.
+docs_dir: design_d_revised/site_src
+# superseded Atkinson Hyperlegible files stay out of the published site
+exclude_docs: |
+  assets/fonts/atkinson_*
+  assets/fonts/OFL_ATKINSON_HYPERLEGIBLE.txt
+site_dir: output_site/d-alpha
+strict: true
+
+theme:
+  name: material
+  # layout templates only; every word on the site lives in the Markdown pages
+  custom_dir: design_d_revised/theme
+  language: en
+  # fonts are self-hosted through stylesheets/tokens.css
+  font: false
+  logo: assets/mascot/nilbc_logo_round_96.webp
+  favicon: assets/mascot/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.tooltips
+    - announce.dismiss
+
+nav:
+  - Home: index.md
+  - Shows:
+      - shows/index.md
+      - Visiting a show: shows/visiting.md
+      - Show logbook: shows/logbook.md
+  - Worlds we build: creations/index.md
+  - Join:
+      - join/index.md
+      - Build standards: join/standards.md
+  - About:
+      - about/index.md
+      - Meet Matchstick: about/matchstick.md
+      - Credits and sources: about/credits.md
+
+# `/// name` blocks for Markdown pages: layout blocks and data-filled blocks (docs/USAGE.md)
+hooks:
+  - design_d_revised/site_hooks/markdown_blocks.py
+  - design_d_revised/site_hooks/data_blocks.py
+
+extra_css:
+  - stylesheets/tokens.css
+  - stylesheets/base.css
+  - stylesheets/components.css
+  - stylesheets/gallery.css
+  - stylesheets/home.css
+  - stylesheets/pages.css
+
+extra_javascript:
+  - javascripts/worlds.js
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/NILTC
+      name: Club Facebook page (still under the NILTC name)
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/niltc/
+      name: Club Instagram (still under the NILTC name)
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCMU0Eiw6H903-Lgzayy_yVQ
+      name: Club YouTube channel
+    - icon: fontawesome/brands/flickr
+      link: https://www.flickr.com/groups/niltc/pool/
+      name: Club Flickr photo pool
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn

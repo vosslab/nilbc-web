@@ -1,0 +1,23 @@
+# Club photo originals, checked 2026-10-19
+# filename<TAB>width x height<TAB>source_url<TAB>credit
+club_group_2026.webp	958 x 701	https://niltc.org/wp-content/uploads/2026/06/IMG_2459.webp	NILTC / niltc.org
+brick_days_2026.webp	550 x 338	https://niltc.org/wp-content/uploads/2026/06/IMG_2454.webp	NILTC / niltc.org
+cantigny_group_2016.jpg	2816 x 1447	https://niltc.org/wp-content/uploads/2008/02/Group.jpg	NILTC / niltc.org
+library_layout.jpg	4272 x 2848	https://niltc.org/wp-content/uploads/2017/02/img_0272.jpg	NILTC / niltc.org
+layout_2009.jpg	432 x 576	https://niltc.org/wp-content/uploads/2011/01/IMG_1133.jpg	NILTC / niltc.org
+metra_locomotive.jpg	900 x 600	https://niltc.org/wp-content/uploads/2017/02/metra-1.jpg	NILTC / niltc.org
+caboose.jpg	900 x 600	https://niltc.org/wp-content/uploads/2017/02/caboose.jpg	NILTC / niltc.org
+vintage_steam.jpg	900 x 598	https://niltc.org/wp-content/uploads/2017/02/26293716221_5b6ae4f475_o.jpg	NILTC / niltc.org
+night_skyline.jpg	900 x 600	https://niltc.org/wp-content/uploads/2017/02/night_skyline.jpg	NILTC / niltc.org
+skyscrapers.jpg	600 x 381	https://niltc.org/wp-content/uploads/2014/03/NILTC_Skyscrapers.jpg	NILTC / niltc.org
+paris_night.jpg	900 x 600	https://niltc.org/wp-content/uploads/2017/02/Brickworld_2016_wol.jpg	NILTC / niltc.org
+prairie_bungalow.jpg	900 x 600	https://niltc.org/wp-content/uploads/2017/02/praire-bungalow.jpg	NILTC / niltc.org
+museum_replica.jpg	900 x 675	https://niltc.org/wp-content/uploads/2017/02/14619643672_993e1cb6d7_o.jpg	NILTC / niltc.org
+gazebo.jpg	480 x 640	https://niltc.org/wp-content/uploads/2017/02/gazebo.jpg	NILTC / niltc.org
+teacup.jpg	595 x 397	https://niltc.org/wp-content/uploads/2017/02/head_over_teacup_595.jpg	NILTC / niltc.org
+springfield.jpg	1800 x 502	https://niltc.org/wp-content/uploads/2017/02/14225718238_c464489249_o.jpg	NILTC / niltc.org
+falcon_bay.jpg	595 x 397	https://niltc.org/wp-content/uploads/2017/02/falcon_bay_595.jpg	NILTC / niltc.org
+jet.jpg	1088 x 444	https://niltc.org/wp-content/uploads/2017/02/jet.jpg	NILTC / niltc.org
+unikitty.jpg	2405 x 3198	https://niltc.org/wp-content/uploads/2017/02/IMG_9462.jpg	NILTC / niltc.org
+frog.jpg	900 x 600	https://niltc.org/wp-content/uploads/2017/02/frog.jpg	NILTC / niltc.org
+bear_woods.jpg	595 x 397	https://niltc.org/wp-content/uploads/2017/02/bear_in_the_woods_595.jpg	NILTC / niltc.org

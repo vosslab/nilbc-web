@@ -1,4 +1,4 @@
-name: Publish four website designs
+name: Publish website designs
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python3 -m pip install -r pip_requirements.txt
-      - name: Build comparison homepage and designs A-D
+      - name: Build comparison homepage, originals, and D revisions
         run: source source_me.sh && python3 build_sites.py
         shell: bash
       - uses: actions/setup-node@v7.1.0

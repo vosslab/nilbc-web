@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 948" id="nb-anatomy" class="nb-anatomy" role="img" aria-labelledby="nb-anatomy-title nb-anatomy-desc">
+	<title id="nb-anatomy-title">Matchstick parts callout</title>
+	<desc id="nb-anatomy-desc">The rendered Matchstick brick model with nine numbered callouts: 1 purple horns, 2 oversized eyes, 3 brick-built snout, 4 cream belly, 5 short legs and feet, 6 back spike, 7 small blue wings, 8 tail spikes, 9 curled tail. The numbered list after the picture describes each part.</desc>
+	<style>
+		#nb-anatomy image { filter: drop-shadow(0 10px 10px rgba(5, 19, 29, 0.28)); }
+		#nb-anatomy .nb-leader { stroke: var(--nb-ink, #13213C); stroke-width: 2.5; stroke-linecap: round; fill: none; }
+		#nb-anatomy .nb-anchor { fill: #FFFFFF; stroke: var(--nb-ink, #13213C); stroke-width: 3; }
+		#nb-anatomy .nb-marker circle { fill: var(--nb-ink, #13213C); stroke: var(--nb-paper, #FBF6EC); stroke-width: 4; }
+		#nb-anatomy .nb-marker text { fill: var(--nb-paper, #FBF6EC); font-family: var(--nb-font-display, "Fredoka", sans-serif); font-size: 28px; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+	</style>
+	<!-- glossy brick render, background removed by devel/build_site_assets.py;
+	     its colors match the working palette listed beside the diagram -->
+	<image href="matchstick_render_560.webp" x="60" y="15" width="560" height="918"/>
+	<!-- leader lines: from marker to the feature, ending in an anchor dot -->
+	<g id="nb-anatomy-leaders">
+		<path class="nb-leader" d="M 32 60 L 120 60 L 200 85"/>
+		<path class="nb-leader" d="M 32 230 L 100 230 L 210 255"/>
+		<path class="nb-leader" d="M 32 340 L 90 340 L 170 395"/>
+		<path class="nb-leader" d="M 32 640 L 90 640 L 230 665"/>
+		<path class="nb-leader" d="M 32 890 L 90 890 L 160 845"/>
+		<path class="nb-leader" d="M 330 42 L 330 108"/>
+		<path class="nb-leader" d="M 648 380 L 610 380 L 540 445"/>
+		<path class="nb-leader" d="M 648 520 L 620 520 L 560 570"/>
+		<path class="nb-leader" d="M 648 760 L 620 760 L 565 735"/>
+	</g>
+	<g id="nb-anatomy-anchors">
+		<circle class="nb-anchor" cx="200" cy="85" r="6"/>
+		<circle class="nb-anchor" cx="210" cy="255" r="6"/>
+		<circle class="nb-anchor" cx="170" cy="395" r="6"/>
+		<circle class="nb-anchor" cx="230" cy="665" r="6"/>
+		<circle class="nb-anchor" cx="160" cy="845" r="6"/>
+		<circle class="nb-anchor" cx="330" cy="118" r="6"/>
+		<circle class="nb-anchor" cx="540" cy="445" r="6"/>
+		<circle class="nb-anchor" cx="560" cy="570" r="6"/>
+		<circle class="nb-anchor" cx="565" cy="735" r="6"/>
+	</g>
+	<!-- numbered markers, matching the ordered list on the page -->
+	<g id="nb-anatomy-markers">
+		<g class="nb-marker" transform="translate(32 60)"><circle r="24"/><text>1</text></g>
+		<g class="nb-marker" transform="translate(32 230)"><circle r="24"/><text>2</text></g>
+		<g class="nb-marker" transform="translate(32 340)"><circle r="24"/><text>3</text></g>
+		<g class="nb-marker" transform="translate(32 640)"><circle r="24"/><text>4</text></g>
+		<g class="nb-marker" transform="translate(32 890)"><circle r="24"/><text>5</text></g>
+		<g class="nb-marker" transform="translate(330 32)"><circle r="24"/><text>6</text></g>
+		<g class="nb-marker" transform="translate(648 380)"><circle r="24"/><text>7</text></g>
+		<g class="nb-marker" transform="translate(648 520)"><circle r="24"/><text>8</text></g>
+		<g class="nb-marker" transform="translate(648 760)"><circle r="24"/><text>9</text></g>
+	</g>
+</svg>

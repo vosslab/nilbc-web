@@ -1,0 +1,24 @@
+/* D beta: quieter surfaces give real builds and the member photograph more space. */
+.nb-hero,
+.nb-page-hero {
+	background-image: none;
+}
+.nb-world-card {
+	--tint-strength: 0.18;
+}
+.nb-world-card--azure {
+	--tint-strength: 0.18;
+}
+@media (hover: none) {
+	.nb-world-card__stage:not(.nb-world-card__stage--spec)::before {
+		opacity: 0.18;
+	}
+}
+.md-content:has(.nb-hero) .nb-section-kicker + h2 {
+	font-size: clamp(1.7rem, 3vw, 2.3rem);
+}
+@media (min-width: 52.01em) {
+	.md-content:has(.nb-hero) .nb-split {
+		grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+	}
+}
