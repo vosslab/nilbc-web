@@ -1,12 +1,11 @@
 # Club photo manifest.
-# Every photo on the website comes from the public NILTC website (niltc.org) media library.
-# devel/fetch_club_photos.py downloads source_url into data/photo_sources/;
-# devel/build_site_assets.py writes WebP derivatives to site_src/assets/photos/.
+# Sources include niltc.org and owner-authorized Archive Shows selections.
+# Discord originals and exact provenance: ARTIFACTS/discord_archive_shows/provenance.json.
+# Existing niltc.org derivatives were imported with original D.
+# Archive Shows derivatives and processing details are documented in docs/DISCORD_ARCHIVE.md.
 # Fields: id (file stem), source_url, source_page, theme, credit, caption, alt.
-# Captions describe only what is visible or stated on niltc.org; builders stay unnamed
-# because niltc.org does not credit individual photos or models.
-# Themes: trains, city, screen (film, TV, games), creatures (characters and critters),
-# club (people and shows).
+# Captions describe visible subjects or source-supported facts. Uploader is not builder credit.
+# Themes: trains, city, screen, creatures, castle, club.
 
 # the world name shown on photo captions and credits for each theme
 themes:
@@ -15,8 +14,421 @@ themes:
   screen: Screen and story
   creatures: Creatures and characters
   club: The club
+  castle: Castles
 
 photos:
+  - id: ela_castle_2026
+    show: 2026-09-12-ela-area
+    source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549076018784903280
+    source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549076018784903280
+    theme: castle
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Castle walls, a blue-roofed hall, and a busy livestock yard at Ela Area, September 2026.
+    album_caption: Castle walls, a blue-roofed hall, and a busy livestock yard.
+    alt: A blue-roofed timbered hall beside gray castle battlements, with a horse cart, townspeople, and cattle in a fenced yard.
+    focus: 50% 35%
+  - id: ela_locomotive_2026
+    show: 2026-09-12-ela-area
+    source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
+    source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
+    theme: trains
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Canadian Pacific 7309 in close-up at Ela Area, September 2026.
+    album_caption: Canadian Pacific 7309 in close-up.
+    alt: A red brick-built Canadian Pacific diesel locomotive numbered 7309, with gray handrails and a black underframe, on display track.
+  - id: northbrook_street_2026
+    show: 2026-10-17-northbrook
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942
+    theme: city
+    credit: NILTC archive; uploaded by Kerbear
+    note: A whole world on one street.
+    caption: A Japanese streetscape with a bookshop and flower displays at Northbrook, October 2026.
+    album_caption: A Japanese streetscape with a bookshop and flower displays.
+    alt: A dark red brick-built Japanese bookshop beside a white shop, with flower stands, minifigures, and a white car beneath elevated track.
+  - id: "ela_spacecraft_2026"
+    show: 2026-09-12-ela-area
+    source_url: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642"
+    source_page: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642"
+    theme: "screen"
+    credit: "NILTC archive; uploaded by Kerbear"
+    caption: "White-and-blue spacecraft on display stands at Ela Area, September 2026."
+    album_caption: White-and-blue spacecraft on display stands.
+    alt: "A white brick-built spacecraft with a transparent blue cockpit, with black-and-green and red spacecraft behind it."
+    focus: "50% 75%"
+  - id: "ela_dog_2026"
+    show: 2026-09-12-ela-area
+    source_url: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549075979605901392"
+    source_page: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549075979605901392"
+    theme: "creatures"
+    credit: "NILTC archive; uploaded by Kerbear"
+    caption: "A white dog with a red superhero emblem at Ela Area, September 2026."
+    album_caption: A white dog with a red superhero emblem.
+    alt: "A white brick-built dog with upright ears, a black nose, a raised tail, and a red chest emblem."
+    focus: "50% 45%"
+  - id: "ela_characters_2026"
+    show: 2026-09-12-ela-area
+    source_url: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642"
+    source_page: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642"
+    theme: "creatures"
+    credit: "NILTC archive; uploaded by Kerbear"
+    caption: "Oversized eyes and colorful space suits at Ela Area, September 2026."
+    album_caption: Oversized eyes and colorful space suits.
+    alt: "Two brick-built characters with oversized round eyes and snouts, wearing blue-and-white and yellow space suits."
+    focus: "55% 35%"
+  - id: "ela_market_2026"
+    show: 2026-09-12-ela-area
+    source_url: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549076018784903280"
+    source_page: "https://discord.com/channels/1014224389300043888/1344091682479673436/1549076018784903280"
+    theme: "castle"
+    credit: "NILTC archive; uploaded by Kerbear"
+    caption: "A produce stall beneath a striped awning at Ela Area, September 2026."
+    album_caption: A produce stall beneath a striped awning.
+    alt: "Minifigures hold green vegetables beside a market cart beneath a dark-red-and-cream striped canopy; a white chicken stands nearby."
+    focus: "50% 65%"
+  - id: "northbrook_boating_2026"
+    show: 2026-10-17-northbrook
+    source_url: "https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942"
+    source_page: "https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942"
+    theme: "city"
+    credit: "NILTC archive; uploaded by Kerbear"
+    caption: "Hats and paddles beside a small boat at Northbrook, October 2026."
+    album_caption: Hats and paddles beside a small boat.
+    alt: "Hat-wearing minifigures with brown paddles gather beside a white doorway and a tan boat on green brick terrain."
+    focus: "50% 60%"
+  - id: ela_interior_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075979605901392
+    source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075979605901392
+    theme: city
+    show: 2026-09-12-ela-area
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A room full of trophies, books, and tiny details.
+    alt: A black-and-white brick-built room with bookcases, trophies, a checkerboard floor, and a minifigure
+      in a wheelchair.
+  - id: ela_facade_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075921602871426
+    source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075921602871426
+    theme: city
+    show: 2026-09-12-ela-area
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Arched windows and flower boxes above a blue-awning storefront.
+    alt: A gray brick-built facade with arched windows, brown flower boxes, blue shop awnings, and
+      a sidewalk bench.
+  - id: ela_aquarium_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075921602871426
+    source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075921602871426
+    theme: city
+    show: 2026-09-12-ela-area
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Chicago's Shedd Aquarium, down to its columned entrance.
+    alt: A brick-built John G. Shedd Aquarium entrance with white columns, gray steps, minifigure visitors,
+      and an American flag.
+  - id: ela_spider_riders_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
+    source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
+    theme: screen
+    show: 2026-09-12-ela-area
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A fantasy patrol crosses the snow on spider mounts.
+    alt: Three green-faced minifigures with crested helmets ride black spiders across white terrain,
+      carrying spears beside brick-built evergreen trees.
+  - id: northbrook_coffee_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942
+    theme: city
+    show: 2026-10-17-northbrook
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A drive-through coffee stop beside the railway.
+    alt: A white Seven Brew coffee shop with a blue roof, drive-through cars, minifigures, flowering
+      borders, and railway track.
+  - id: northbrook_freight_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
+    theme: trains
+    show: 2026-10-17-northbrook
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Lettering and doors give these freight cars their character.
+    alt: Brick-built freight cars on parallel tracks, including a brown Hershey's Chocolate and Cocoa
+      car and a yellow Miller High Life car.
+  - id: northbrook_party_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
+    theme: creatures
+    show: 2026-10-17-northbrook
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A party on wheels, complete with balloons and paper hats.
+    alt: A colorful brick-built party vehicle with large number panels, balloon decorations, and figures
+      wearing party hats on its upper deck.
+  - id: northbrook_cottage_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    theme: city
+    show: 2026-10-17-northbrook
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A steep-roofed cottage dressed for autumn.
+    alt: A brown brick-built cottage with a black tiled roof, green shutters, pumpkins, flowers, trees,
+      and costumed minifigures.
+  - id: northbrook_depot_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    theme: trains
+    show: 2026-10-17-northbrook
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A blue-and-white locomotive waits outside the stone depot.
+    alt: A gray brick-built railway depot with a steep roof, dormers, open brown doors, and a blue-and-white
+      locomotive numbered 2476 on the tracks.
+  - id: northbrook_crane_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    theme: trains
+    show: 2026-10-17-northbrook
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Freight handling in miniature.
+    alt: A yellow rail-yard crane beside a red freight wagon, signal-box building, red loader, and
+      white-and-blue utility truck; a sign invites visitors to ask about interior details.
+  - id: northbrook_tower_2026
+    source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
+    theme: city
+    show: 2026-10-17-northbrook
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A club sign high above a busy city corner.
+    alt: A tall dark-red and black brick-built skyscraper with ornate gold panels and a Northern Illinois
+      sign above streets filled with minifigures and vehicles.
+  - id: arlington_dinosaurs_2025
+    source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178341452644392
+    source_page: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178341452644392
+    theme: creatures
+    show: 2025-12-13-arlington-heights
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Dinosaurs have taken over the grocery run.
+    alt: Large dinosaur figures crowd a brick-built Hole Foods Market, surrounded by minifigures, shopping
+      carts, produce, and street vehicles.
+  - id: arlington_winter_market_2025
+    source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178306170421391
+    source_page: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178306170421391
+    theme: city
+    show: 2025-12-13-arlington-heights
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A winter fair packed with small stories.
+    alt: Red-and-white striped market stalls, crowds of minifigures, snowy trees, and a red sleigh
+      in a brick-built winter fair.
+  - id: arlington_castle_guard_2025
+    source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178185185722522
+    source_page: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178185185722522
+    theme: castle
+    show: 2025-12-13-arlington-heights
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Blue-cloaked travelers on the castle battlements.
+    alt: Blue-cloaked minifigures cross gray battlements toward a pale timber-accented building, with
+      an armored guard, trees, and a path.
+  - id: arlington_garden_2025
+    source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178153308885084
+    source_page: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178153308885084
+    theme: castle
+    show: 2025-12-13-arlington-heights
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A medieval garden between the stone walls.
+    alt: Two archer minifigures stand among flowers, barrels, a wooden well frame, and stone buildings
+      in a brick-built garden.
+  - id: arlington_tudor_2025
+    source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178100410191912
+    source_page: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178100410191912
+    theme: castle
+    show: 2025-12-13-arlington-heights
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A timbered house with a garden worth exploring.
+    alt: A brick-built medieval half-timbered house beside vegetable beds, flowers, rabbits, trees,
+      and minifigures.
+  - id: arlington_sailboat_2025
+    source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1449994892666339500
+    source_page: https://discord.com/channels/1014224389300043888/1350204460584144958/1449994892666339500
+    theme: city
+    show: 2025-12-13-arlington-heights
+    credit: NILTC archive; uploaded by Andertoons
+    caption: A sailboat tucked into a wooded harbor.
+    alt: A white-and-blue brick-built sailboat with a tan sail and cargo rests on blue water beside
+      a brown dock and dense green trees.
+  - id: arlington_santa_2025
+    source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1449994471168020511
+    source_page: https://discord.com/channels/1014224389300043888/1350204460584144958/1449994471168020511
+    theme: creatures
+    show: 2025-12-13-arlington-heights
+    credit: NILTC archive; uploaded by Andertoons
+    caption: Santa takes the high road.
+    alt: A brick-built Santa in a red sleigh pulled by brown reindeer above a black-and-white Carvana
+      tower and blue car-shaped sign.
+  - id: oswego_spider_2025
+    source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453124177788928
+    source_page: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453124177788928
+    theme: creatures
+    show: 2025-10-25-oswego
+    credit: NILTC archive; uploaded by Andertoons
+    caption: A woodland spider and its much smaller passengers.
+    alt: A large brown brick-built spider carrying tan spiderlings stands over a forest diorama with
+      plants, rocks, water, and a red mushroom.
+  - id: oswego_fortress_2025
+    source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453124177788928
+    source_page: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453124177788928
+    theme: castle
+    show: 2025-10-25-oswego
+    credit: NILTC archive; uploaded by Andertoons
+    caption: Towers, a drawbridge, and a busy castle courtyard.
+    alt: A large gray brick-built fantasy castle with towers, a drawbridge, dragon, carts, minifigures,
+      and landscaped ground at a public display.
+  - id: oswego_helicopter_2025
+    source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453019345223710
+    source_page: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453019345223710
+    theme: screen
+    show: 2025-10-25-oswego
+    credit: NILTC archive; uploaded by Andertoons
+    caption: An unusual lift for a heavy-duty helicopter.
+    alt: An orange brick-built helicopter suspends a large jack-o-lantern-faced cylinder on a platform
+      hanging from chains.
+  - id: oswego_purple_castle_2025
+    source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432452508378468523
+    source_page: https://discord.com/channels/1014224389300043888/1336376559774203967/1432452508378468523
+    theme: castle
+    show: 2025-10-25-oswego
+    credit: NILTC archive; uploaded by Andertoons
+    caption: Purple towers for an October show.
+    alt: A tall purple-and-lavender brick-built haunted castle with transparent turret towers, pink
+      foliage, minifigure scenes, and a black stepped base.
+  - id: oswego_hippogriff_2025
+    source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432452508378468523
+    source_page: https://discord.com/channels/1014224389300043888/1336376559774203967/1432452508378468523
+    theme: screen
+    show: 2025-10-25-oswego
+    credit: NILTC archive; uploaded by Andertoons
+    caption: A quiet encounter with a hippogriff.
+    alt: A bearded minifigure holding a lantern faces a gray hippogriff on green terrain beside a dark
+      brick wall and spider pieces.
+  - id: barrington_landscape_2025
+    source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
+    source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
+    theme: city
+    show: 2025-09-06-barrington
+    credit: NILTC archive; uploaded by Jason C
+    caption: A forested riverbank beside the running tracks.
+    alt: A brick-built rocky hill with dense green and yellow foliage, blue water, a small sailboat,
+      railway tracks, and a yellow lattice tower.
+  - id: barrington_harbor_2025
+    source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
+    source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
+    theme: creatures
+    show: 2025-09-06-barrington
+    credit: NILTC archive; uploaded by Jason C
+    caption: Whales, swimmers, and a yacht share the harbor.
+    alt: A white-and-blue brick-built yacht on blue water with minifigures, an orca, a gray whale,
+      a dolphin, and a shark beside a railway and street.
+  - id: barrington_yard_2025
+    source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+    source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+    theme: trains
+    show: 2025-09-06-barrington
+    credit: NILTC archive; uploaded by Jason C
+    caption: A freight yard built for a busy day.
+    alt: A broad brick-built rail yard with parallel and curved tracks, container trains, CP and Conrail
+      locomotives, cranes, cargo stacks, and an engine shed.
+  - id: barrington_aircraft_2025
+    source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723249060417656
+    source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723249060417656
+    theme: screen
+    show: 2025-09-06-barrington
+    credit: NILTC archive; uploaded by Jason C
+    caption: Helicopters and a test aircraft lined up on the apron.
+    alt: Gray, white, and green brick-built helicopters and a blue-and-white aircraft on a large gray-and-black
+      tarmac beside railway tracks.
+  - id: algonquin_jet_2026
+    source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630460848406629
+    source_page: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630460848406629
+    theme: screen
+    show: 2026-05-02-algonquin
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Blue and yellow, from the nose to the tail.
+    alt: A blue-and-yellow brick-built Blue Angels jet numbered 3, with cockpit canopy and landing
+      gear, on a gray display base.
+  - id: algonquin_cyclist_2026
+    source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
+    source_page: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
+    theme: city
+    show: 2026-05-02-algonquin
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A bicycle ride with a feathered passenger.
+    alt: A bearded minifigure in a straw hat rides a black bicycle with a gray bird on its rear rack
+      beside a landscaped path and blue water.
+  - id: algonquin_cars_2026
+    source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
+    source_page: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
+    theme: city
+    show: 2026-05-02-algonquin
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A colorful line-up of detailed sports cars.
+    alt: Yellow, orange, red, and maroon brick-built sports cars on a gray tiled base beside a brick
+      building; the yellow convertible has a minifigure driver.
+  - id: algonquin_animals_2026
+    source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
+    source_page: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
+    theme: creatures
+    show: 2026-05-02-algonquin
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A whole shelf of animal personalities.
+    alt: Colorful brick-built animals on white stepped shelves, including a moose, giraffe, zebra,
+      purple elephant, and red-and-yellow horse.
+  - id: algonquin_classic_space_2026
+    source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630151975927998
+    source_page: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630151975927998
+    theme: screen
+    show: 2026-05-02-algonquin
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A new spacecraft with a Classic Space starting point.
+    alt: A blue-and-gray brick-built spacecraft with swept wings, yellow cockpit canopy, and twin engine
+      cannons beside a sign reading Inspired By Classic Space 1978.
+  - id: algonquin_food_stall_2026
+    source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630151975927998
+    source_page: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630151975927998
+    theme: castle
+    show: 2026-05-02-algonquin
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A woodland snack stop beneath a striped awning.
+    alt: A brown brick-built food stall with a red-and-white awning, squirrel topper, pretzel, croissant,
+      rabbit, and bearded vendor among evergreen branches.
+  - id: wheaton_horses_2026
+    source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368795857813535
+    source_page: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368795857813535
+    theme: creatures
+    show: 2026-04-11-wheaton
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Two white horses at the river's edge.
+    alt: Two white horse figures stand on a landscaped riverbank with blue water, gray
+      rocks, green plants, and a forested cliff.
+  - id: wheaton_barn_2026
+    source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368691868434647
+    source_page: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368691868434647
+    theme: city
+    show: 2026-04-11-wheaton
+    credit: NILTC archive; uploaded by Kerbear
+    caption: A barn-raising scene, built in bricks.
+    alt: A red brick-built barn with white doors and exposed tan roof framing, worker minifigures,
+      a gray silo, trees, and landscaped paths.
+  - id: wheaton_eloise_2026
+    source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368691868434647
+    source_page: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368691868434647
+    theme: city
+    show: 2026-04-11-wheaton
+    credit: NILTC archive; uploaded by Kerbear
+    caption: Eloise under sail.
+    alt: A tan-and-brown brick-built sailboat named Eloise with white sails, black rigging, and two
+      minifigures on blue brick water.
+  - id: wheaton_carrots_2026
+    source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493344213822345276
+    source_page: https://discord.com/channels/1014224389300043888/1336379818643689562/1493344213822345276
+    theme: castle
+    show: 2026-04-11-wheaton
+    credit: NILTC archive; uploaded by Andertoons
+    caption: Carrots for sale, with a rabbit keeping watch.
+    alt: A brown brick-built market stall with an orange-and-white canopy, carrot-filled crates, a
+      green-hatted vendor, and a white rabbit.
   - id: club_group_2026
     note: Yes, those are bricks.
     source_url: https://niltc.org/wp-content/uploads/2026/06/IMG_2459.webp

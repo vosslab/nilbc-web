@@ -1,3 +1,86 @@
+## 2026-10-29
+
+### Behavior or Interface Changes
+
+- Redesigned shared D show galleries with seven photographic cover cards, compact page
+  heading, explicit lead/detail sequences, and short album captions. Full viewer attribution
+  and credits remain accessible. Preserved all 45 photographs and their original bytes.
+- Distinguished alpha's clean catalog, beta's lead-led photo essay, and gamma's selectively
+  offset handwritten scrapbook. Other pages, homepage identity, original A/B/C/D unchanged.
+
+### Fixes and Maintenance
+
+- Verified nine responsive gallery cases, 63 album viewer sessions, three no-JavaScript
+  journeys, dark mode, failed-image recovery, direct links, and credits. All 135 provenance
+  hashes match. Screenshots and exact evidence: `active_plans/reports/editorial_gallery.md`.
+- Final `npm test` built eight sites and passed 136 route checks/16 journeys before original
+  C's Material search timed out; the single unchanged retry failed there too. Isolated C search
+  subsequently returned results. No test weakening or unrelated original-design changes.
+
+## 2026-10-28
+
+### Additions and New Features
+
+- Broad archive pass: reviewed all 72 contact sheets across 32 folders and 46 candidate
+  original frames; added 37 completed-show photographs, bringing the archive selection to
+  45 distinct photographs across seven library shows. Preserved originals and 135 hashes.
+- Added show navigation, native expandable albums, lazy local thumbnails, and group-local
+  Previous/Next and keyboard viewer navigation. Expanded category galleries and refreshed
+  the three-photo homepage preview without enlarging it into the full collection.
+- Second photo pass: added five full-size-reviewed source selections and ten local WebP
+  derivatives; eight archive selections now have preserved originals and exact provenance.
+- Added a three-photo homepage preview and six-photo library-show gallery; replaced weak
+  Screen/story and Creatures cards, tuned responsive focal positions, and kept archive credits
+  visible on phones. No changes to original A/B/C/D, Matchstick, or the guitar group image.
+- Copied all 1,336 image attachments across 34 Archive Shows channels after complete pagination
+  of 8,167 messages; preserved 2,039,029,563 CDN-served bytes outside the repository.
+- Organized originals by show, retained provenance/hashes, and generated 72 contact sheets.
+- Added three reviewed Ela Area/Northbrook exhibit photographs, preserved selected originals,
+  and produced six optimized local WebP derivatives with uploader attribution.
+
+### Behavior or Interface Changes
+
+- Recorded the explicit no-WIP/home/setup/other-LUG boundary and the correction that eight
+  selections were inadequate. Ambiguous candidates remain unpublished; source context is
+  corroborated without publishing raw private messages. Original A/B/C/D remain unchanged.
+- Replaced the D revisions' Castles homepage diagram with a real club castle scene; refreshed
+  train/city cards and galleries and illustrated the visiting page. Original A/B/C/D stay unchanged.
+- Preserved alpha/beta/gamma treatments and corrected credits to distinguish uploaders from makers.
+
+### Fixes and Maintenance
+
+- Broad-pass verification: eight strict builds, 136 page checks and 24 browser journeys
+  passed; 9 responsive cases exercised all seven albums with 63 viewer sessions. Verified
+  135 hashes, no-JavaScript/images-blocked navigation, image failure recovery, and modal
+  keyboard focus. One Material search timeout passed the single unchanged retry.
+  Pytest: 1,442 passed; the existing 35.23 GB host Podman budget failure remains.
+  See [broad review report](active_plans/reports/archive_broad_review.md).
+- Second-pass verification: eight strict builds, 130 page checks, 21 journeys, 18 focused
+  route/viewport cases, 54 keyboard viewer opens, and all 24 source/derivative hashes passed.
+  Final homepage/card/gallery screenshots were inspected. Pytest: 1,439 passed; the same
+  host Podman budget failure remains. See
+  [second-pass report](active_plans/reports/archive_second_pass_verification.md).
+- Fixed heading permalinks intercepting clicks on revised homepage category cards.
+- Passed `npm test -- --capture`: eight strict builds, 130 page checks, 21 integration journeys.
+- Passed 12 focused image/navigation cases at 390/1440/2560 widths, including gallery opening,
+  Escape dismissal, no overflow, and images-blocked/no-JavaScript navigation. Inspected screenshots.
+- Repository pytest: 1,438 passed; one unrelated host Podman disk-budget failure (35.23 GB
+  versus 20 GB). Did not remove host resources or weaken the check. `git diff --check` passes.
+
+### Removals and Deprecations
+
+- None. No commits, deployments, or Discord writes.
+
+### Decisions and Failures
+
+- Full archive stays at `/home/vosslab/nsh/niltc_archive_shows/`, outside Git/deployment.
+  See [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) for source IDs and copy/curation boundaries.
+- 401 valid CDN images differ in size from Discord attachment metadata; preserve received bytes
+  and record both sizes rather than claim pre-upload originals. Selected files match metadata.
+- Initial urllib retrieval received HTTP 403; the requests client with Discord bot User-Agent
+  succeeded. Installed declared Node dependencies after missing Playwright blocked browser checks.
+- One initial search journey timed out; unchanged search code passed two subsequent complete runs.
+
 ## 2026-10-27
 
 ### Additions and changes

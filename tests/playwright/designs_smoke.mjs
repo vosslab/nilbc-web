@@ -144,6 +144,35 @@ try {
 		}
 		report.journeys.push(design + ': photo viewer opens and closes');
 	}
+	for (const design of ['d-alpha', 'd-beta', 'd-gamma']) {
+		await page.goto(base + design + '/shows/gallery/');
+		const albumLink = page.locator('.nb-album-nav a').last();
+		await albumLink.click();
+		const album = page.locator(page.url().slice(page.url().indexOf('#')));
+		assert.equal(await album.getAttribute('open'), '');
+		const opener = album.locator('.nb-photo__link').first();
+		await opener.focus();
+		await page.keyboard.press('Enter');
+		const viewer = page.getByRole('dialog', { name: 'Photo viewer' });
+		await viewer.waitFor({ state: 'visible' });
+		const first = await viewer.locator('img').getAttribute('src');
+		await viewer.getByRole('button', { name: 'Next', exact: true }).click();
+		assert.notEqual(await viewer.locator('img').getAttribute('src'), first);
+		await page.keyboard.press('ArrowLeft');
+		assert.equal(await viewer.locator('img').getAttribute('src'), first);
+		await viewer.locator('.nb-lightbox__original').focus();
+		await page.keyboard.press('Tab');
+		assert.ok(await viewer.getByRole('button', { name: 'Close photo' }).evaluate((node) => node === document.activeElement));
+		await page.keyboard.press('Shift+Tab');
+		assert.ok(await viewer.locator('.nb-lightbox__original').evaluate((node) => node === document.activeElement));
+		await page.keyboard.press('Escape');
+		await viewer.waitFor({ state: 'hidden' });
+		assert.ok(await opener.evaluate((node) => node === document.activeElement));
+		await album.locator('summary').focus();
+		await page.keyboard.press('Enter');
+		assert.equal(await album.getAttribute('open'), null);
+		report.journeys.push(design + ': show album navigation, keyboard viewer, next/previous and focus return');
+	}
 	await page.setViewportSize({ width: 1440, height: 1000 });
 	for (const design of ['c', ...dDesigns]) {
 		await page.goto(base + design + '/');

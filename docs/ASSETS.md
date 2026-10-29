@@ -61,6 +61,16 @@ parts list if exact LEGO color identification is needed.
 These references describe Matchstick. They do not mandate the site's backgrounds, typography,
 or complete palette. Choose accessible color combinations for actual interface elements.
 
+## Discord show photographs
+
+The D revisions use 45 owner-requested Archive Shows selections across seven library shows.
+All 72 contact sheets were reviewed; 37 photographs extend the previous eight selections.
+Preserved originals
+and hashes are in `ARTIFACTS/discord_archive_shows/provenance.json`; optimized local WebP copies
+are in the shared revised photo directory. See [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) for
+complete-copy counts, the durable full archive path, source IDs, selection criteria, and rights
+limitations. The full archive and contact sheets are not deployed or added to Git.
+
 ## Sources and credits
 
 The original files came from the club owner. Artist attribution and a source parts list were

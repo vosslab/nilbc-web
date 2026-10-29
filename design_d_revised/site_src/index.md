@@ -59,32 +59,31 @@ Explore the trains, buildings, and characters members bring to our shows.
 
 ### [Rail yards](creations/index.md#rail-yards)
 
-![](assets/photos/metra_locomotive_thumb.webp)
+![](assets/photos/ela_locomotive_2026_thumb.webp)
 
 Where the club began. Locomotives and rolling stock run on shared track standards.
 
 ### [Cities and landmarks](creations/index.md#cities-and-landmarks)
 
-![](assets/photos/paris_night_thumb.webp)
+![](assets/photos/northbrook_street_2026_thumb.webp)
 
-Skyscrapers built to shared city blocks, prairie houses, and a lit Eiffel Tower.
+Skyscrapers, prairie houses, and streets full of little stories.
 
 ### [Screen and story](creations/index.md#screen-and-story)
 
-![](assets/photos/falcon_bay_thumb.webp)
+![](assets/photos/ela_spacecraft_2026_thumb.webp)
 
 Famous starships, cartoon towns, and scenes from favorite stories.
 
 ### [Castles](creations/index.md#castles)
 
-/// castle-module
-///
+![](assets/photos/ela_castle_2026_thumb.webp)
 
 The castle display joins members' modules into one kingdom.
 
 ### [Creatures and characters](creations/index.md#creatures-and-characters)
 
-![](assets/photos/unikitty_thumb.webp)
+![](assets/photos/ela_dog_2026_thumb.webp)
 
 Frogs, bears, and characters with a lot of personality.
 
@@ -103,6 +102,16 @@ Members bring their own interests to our displays, from running trains to brick-
 ![Club members behind large brick-built guitars, with a red pickup truck and other models on the table.](assets/photos/club_group_2026.webp "Yes, those are bricks.")
 
 ///
+
+## Small scenes from our shows { data-kicker="Look closer" }
+
+A harbor full of life, a barn-raising scene, and a woodland spider. A few details from
+the displays our members bring to libraries across northern Illinois.
+
+/// photos | barrington_harbor_2025 wheaton_barn_2026 oswego_spider_2025
+///
+
+[Browse photos by show](shows/gallery.md){ .md-button }
 
 /// stats
 

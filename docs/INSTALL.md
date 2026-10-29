@@ -119,6 +119,24 @@ Open `http://127.0.0.1:8000/nilbc-web/d-alpha/`. For beta, use `mkdocs_d_beta.ym
 `design_d_revised/`; beta and gamma inherit alpha independently and add their own stylesheets.
 Original D stays independent.
 
+### Edit the show gallery
+
+The shared `design_d_revised/data/photos.yml` assigns each archive photo a `show` key and
+building theme. `data/photo_shows.yml` owns album order, venue names, dates, and descriptions.
+The `/// show-gallery` block in `site_src/shows/gallery.md` generates album counts and lazy
+local thumbnails; it requires no client API or Discord login. Keep the homepage's three-photo
+preview curated separately. Preserve source provenance and apply the completed-show-only
+selection boundary in [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) before adding photographs.
+The browser suite exercises album navigation, viewer arrows, focus wrapping, and Escape.
+
+Each show's `sequence` must list all its photo IDs exactly once, in reading/viewer order.
+The first ID supplies its cover. Choose a clear opening scene and follow with related details;
+the strict build rejects omissions, duplicates, and IDs from another show. An optional
+`album_caption` in `photos.yml` shortens captions specifically for albums, leaving other
+placements unchanged. Keep source/uploader facts in the ordinary caption/credit fields.
+Gallery-only compactness comes from omitting `art` in gallery Markdown, not a global hero rule.
+Alpha styling is in `gallery.css`; beta and gamma add scoped album rules in their own CSS.
+
 ## Export the flyer
 
 After the Node and Chromium setup above, run `npm run flyer`. The command reads the editable

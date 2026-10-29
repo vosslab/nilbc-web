@@ -1,4 +1,24 @@
 /* D beta: quieter surfaces give real builds and the member photograph more space. */
+/* Show albums read as photo essays: an opening scene, then paired details. */
+.nb-show-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.8rem; }
+.md-typeset .nb-show-gallery .nb-photo:first-child { grid-column: 1 / -1; }
+.md-typeset .nb-show-gallery .nb-photo:first-child .nb-photo__link {
+	aspect-ratio: auto;
+	background: transparent;
+}
+.md-typeset .nb-show-gallery .nb-photo:first-child img {
+	height: auto;
+	max-height: 31rem;
+	object-fit: contain;
+}
+.md-typeset .nb-show-gallery .nb-photo:first-child figcaption {
+	max-width: 34rem;
+	font-size: 0.9rem;
+	border-bottom: 1px solid var(--nb-rule);
+}
+@media (max-width: 44em) {
+	.nb-show-gallery { grid-template-columns: 1fr; gap: 1rem; }
+}
 .nb-hero,
 .nb-page-hero {
 	background-image: none;

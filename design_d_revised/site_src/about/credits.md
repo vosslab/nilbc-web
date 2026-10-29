@@ -20,9 +20,11 @@ Matchstick are digital renderings of the buildable model. His colors on
 
 ## Club photographs
 
-Every photo of member work comes from the club's photo archive on its
-[earlier website](https://niltc.org/). The archive does not record who took each photo or
-built each model, so photos are credited to the club. Did you take one of these photos or
+Photographs come from the club's [earlier website](https://niltc.org/) and its archived
+show collection. The show albums include photographs uploaded by Kerbear, Andertoons,
+and Jason C. An uploader credit does not identify the photographer or model builder. Discord source
+links require access to the club server. Photos are hosted locally; viewing needs no login.
+No external reuse license is implied. Did you take one of these photos or
 build one of these models? Email
 [niltc.contact@gmail.com](mailto:niltc.contact@gmail.com?subject=Photo%20credit) and we will
 add your name.
@@ -48,7 +50,7 @@ this site.
 
 Some revised designs use paper or picture frames and short editorial captions. These captions
 were written for the demo; they are not quotations from members. Clicking gallery photographs
-opens the original image.
+opens a larger, uncropped web copy. Preserved source files stay outside the deployed site.
 
 Handwritten captions use [Kalam](https://github.com/google/fonts/tree/main/ofl/kalam),
 Copyright 2014 Indian Type Foundry, under the SIL Open Font License. The font and its license

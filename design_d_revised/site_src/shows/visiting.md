@@ -65,6 +65,19 @@ leave home.
 - **Other builds.** Starships, cartoon towns, castles, and creatures. Ask the builder
   which one they are proudest of.
 
+## Scenes from two library shows
+
+Details from Ela Area in September 2026 and Northbrook in October 2026.
+Select a photograph to see the complete frame. Uploaded to the club archive by Kerbear;
+photographer and builder names were not recorded.
+
+/// photos | ela_locomotive_2026 ela_spacecraft_2026 ela_characters_2026 northbrook_street_2026 ela_market_2026 northbrook_boating_2026
+///
+
+[Photo credits and sources](../about/credits.md)
+
+[Explore more library shows in the show photo gallery](gallery.md){ .md-button }
+
 /// callout | From Matchstick
 
 ![](../assets/mascot/matchstick_full_320.webp)

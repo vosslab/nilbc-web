@@ -7,6 +7,7 @@ blocks below have no body and are swapped for HTML before the Markdown is conver
 - /// gallery | THEME        every photo in data/photos.yml with that theme
 - /// photos | ID ID ID      the named photos, in order
 - /// photo-credits          a credits list covering every photo
+- /// show-gallery           expandable albums from data/photo_shows.yml
 - /// shows                  upcoming shows from the `shows:` front matter of shows/index.md
 - /// next-show              a ticket for the first upcoming show
 - /// diagram | PATH         an SVG file inlined so it follows the color scheme
@@ -29,12 +30,14 @@ import PIL.Image
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST_FILE = os.path.join(REPO_ROOT, 'data', 'photos.yml')
+PHOTO_SHOWS_FILE = os.path.join(REPO_ROOT, 'data', 'photo_shows.yml')
 PHOTO_DIR = os.path.join(REPO_ROOT, 'site_src', 'assets', 'photos')
 SHOWS_PAGE = os.path.join(REPO_ROOT, 'site_src', 'shows', 'index.md')
 
 
 DATA_BLOCK_NAMES = (
-	'gallery', 'photos', 'photo-credits', 'shows', 'next-show', 'diagram', 'castle-module',
+	'gallery', 'photos', 'photo-credits', 'show-gallery', 'shows', 'next-show', 'diagram',
+	'castle-module',
 )
 # one data block: opening line with optional argument, then the closing `///` line
 DATA_BLOCK = re.compile(
@@ -52,11 +55,24 @@ def load_photos() -> dict:
 	with open(MANIFEST_FILE, 'r') as handle:
 		manifest = yaml.safe_load(handle)
 	by_id = {}
+	photo_shows = load_photo_shows()
 	for photo in manifest['photos']:
 		# each photo carries its world's display name from the `themes:` table
 		photo['theme_name'] = manifest['themes'][photo['theme']]
+		if 'show' in photo:
+			show = photo_shows[photo['show']]
+			photo['show_label'] = f"{show['title']}, {show['date']}"
+		if photo['id'] in by_id:
+			raise ValueError(f"duplicate photo id: {photo['id']}")
 		by_id[photo['id']] = photo
 	return by_id
+
+#============================================
+def load_photo_shows() -> dict:
+	"""Read the editorial album labels in display order."""
+	with open(PHOTO_SHOWS_FILE, 'r') as handle:
+		shows = yaml.safe_load(handle)
+	return shows
 
 #============================================
 def load_themes() -> dict:
@@ -130,7 +146,7 @@ def image_size(filename: str) -> tuple:
 	return size
 
 #============================================
-def figure_html(photo: dict, prefix: str) -> str:
+def figure_html(photo: dict, prefix: str, album: bool = False) -> str:
 	"""
 	Build one gallery figure: thumbnail linking to the large image, caption, credit.
 	"""
@@ -139,11 +155,15 @@ def figure_html(photo: dict, prefix: str) -> str:
 	full_src = f"{prefix}assets/photos/{photo_id}.webp"
 	thumb_src = f"{prefix}assets/photos/{photo_id}_thumb.webp"
 	caption = html.escape(photo['caption'])
+	viewer_caption = caption
+	if 'show_label' in photo:
+		viewer_caption += ' ' + html.escape(photo['show_label']) + '.'
+	viewer_caption += ' ' + html.escape(photo['credit']) + '.'
 	alt = html.escape(photo['alt'], quote=True)
 	credit = html.escape(photo['credit'])
 	theme_name = photo['theme_name']
 	text = f'<figure class="nb-photo" data-world="{photo["theme"]}" data-photo="{html.escape(photo_id, quote=True)}">'
-	text += f'<a class="nb-photo__link" href="{full_src}" data-caption="{caption}">'
+	text += f'<a class="nb-photo__link" href="{full_src}" data-caption="{viewer_caption}">'
 	text += f'<img src="{thumb_src}" alt="{alt}" width="{width}" height="{height}"'
 	# optional focal point keeps the subject in frame when the card crops the photo
 	if 'focus' in photo:
@@ -154,10 +174,18 @@ def figure_html(photo: dict, prefix: str) -> str:
 		text += f'<img class="nb-photo-cutout" src="{prefix}assets/photos/{cutout}"'
 		text += f' alt="{alt}" loading="lazy" decoding="async">'
 	text += '</a>'
+	if album:
+		text += f'<figcaption>{html.escape(photo.get("album_caption", photo["caption"]))}</figcaption></figure>'
+		return text
 	if 'note' in photo:
 		text += f'<span class="nb-photo-note">{html.escape(photo["note"])}</span>'
 	text += f'<figcaption><span class="nb-photo__world">{theme_name}</span>'
-	text += f'{caption} <span class="nb-photo__credit">Photo: {credit}</span>'
+	text += caption
+	if 'show_label' in photo:
+		show_anchor = html.escape(photo['show'], quote=True)
+		text += f'<a class="nb-photo__show" href="{prefix}shows/gallery/#show-{show_anchor}">'
+		text += html.escape(photo['show_label']) + '</a>'
+	text += f' <span class="nb-photo__credit">Photo: {credit}</span>'
 	text += '</figcaption></figure>'
 	return text
 
@@ -171,6 +199,43 @@ def gallery_html(photos: dict, theme: str, prefix: str) -> str:
 		raise ValueError(f"unknown gallery theme '{theme}'; use one of {sorted(themes)}")
 	figures = [figure_html(p, prefix) for p in photos.values() if p['theme'] == theme]
 	text = f'<div class="nb-gallery" data-world="{theme}">' + ''.join(figures) + '</div>'
+	return text
+
+#============================================
+def show_gallery_html(photos: dict, prefix: str) -> str:
+	"""Build static, keyboard-operable show albums with lazy local thumbnails."""
+	shows = load_photo_shows()
+	albums = []
+	links = []
+	for show_id, show in shows.items():
+		selected = [p for p in photos.values() if p.get('show') == show_id]
+		if not selected:
+			continue
+		sequence = show['sequence']
+		if len(sequence) != len(set(sequence)) or set(sequence) != {p['id'] for p in selected}:
+			raise ValueError(f"{show_id}: sequence must contain every album photo exactly once")
+		selected = [photos[photo_id] for photo_id in sequence]
+		title = html.escape(show['title'])
+		date = html.escape(show['date'])
+		anchor = 'show-' + html.escape(show_id, quote=True)
+		cover_id = selected[0]['id']
+		width, height = image_size(f'{cover_id}_thumb.webp')
+		cover = f'<a href="#{anchor}"><img src="{prefix}assets/photos/{cover_id}_thumb.webp"'
+		cover += f' alt="" width="{width}" height="{height}" loading="lazy" decoding="async">'
+		cover += f'<strong>{title}</strong><span>{date} &middot; {len(selected)} photos</span></a>'
+		links.append(cover)
+		opened = ' open' if not albums else ''
+		album = f'<details class="nb-show-album" id="{anchor}"{opened}>'
+		album += f'<summary><strong>{title}</strong><span>{date} &middot; '
+		album += f'{len(selected)} photos</span></summary>'
+		album += f'<p>{html.escape(show["description"])}</p>'
+		album += '<div class="nb-show-gallery">'
+		album += ''.join(figure_html(p, prefix, album=True) for p in selected)
+		album += '</div></details>'
+		albums.append(album)
+	text = '<nav class="nb-album-nav" aria-label="Browse photos by show">'
+	text += ''.join(links) + '</nav><div class="nb-show-albums">'
+	text += ''.join(albums) + '</div>'
 	return text
 
 #============================================
@@ -429,6 +494,8 @@ def on_page_markdown(markdown: str, page: object, config: object, files: object)
 			block = mosaic_html(photos, argument.split(), prefix)
 		elif name == 'photo-credits':
 			block = credits_html(photos, prefix)
+		elif name == 'show-gallery':
+			block = show_gallery_html(photos, prefix)
 		elif name == 'shows':
 			block = shows_html(shows)
 		elif name == 'next-show':

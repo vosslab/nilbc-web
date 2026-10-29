@@ -57,6 +57,7 @@ nav:
   - Shows:
       - shows/index.md
       - Visiting a show: shows/visiting.md
+      - Show photo gallery: shows/gallery.md
       - Show logbook: shows/logbook.md
   - Worlds we build: creations/index.md
   - Join:

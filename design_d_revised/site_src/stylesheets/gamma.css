@@ -129,6 +129,29 @@
 .nb-photo {
 	border-bottom: 0.35rem solid #078BC9;
 }
+/* Show scrapbook: a scene and detail rhythm, with only selected notes tilted. */
+.nb-show-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.md-typeset .nb-show-gallery .nb-photo {
+	padding: 0.6rem 0.6rem 0;
+	background: #fff;
+	border: 1px solid #D5D1C9;
+	box-shadow: 0.12rem 0.25rem 0.5rem #00000020;
+}
+.md-typeset .nb-show-gallery .nb-photo figcaption { color: #182334; }
+.md-typeset .nb-show-gallery .nb-photo:nth-child(3n + 2) {
+	rotate: -1deg;
+	margin-top: 1.2rem;
+}
+.md-typeset .nb-show-gallery .nb-photo:nth-child(3n + 2) figcaption {
+	font: 700 1rem/1.4 "Kalam", cursive;
+}
+.md-typeset .nb-show-gallery .nb-photo:first-child { grid-column: auto; }
+.md-typeset .nb-show-gallery .nb-photo:first-child .nb-photo__link { aspect-ratio: 1; }
+.md-typeset .nb-show-gallery .nb-photo:first-child figcaption { font: 700 1rem/1.4 "Kalam", cursive; }
+@media (max-width: 44em) {
+	.nb-show-gallery { grid-template-columns: 1fr; gap: 1.3rem; }
+	.md-typeset .nb-show-gallery .nb-photo:nth-child(3n + 2) { rotate: none; margin-top: 0; }
+}
 @media (max-width: 44em) {
 	.nb-hero {
 		background-image: none;

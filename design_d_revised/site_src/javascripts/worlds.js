@@ -57,55 +57,103 @@ function nbSetupWorldFilter() {
 
 function nbSetupLightbox() {
 	const links = document.querySelectorAll(".nb-photo__link");
-	if (links.length === 0 || typeof HTMLDialogElement !== "function") {
-		return;
-	}
+	if (links.length === 0 || typeof HTMLDialogElement !== "function") return;
 	let dialog = document.querySelector(".nb-lightbox");
 	if (!dialog) {
 		dialog = document.createElement("dialog");
 		dialog.className = "nb-lightbox";
 		dialog.setAttribute("aria-label", "Photo viewer");
-		// the <img> is added on first open so the page never holds an image without a source
+		dialog.setAttribute("aria-describedby", "nb-viewer-caption");
 		dialog.innerHTML =
 			'<button type="button" class="nb-lightbox__close" aria-label="Close photo">&times;</button>' +
-			"<p></p>";
+			'<div class="nb-lightbox__controls">' +
+			'<button type="button" data-step="-1">Previous</button>' +
+			'<span class="nb-lightbox__status" role="status"></span>' +
+			'<button type="button" data-step="1">Next</button></div>' +
+			'<p id="nb-viewer-caption"></p>' +
+			'<a class="nb-lightbox__original">Open image directly</a>';
 		document.body.appendChild(dialog);
-		dialog.querySelector(".nb-lightbox__close").addEventListener("click", () => dialog.close());
-		// clicking the backdrop (the dialog box itself, not its children) closes it
-		dialog.addEventListener("click", (event) => {
-			if (event.target === dialog) {
-				dialog.close();
-			}
-		});
 	}
 	const caption = dialog.querySelector("p");
+	const status = dialog.querySelector("[role=status]");
 	let opener = null;
-	dialog.addEventListener("close", () => {
-		if (opener) {
-			opener.focus();
+	let group = [];
+	let index = 0;
+	function showPhoto(next) {
+		index = (next + group.length) % group.length;
+		const link = group[index];
+		let image = dialog.querySelector("img");
+		if (!image) {
+			image = document.createElement("img");
+			dialog.insertBefore(image, caption);
 		}
+		status.textContent = `Loading photo ${index + 1} of ${group.length}`;
+		image.onload = () => { status.textContent = `Photo ${index + 1} of ${group.length}`; };
+		image.onerror = () => { status.textContent = "Photo unavailable. Try the direct image link."; };
+		image.alt = link.querySelector("img").alt;
+		image.src = link.href;
+		caption.textContent = link.dataset.caption;
+		dialog.querySelector(".nb-lightbox__original").href = link.href;
+		dialog.querySelectorAll("[data-step]").forEach((button) => {
+			button.disabled = group.length < 2;
+		});
+	}
+	dialog.querySelector(".nb-lightbox__close").onclick = () => dialog.close();
+	dialog.querySelectorAll("[data-step]").forEach((button) => {
+		button.onclick = () => showPhoto(index + Number(button.dataset.step));
 	});
-
-	links.forEach((link) => {
-		if (link.dataset.ready === "1") {
-			return;
+	dialog.onkeydown = (event) => {
+		if (event.key === "Tab") {
+			const controls = Array.from(dialog.querySelectorAll("button:not([disabled]), a[href]"));
+			const first = controls[0];
+			const last = controls[controls.length - 1];
+			if (event.shiftKey && document.activeElement === first) {
+				event.preventDefault();
+				last.focus();
+			} else if (!event.shiftKey && document.activeElement === last) {
+				event.preventDefault();
+				first.focus();
+			}
 		}
-		link.dataset.ready = "1";
-		link.addEventListener("click", (event) => {
+		if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+			event.preventDefault();
+			showPhoto(index + (event.key === "ArrowRight" ? 1 : -1));
+		}
+	};
+	dialog.onclick = (event) => { if (event.target === dialog) dialog.close(); };
+	dialog.onclose = () => { if (opener && opener.isConnected) opener.focus(); };
+	links.forEach((link) => {
+		link.onclick = (event) => {
+			if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
 			event.preventDefault();
 			opener = link;
-			const thumb = link.querySelector("img");
-			let image = dialog.querySelector("img");
-			if (!image) {
-				image = document.createElement("img");
-				dialog.insertBefore(image, caption);
-			}
-			image.src = link.href;
-			image.alt = thumb.alt;
-			caption.textContent = link.dataset.caption;
+			const container = link.closest(".nb-show-gallery, .nb-gallery, .nb-mosaic");
+			group = container ? Array.from(container.querySelectorAll(".nb-photo__link")) : [link];
+			showPhoto(group.indexOf(link));
 			dialog.showModal();
+		};
+	});
+}
+
+function nbSetupAlbums() {
+	const albums = Array.from(document.querySelectorAll(".nb-show-album"));
+	if (!albums.length) return;
+	function revealHash(focus) {
+		const album = albums.find((item) => `#${item.id}` === location.hash);
+		if (!album) return;
+		album.open = true;
+		album.scrollIntoView({ block: "start" });
+		if (focus) album.querySelector("summary").focus({ preventScroll: true });
+	}
+	document.querySelectorAll(".nb-album-nav a").forEach((link) => {
+		link.addEventListener("click", () => {
+			const album = albums.find((item) => `#${item.id}` === link.hash);
+			album.open = true;
+			album.querySelector("summary").focus({ preventScroll: true });
 		});
 	});
+	window.addEventListener("hashchange", () => revealHash(true));
+	revealHash(false);
 }
 
 function nbSetupTrain() {
@@ -128,6 +176,7 @@ function nbSetupTrain() {
 function nbInit() {
 	nbSetupWorldFilter();
 	nbSetupLightbox();
+	nbSetupAlbums();
 	nbSetupTrain();
 }
 

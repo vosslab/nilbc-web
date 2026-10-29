@@ -7,6 +7,44 @@ the reasoning a later reader needs. Guidance Neil Voss states belongs in
 `docs/active_plans/decisions/`. [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+### Editorial album presentation
+
+**Decision.** Photo-show YAML owns a complete explicit sequence; its first image also supplies
+the photographic cover. Build validation rejects duplicate, omitted, or foreign album IDs.
+Album figures use optional short captions without category, event, note, or credit stacks.
+Full attribution remains in the viewer and linked credits page, including without JavaScript.
+
+**Why.** The prior uniform metadata-heavy cards concealed the photographs. Sequences now move
+from an establishing exhibit to complementary details, based on inspection of the existing
+45 selected images rather than invented stories or maker attributions.
+
+**Consequence.** Only the gallery Markdown opts out of the generic mascot banner. Alpha uses
+a clean catalog grid; beta uses a large opening frame and paired details; gamma uses selected
+offsets and handwritten captions. All album images remain contained rather than cropped;
+phone offsets are removed. Other pages retain their existing figure treatment and captions.
+
+**Owner.** `design_d_revised/data/photo_shows.yml`, `site_hooks/data_blocks.py`,
+`site_src/shows/gallery.md`, and shared/variant gallery styles.
+
+### Show albums without an eager wall
+
+**Decision.** Publish 45 reviewed archive photographs across seven library shows in the shared
+D revisions. Use native expandable albums, lazy local thumbnails, and an uncropped viewer with
+group-local navigation. Keep the homepage preview at three photographs.
+
+**Why.** The owner rejected the eight-photo scope. Broad archive review supports much richer
+coverage, but only completed club exhibits at shows qualify; attractive unrelated or ambiguous
+images do not become eligible to meet a quota.
+
+**Consequence.** Source hashes, unchanged selected originals, and all-sheet review evidence stay
+in ARTIFACTS. The full archive stays external. Album labels live in YAML; counts are calculated.
+No-JavaScript visitors retain native albums and direct image links. Original A/B/C/D and the
+three revised variants' existing mascot, group image, and visual character are preserved.
+
+**Owner.** [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md),
+`design_d_revised/data/photos.yml`, `design_d_revised/data/photo_shows.yml`, and
+`design_d_revised/site_hooks/data_blocks.py`.
+
 ### Temporary Graphify Cargo reconciliation
 
 **Decision.** Reconcile exact Cargo aliases with their AST package twins before
@@ -128,7 +166,38 @@ Gamma's existing 44em mobile breakpoint now reduces category photo stages from 1
 7rem, retaining stacked cards, full copy, and colored frames. Desktop photo heights stay
 unchanged. The comparison page leads with beta and invites feedback on individual details.
 
-The castle photograph replacement is blocked on a verified club image. The shared manifest,
-original design assets, and earlier Instagram-source records contain no suitable photograph;
-the club's castle page contains module diagrams. Keep the current diagram until a suitable
-source is available rather than substitute an unrelated build.
+The castle photograph replacement was initially blocked on a verified club image. The
+2026-10-28 Archive Shows collection resolves that gap with the Ela Area castle scene.
+
+### Archive-first exhibit photography
+
+**Decision.** Preserve the complete category image collection outside Git and deployment,
+then curate finished club exhibit photographs for the shared D revisions. Keep selected
+originals and exact provenance in ARTIFACTS, with local metadata-free WebP derivatives.
+
+**Why.** The owner requires copy, organization, and assessment in that order. Category membership
+alone is not evidence that a photo depicts club work; show context and full-image review matter.
+
+**Consequence.** All revisions get a real Castles card and recent railway/city photographs.
+Their existing restrained, balanced, and playful treatments remain distinct. Uploader credit
+is explicit, private discussion stays unpublished, and full collection size does not inflate Git.
+
+**Owner.** [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) and `design_d_revised/data/photos.yml`.
+
+### Placement-specific archive curation
+
+**Decision.** Use eight reviewed archive selections: the original three plus spacecraft, a
+white dog, space-suited characters, a market stall, and a boating scene. Put a three-image
+preview after the homepage club portrait and six complementary details on Visiting a show.
+
+**Why.** The weaker Screen/story and Creatures cards needed clearer subjects; coherent local
+show batches provide stronger evidence than broad but ambiguous external-show coverage.
+
+**Consequence.** Captions describe visible builds and source-supported show dates, not inferred
+franchises or makers. Homepage focal positions differ from gallery positions; the dog keeps
+its complete frame on desktop and a face-focused crop on phones. Viewer images remain uncropped.
+Alpha stays plain, beta retains selected paper notes, and gamma retains its existing playful
+frames. All source originals and hashes stay preserved, with no private discussions published.
+
+**Owner.** `design_d_revised/data/photos.yml`, revised home/gallery styles, and
+[DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md).

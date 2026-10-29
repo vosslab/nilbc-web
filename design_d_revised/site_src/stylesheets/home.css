@@ -35,6 +35,7 @@
 	margin-bottom: 0;
 }
 .nb-hero .headerlink,
+.nb-worlds .headerlink,
 .nb-layout .headerlink {
 	display: none;
 }
@@ -811,4 +812,24 @@
 
 .md-typeset .nb-figure {
 	border: 1px solid var(--nb-rule);
+}
+
+/* Card crops are independent of gallery crops and full-image viewer frames. */
+.nb-world-card__stage img[src*="ela_locomotive_2026"] { object-position: 38% 55%; }
+.nb-world-card__stage img[src*="northbrook_street_2026"] { object-position: 44% 52%; }
+.nb-world-card__stage img[src*="ela_spacecraft_2026"] { object-position: 50% 76%; }
+.nb-world-card__stage img[src*="ela_castle_2026"] { object-position: 50% 38%; }
+.nb-world-card__stage img[src*="ela_dog_2026"] {
+	object-position: 48% 40%;
+	object-fit: contain;
+	background: #E9E6E0;
+}
+@media (max-width: 44em) {
+	.nb-world-card__stage img[src*="ela_dog_2026"] { object-fit: cover; }
+}
+@media (max-width: 44em) {
+	/* Wide phone stages favor faces and cockpits rather than the floor. */
+	.nb-world-card__stage img[src*="ela_spacecraft_2026"] { object-position: 50% 70%; }
+	.nb-world-card__stage img[src*="ela_dog_2026"] { object-position: 48% 30%; }
+	.nb-world-card__stage img[src*="ela_castle_2026"] { object-position: 50% 32%; }
 }

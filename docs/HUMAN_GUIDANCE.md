@@ -1,5 +1,6 @@
 # Human guidance
 
+
 <!-- VENDORED HEADER: START -->
 Record the durable guidance Neil Voss states, or approves for preservation here, in his own words:
 first person or close paraphrase, one to three lines per bullet. Material he supplies as a source
@@ -7,6 +8,28 @@ may inform [DESIGN_DECISIONS.md](DESIGN_DECISIONS.md) once it is settled, and an
 origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
+
+- 2026-10-29: Make the D revision show galleries editorial: photographic venue/date/count
+  covers, a compact gallery heading, strong lead/detail sequences, and short captions with
+  full credits accessible. Alpha is a catalog, beta a photo essay, gamma a readable scrapbook.
+- 2026-10-29: Retain all 45 selected photographs/seven shows, full-frame and keyboard browsing,
+  lazy loading and no-JavaScript access. Keep other pages and original A/B/C/D intact; no deploy.
+
+- 2026-10-28: Eight photos from 1,336 archived images is not enough. Review all 72 contact
+  sheets and substantially broaden the shared D revisions with show-organized galleries,
+  stronger categories, and a curated homepage preview rather than a photo dump.
+- 2026-10-28: Avoid WIP; just show the club's work at shows. Exclude home/workbench images,
+  setup/teardown, planning, and other LUG exhibits. Check image plus source context;
+  archive membership alone is insufficient, and ambiguous candidates stay unpublished.
+- 2026-10-28: Add more curated show images to Dalpha/Dbeta/Dgamma, improve Screen/story and
+  Creatures photos and placement-specific crops, and add a small factual show gallery. Keep
+  Matchstick, the guitar group, core layout, and original A/B/C/D; do not commit or deploy.
+- 2026-10-28: Copy all Archive Shows channel image attachments first, organize and catalog
+  them second, then assess website suitability. Preserve originals and provenance outside
+  deployment; keep large archives out of Git. Do not publish private discussion histories.
+- 2026-10-28: Enhance shared Dalpha, Dbeta, and Dgamma with suitable club exhibit images;
+  leave A/B/C/original D unchanged. Use the existing Discord bot without configuration or
+  server changes, verify the result, and do not commit.
 
 - Make durable changes in starter-repo-template; consumer copies are vendored.
 - A temporary, easily removable wrapper is acceptable for the Graphify crash.

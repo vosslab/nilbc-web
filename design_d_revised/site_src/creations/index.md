@@ -11,8 +11,10 @@ hide:
 
 # Worlds we build
 
-Club builds and displays from the NILTC website archive. Trains run through most of our
+Club builds and displays from our website and show archives. Trains run through most of our
 layouts, but members build whatever they love, as long as it is family friendly.
+
+[Prefer to explore one show at a time? Browse the show photo gallery.](../shows/gallery.md)
 
 /// world
 
@@ -42,7 +44,7 @@ and small scenes worth bending down for.
 
 ## Screen and story
 
-Builds inspired by film, television, and favorite stories.
+Imagined worlds, favorite stories, starships, and aircraft.
 
 /// gallery | screen
 ///
@@ -52,6 +54,9 @@ Builds inspired by film, television, and favorite stories.
 /// world
 
 ## Castles
+
+/// gallery | castle
+///
 
 /// split | module
 
