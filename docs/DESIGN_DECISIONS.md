@@ -26,6 +26,24 @@ phone offsets are removed. Other pages retain their existing figure treatment an
 **Owner.** `design_d_revised/data/photo_shows.yml`, `site_hooks/data_blocks.py`,
 `site_src/shows/gallery.md`, and shared/variant gallery styles.
 
+### Verified event dates and curated homepage photographs
+
+**Decision.** Represent verified event dates as quoted ISO `YYYY-MM` or `YYYY-MM-DD`,
+at the precision the evidence supports. Order dated events newest first with an explicit,
+stable tie-break; keep undated entries last. A photograph's show reference supplies its
+public event date without duplicating date metadata. Maintain the homepage preview as an
+explicit root `homepage_photos` list of curated IDs; the `featured-photos` hook validates
+ID uniqueness and that each photo resolves to a show with a verified date.
+
+**Why.** Explicit source-supported chronology avoids false precision from IDs or upload order,
+while a small curated homepage set can be refreshed deliberately without dumping the catalog.
+
+**Consequence.** Never infer event dates from identifiers or upload timestamps. Preserve album
+sequence independently from chronology; do not publish undated event dates as verified. The
+homepage list remains handpicked and validation prevents duplicate or undated selections.
+
+**Owner.** Shared photo/show data, `featured-photos` hook, and root MkDocs homepage configuration.
+
 ### Show albums without an eager wall
 
 **Decision.** Publish 45 reviewed archive photographs across seven library shows in the shared
@@ -129,6 +147,22 @@ rotations and overlaps. Existing theme, search, gallery, and reduced-motion beha
 
 **Owner.** `design_d_revised/` and the three `mkdocs_d_*.yml` revision configurations.
 
+### Gamma working atlas
+
+**Decision.** Gamma uses a task-changing working-atlas composition across the shared D revision
+pages: real club builds are inspection windows, with a route index and practical handoff for
+visitors. Keep variant presentation in gamma's configuration, template branch, and final CSS.
+
+**Why.** A coherent experiential distinction should extend beyond headline lettering or photo
+frames while leaving facts, photo provenance, and editing in shared Markdown/data.
+
+**Consequence.** Gamma can use route-scoped composition but must preserve Material navigation,
+search, theme controls, the shared viewer, accessible focus, responsive reflow, and reduced-motion
+meaning. Alpha/beta keep the existing template branch.
+
+**Owner.** `mkdocs_d_gamma.yml`, `design_d_revised/theme/main.html`,
+`design_d_revised/site_src/stylesheets/gamma.css`, and `gamma-layout.css`.
+
 ### Editable evergreen flyer
 
 **Decision.** Keep one self-contained SVG master with live text, embedded fonts and logo,
@@ -201,3 +235,42 @@ frames. All source originals and hashes stay preserved, with no private discussi
 
 **Owner.** `design_d_revised/data/photos.yml`, revised home/gallery styles, and
 [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md).
+
+### Visitor-first shared content
+
+**Decision.** Keep the homepage welcome and curated show photos adjacent while leaving
+composition to each variant. Give all five creation themes a representative linked photo,
+and link collection show/date headings to their show albums while captions identify the build.
+Use one shared email call to action on Join and one About timeline as the history detail source.
+
+**Why.** Visitors can act, see real exhibits, and choose a building interest without reading
+repeated history or show metadata before reaching practical information.
+
+**Consequence.** Keep category links and section IDs stable, preserve direct full-image links
+without JavaScript, and use `album_caption` with `caption` as its fallback. The variants may
+arrange shared content differently.
+
+**Owner.** `design_d_revised/site_src/index.md`, `creations/index.md`, `join/index.md`,
+`shows/index.md`, `about/index.md`, and `site_hooks/data_blocks.py`.
+
+## 2026-10-30 page refinements
+
+**Decision.** Treat alpha, beta, and gamma as distinct whole-site directions: a restrained
+club catalog, an editorial photo-led presentation, and a numbered exhibition floor. Keep facts
+and Markdown shared; let each variant own layout and styling. Gamma's manager chose its concept
+exploration process. Any coverage matrix is illustrative, not a required structure or quota.
+
+**Why.** Visitors need clear club and show information across all variants, while the design
+exercise asks each revision to make a coherent visual choice across home and interior pages.
+
+**Consequence.** Content and structured photo records remain common. The refinement checkpoint
+has 73 unique photos (52 archive selections and 21 existing site photos), including 17 train
+records and two newly selected Arlington train views. Purple Rain leads the homepage selection.
+Uploader credits do not claim an unverified photographer, builder, ownership, or redistribution
+right. See [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) and the dated refinement reports for evidence.
+Gamma specification, scoped quality reviews, the mobile drawer fix, and final whole-site browser
+suite are accepted. The latest full pytest run recorded 1,671 passes and one sandbox-only Podman
+failure; an outside-sandbox read-only check confirmed storage above the 20 GB budget.
+
+**Owner.** `.hermes/plans/refinement-execution.md`, the three D revision stylesheets, shared
+`design_d_revised/data/`, and [refinement verification](active_plans/reports/refinement_verification.md).

@@ -1,12 +1,13 @@
 INHERIT: mkdocs_d_alpha.yml
 site_url: https://vosslab.github.io/nilbc-web/d-gamma/
 site_dir: output_site/d-gamma
+extra:
+  revision: gamma
 extra_css:
   - stylesheets/tokens.css
-  - stylesheets/base.css
   - stylesheets/components.css
   - stylesheets/gallery.css
-  - stylesheets/home.css
-  - stylesheets/pages.css
-  - stylesheets/photo-frames.css
+  - stylesheets/image-forward.css
+  - stylesheets/timeline.css
   - stylesheets/gamma.css
+  - stylesheets/gamma-layout.css

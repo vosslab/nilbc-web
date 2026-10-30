@@ -36,8 +36,8 @@ SHOWS_PAGE = os.path.join(REPO_ROOT, 'site_src', 'shows', 'index.md')
 
 
 DATA_BLOCK_NAMES = (
-	'gallery', 'photos', 'photo-credits', 'show-gallery', 'shows', 'next-show', 'diagram',
-	'castle-module',
+	'gallery', 'photos', 'featured-photos', 'photo-credits', 'show-gallery', 'shows', 'next-show', 'diagram',
+	'castle-module', 'collection',
 )
 # one data block: opening line with optional argument, then the closing `///` line
 DATA_BLOCK = re.compile(
@@ -60,6 +60,8 @@ def load_photos() -> dict:
 		# each photo carries its world's display name from the `themes:` table
 		photo['theme_name'] = manifest['themes'][photo['theme']]
 		if 'show' in photo:
+			if photo['show'] not in photo_shows:
+				raise ValueError(f"{photo['id']}: unknown show reference '{photo['show']}'")
 			show = photo_shows[photo['show']]
 			photo['show_label'] = f"{show['title']}, {show['date']}"
 		if photo['id'] in by_id:
@@ -69,10 +71,28 @@ def load_photos() -> dict:
 
 #============================================
 def load_photo_shows() -> dict:
-	"""Read the editorial album labels in display order."""
+	"""Read show labels and validate any precision-preserving verified event dates."""
 	with open(PHOTO_SHOWS_FILE, 'r') as handle:
 		shows = yaml.safe_load(handle)
+	for show_id, show in shows.items():
+		if 'event_date' in show:
+			parse_event_date(show['event_date'], show_id)
 	return shows
+
+#============================================
+def parse_event_date(value: object, show_id: str) -> tuple:
+	"""Validate YYYY-MM or YYYY-MM-DD; return sort fields without inventing a day."""
+	if not isinstance(value, str) or not re.fullmatch(r"[0-9]{4}-[0-9]{2}(?:-[0-9]{2})?", value):
+		raise ValueError(f"{show_id}: event_date must be a quoted YYYY-MM or YYYY-MM-DD string")
+	try:
+		parts = [int(part) for part in value.split('-')]
+		if len(parts) == 2:
+			datetime.date(parts[0], parts[1], 1)
+			return (parts[0], parts[1], 0, 0)
+		datetime.date(*parts)
+	except ValueError as error:
+		raise ValueError(f"{show_id}: event_date '{value}' is not a valid calendar date") from error
+	return (parts[0], parts[1], 1, parts[2])
 
 #============================================
 def load_themes() -> dict:
@@ -155,10 +175,18 @@ def figure_html(photo: dict, prefix: str, album: bool = False) -> str:
 	full_src = f"{prefix}assets/photos/{photo_id}.webp"
 	thumb_src = f"{prefix}assets/photos/{photo_id}_thumb.webp"
 	caption = html.escape(photo['caption'])
-	viewer_caption = caption
-	if 'show_label' in photo:
-		viewer_caption += ' ' + html.escape(photo['show_label']) + '.'
-	viewer_caption += ' ' + html.escape(photo['credit']) + '.'
+	viewer_caption = ''
+	if album and photo.get('collection_context'):
+		context = photo.get('show_label', 'Club archive; date not established')
+		viewer_caption = html.escape(context) + '. '
+		if 'capture_date' in photo:
+			viewer_caption += 'Capture date: ' + html.escape(str(photo['capture_date'])) + '. '
+		viewer_caption += caption + ' '
+	elif 'show_label' in photo:
+		viewer_caption = html.escape(photo['show_label']) + '. ' + caption + ' '
+	else:
+		viewer_caption = caption + ' '
+	viewer_caption += html.escape(photo['credit']) + '.'
 	alt = html.escape(photo['alt'], quote=True)
 	credit = html.escape(photo['credit'])
 	theme_name = photo['theme_name']
@@ -175,7 +203,11 @@ def figure_html(photo: dict, prefix: str, album: bool = False) -> str:
 		text += f' alt="{alt}" loading="lazy" decoding="async">'
 	text += '</a>'
 	if album:
-		text += f'<figcaption>{html.escape(photo.get("album_caption", photo["caption"]))}</figcaption></figure>'
+		album_caption = html.escape(photo.get('album_caption', photo['caption']))
+		text += f'<figcaption>{album_caption}'
+		if photo.get('collection_context') and 'capture_date' in photo:
+			text += f' <span class="nb-photo__capture-date">Capture date: {html.escape(str(photo["capture_date"]))}</span>'
+		text += '</figcaption></figure>'
 		return text
 	if 'note' in photo:
 		text += f'<span class="nb-photo-note">{html.escape(photo["note"])}</span>'
@@ -187,6 +219,98 @@ def figure_html(photo: dict, prefix: str, album: bool = False) -> str:
 		text += html.escape(photo['show_label']) + '</a>'
 	text += f' <span class="nb-photo__credit">Photo: {credit}</span>'
 	text += '</figcaption></figure>'
+	return text
+
+#============================================
+def collection_show_sort_key(item: tuple) -> tuple:
+	"""Sort verified show dates newest-first and break ties by stable show id."""
+	show_id, show = item
+	if 'event_date' not in show:
+		return (1, 0, 0, 0, 0, show_id)
+	year, month, has_day, day = parse_event_date(show['event_date'], show_id)
+	# More precise dates lead month-only dates in the same month; no day is imputed.
+	return (0, -year, -month, -has_day, -day, show_id)
+
+#============================================
+def validate_show_sequence(show_id: str, sequence: list, photos: dict, selected: list) -> None:
+	"""Require a unique, known sequence exactly covering the show's associated photos."""
+	message = f"{show_id}: sequence must contain every album photo exactly once"
+	if (not isinstance(sequence, list)
+			or not all(isinstance(photo_id, str) for photo_id in sequence)):
+		raise ValueError(message)
+	sequence_ids = set(sequence)
+	album_ids = {photo['id'] for photo in selected}
+	if (len(sequence) != len(sequence_ids)
+			or not sequence_ids <= set(photos)
+			or sequence_ids != album_ids):
+		raise ValueError(message)
+
+#============================================
+def collection_photos(photos: dict, theme: str) -> list:
+	"""Return dated shows newest-first, each in editorial sequence, then undated work."""
+	if theme not in load_themes():
+		raise ValueError(f"unknown gallery theme '{theme}'")
+	selected = []
+	seen = set()
+	shows = load_photo_shows()
+	ordered_shows = sorted(shows.items(), key=collection_show_sort_key)
+	for show_id, show in ordered_shows:
+		sequence = show['sequence']
+		associated = [photo for photo in photos.values() if photo.get('show') == show_id]
+		validate_show_sequence(show_id, sequence, photos, associated)
+		for photo_id in sequence:
+			photo = photos[photo_id]
+			if photo['theme'] == theme and photo_id not in seen:
+				selected.append(photo)
+				seen.add(photo_id)
+	selected.extend(p for p in photos.values() if p['theme'] == theme and p['id'] not in seen)
+	return selected
+
+#============================================
+def featured_photos_html(photos: dict, prefix: str) -> str:
+	"""Render human-curated homepage picks with a verified show-date eligibility check."""
+	with open(MANIFEST_FILE, 'r') as handle:
+		manifest = yaml.safe_load(handle)
+	ids = manifest.get('homepage_photos')
+	if not isinstance(ids, list) or not ids or not all(isinstance(photo_id, str) and photo_id for photo_id in ids):
+		raise ValueError("data/photos.yml needs a non-empty homepage_photos ID list of strings")
+	if len(ids) != len(set(ids)):
+		raise ValueError("homepage_photos contains duplicate photo IDs")
+	shows = load_photo_shows()
+	for photo_id in ids:
+		if photo_id not in photos:
+			raise ValueError(f"homepage_photos names unknown photo id '{photo_id}'")
+		photo = photos[photo_id]
+		show_id = photo.get('show')
+		if show_id not in shows or 'event_date' not in shows[show_id]:
+			raise ValueError(f"homepage photo '{photo_id}' needs a show with a verified event_date")
+		parse_event_date(shows[show_id]['event_date'], show_id)
+	return mosaic_html(photos, ids, prefix)
+
+#============================================
+def collection_html(photos: dict, theme: str, prefix: str) -> str:
+	"""Render a complete, lazy thumbnail grid in dated-show then archive order."""
+	selected = collection_photos(photos, theme)
+	text = f'<p class="nb-collection-count">{len(selected)} photos</p>'
+	text += f'<div class="nb-gallery nb-collection" data-world="{html.escape(theme, quote=True)}">'
+	last_show = object()
+	for photo in selected:
+		show_id = photo.get('show')
+		if show_id != last_show:
+			last_show = show_id
+			label = photo.get('show_label', 'Club archive; date not established')
+			if show_id:
+				anchor = html.escape(show_id, quote=True)
+				label = f'<a href="{prefix}shows/gallery/#show-{anchor}">{html.escape(label)}</a>'
+			else:
+				label = html.escape(label)
+			text += f'<h2 class="nb-collection__divider">{label}</h2>'
+		compact = dict(photo)
+		compact['album_caption'] = photo.get('album_caption', photo['caption'])
+		compact['collection_context'] = True
+		figure = figure_html(compact, prefix, album=True)
+		text += figure
+	text += '</div>'
 	return text
 
 #============================================
@@ -212,8 +336,7 @@ def show_gallery_html(photos: dict, prefix: str) -> str:
 		if not selected:
 			continue
 		sequence = show['sequence']
-		if len(sequence) != len(set(sequence)) or set(sequence) != {p['id'] for p in selected}:
-			raise ValueError(f"{show_id}: sequence must contain every album photo exactly once")
+		validate_show_sequence(show_id, sequence, photos, selected)
 		selected = [photos[photo_id] for photo_id in sequence]
 		title = html.escape(show['title'])
 		date = html.escape(show['date'])
@@ -423,7 +546,7 @@ def check_banner_photo(markdown: str, page: object, photos: dict) -> None:
 	for name, argument in DATA_BLOCK.findall(markdown):
 		if name == 'photos':
 			body_ids.update(argument.split())
-		elif name == 'gallery':
+		elif name in ('gallery', 'collection'):
 			body_ids.update(pid for pid, p in photos.items() if p['theme'] == argument)
 	if art in body_ids:
 		raise ValueError(f"{page.file.src_path}: banner photo '{art}' repeats in the page body")
@@ -488,7 +611,11 @@ def on_page_markdown(markdown: str, page: object, config: object, files: object)
 		argument = ''
 		if match.group(2) is not None:
 			argument = match.group(2).strip()
-		if name == 'gallery':
+		if name == 'collection':
+			block = collection_html(photos, argument, prefix)
+		elif name == 'featured-photos':
+			block = featured_photos_html(photos, prefix)
+		elif name == 'gallery':
 			block = gallery_html(photos, argument, prefix)
 		elif name == 'photos':
 			block = mosaic_html(photos, argument.split(), prefix)

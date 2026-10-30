@@ -1,0 +1,7 @@
+            <nav class="gamma-wayfinder" aria-label="Exhibition index">
+                {% for target, number, label, section in stations %}
+                <a href="{{ target | url }}"{% if area == section or (section == 'home' and source == 'index.md') %} aria-current="{{ 'page' if source == 'index.md' or source == section ~ '/index.md' else 'true' }}"{% endif %}>
+                    <span aria-hidden="true">{{ number }}</span>{{ label }}<span aria-hidden="true">&#8599;</span>
+                </a>
+                {% endfor %}
+            </nav>

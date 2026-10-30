@@ -80,7 +80,14 @@ scene with an unfinished appearance, a cluttered shoe-brand display, an ambiguou
 aircraft table, and a tower with unfinished-looking surroundings. The barn-raising photograph
 is a completed farm vignette depicting construction, not a workbench progress photograph.
 
-## Published selection
+## Historical selection snapshot
+
+The following selection counts describe the earlier review snapshot documented at that time.
+They are historical evidence, not a claim about the current manifest or final acceptance.
+For current editorial choices, use `design_d_revised/data/photos.yml` and
+`design_d_revised/data/photo_shows.yml`; for updated review status, consult
+`docs/active_plans/reports/`. Broader curation and final acceptance remain pending; this is
+not a completed or deployed collection.
 
 | Show | Date | Archive photos |
 | --- | --- | ---: |
@@ -94,10 +101,29 @@ is a completed farm vignette depicting construction, not a workbench progress ph
 | Total | | 45 |
 
 The archive selections cover 15 city/landscape scenes, 9 castle/market scenes, 9 creatures
-and characters, 7 screen/story/aircraft scenes, and 5 railway views. The shared photo manifest
-contains **66 photographs in total**: these 45 archive selections plus 21 pre-existing website
-photographs. Repeated use of a photograph in an album, theme, or preview does not increase
-this unique count. Matchstick artwork is separate, not counted as show photography.
+and characters, 7 screen/story/aircraft scenes, and 5 railway views. At this historical checkpoint, the shared photo manifest contained 66 photographs in total:
+these 45 archive selections plus 21 pre-existing website photographs. Repeated use of a
+photograph in an album, theme, or preview did not increase that unique count. Matchstick
+artwork was separate, not counted as show photography. This snapshot total is not the current
+manifest count; read the current manifest/report instead.
+
+## Current refinement checkpoint
+
+The 2026-10-30 manifest contains 73 distinct photos: 52 archive selections across the same seven
+dated shows and 21 existing site photographs. Seventeen manifest records have the train theme.
+Two Arlington train selections were added after full-frame review and match to already selected
+post-show photo batches with corroborating show-context references. Their records support the
+event and club-exhibition context, not an individual builder identity. Purple Rain leads the
+manual three-photo homepage sequence. See
+[refinement_curation.md](active_plans/reports/refinement_curation.md) for the selection evidence
+and [refinement_verification.md](active_plans/reports/refinement_verification.md) for the
+integration status. This is a current review checkpoint, not a claim of final acceptance or
+deployment.
+
+The completed-show selection rule continues to exclude candidates whose show context is not
+corroborated, even when the image is visually strong. Uploader attribution is not photographer,
+builder, ownership, or a general redistribution license. Source and rights remain unknown where
+the individual provenance record does not establish them.
 
 Uploaders are Kerbear, Andertoons, and Jason C. Uploader does not mean photographer or builder.
 Use is owner-requested for the demo, not a new external redistribution license. Existing club
@@ -125,21 +151,33 @@ The full-image viewer always opens the uncropped optimized frame, never an exter
 
 ## Website and editing contract
 
-Dalpha, Dbeta, and Dgamma share the complete gallery and photo data. Original A/B/C/D,
-Matchstick, the guitar group image, and the existing variant treatments remain unchanged.
+Dalpha, Dbeta, and Dgamma share the photo data and gallery source. Original A/B/C/D and
+Matchstick remain unchanged; image-forward revisions and curation are still being reviewed.
 
-- `design_d_revised/data/photos.yml`: captions, alternative text, theme, show key, credit,
-  and source URLs. Existing `focus` values apply to cropped theme/preview placements.
-- `design_d_revised/data/photo_shows.yml`: album order, venue label, month/year, description.
-  Album counts are calculated from the photos, not hand-maintained.
-- `shows/gallery.md`: show navigation and seven native expandable albums. Only the newest
-  album starts open. All thumbnails are local and lazy; larger images load on demand.
-- `creations/index.md`: expanded theme galleries and a link to browsing by show.
-- The homepage retains five category cards and a three-photo preview, not the full collection.
-- The viewer supports Previous/Next, arrow keys, Escape, close button, focus return,
-  loading/error feedback, and a direct-image link. It stays within the current album/theme.
-- Without JavaScript, native albums and direct full-image links still work.
-- Captions link back to their show album, including direct hash links that expand the album.
+- `design_d_revised/data/photos.yml`: captions, alternative text, theme, structured `show` key,
+  credit, source URLs, and the manually curated `homepage_photos` ID list. Each show photo's
+  `show` must match a key in `photo_shows.yml`; do not infer association from text or filenames.
+- `design_d_revised/data/photo_shows.yml`: show labels/descriptions and the explicit editorial
+  `sequence`, plus `event_date` when verified. Quote `event_date` as ISO `'YYYY-MM'` for verified
+  month-only precision, or `'YYYY-MM-DD'` only for a verified day. Never infer capture dates
+  from Discord upload times or file metadata. Dated collections sort newest-first by event date;
+  each show's sequence controls its internal order. Undated archive entries come last.
+- `site_src/index.md`: the `/// featured-photos` block renders `homepage_photos` in list order.
+  To refresh the homepage, edit that short ID list manually; it does not auto-pick recent uploads.
+- `site_src/shows/gallery.md`: `/// show-gallery` renders the show albums. The dedicated trains,
+  cities, screen-and-story, castles, and creatures pages use `/// collection | THEME` for complete,
+  newest-first, thumbnail-first views; opening a full-size image/viewer is optional.
+- `site_src/about/timeline.md`: one shared editable timeline, grounded in the public sources
+  cited there. Preserve source-level date precision; leave the identity/rebrand chapter undated
+  unless a public launch date is verified. No upload timestamp establishes a photo's capture
+  date. Avoid implying an unverified launch event.
+- Alpha, beta, and gamma share source and hooks. Alpha loads common CSS then `alpha-layout.css`;
+  beta and gamma inherit MkDocs settings but define their own CSS lists, layering their variant
+  styles over common styles. Gamma includes `photo-frames.css`; beta includes `beta.css`; each
+  has its own layout stylesheet. Static data blocks and local assets need no external API at
+  runtime.
+- Full-image viewing is an enhancement; collection grids remain local-thumbnail-first. No
+  Discord login or image API is needed to build or view the site.
 
 ## Verification and historical passes
 
@@ -147,6 +185,8 @@ The first two passes selected three and then eight photographs. Their narrower s
 superseded by the owner's explicit request for substantial archive-wide review and coverage.
 Their originals, hashes, credits, and authorized layout changes were preserved.
 
-Current execution results and screenshots are documented in
+Execution results and screenshots from the earlier broad-review pass are documented in
 [archive_broad_review.md](active_plans/reports/archive_broad_review.md).
-Build and browsing require neither Discord credentials nor network images.
+That dated report is a historical checkpoint, not final acceptance evidence. Check the latest
+report in `docs/active_plans/reports/` for ongoing work. Build and browsing require neither
+Discord credentials nor network images. No final acceptance or deployment is claimed here.

@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+  {% if config.extra.revision == "gamma" %}
+    {% set source = '404' %}
+    {% set area = '404' %}
+    {% set stations = [('index.html', '00', 'Home', 'home'), ('creations/', '01', 'Worlds', 'creations'), ('shows/', '02', 'Shows', 'shows'), ('join/', '03', 'Join', 'join'), ('about/', '04', 'Club', 'about')] %}
+    <div class="nb-atlas" data-page="404" data-area="404">
+      {% include "gamma_wayfinder.html" %}
+      <div class="gamma-marker"><span>NILBC / 404</span><span>A different route</span></div>
+      <h1>You've wandered off the layout.</h1>
+      <p>We couldn't find this page. Pick a destination above, or search for a build, show, or club information.</p>
+      <p><a class="md-button md-button--primary" href="{{ 'index.html' | url }}">Back to the club</a></p>
+    </div>
+  {% else %}
+    <h1>404 - Not found</h1>
+  {% endif %}
+{% endblock %}

@@ -119,23 +119,63 @@ Open `http://127.0.0.1:8000/nilbc-web/d-alpha/`. For beta, use `mkdocs_d_beta.ym
 `design_d_revised/`; beta and gamma inherit alpha independently and add their own stylesheets.
 Original D stays independent.
 
-### Edit the show gallery
+### Edit photos, collections, and timeline
 
-The shared `design_d_revised/data/photos.yml` assigns each archive photo a `show` key and
-building theme. `data/photo_shows.yml` owns album order, venue names, dates, and descriptions.
-The `/// show-gallery` block in `site_src/shows/gallery.md` generates album counts and lazy
-local thumbnails; it requires no client API or Discord login. Keep the homepage's three-photo
-preview curated separately. Preserve source provenance and apply the completed-show-only
-selection boundary in [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) before adding photographs.
-The browser suite exercises album navigation, viewer arrows, focus wrapping, and Escape.
+The shared `design_d_revised/data/photos.yml` is the photo manifest. Each photo has a stable
+`id`, `theme`, caption/alt text and credit; a show photograph also has a `show` value matching
+a key in `data/photo_shows.yml`. Keep that association structured; do not infer shows from
+filenames or captions. Preserve source provenance and the completed-show-only selection boundary
+in [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) before adding archive photographs. Upload timestamps
+and file metadata are not capture dates: never add or imply a capture date from the upload.
 
-Each show's `sequence` must list all its photo IDs exactly once, in reading/viewer order.
-The first ID supplies its cover. Choose a clear opening scene and follow with related details;
-the strict build rejects omissions, duplicates, and IDs from another show. An optional
-`album_caption` in `photos.yml` shortens captions specifically for albums, leaving other
-placements unchanged. Keep source/uploader facts in the ordinary caption/credit fields.
-Gallery-only compactness comes from omitting `art` in gallery Markdown, not a global hero rule.
-Alpha styling is in `gallery.css`; beta and gamma add scoped album rules in their own CSS.
+The metadata indexer is an archive-review utility, not a build dependency. From the repository
+root, this command reads the default external archive and writes `metadata.json` beside its
+`downloads.json` catalog:
+
+```bash
+source source_me.sh && python3 devel/index_archive_metadata.py
+```
+
+Pass an archive directory as the optional positional argument to use a different local copy.
+The full archive and its metadata index remain outside Git and deployment. The separate
+`image_forward_review.json` and `train_review_batch_3.json` editorial ledgers also stay in the
+external archive; consult the dated reports under `docs/active_plans/reports/` for the selected
+evidence summary. Do not publish raw archive identifiers or private discussion text.
+
+For public collection ordering, add a verified `event_date` to the corresponding
+`photo_shows.yml` entry as a quoted ISO string (`'YYYY-MM'` when only month is verified,
+`'YYYY-MM-DD'` only when the day is verified). The build sorts dated shows newest-first; within
+each show, its `sequence` remains the explicit editorial/viewer order and must list every photo
+in that album exactly once. The first sequence ID is the album cover. Undated archive material
+comes after dated shows in stable manifest order; do not guess a date to move it forward.
+Keep the display `date` label consistent with the verified `event_date`; maintainers are
+responsible for that consistency. The build validates `event_date` syntax and calendar validity,
+show references, and complete, duplicate-free sequences, but does not compare the display label
+to the verified event date.
+
+Refresh the homepage manually and briefly: choose the desired IDs in `homepage_photos` at the
+bottom of `photos.yml`, in display order; keep them unique and associated with shows having a
+verified `event_date`. The `/// featured-photos` block in `site_src/index.md` renders that
+curated list. It does not automatically select the newest uploads. Album listings use
+`/// show-gallery`; `/// collection | THEME` supplies a full, date-ordered theme page.
+Dedicated trains, cities, screen-and-story, castles, and creatures pages use this collection
+block. Collections are thumbnail-first; the full-image viewer is an optional enhancement, not
+a reason to load full-size images for the grid. No external API or Discord login is used at
+runtime.
+
+The shared editable timeline lives at `site_src/about/timeline.md` and is sourced from public
+research links in that page. Preserve the cited date precision, distinguish documented events
+from interpretation, and leave the rebrand/identity chapter undated unless a public launch date
+is verified. Do not turn a planned or approved identity into a fabricated launch date.
+
+Alpha, beta, and gamma share the revised source and hooks. Alpha's `extra_css` loads the common
+tokens, base, components, gallery, home, pages, timeline, and image-forward styles, then
+`alpha-layout.css`. Beta inherits alpha's MkDocs settings but explicitly replaces the CSS list,
+loading common styles, `beta.css`, `image-forward.css`, and `beta-layout.css`. Gamma likewise
+sets its own list, including `photo-frames.css`, `image-forward.css`, `timeline.css`,
+`gamma.css`, and `gamma-layout.css`. Keep variant-specific rules in the corresponding
+stylesheet; later loaded rules can layer over earlier common rules. The data blocks and local
+assets are built statically; there is no external API at runtime.
 
 ## Export the flyer
 

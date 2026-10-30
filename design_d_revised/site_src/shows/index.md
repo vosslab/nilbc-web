@@ -29,14 +29,12 @@ shows:
 
 # Upcoming shows
 
-Come see the layouts in person. Our shows are hosted by public libraries and partner venues
-around the Chicago suburbs. Members bring trains, cities, and other builds to share.
-
-Each host venue sets its own hours, parking, and policies, so check the venue's website
-before you travel.
-
 /// shows
 ///
+
+Come see the layouts in person. Shows are hosted by public libraries and partner venues
+around the Chicago suburbs. Each host venue sets its own hours, parking, and policies, so
+check its website before you travel.
 
 /// callout | Planning a visit?
 

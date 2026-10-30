@@ -63,13 +63,18 @@ or complete palette. Choose accessible color combinations for actual interface e
 
 ## Discord show photographs
 
-The D revisions use 45 owner-requested Archive Shows selections across seven library shows.
-All 72 contact sheets were reviewed; 37 photographs extend the previous eight selections.
-Preserved originals
-and hashes are in `ARTIFACTS/discord_archive_shows/provenance.json`; optimized local WebP copies
-are in the shared revised photo directory. See [DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) for
-complete-copy counts, the durable full archive path, source IDs, selection criteria, and rights
-limitations. The full archive and contact sheets are not deployed or added to Git.
+The current refinement checkpoint has 73 distinct manifest photos: 52 Archive Shows selections
+across seven dated shows and 21 pre-existing site photographs. The 17 train records include two
+new Arlington exhibit images; the Purple Rain railcar leads the curated homepage photo sequence.
+These counts describe the current review checkpoint, not final acceptance or deployment. Earlier
+45-photo totals are historical snapshots. Consult `design_d_revised/data/photos.yml` and
+[refinement_curation.md](active_plans/reports/refinement_curation.md) for current selection
+details.
+Preserved originals and hashes are in `ARTIFACTS/discord_archive_shows/provenance.json`;
+optimized local WebP copies are in the shared revised photo directory. See
+[DISCORD_ARCHIVE.md](DISCORD_ARCHIVE.md) for the archive evidence, source IDs, selection
+criteria, and rights limitations. The full archive and contact sheets are not deployed or
+added to Git.
 
 ## Sources and credits
 

@@ -34,30 +34,10 @@ The club also introduced a new identity: a round logo, a banner, and a mascot,
 While the change rolls out, you will still see the NILTC name on our email address and
 social media.
 
-## Our story so far
+## Our history
 
-/// steps | timeline
-
-1. **2001: Started**
-   The club began in late summer 2001.
-2. **2002: First show**
-   Five members built a 17 by 22 foot display for the NMRA High Wheeler show at Harper
-   College in Palatine. Later that year the club was invited to the Train Collectors
-   Association national show in St. Charles.
-3. **2003: Biggest crowd**
-   A 30 by 30 foot display at the Illinois Railway Museum in Union drew about 48,000 guests
-   over the event.
-4. **to 2022: A holiday tradition**
-   A Christmas train show at Cantigny Park in Wheaton ran for twenty annual shows. In 2011
-   it drew more than 10,800 visitors.
-5. **Today: On the road**
-   Around nine shows a year at public libraries, gardens, Brickworld Chicago each June, and
-   Nebraska Brick Days.
-
-///
-
-/// photos | cantigny_group_2016 layout_2009 brick_days_2026
-///
+The club began in 2001. Read the [club timeline](timeline.md) for selected moments and
+the sources behind them.
 
 ## Who we are
 

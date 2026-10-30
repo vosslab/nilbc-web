@@ -59,7 +59,13 @@ nav:
       - Visiting a show: shows/visiting.md
       - Show photo gallery: shows/gallery.md
       - Show logbook: shows/logbook.md
-  - Worlds we build: creations/index.md
+  - Worlds we build:
+      - creations/index.md
+      - Trains: creations/trains.md
+      - Cities and landmarks: creations/cities.md
+      - Screen and story: creations/screen.md
+      - Castles: creations/castles.md
+      - Creatures and characters: creations/creatures.md
   - Join:
       - join/index.md
       - Build standards: join/standards.md
@@ -67,6 +73,7 @@ nav:
       - about/index.md
       - Meet Matchstick: about/matchstick.md
       - Credits and sources: about/credits.md
+      - Our story: about/timeline.md
 
 # `/// name` blocks for Markdown pages: layout blocks and data-filled blocks (docs/USAGE.md)
 hooks:
@@ -80,12 +87,16 @@ extra_css:
   - stylesheets/gallery.css
   - stylesheets/home.css
   - stylesheets/pages.css
+  - stylesheets/timeline.css
+  - stylesheets/image-forward.css
+  - stylesheets/alpha-layout.css
 
 extra_javascript:
   - javascripts/worlds.js
 
 extra:
   generator: false
+  revision: alpha
   social:
     - icon: fontawesome/brands/facebook
       link: https://facebook.com/NILTC

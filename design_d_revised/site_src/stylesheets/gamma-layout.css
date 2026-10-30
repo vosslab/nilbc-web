@@ -1,0 +1,153 @@
+/* Page compositions: exhibition poster, contact sheets, departure board, field manual. */
+.nb-atlas[data-page="index.md"] .nb-home-stage { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: 0 2rem; margin: 0 0 2rem; }
+.md-typeset .nb-atlas .nb-home-stage .nb-hero { grid-column: 1; grid-row: 1; display: flex; flex-direction: column; padding: 0; margin: 0; min-width: 0; background: transparent; }
+.nb-atlas .nb-hero__inner { display: block; }
+.nb-atlas .nb-hero__eyebrow { font: .65rem/1.4 ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
+.md-typeset .nb-atlas .nb-hero__title { font-size: clamp(3.3rem,6.7vw,6.7rem); margin: .6rem 0 1rem; font-weight: 1000; line-height: .92; letter-spacing: -.075em; }
+.nb-atlas .nb-hero__title em { display: block; font-style: normal; color: var(--gamma-black); background: var(--gamma-orange); width: fit-content; padding: .07em .12em .12em; rotate: -3deg; margin-top: .12em; }
+.md-typeset .nb-atlas .nb-hero__lede { font-size: .95rem; line-height: 1.55; margin-block: 1.2rem; max-width: 42ch; }
+.nb-atlas .nb-hero__actions { display: flex; gap: .6rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.nb-atlas .nb-hero__art { display: flex; align-items: center; gap: .8rem; margin-top: 1rem; max-width: none; }
+.md-typeset .nb-atlas .nb-hero__matchstick { width: 5rem; height: 5rem; object-fit: contain; margin: 0; }
+.md-typeset .nb-atlas .nb-hero__meet { color: var(--nb-link); font-size: .7rem; padding: 0; text-align: start; }
+.nb-atlas .nb-home-stage .nb-ticket { margin-top: auto; }
+.nb-atlas .nb-home-photos { grid-column: 2; grid-row: 1; min-width: 0; padding: 0; border-inline-start: 1px solid var(--nb-ink); padding-inline-start: 1.5rem; }
+.nb-atlas .nb-home-photos > h2 { margin: 0 0 .7rem; font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+.nb-atlas .nb-home-photos .nb-mosaic { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .6rem; }
+.nb-atlas .nb-home-photos .nb-photo:first-child { grid-column: 1/-1; }
+.md-typeset .nb-atlas .nb-home-photos .nb-photo:first-child .nb-photo__link { aspect-ratio: 4/3; }
+.md-typeset .nb-atlas .nb-home-photos .nb-photo figcaption { font-size: .65rem; padding-block: .4rem; }
+.nb-atlas .nb-home-photos > p { margin: .8rem 0; font-size: .75rem; }
+.nb-atlas .nb-home-stage > .nb-ticket-row { grid-column: 1/-1; margin: 1.5rem 0 0; }
+.nb-atlas .nb-home-stage > .nb-section-kicker { margin: 2.5rem 0 .5rem; }
+.nb-atlas .nb-home-stage > :is(h2,p,.nb-worlds,.nb-section-kicker) { grid-column: 1/-1; }
+.nb-atlas .nb-home-stage > h2 { margin: 0; font-size: clamp(2.2rem,4.8vw,4.6rem); }
+.nb-atlas .nb-home-stage > p { margin: .7rem 0 1.5rem; }
+.nb-atlas .nb-worlds { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); grid-auto-flow: row; gap: 1rem; margin: 0; padding: 0; counter-reset: world; }
+.nb-atlas .nb-world-card { position: relative; grid-column: span 2; display: grid; grid-template-columns: minmax(0,1fr); min-width: 0; padding: 0 0 1rem; border-bottom: 1px solid var(--nb-ink); counter-increment: world; }
+.nb-atlas .nb-world-card:nth-child(-n+2) { grid-column: span 3; }
+.nb-atlas .nb-world-card::before { content: '0' counter(world); font: 900 1.1rem/1 var(--nb-font-body); padding: .45rem .6rem; position: absolute; z-index: 1; top: .6rem; left: .6rem; background: var(--gamma-yellow); color: var(--gamma-black); }
+.nb-atlas .nb-world-card__stage { display: block; height: clamp(8rem,15vw,14rem); margin: 0 0 .7rem; overflow: hidden; background: var(--gamma-black); }
+.nb-atlas .nb-world-card:nth-child(-n+2) .nb-world-card__stage { height: clamp(10rem,20vw,19rem); }
+.nb-atlas .nb-world-card__stage img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--photo-focus, 50% 50%); }
+.nb-atlas .nb-world-card h3 { font-size: 1.3rem; margin: .15rem 0 .4rem; }
+.nb-atlas .nb-world-card h3 a { color: var(--nb-ink); text-decoration: none; }
+.nb-atlas .nb-world-card h3 a:not(.headerlink)::after { content: ''; position: absolute; inset: 0; }
+.nb-atlas .nb-world-card h3 .headerlink { display: none; }
+.nb-atlas .nb-world-card:focus-within { outline: 3px solid var(--nb-focus); outline-offset: 4px; }
+.nb-atlas .nb-world-card:hover h3 a { text-decoration: underline; }
+.nb-atlas .nb-world-card p { margin: 0; max-width: 50ch; font-size: .78rem; }
+.nb-atlas[data-page="index.md"] ol.nb-steps { grid-template-columns: repeat(3,minmax(0,1fr)); margin-block: 1.5rem; }
+.md-typeset .nb-atlas[data-page="index.md"] .nb-steps > li { padding: 5rem 1rem .5rem 0; }
+/* World index becomes a sequence of oversized signposts, rather than repeated cards. */
+.nb-atlas[data-page="creations/index.md"] { counter-reset: exhibit; }
+.nb-atlas[data-page="creations/index.md"] .nb-world { position: relative; margin: 3rem 0; border-top: 2px solid var(--nb-ink); padding: 1rem 0 0 5rem; counter-increment: exhibit; }
+.nb-atlas[data-page="creations/index.md"] .nb-world::before { content: '0' counter(exhibit); position: absolute; left: 0; top: 1rem; color: var(--nb-ink-soft); font: 1000 3.5rem/.9 var(--nb-font-body); letter-spacing: -.08em; }
+.nb-atlas[data-page="creations/index.md"] .nb-world > h2 { margin: 0 0 .7rem; font-size: clamp(2rem,4.4vw,4rem); }
+.nb-atlas[data-page="creations/index.md"] .nb-world > p { max-width: 60ch; }
+.nb-atlas[data-page="creations/index.md"] .nb-world > p:has(a[href$=".md"]), .nb-atlas[data-page="creations/index.md"] .nb-world > p:has(a[href$="/trains/"]) { font-weight: 1000; }
+/* Dense, full-frame contact sheets with conspicuous show transitions. */
+.md-typeset .nb-atlas .nb-collection > .nb-collection__divider a { color: #e2f28d; }
+.nb-atlas .nb-collection-count { display: inline-block; margin: .3rem 0 1rem; padding: .4rem .8rem; background: var(--gamma-yellow); color: var(--gamma-black); font: 900 .8rem/1.3 ui-monospace, monospace; rotate: -2deg; }
+.md-typeset .nb-atlas .nb-gallery.nb-collection { grid-template-columns: repeat(4,minmax(0,1fr)); gap: .8rem; padding: 1rem; background: var(--gamma-black); }
+.md-typeset .nb-atlas .nb-collection > .nb-collection__divider { margin: 1.4rem 0 .1rem; padding: .7rem 0 .5rem; border: 0; border-top: 1px solid #81907d; color: #f4f2e8; font: 1000 1.15rem/1.3 var(--nb-font-body); letter-spacing: -.025em; }
+.md-typeset .nb-atlas .nb-collection .nb-photo figcaption { color: #f4f2e8; font-size: .65rem; }
+.md-typeset .nb-atlas .nb-collection .nb-photo figcaption :is(a,.nb-photo__world) { color: #e2f28d; }
+.md-typeset .nb-atlas .nb-collection .nb-photo__capture-date { color: #c3cebd; }
+.md-typeset .nb-atlas .nb-collection .nb-photo__link { background: #252e27; }
+/* A departures board: the date is a rail, venue information a broad readable field. */
+.nb-atlas .nb-shows { gap: 0; border-top: 2px solid var(--nb-ink); }
+.nb-atlas .nb-show { border: 0; border-bottom: 2px solid var(--nb-ink); padding: 1.4rem 0; border-radius: 0; box-shadow: none; background: transparent; grid-template-columns: 7rem minmax(0,1fr); gap: 1.5rem; }
+.nb-atlas .nb-show__date { margin: 0; padding: 1.2rem .5rem; border-radius: 0; box-shadow: none; background: var(--gamma-orange); color: var(--gamma-black); }
+.nb-atlas .nb-show__date::before { display: none; }
+.nb-atlas .nb-show__days { font-size: 2.3rem; letter-spacing: -.06em; font-weight: 1000; }
+.nb-atlas .nb-show__month { font: .75rem/1.3 ui-monospace,monospace; }
+.nb-atlas .nb-show--next .nb-show__date { background: var(--gamma-yellow); }
+.nb-atlas .nb-show h3 { font-size: clamp(1.3rem,2.7vw,2.2rem); }
+.nb-atlas[data-page="shows/visiting.md"] > h2 { max-width: 20ch; padding-block: .5rem; border-block-start: 5px solid var(--gamma-orange); }
+.nb-atlas[data-page="shows/logbook.md"] table { min-width: min(100%,35rem); }
+.nb-atlas[data-page="shows/logbook.md"] > h2 { margin-top: 2rem; font: 1000 4rem/1 var(--nb-font-body); letter-spacing: -.06em; }
+/* Album navigation becomes a wall of landscape strips, with image and label side by side. */
+.nb-atlas .nb-album-nav { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; counter-reset: album; }
+.md-typeset .nb-atlas .nb-album-nav > a { position: relative; display: grid; grid-template-columns: 1.3fr 1fr; grid-template-rows: auto auto; align-items: center; border: 0; border-block: 1px solid var(--nb-ink); border-radius: 0; background: transparent; padding: 0; text-decoration: none; counter-increment: album; }
+.nb-atlas .nb-album-nav img { grid-row: 1/3; height: 8rem; object-fit: contain; background: var(--gamma-black); }
+.nb-atlas .nb-album-nav strong { padding: .7rem .7rem .2rem; font-size: .9rem; line-height: 1.15; }
+.nb-atlas .nb-album-nav a > span { align-self: start; padding: .2rem .7rem .7rem; }
+.md-typeset .nb-atlas .nb-show-album { border: 0; border-top: 2px solid var(--nb-ink); margin: 2rem 0; background: transparent; overflow: visible; }
+.md-typeset .nb-atlas .nb-show-album > summary { font: 1000 clamp(1.2rem,2.6vw,2.2rem)/1.2 var(--nb-font-body); letter-spacing: -.04em; background: transparent; padding-block: 1rem; }
+.nb-atlas .nb-show-gallery { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; padding: .5rem 0 1rem; }
+.nb-atlas .nb-show-gallery .nb-photo:nth-child(5n+1) { grid-column: span 2; }
+/* Joining reads like an open invitation; its essential facts stay in the source flow. */
+.nb-atlas[data-page="join/index.md"] > h1 { max-width: 10ch; }
+.nb-atlas .nb-join-cta { margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--nb-ink); border-left: .7rem solid var(--gamma-orange); background: var(--nb-paper-raised); }
+.nb-atlas[data-page="join/index.md"] > h2 { border-block-start: 1px solid var(--nb-ink); padding-top: .8rem; max-width: 24ch; }
+/* Standards are a field manual: one specification per ruled row. */
+.nb-atlas[data-page="join/standards.md"] .nb-cards { display: block; }
+.md-typeset .nb-atlas[data-page="join/standards.md"] .nb-brick { display: grid; grid-template-columns: 3rem minmax(0,.8fr) minmax(0,1.2fr); gap: .3rem 1rem; margin: 0; padding: 1.3rem 0; border-top: 1px solid var(--nb-ink); background: transparent; }
+.nb-atlas[data-page="join/standards.md"] .nb-brick > .nb-brick__icon { grid-column: 1; grid-row: 1/3; margin: 0; color: var(--nb-ink); }
+.nb-atlas[data-page="join/standards.md"] .nb-brick > h3 { grid-column: 2; grid-row: 1/3; font-size: 1.5rem; }
+.nb-atlas[data-page="join/standards.md"] .nb-brick > p:not(.nb-brick__icon) { grid-column: 3; margin: 0; }
+.nb-atlas[data-page="join/standards.md"] > h2 { padding: 1rem; border-inline-start: .65rem solid var(--gamma-orange); background: var(--nb-paper-sunk); }
+.nb-atlas[data-page="join/standards.md"] > h3 { padding-block: .6rem; border-top: 1px solid var(--nb-rule); }
+/* Club story: a year rail with broad illustrated chapters. */
+.nb-atlas[data-page="about/index.md"] > h2 { border-top: 2px solid var(--nb-ink); padding-top: 1rem; }
+.md-typeset .nb-atlas .nb-steps--timeline > li { padding-left: 6rem; }
+.md-typeset .nb-atlas .nb-steps--timeline > li::before { width: 5rem; height: 3rem; }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline { border: 0; margin-top: 2rem; padding: 0; }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline-entry { display: grid; grid-template-columns: minmax(10rem,.8fr) minmax(0,1.6fr); gap: .5rem 2rem; padding: 1.5rem 0 2.5rem; border: 0; border-top: 2px solid var(--nb-ink); }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline-entry::before { display: none; }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline-entry > h2 { grid-row: 1; grid-column: 1; align-self: start; font-size: clamp(1.6rem,2.4vw,2.2rem); }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline-entry > :not(h2) { grid-column: 2; min-width: 0; }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline-entry:nth-child(even) { padding-inline-start: 2rem; border-inline-start: .5rem solid var(--gamma-orange); }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline-photo { max-width: none; margin: .7rem 0; }
+.nb-atlas[data-page="about/timeline.md"] .nb-timeline-photo img { border-radius: 0; }
+.nb-atlas[data-page="about/matchstick.md"] .nb-split--parts { border: 1px solid var(--nb-ink); padding: 1.2rem; background: var(--nb-paper-raised); }
+.nb-atlas[data-page="about/matchstick.md"] .nb-cards { margin-block: 2rem; }
+.nb-atlas[data-page="about/credits.md"] > h2 { font: 900 .8rem/1.3 ui-monospace,monospace; text-transform: uppercase; letter-spacing: .04em; border-bottom: 1px solid var(--nb-ink); padding-block: .6rem; }
+.nb-atlas[data-page="404"] > h1 { padding: 1rem; background: var(--gamma-orange); color: var(--gamma-black); }
+@media(min-width:76.25em) {
+  .md-sidebar--primary { border-inline-end: 1px solid var(--nb-rule); margin-right: 1rem; }
+  .md-sidebar--primary .md-sidebar__scrollwrap { margin-inline: .5rem; }
+}
+@media(max-width:60em) {
+  .nb-atlas[data-page="index.md"] .nb-home-stage { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 0 1rem; }
+  .md-typeset .nb-atlas .nb-hero__title { font-size: clamp(2.4rem,5.7vw,4rem); }
+  .nb-atlas .nb-home-photos { padding-inline-start: 1rem; }
+  .md-typeset .nb-atlas .nb-gallery.nb-collection { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media(max-width:44em) {
+  .nb-atlas[data-page="index.md"] .nb-home-stage { grid-template-columns: minmax(0,1fr); gap: 1.5rem; }
+  .md-typeset .nb-atlas .nb-home-stage .nb-hero { grid-column: 1; grid-row: auto; }
+  .md-typeset .nb-atlas .nb-hero__title { font-size: clamp(2.4rem,11vw,3.5rem); max-width: none; }
+  .nb-atlas .nb-hero__art { margin-block: 0; }
+  .md-typeset .nb-atlas .nb-hero__matchstick { width: 3rem; height: 3rem; }
+  .md-typeset .nb-atlas .nb-hero__lede { margin-block: .8rem; font-size: .85rem; }
+  .nb-atlas .nb-home-stage .nb-ticket { margin-bottom: 0; }
+  .nb-atlas .nb-home-photos { grid-column: 1; grid-row: auto; border: 0; padding: 0; }
+  .nb-atlas .nb-home-photos .nb-mosaic { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .nb-atlas .nb-worlds { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+  .nb-atlas .nb-world-card, .nb-atlas .nb-world-card:nth-child(-n+2) { grid-column: auto; }
+  .nb-atlas .nb-world-card:first-child { grid-column: 1/-1; }
+  .nb-atlas .nb-world-card__stage, .nb-atlas .nb-world-card:nth-child(-n+2) .nb-world-card__stage { height: 8rem; }
+  .nb-atlas .nb-world-card:first-child .nb-world-card__stage { height: 12rem; }
+  .nb-atlas .nb-world-card h3 { font-size: 1.05rem; }
+  .nb-atlas .nb-world-card p { font-size: .72rem; }
+  .nb-atlas[data-page="index.md"] ol.nb-steps { grid-template-columns: 1fr; }
+  .md-typeset .nb-atlas[data-page="index.md"] .nb-steps > li { padding: .7rem 0 .7rem 4.5rem; }
+  .nb-atlas[data-page="creations/index.md"] .nb-world { padding-left: 0; padding-top: 4rem; }
+  .nb-atlas[data-page="creations/index.md"] .nb-world::before { font-size: 2.5rem; }
+  .md-typeset .nb-atlas .nb-gallery.nb-collection { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .6rem; padding: .6rem; }
+  .nb-atlas .nb-show { grid-template-columns: 1fr; gap: 1rem; }
+  .nb-atlas .nb-show__date { display: flex; justify-content: start; gap: .5rem; padding: .6rem 1rem; }
+  .nb-atlas .nb-show-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .nb-atlas .nb-show-gallery .nb-photo:nth-child(5n+1) { grid-column: 1/-1; }
+  .nb-atlas .nb-album-nav { grid-template-columns: 1fr; }
+  .nb-atlas .nb-album-nav img { height: 7rem; }
+  .nb-atlas[data-page="about/timeline.md"] .nb-timeline-entry { display: block; }
+  .nb-atlas[data-page="about/timeline.md"] .nb-timeline-entry:nth-child(even) { padding-inline-start: 1rem; }
+  .nb-atlas[data-page="about/matchstick.md"] .nb-split--parts { padding: .7rem; }
+  .md-typeset .nb-atlas[data-page="join/standards.md"] .nb-brick { grid-template-columns: 2.5rem minmax(0,1fr); }
+  .nb-atlas[data-page="join/standards.md"] .nb-brick > .nb-brick__icon { grid-row: 1; }
+  .nb-atlas[data-page="join/standards.md"] .nb-brick > h3 { grid-column: 2; grid-row: 1; margin: 0 0 .5rem; }
+  .nb-atlas[data-page="join/standards.md"] .nb-brick > p:not(.nb-brick__icon) { grid-column: 1/-1; }
+}

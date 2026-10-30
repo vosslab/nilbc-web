@@ -9,6 +9,24 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 [PROPAGATED HEADER - ENTRIES BELOW ARE YOURS]
 <!-- VENDORED HEADER: END -->
 
+- 2026-10-30: Alpha should be conservative, beta middle-road, and gamma wild CSS ideas;
+  they currently look too similar and gamma remains too conservative. Plan stronger
+  differentiation and a more image-forward presentation.
+- 2026-10-30: Date photographs using EXIF or corroborating evidence. The guitar photo is
+  probably early 2010s, not "recent," and the frog is old. Prioritize newer show content.
+- 2026-10-30: Continue the manager's image sorting and expand it. Prefer thumbnail-first
+  browsing; clicking Trains should reveal a substantial collection, perhaps 100 thumbnails.
+- 2026-10-30: Keep alpha a familiar, restrained catalog with faint studs; make beta a
+  contemporary magazine with larger photographs and solid backgrounds. Gamma may reinterpret
+  the whole site beyond lettering or collage; leave room for the subagent's stronger ideas.
+- 2026-10-30: Aim for approximately 100 train MOC photographs where the evidence supports them,
+  without padding. Focus on MOCs rather than people; incidental people are not a privacy exclusion.
+- 2026-10-30: Build the timeline from the club's public web presence and existing Discord evidence.
+- 2026-10-30: Use the Luna6 subagents manager workflow.
+- 2026-10-30: Review metadata for every local archive image, then assess image category, crop,
+  and placement. Keep alpha restrained, beta editorial, and gamma distinct across the site.
+  The gamma manager chooses the exploration concept and process; coverage examples are suggestions.
+
 - 2026-10-29: Make the D revision show galleries editorial: photographic venue/date/count
   covers, a compact gallery heading, strong lead/detail sequences, and short captions with
   full credits accessible. Alpha is a catalog, beta a photo essay, gamma a readable scrapbook.

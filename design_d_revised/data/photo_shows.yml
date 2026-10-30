@@ -1,36 +1,94 @@
-# Album order is newest first. Counts are calculated from photos.yml.
 2026-10-17-northbrook:
   title: Northbrook Public Library
   date: October 2026
   description: City corners, rolling stock, and small scenes beside the tracks.
-  sequence: [northbrook_street_2026, northbrook_coffee_2026, northbrook_boating_2026, northbrook_cottage_2026, northbrook_depot_2026, northbrook_crane_2026, northbrook_freight_2026, northbrook_tower_2026, northbrook_party_2026]
+  sequence:
+  - northbrook_street_2026
+  - northbrook_coffee_2026
+  - northbrook_boating_2026
+  - northbrook_cottage_2026
+  - northbrook_depot_2026
+  - northbrook_crane_2026
+  - northbrook_freight_2026
+  - northbrook_tower_2026
+  - northbrook_party_2026
+  - northbrook_purple_train_2026
+  - northbrook_1999_railcar_2026
+  event_date: 2026-10
 2026-09-12-ela-area:
   title: Ela Area Public Library
   date: September 2026
   description: Castle courtyards, Chicago architecture, spacecraft, and larger-than-life characters.
-  sequence: [ela_castle_2026, ela_market_2026, ela_facade_2026, ela_interior_2026, ela_aquarium_2026, ela_spider_riders_2026, ela_characters_2026, ela_dog_2026, ela_locomotive_2026, ela_spacecraft_2026]
+  sequence:
+  - ela_castle_2026
+  - ela_market_2026
+  - ela_facade_2026
+  - ela_interior_2026
+  - ela_aquarium_2026
+  - ela_spider_riders_2026
+  - ela_characters_2026
+  - ela_dog_2026
+  - ela_locomotive_2026
+  - ela_spacecraft_2026
+  event_date: 2026-09
 2026-05-02-algonquin:
   title: Algonquin Area Public Library
   date: May 2026
   description: A colorful line-up of animals, aircraft, cars, and woodland details.
-  sequence: [algonquin_classic_space_2026, algonquin_jet_2026, algonquin_cars_2026, algonquin_cyclist_2026, algonquin_animals_2026, algonquin_food_stall_2026]
+  sequence:
+  - algonquin_classic_space_2026
+  - algonquin_jet_2026
+  - algonquin_cars_2026
+  - algonquin_cyclist_2026
+  - algonquin_animals_2026
+  - algonquin_food_stall_2026
+  - algonquin_steam_locomotive_2026
+  - algonquin_character_trains_2026
+  - algonquin_industrial_freight_2026
+  event_date: 2026-05
 2026-04-11-wheaton:
   title: Wheaton Public Library
   date: April 2026
   description: A riverbank, a sailboat, a barn-raising scene, and a very small market.
-  sequence: [wheaton_eloise_2026, wheaton_horses_2026, wheaton_barn_2026, wheaton_carrots_2026]
+  sequence:
+  - wheaton_eloise_2026
+  - wheaton_horses_2026
+  - wheaton_barn_2026
+  - wheaton_carrots_2026
+  event_date: 2026-04
 2025-12-13-arlington-heights:
   title: Arlington Heights Memorial Library
   date: December 2025
-  description: Winter festivities, garden paths, castle walls, and a dinosaur grocery run.
-  sequence: [arlington_winter_market_2025, arlington_tudor_2025, arlington_garden_2025, arlington_castle_guard_2025, arlington_dinosaurs_2025, arlington_sailboat_2025, arlington_santa_2025]
+  description: Winter festivities, castle gardens, dinosaurs, and a multitrack rail display.
+  sequence:
+  - arlington_winter_market_2025
+  - arlington_tudor_2025
+  - arlington_garden_2025
+  - arlington_castle_guard_2025
+  - arlington_dinosaurs_2025
+  - arlington_sailboat_2025
+  - arlington_multitrack_2025
+  - arlington_cnrail_8744_2025
+  - arlington_santa_2025
+  event_date: 2025-12
 2025-10-25-oswego:
   title: Oswego Public Library
   date: October 2025
   description: Woodland creatures, tall castles, and an unusual helicopter delivery.
-  sequence: [oswego_fortress_2025, oswego_purple_castle_2025, oswego_hippogriff_2025, oswego_spider_2025, oswego_helicopter_2025]
+  sequence:
+  - oswego_fortress_2025
+  - oswego_purple_castle_2025
+  - oswego_hippogriff_2025
+  - oswego_spider_2025
+  - oswego_helicopter_2025
+  event_date: 2025-10
 2025-09-06-barrington:
   title: Barrington Area Library
   date: September 2025
   description: A broad freight yard, an aircraft apron, and a harbor full of life.
-  sequence: [barrington_landscape_2025, barrington_harbor_2025, barrington_yard_2025, barrington_aircraft_2025]
+  sequence:
+  - barrington_landscape_2025
+  - barrington_harbor_2025
+  - barrington_yard_2025
+  - barrington_aircraft_2025
+  event_date: 2025-09

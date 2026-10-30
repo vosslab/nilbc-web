@@ -1,3 +1,62 @@
+## 2026-10-30
+
+### Planning
+
+- Recorded the owner's correction on variant differentiation, photograph dating, recent-show
+  priority, and deeper thumbnail-first collections. Added the proposed
+  [IMAGE_FORWARD_D_REVISIONS.md](active_plans/IMAGE_FORWARD_D_REVISIONS.md) plan after reviewing
+  prior plans, reports, source structure, and published photo metadata.
+- Confirmed ten train-tagged photographs in the current shared manifest and empty EXIF in
+  the deployed guitar and frog WebP files. Upload directories do not establish capture dates.
+  No website implementation, commit, or deployment in this planning pass.
+- During implementation, recorded the clarified alpha/beta/gamma direction, evidence-based
+  train-photo target, incidental-people boundary, public-web/Discord timeline sources, and
+  Luna6 manager workflow. Settled date precision/order and curated homepage validation rules;
+  assigned implementation remains in progress and acceptance is pending.
+- Approved the page-refinement and archive-metadata plan. Metadata review covers all 1,336
+  local archive files, with visual review of candidate categories, crops, and placements.
+  Gamma's concept and exploration process were selected by its manager; scoped specifications
+  are accepted, while gamma quality/integration and whole-repository verification remain open.
+- Indexed all 1,336 preserved archive records with dimensions, image metadata, upload timestamps,
+  explicit unknown capture/event dates, warnings, and four exact duplicate groups. Added crop and
+  placement guidance for image-forward candidates across five themes. This metadata pass changed
+  no images or manifests. See [refinement_metadata.md](active_plans/reports/refinement_metadata.md).
+- Alpha and beta now carry distinct whole-site treatments: a restrained catalog and a photo-led
+  editorial experience. Shared page copy and club facts remain common to all three D revisions.
+- Replaced gamma's earlier atlas experiment with the exhibition-floor direction: numbered visual
+  routes, bold wayfinding, and role-specific whole-site layouts. The manager chose the exploration
+  process; no illustrative coverage matrix or proposal count was required.
+- Curated two additional Arlington train photographs after matching completed exhibit views to
+  corroborated show batches. The manifest now has 73 distinct photos (52 archive, 21 existing);
+  its 17 train records include both additions. Purple Rain leads the curated homepage photo list.
+  Uploader credit does not establish photographer, builder, ownership, or redistribution rights.
+- Fixed malformed IPTC length handling and added six parser tests. Reindexing retained all 1,336
+  records and four exact duplicate groups; malformed IPTC is reported per image.
+- Gamma's final browser probe covered 18 routes at five widths (90 checks), five interaction
+  journeys, and recorded no browser errors or local HTTP failures. This scoped result does not
+  replace the pending whole-repository integration review.
+  - Full pytest initially reported 1,664 passes and three failures. Two scoped issues were fixed
+  and 12 targeted checks passed. An intermediate full run reported 1,667 passed. The latest
+  complete run reported 1,671 passed and one sandbox Podman failure in 7.38 seconds; the isolated
+  read-only check outside the sandbox confirmed 35.72 GB against the 20 GB limit. A fresh
+  independent review passed the mobile drawer fix for Enter, Space, pointer activation, and
+  desktop focusability; Escape was checked with the drawer already closed. The final whole-site
+  browser run passed 172 desktop/mobile page checks and 25 journeys across seven designs, with
+  no browser errors or failures. Final integration review found no remaining defects. No commit
+  or deployment occurred. See
+  [refinement_test_reconcile.md](active_plans/reports/refinement_test_reconcile.md) and the
+  [verification status](active_plans/reports/refinement_verification.md).
+
+### Content refinements
+
+- Paired the homepage welcome with its curated show photos, linked representative photos for
+  all five creation themes, and placed the shared membership email action after the intro.
+- Put upcoming show cards first, made each collection's show/date heading link to its album,
+  and kept subject captions concise. Replaced duplicate about-page history details with the
+  sourced timeline link; removed historical homepage stats for a shorter first visit.
+- Recorded scope and build evidence in
+  [refinement_content.md](active_plans/reports/refinement_content.md).
+
 ## 2026-10-29
 
 ### Behavior or Interface Changes

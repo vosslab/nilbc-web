@@ -18,45 +18,51 @@ layouts, but members build whatever they love, as long as it is family friendly.
 
 /// world
 
-## Rail yards
+## Trains and rail yards { #trains }
 
 Running layouts are where the club began. Members build locomotives and rolling stock to
 shared [train standards](../join/standards.md) so everything runs on one layout.
 
-/// gallery | trains
-///
+[![Canadian Pacific 7309 locomotive at Ela Area.](../assets/photos/ela_locomotive_2026_thumb.webp)](trains.md)
+
+[Browse all trains photographs](trains.md)
 
 ///
 
 /// world
 
-## Cities and landmarks
+## Cities and landmarks { #cities }
 
 Skyscrapers built to shared city-block standards, prairie-style houses, local landmarks,
 and small scenes worth bending down for.
 
-/// gallery | city
-///
+[![Japanese streetscape with a bookshop and flower displays.](../assets/photos/northbrook_street_2026_thumb.webp)](cities.md)
+
+[Browse all cities and landmarks photographs](cities.md)
 
 ///
 
 /// world
 
-## Screen and story
+## Screen and story { #screen }
 
 Imagined worlds, favorite stories, starships, and aircraft.
 
-/// gallery | screen
-///
+[![White-and-blue spacecraft on display stands.](../assets/photos/ela_spacecraft_2026_thumb.webp)](screen.md)
+
+[Browse all screen and story photographs](screen.md)
 
 ///
 
 /// world
 
-## Castles
+## Castles { #castles }
 
-/// gallery | castle
-///
+The castle display joins members' modules into one kingdom.
+
+[![Castle walls, a blue-roofed hall, and a livestock yard.](../assets/photos/ela_castle_2026_thumb.webp)](castles.md)
+
+[Browse all castles photographs](castles.md)
 
 /// split | module
 
@@ -78,12 +84,13 @@ Want to add a tower? Read the [castle standards](../join/standards.md#castle), t
 
 /// world
 
-## Creatures and characters
+## Creatures and characters { #creatures }
 
 Not everything on the table runs on rails.
 
-/// gallery | creatures
-///
+[![A white dog with a red superhero emblem.](../assets/photos/ela_dog_2026_thumb.webp)](creatures.md)
+
+[Browse all creatures and characters photographs](creatures.md)
 
 ///
 

@@ -173,7 +173,44 @@ function nbSetupTrain() {
 	observer.observe(train.parentElement);
 }
 
+function nbSetupMobileDrawer() {
+	const toggle = document.querySelector('.md-header__button[for="__drawer"]');
+	const drawer = document.getElementById("__drawer");
+	if (!toggle || !drawer || toggle.dataset.nbKeyboardReady === "true") return;
+
+	// Keep Material's native label/checkbox interaction; enhance it for keyboard users.
+	toggle.dataset.nbKeyboardReady = "true";
+	toggle.setAttribute("role", "button");
+	toggle.setAttribute("tabindex", "0");
+	toggle.setAttribute("aria-label", "Toggle navigation");
+	toggle.setAttribute("aria-controls", "__drawer");
+	const sync = () => {
+		toggle.setAttribute("aria-expanded", String(drawer.checked));
+		toggle.setAttribute("tabindex", window.matchMedia("(max-width: 76.1875em)").matches ? "0" : "-1");
+	};
+	const onViewportChange = () => sync();
+	if (window.matchMedia) {
+		const mobile = window.matchMedia("(max-width: 76.1875em)");
+		if (mobile.addEventListener) mobile.addEventListener("change", onViewportChange);
+		else if (mobile.addListener) mobile.addListener(onViewportChange);
+		window.addEventListener("resize", onViewportChange);
+	}
+	drawer.addEventListener("change", sync);
+	sync();
+	toggle.addEventListener("keydown", (event) => {
+		if (event.key !== " ") return;
+		event.preventDefault();
+		drawer.checked = !drawer.checked;
+		drawer.dispatchEvent(new Event("change", { bubbles: true }));
+	});
+	toggle.addEventListener("click", (event) => {
+		// The label's native pointer activation toggles the checkbox; only sync state here.
+		queueMicrotask(sync);
+	});
+}
+
 function nbInit() {
+	nbSetupMobileDrawer();
 	nbSetupWorldFilter();
 	nbSetupLightbox();
 	nbSetupAlbums();

@@ -1,7 +1,7 @@
 ---
 title: Show photo gallery
 
-description: Explore completed club exhibits at seven northern Illinois library shows, from tiny details to shared railway layouts.
+description: Browse photographs of completed club exhibits, from close-up creations to shared layouts.
 hide:
   - navigation
   - toc
@@ -12,8 +12,9 @@ hide:
 The trains are only the beginning. Explore the buildings, creatures, spacecraft, and
 small stories our members bring to public displays.
 
-Seven shows, 45 photographs. Choose a cover or open an album below. Select any photo
-for the full frame and upload credit; use Previous, Next, or the arrow keys to explore.
+Browse the displays one show at a time. Choose an album cover for more views, or select
+any photo to see it full-frame with its upload credit. Use Previous, Next, or the arrow keys
+to explore.
 [Photo credits and sources](../about/credits.md).
 
 /// show-gallery

@@ -13,6 +13,11 @@ description: How to become a member of the Northern Illinois Brick Club, who can
 We welcome adult builders with all kinds of interests. Tell us what you like to build
 and what you would like to do with the club.
 
+<p class="nb-join-cta">
+<a class="md-button md-button--primary" href="mailto:niltc.contact@gmail.com?subject=Membership">
+Email the club to get started</a>
+</p>
+
 /// split
 
 ## What members do

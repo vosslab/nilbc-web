@@ -1,20 +1,14 @@
 {% extends "base.html" %}
 
-{#- Layout only: page banners, peeking Matchstick, announcement bar, head tags.
-    Page text comes from the Markdown pages in site_src/ and their front matter; the only
-    words here are the peeking Matchstick's alt text and tooltip. -#}
-
+{# Layout only: page banners, peeking Matchstick, announcement bar, head tags. #}
 {% block extrahead %}
 	<link rel="apple-touch-icon" href="{{ 'assets/mascot/apple_touch_icon.png' | url }}">
-	<meta name="theme-color" content="#2768A5">
+	<meta name="theme-color" content="{{ '#151715' if config.extra.revision == 'gamma' else '#2768A5' }}">
 {% endblock %}
 
-{#- Inner pages get a full-width banner from their front matter: the `band` color, the
-    `kicker` line, the page title, and the `art` club photo mounted like a set-box picture
-    (`art: matchstick` shows the mascot render standing on a plate instead). -#}
 {% block tabs %}
 	{{ super() }}
-	{% if page.meta and page.meta.art %}
+	{% if config.extra.revision != "gamma" and page.meta and page.meta.art %}
 		{% set is_mascot = page.meta.art == "matchstick" %}
 		<section class="nb-page-hero {{ 'nb-page-hero--matchstick' if is_mascot else 'nb-page-hero--photo' }} nb-band--{{ page.meta.band or 'blue' }}">
 			<div class="md-grid nb-page-hero__inner">
@@ -35,15 +29,33 @@
 {% endblock %}
 
 {% block content %}
-	{{ super() }}
-	{#- "Find Matchstick": he peeks over the bottom edge of the content (`peek: false` opts out) -#}
-	{% if not (page.meta and page.meta.peek == false) %}
+	{% if config.extra.revision == "gamma" %}
+        {% set source = page.file.src_path if page and page.file else '404' %}
+        {% set area = source.split('/')[0] %}
+        {% set stations = [('index.html', '00', 'Home', 'home'), ('creations/', '01', 'Worlds', 'creations'), ('shows/', '02', 'Shows', 'shows'), ('join/', '03', 'Join', 'join'), ('about/', '04', 'Club', 'about')] %}
+        <div class="nb-atlas" data-page="{{ source | e }}" data-area="{{ area | e }}">
+            {% include "gamma_wayfinder.html" %}
+            <div class="gamma-marker" aria-hidden="true">
+                <span>NILBC / {{ '00' if source == 'index.md' else '01' if area == 'creations' else '02' if area == 'shows' else '03' if area == 'join' else '04' if area == 'about' else '404' }}</span>
+                <span>{{ page.meta.kicker if page and page.meta and page.meta.kicker else 'Many interests. One club.' }}</span>
+                <span>Keep exploring &#8595;</span>
+            </div>
+            {{ super() }}
+            <nav class="gamma-exits" aria-label="Keep exploring">
+                <a href="{{ 'creations/' | url }}"><small>01 / The work</small><strong>Find your world &#8599;</strong></a>
+                <a href="{{ 'shows/' | url }}"><small>02 / In person</small><strong>Come see us &#8599;</strong></a>
+                <a href="{{ 'join/' | url }}"><small>03 / Your turn</small><strong>Bring your builds &#8599;</strong></a>
+            </nav>
+        </div>
+	{% else %}
+		{{ super() }}
+	{% endif %}
+	{% if config.extra.revision != "gamma" and not (page.meta and page.meta.peek == false) %}
 		<img class="nb-peek" src="{{ 'assets/mascot/matchstick_render_320.webp' | url }}"
 			alt="Matchstick peeking in. You found him!" title="You found Matchstick!" loading="lazy">
 	{% endif %}
 {% endblock %}
 
-{#- the announcement text lives in the home page front matter (`announcement:`) -#}
 {% block announce %}
 	{% set note = config.extra.announcement %}
 	<p class="nb-announce">
