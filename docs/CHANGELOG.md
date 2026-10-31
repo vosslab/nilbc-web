@@ -1,3 +1,10 @@
+## 2026-10-31
+
+### Fixes
+
+- Fixed Design C's raw HTML links to published routes after the GitHub Pages smoke check
+  found a 404. Updated the deployment workflow to Node 26 LTS.
+
 ## 2026-10-30
 
 ### Behavior or Interface Changes

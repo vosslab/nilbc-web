@@ -56,7 +56,7 @@ the original competition entries in `OTHER_REPOS/` remain untouched.
 
 ## Verify the integration
 
-Node 22.12 or newer is needed only for browser verification:
+Node 22.12 or newer is needed only for browser verification. GitHub Actions uses Node 26 LTS:
 
 ```bash
 npm ci

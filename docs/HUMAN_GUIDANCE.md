@@ -111,3 +111,5 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 
 - Keep photo captions short; omit obvious visual details. Name Prince directly in the
   Purple Rain railcar caption rather than calling him a musician figure.
+
+- 2026-10-31: Use latest versions; Node 22 is fairly old.
