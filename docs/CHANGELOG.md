@@ -1,5 +1,15 @@
 ## 2026-10-30
 
+### Behavior or Interface Changes
+
+- Tightened original and revised D photo captions to short subjects, names, and locations,
+  including Prince's Purple Rain railcar. Preserved descriptive image alternatives and
+  regenerated the repository photo catalog.
+
+- Removed public club photo source credits and source lists across the designs, retaining
+  descriptive captions and locations. Replaced former-site navigation with local destinations;
+  shared-module builders are directed to contact the club for full specifications.
+
 ### Planning
 
 - Recorded the owner's correction on variant differentiation, photograph dating, recent-show
@@ -259,3 +269,37 @@
 - Added website guidance to the agent entry point and project context to the README.
 - Made the Bash startup file optional so a new Mac can use the starter without a personal bashrc.
 - Documented human guidance and replaceable starter decisions; ignored local environment caches.
+
+### Club presentation polish
+
+- Balanced Beta's introduction and next-show information above a three-photo spread;
+  changed its site-wide heading font to Nunito and repaired the secondary button color.
+- Tightened Alpha's desktop next-show placement and mobile photo list. Gamma now opens
+  with a full-width poster headline and a separate staggered photograph strip.
+- Removed repeated venue/date text from featured subject captions; linked show context,
+  full-image access, credits, and source data remain available.
+- Added a generated repository photo catalog with theme previews, ordered show albums,
+  and measured file metadata for all 73 selections. The catalog links existing assets,
+  including preserved originals, and is not deployed as club-facing content.
+- Verification: strict combined build, 172 browser page checks, 25 journeys, and 54 focused
+  responsive/theme checks passed. Broad Python checks retain four failures in unchanged
+  archive utility/test files; see [presentation_polish.md](active_plans/reports/presentation_polish.md).
+
+### Train previews and show invitations
+
+- Corrected original D's Rail yards card to open a dedicated page. Its 23 previews reuse
+  the current shared selection without duplicating source assets.
+- Added six inspected Barrington and Wheaton train/rail-yard views with original hashes,
+  source-batch evidence, captions, and small WebP previews. The manifest now has 79 photos,
+  including 58 archive selections and 23 train photographs.
+- Replaced the revised sites' gallery lightbox with static thumbnails. Collection pages
+  encourage in-person visits; show albums keep native expandable browsing and source credits.
+- Updated browser journeys to verify dedicated routes, thumbnail sources, absence of an
+  image viewer, and keyboard navigation to upcoming shows.
+- Fixed original D's overlapping heading permalink, which intercepted clicks on its world
+  cards. Rail yards now follows the visible card destination reliably.
+- Reduced all 23 train thumbnails to at most 480 pixels: 805,046 bytes in total, versus
+  1,298,168 before resizing. Revised collections use continuous preview grids with show
+  context in captions, avoiding empty rows between small date groups.
+- Final verification passed 174 browser page checks, 23 journeys, 16 JavaScript-on/off train
+  preview checks, and 147 scoped Python checks. See [train_teasers.md](active_plans/reports/train_teasers.md).

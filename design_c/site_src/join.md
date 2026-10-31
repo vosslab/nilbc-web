@@ -7,9 +7,9 @@ description: How an adult builder asks to join, including published dues and the
 
 # Ask to join
 
-NILBC is an adult club. The [membership page](https://niltc.org/membership) on niltc.org, last modified 4 January 2026, says you need to be 18 or older. It also says the club is not just a train club, and that anyone who creates with bricks is welcome. Trains are still part of the shows.
+NILBC is an adult club. Members must be 18 or older. Anyone who creates with bricks is welcome. Trains are still part of the shows.
 
-The [FAQ](https://niltc.org/faqs) adds two practical expectations: reliable transportation, and a way to pay for an expensive hobby. Those lines are older than the dues note below. The FAQ was last modified 20 February 2023.
+The [FAQ](join.md) adds two practical expectations: reliable transportation, and a way to pay for an expensive hobby. Those lines are older than the dues note below. The FAQ was last modified 20 February 2023.
 
 ## Dues on record
 
@@ -33,7 +33,7 @@ Email [niltc.contact@gmail.com](mailto:niltc.contact@gmail.com) and include:
 - Links to pictures or video of your builds
 - Projects you are working on
 
-The membership page says the club will invite you to a meeting, look at a build or two, and go from there. Meetings are described in the FAQ as about once a quarter at members' homes. There is no public meeting calendar on niltc.org as of 19 October 2026.
+The membership page says the club will invite you to a meeting, look at a build or two, and go from there. Meetings are described in the FAQ as about once a quarter at members' homes. Contact the club for meeting arrangements.
 
 ## What joining means
 

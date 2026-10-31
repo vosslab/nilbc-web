@@ -81,16 +81,16 @@
       {
         "path": "design_d_revised/site_src/assets/photos/ela_locomotive_2026_thumb.webp",
         "dimensions": [
-          720,
-          540
+          480,
+          360
         ],
-        "bytes": 74158,
-        "sha256": "6413d7a13e3dd61d558414d4482d4cef2c9571916d2b7a71b9c5bb5a76c7cb30"
+        "bytes": 30742,
+        "sha256": "b4d7c284e68a483be5eaa56bd67ca4209b9f50e11acd20f8d126e2a66d4a2149"
       }
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82 method 6, longest edge 1600/720; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82 method 6, longest edge 1600/720; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-09-12-ela-area",
     "context_message_ids": [
       "1549081127401029796",
@@ -678,16 +678,16 @@
       {
         "path": "design_d_revised/site_src/assets/photos/northbrook_freight_2026_thumb.webp",
         "dimensions": [
-          640,
-          480
+          480,
+          360
         ],
-        "bytes": 48868,
-        "sha256": "7d00105c40f4e73752a2ad91df40bbab2cea0e98a36733f49317a5d9ce044ef5"
+        "bytes": 28486,
+        "sha256": "f6bd8685234dc5121526a296a47a771c0a94dab289f325d983c08aaed86bcb9d"
       }
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-10-17-northbrook",
     "context_message_ids": [
       "1562117379033665597",
@@ -825,16 +825,16 @@
       {
         "path": "design_d_revised/site_src/assets/photos/northbrook_depot_2026_thumb.webp",
         "dimensions": [
-          640,
-          480
+          480,
+          360
         ],
-        "bytes": 86372,
-        "sha256": "df0eeeb949dc2533ee25d2ded4d195c393e57b319d0949a99d3e91389dc47618"
+        "bytes": 49848,
+        "sha256": "5365fd2e6b3253202f6213d56e8586094c9fdb3115de23d9706fe2e48f4660ea"
       }
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-10-17-northbrook",
     "context_message_ids": [
       "1562117379033665597",
@@ -874,16 +874,16 @@
       {
         "path": "design_d_revised/site_src/assets/photos/northbrook_crane_2026_thumb.webp",
         "dimensions": [
-          640,
-          503
+          480,
+          377
         ],
-        "bytes": 72702,
-        "sha256": "1522cf50942f66b6a266b03982a7b5fb592e84aff5ab2e60883fda8f01c75ab4"
+        "bytes": 43428,
+        "sha256": "6a6fb9bb8f647e6399241a4351f391c68af6267278f9842d1e6f62d2a2438317"
       }
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-10-17-northbrook",
     "context_message_ids": [
       "1562117379033665597",
@@ -1660,16 +1660,16 @@
       {
         "path": "design_d_revised/site_src/assets/photos/barrington_yard_2025_thumb.webp",
         "dimensions": [
-          640,
-          480
+          480,
+          360
         ],
-        "bytes": 99140,
-        "sha256": "fd15055088135267604d440d8f577388fbc283fac446a87224da23bd68fc1134"
+        "bytes": 52042,
+        "sha256": "743d141eb177c22e0759598829ff05a0b38034d618b114163d4c7c3b660f4d25"
       }
     ],
     "credit": "NILTC archive; uploaded by Jason C",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2025-09-06-barrington",
     "context_message_ids": [
       "1415680558633189388",
@@ -2237,11 +2237,11 @@
       {
         "path": "design_d_revised/site_src/assets/photos/northbrook_purple_train_2026_thumb.webp",
         "dimensions": [
-          640,
-          469
+          480,
+          352
         ],
-        "bytes": 26170,
-        "sha256": "5eb6d64eb39ecccd9761ea92850f8b7d3dccc947c1fec6619d2fff422e5ec558"
+        "bytes": 15066,
+        "sha256": "04d1fc5faf27a632a5a5666e74ad3381f2844cb3ab0feaa23fc498356bd96922"
       },
       {
         "path": "design_d_revised/site_src/assets/photos/northbrook_purple_train_2026.webp",
@@ -2255,7 +2255,7 @@
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-10-17-northbrook",
     "context_message_ids": [
       "1561552905247654002",
@@ -2286,11 +2286,11 @@
       {
         "path": "design_d_revised/site_src/assets/photos/northbrook_1999_railcar_2026_thumb.webp",
         "dimensions": [
-          640,
-          476
+          480,
+          357
         ],
-        "bytes": 43996,
-        "sha256": "1b678a643914d28a0f76cca44451df1e1005a3b0d91bcfed4c35e0a3ee52ef3f"
+        "bytes": 25768,
+        "sha256": "6aab3423a375d26ebbdabd0ceab70a78213e72de9b2a389a1243cf34b760d788"
       },
       {
         "path": "design_d_revised/site_src/assets/photos/northbrook_1999_railcar_2026.webp",
@@ -2304,7 +2304,7 @@
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-10-17-northbrook",
     "context_message_ids": [
       "1561552905247654002",
@@ -2335,11 +2335,11 @@
       {
         "path": "design_d_revised/site_src/assets/photos/algonquin_steam_locomotive_2026_thumb.webp",
         "dimensions": [
-          640,
-          474
+          480,
+          356
         ],
-        "bytes": 61194,
-        "sha256": "abb63eed2535c2872cfb910c67e8256547839ffeb9258afc70aa4621947f24be"
+        "bytes": 35716,
+        "sha256": "a4bde245ee919dde56832462e14133d0b465a108cf6776f32f3ab7ba2190dcd8"
       },
       {
         "path": "design_d_revised/site_src/assets/photos/algonquin_steam_locomotive_2026.webp",
@@ -2353,7 +2353,7 @@
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-05-02-algonquin",
     "context_message_ids": [
       "1500668583490097203",
@@ -2384,11 +2384,11 @@
       {
         "path": "design_d_revised/site_src/assets/photos/algonquin_character_trains_2026_thumb.webp",
         "dimensions": [
-          592,
-          640
+          444,
+          480
         ],
-        "bytes": 69272,
-        "sha256": "6a70b02e46f8d4e5d5822679367538af9347a49eed131803f0a7d050969725b1"
+        "bytes": 40388,
+        "sha256": "385385cddbdcfa1e5774c2308b61bedcc9a30b01b650b87faa84fce61c9e16a9"
       },
       {
         "path": "design_d_revised/site_src/assets/photos/algonquin_character_trains_2026.webp",
@@ -2402,7 +2402,7 @@
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-05-02-algonquin",
     "context_message_ids": [
       "1500668583490097203",
@@ -2433,11 +2433,11 @@
       {
         "path": "design_d_revised/site_src/assets/photos/algonquin_industrial_freight_2026_thumb.webp",
         "dimensions": [
-          640,
-          480
+          480,
+          360
         ],
-        "bytes": 52812,
-        "sha256": "3fe65c0281ee9d981d182f855fa36028d84fdad8b3f9a5090f422e171b77f59c"
+        "bytes": 29724,
+        "sha256": "21a2293c895c53777a356855606ef3d497a601e5b1b1bf2e0f402bae8de75797"
       },
       {
         "path": "design_d_revised/site_src/assets/photos/algonquin_industrial_freight_2026.webp",
@@ -2451,7 +2451,7 @@
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2026-05-02-algonquin",
     "context_message_ids": [
       "1500668583490097203",
@@ -2482,11 +2482,11 @@
       {
         "path": "design_d_revised/site_src/assets/photos/arlington_multitrack_2025_thumb.webp",
         "dimensions": [
-          640,
-          480
+          480,
+          360
         ],
-        "bytes": 90294,
-        "sha256": "c27b133bc875631d90f5ff722822048a564e196a206734de6e93fdbb93fb8843"
+        "bytes": 52872,
+        "sha256": "18dfb6c398d064f76bd13838caa6c34b3bf11add56e2dc38b3c7043d4dc69dc3"
       },
       {
         "path": "design_d_revised/site_src/assets/photos/arlington_multitrack_2025.webp",
@@ -2500,7 +2500,7 @@
     ],
     "credit": "NILTC archive; uploaded by Kerbear",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2025-12-13-arlington-heights",
     "context_message_ids": [
       "1450178535808434372",
@@ -2531,11 +2531,11 @@
       {
         "path": "design_d_revised/site_src/assets/photos/arlington_cnrail_8744_2025_thumb.webp",
         "dimensions": [
-          640,
-          480
+          480,
+          360
         ],
-        "bytes": 57934,
-        "sha256": "67cb6103aebb3adb2ce5f565dc8cc878e5803e64259ca159539d782ec29d17c6"
+        "bytes": 35896,
+        "sha256": "0f3636eb1ae0edbcedf9fda217fac15cf011aef214c47261fa8361e953a70ee2"
       },
       {
         "path": "design_d_revised/site_src/assets/photos/arlington_cnrail_8744_2025.webp",
@@ -2549,7 +2549,7 @@
     ],
     "credit": "NILTC archive; uploaded by Andertoons",
     "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
-    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed.",
+    "processing": "EXIF orientation applied; RGB WebP quality 82/78 method 6, longest edge 1600/640, no upscaling; no crop or generated content; derivative metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
     "show": "2025-12-13-arlington-heights",
     "context_message_ids": [
       "1450178535808434372",
@@ -2560,5 +2560,298 @@
     "message_url": "https://discord.com/channels/1014224389300043888/1350204460584144958/1449994471168020511",
     "status": "downloaded",
     "decode": "verified"
+  },
+  {
+    "channel": "2025-09-06-barrington",
+    "channel_id": "1337105126984515626",
+    "message_id": "1415723346053693612",
+    "timestamp": "2025-09-11T15:39:08.567000+00:00",
+    "uploader": "Jason C",
+    "attachment_id": "1415723342102528000",
+    "filename": "IMG_2190.jpg",
+    "size": 1273626,
+    "content_type": "image/jpeg",
+    "message_url": "https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612",
+    "local_path": "2025-09-06-barrington/1415723342102528000_IMG_2190.jpg",
+    "sha256": "c524838969bb49cf7ea0713d61561084e2d236bffc32086407dac9f79a411422",
+    "status": "downloaded",
+    "received_bytes": 1273626,
+    "size_matches_metadata": true,
+    "decode": "verified",
+    "id": "barrington_gantry_2025",
+    "original": "ARTIFACTS/discord_archive_shows/barrington_gantry_2025.jpg",
+    "derivatives": [
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_gantry_2025.webp",
+        "dimensions": [
+          720,
+          540
+        ],
+        "bytes": 92806,
+        "sha256": "288de37de75505fbe062d4fda27f7b11041cd9cf2d6eae5e0a4b13af88acdf64"
+      },
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_gantry_2025_thumb.webp",
+        "dimensions": [
+          480,
+          360
+        ],
+        "bytes": 42732,
+        "sha256": "8682d9104c70b24f5c442b72049ada27a6db8c189370d567c3c0861699252149"
+      }
+    ],
+    "credit": "NILTC archive; uploaded by Jason C",
+    "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
+    "processing": "EXIF orientation applied; RGB WebP quality 76, longest edge 720/480; no crop or generated content; metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
+    "show": "2025-09-06-barrington",
+    "context_message_ids": [
+      "1415680558633189388",
+      "1415853034742878311",
+      "1426302698655059978"
+    ]
+  },
+  {
+    "channel": "2025-09-06-barrington",
+    "channel_id": "1337105126984515626",
+    "message_id": "1415723346053693612",
+    "timestamp": "2025-09-11T15:39:08.567000+00:00",
+    "uploader": "Jason C",
+    "attachment_id": "1415723342643855541",
+    "filename": "IMG_2191.jpg",
+    "size": 1496351,
+    "content_type": "image/jpeg",
+    "message_url": "https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612",
+    "local_path": "2025-09-06-barrington/1415723342643855541_IMG_2191.jpg",
+    "sha256": "577ee1b9a8526ecb7a1ca92854beaa67776f21b49921044ea56fdd8091603b2a",
+    "status": "downloaded",
+    "received_bytes": 1496351,
+    "size_matches_metadata": true,
+    "decode": "verified",
+    "id": "barrington_metra_2025",
+    "original": "ARTIFACTS/discord_archive_shows/barrington_metra_2025.jpg",
+    "derivatives": [
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_metra_2025.webp",
+        "dimensions": [
+          720,
+          540
+        ],
+        "bytes": 109344,
+        "sha256": "b5cb699bcbb68439450e4cfe970bf98c387b31d02e0890fe6e1d2924c4f76f72"
+      },
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_metra_2025_thumb.webp",
+        "dimensions": [
+          480,
+          360
+        ],
+        "bytes": 48870,
+        "sha256": "c7ec40b054d7bd5bb58fd69bfe1e0ed67f6ef143af4be0c674cab8f6b8f072ea"
+      }
+    ],
+    "credit": "NILTC archive; uploaded by Jason C",
+    "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
+    "processing": "EXIF orientation applied; RGB WebP quality 76, longest edge 720/480; no crop or generated content; metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
+    "show": "2025-09-06-barrington",
+    "context_message_ids": [
+      "1415680558633189388",
+      "1415853034742878311",
+      "1426302698655059978"
+    ]
+  },
+  {
+    "channel": "2025-09-06-barrington",
+    "channel_id": "1337105126984515626",
+    "message_id": "1415723420158791712",
+    "timestamp": "2025-09-11T15:39:26.235000+00:00",
+    "uploader": "Jason C",
+    "attachment_id": "1415723416706748566",
+    "filename": "IMG_2178.jpg",
+    "size": 1534711,
+    "content_type": "image/jpeg",
+    "message_url": "https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712",
+    "local_path": "2025-09-06-barrington/1415723416706748566_IMG_2178.jpg",
+    "sha256": "d6f16c3cb48473dea1cd861958f57e0f654d71b9a61cd32c39ce1ce416562b23",
+    "status": "downloaded",
+    "received_bytes": 1534711,
+    "size_matches_metadata": true,
+    "decode": "verified",
+    "id": "barrington_city_rail_2025",
+    "original": "ARTIFACTS/discord_archive_shows/barrington_city_rail_2025.jpg",
+    "derivatives": [
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_city_rail_2025.webp",
+        "dimensions": [
+          720,
+          540
+        ],
+        "bytes": 107168,
+        "sha256": "aac6b44543040cb47188fcf574d3c0d80391e685b60f33d9a23a180837c0a863"
+      },
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_city_rail_2025_thumb.webp",
+        "dimensions": [
+          480,
+          360
+        ],
+        "bytes": 48756,
+        "sha256": "239d951b9b42fcb38ccd171ac7acc47dc760bfffefddb9e45c6c4c335ece8e8b"
+      }
+    ],
+    "credit": "NILTC archive; uploaded by Jason C",
+    "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
+    "processing": "EXIF orientation applied; RGB WebP quality 76, longest edge 720/480; no crop or generated content; metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
+    "show": "2025-09-06-barrington",
+    "context_message_ids": [
+      "1415680558633189388",
+      "1415853034742878311",
+      "1426302698655059978"
+    ]
+  },
+  {
+    "channel": "2025-09-06-barrington",
+    "channel_id": "1337105126984515626",
+    "message_id": "1415723346053693612",
+    "timestamp": "2025-09-11T15:39:08.567000+00:00",
+    "uploader": "Jason C",
+    "attachment_id": "1415723344543879248",
+    "filename": "IMG_2189.jpg",
+    "size": 1335852,
+    "content_type": "image/jpeg",
+    "message_url": "https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612",
+    "local_path": "2025-09-06-barrington/1415723344543879248_IMG_2189.jpg",
+    "sha256": "b555addae20679e441f127a6d2222b30db38362c73470e2ce929572ca0c75e1a",
+    "status": "downloaded",
+    "received_bytes": 1335852,
+    "size_matches_metadata": true,
+    "decode": "verified",
+    "id": "barrington_containers_2025",
+    "original": "ARTIFACTS/discord_archive_shows/barrington_containers_2025.jpg",
+    "derivatives": [
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_containers_2025.webp",
+        "dimensions": [
+          720,
+          540
+        ],
+        "bytes": 101498,
+        "sha256": "8b297d403ecc54431ade9c17720bbff2124c7f47542327c3c3533b838cbefa52"
+      },
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_containers_2025_thumb.webp",
+        "dimensions": [
+          480,
+          360
+        ],
+        "bytes": 46332,
+        "sha256": "7eb7d4a8ef177381aeffb2ae84c1cac1156e894970847ee93a965cec2146b26e"
+      }
+    ],
+    "credit": "NILTC archive; uploaded by Jason C",
+    "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
+    "processing": "EXIF orientation applied; RGB WebP quality 76, longest edge 720/480; no crop or generated content; metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
+    "show": "2025-09-06-barrington",
+    "context_message_ids": [
+      "1415680558633189388",
+      "1415853034742878311",
+      "1426302698655059978"
+    ]
+  },
+  {
+    "channel": "2025-09-06-barrington",
+    "channel_id": "1337105126984515626",
+    "message_id": "1415723346053693612",
+    "timestamp": "2025-09-11T15:39:08.567000+00:00",
+    "uploader": "Jason C",
+    "attachment_id": "1415723341561466880",
+    "filename": "IMG_2192.jpg",
+    "size": 1271590,
+    "content_type": "image/jpeg",
+    "message_url": "https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612",
+    "local_path": "2025-09-06-barrington/1415723341561466880_IMG_2192.jpg",
+    "sha256": "fb2ea6745a816ce19227a7b0d10dfd0e3ea6245c80790921f06a0539eea83dda",
+    "status": "downloaded",
+    "received_bytes": 1271590,
+    "size_matches_metadata": true,
+    "decode": "verified",
+    "id": "barrington_rail_depot_2025",
+    "original": "ARTIFACTS/discord_archive_shows/barrington_rail_depot_2025.jpg",
+    "derivatives": [
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_rail_depot_2025.webp",
+        "dimensions": [
+          720,
+          540
+        ],
+        "bytes": 85120,
+        "sha256": "c41318ffdbbb263eaa64ebe77c5f755b8906cbcf1a2946df082eecc1ece48cda"
+      },
+      {
+        "path": "design_d_revised/site_src/assets/photos/barrington_rail_depot_2025_thumb.webp",
+        "dimensions": [
+          480,
+          360
+        ],
+        "bytes": 40250,
+        "sha256": "962db298812390e4716c9cdb134a70dbfddd3160f7570d157fdd7daf2f020643"
+      }
+    ],
+    "credit": "NILTC archive; uploaded by Jason C",
+    "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
+    "processing": "EXIF orientation applied; RGB WebP quality 76, longest edge 720/480; no crop or generated content; metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
+    "show": "2025-09-06-barrington",
+    "context_message_ids": [
+      "1415680558633189388",
+      "1415853034742878311",
+      "1426302698655059978"
+    ]
+  },
+  {
+    "channel": "2026-04-11-wheaton",
+    "channel_id": "1336379818643689562",
+    "message_id": "1493344213822345276",
+    "timestamp": "2026-04-13T20:16:45.569000+00:00",
+    "uploader": "Andertoons",
+    "attachment_id": "1493344213549711483",
+    "filename": "IMG_3845.jpg",
+    "size": 200078,
+    "content_type": "image/jpeg",
+    "message_url": "https://discord.com/channels/1014224389300043888/1336379818643689562/1493344213822345276",
+    "local_path": "2026-04-11-wheaton/1493344213549711483_IMG_3845.jpg",
+    "sha256": "fc5b8778739041d0c053880b14ab3dd0c3adbb4aa4aa701a33934b48da0d31ca",
+    "status": "downloaded",
+    "received_bytes": 200078,
+    "size_matches_metadata": true,
+    "decode": "verified",
+    "id": "wheaton_blue_engine_2026",
+    "original": "ARTIFACTS/discord_archive_shows/wheaton_blue_engine_2026.jpg",
+    "derivatives": [
+      {
+        "path": "design_d_revised/site_src/assets/photos/wheaton_blue_engine_2026.webp",
+        "dimensions": [
+          540,
+          720
+        ],
+        "bytes": 39386,
+        "sha256": "1424a5728434b09f677fda0286b37d2b3ded3aceae075d054cf845a25ede3c94"
+      },
+      {
+        "path": "design_d_revised/site_src/assets/photos/wheaton_blue_engine_2026_thumb.webp",
+        "dimensions": [
+          360,
+          480
+        ],
+        "bytes": 23028,
+        "sha256": "147be924b81c44dc265017638143761946436d108358231125e472d2e3e7ce59"
+      }
+    ],
+    "credit": "NILTC archive; uploaded by Andertoons",
+    "rights": "Owner-requested website demo use; uploader is not a verified photographer or builder. No external reuse license established.",
+    "processing": "EXIF orientation applied; RGB WebP quality 76, longest edge 720/480; no crop or generated content; metadata removed. Teaser thumbnail refreshed from the oriented derivative at max 480 pixels, WebP quality 76, metadata removed.",
+    "show": "2026-04-11-wheaton",
+    "context_message_ids": [
+      "1493190208202608640",
+      "1492101408537837689"
+    ]
   }
 ]

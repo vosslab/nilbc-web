@@ -112,7 +112,7 @@
 	color: var(--nb-ink);
 	text-decoration: none;
 }
-.md-typeset .nb-card-link h3 a::after {
+.md-typeset .nb-card-link h3 a:not(.headerlink)::after {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -602,3 +602,6 @@
 .nb-credit-list__meta {
 	color: var(--nb-ink-soft);
 }
+
+/* Heading permalinks must not cover the card destination. */
+.md-typeset .nb-card-link h3 .headerlink { display: none; }

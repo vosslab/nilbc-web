@@ -9,7 +9,7 @@ Next public exhibition
 
 1050 Curtiss Street, Downers Grove, IL 60515
 
-[Check the club's latest listing](https://niltc.org/){ .club-button }
+[Ask about the next show](mailto:niltc.contact@gmail.com){ .club-button }
 
 Dates, times, and address checked against the club homepage on **October 19, 2026**.
 Schedules can change. Confirm the listing before travelling.

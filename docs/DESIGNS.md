@@ -98,3 +98,10 @@ resolve to the revised content, independently of original D.
 The homepage uses B's preferred slogan, A's guitar feature (with D's existing photograph),
 and C's explicit membership checklist on the joining page. The
 [wording review](active_plans/reports/D_REVISIONS_WORDING.md) records the prose changes.
+
+## Train teaser correction
+
+Original D's Rail yards card now opens its own `creations/trains/` page, using the shared
+curated train selection at build time. Its train thumbnails are supplied by
+[train_teasers.py](../design_d/site_hooks/train_teasers.py); other original-D content remains
+independent. This deliberate correction replaces the old anchored section destination.

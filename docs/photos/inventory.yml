@@ -1,0 +1,2076 @@
+- id: ela_castle_2026
+  theme: castle
+  show: 2026-09-12-ela-area
+  caption: Castle courtyard at Ela Area, September 2026.
+  alt: A blue-roofed timbered hall beside gray castle battlements, with a horse cart,
+    townspeople, and cattle in a fenced yard.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 50% 35%
+  homepage: true
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_castle_2026.webp
+    width: 1193
+    height: 1600
+    bytes: 181430
+    sha256: af442915e45c8236a9ff7a15fbcec6ceb91062341ddb886656da84cda1c14347
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_castle_2026_thumb.webp
+    width: 537
+    height: 720
+    bytes: 74734
+    sha256: 7b213d22c498a7d86fcda898cc79c3552f2839795eb81452f6ab7e7dfe54c326
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_castle_2026.jpg
+    width: 1574
+    height: 2111
+    bytes: 452650
+    sha256: 898e4ea8e74e62f5ec2a943f584a062e9b124b4582c0cb1795c45177fca8b20f
+- id: ela_locomotive_2026
+  theme: trains
+  show: 2026-09-12-ela-area
+  caption: Canadian Pacific 7309 at Ela Area, September 2026.
+  alt: A red brick-built Canadian Pacific diesel locomotive numbered 7309, with gray
+    handrails and a black underframe, on display track.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_locomotive_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 228510
+    sha256: c1dd4c726c78907118e1884079e1fc58bd5de95ccbc70aa30c4ce2e49c9139b4
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_locomotive_2026_thumb.webp
+    width: 480
+    height: 360
+    bytes: 30742
+    sha256: b4d7c284e68a483be5eaa56bd67ca4209b9f50e11acd20f8d126e2a66d4a2149
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_locomotive_2026.jpg
+    width: 4032
+    height: 3024
+    bytes: 1316311
+    sha256: 152370ccd39b3a29b27eaa8330f0ab9004f9eca8fc50ffd4792baec0b2504459
+- id: northbrook_street_2026
+  theme: city
+  show: 2026-10-17-northbrook
+  caption: Japanese bookshop at Northbrook, October 2026.
+  alt: A dark red brick-built Japanese bookshop beside a white shop, with flower stands,
+    minifigures, and a white car beneath elevated track.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 50% 52%
+  homepage: true
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_street_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 251602
+    sha256: bd603b036867dc78860bc6505b658f340b906d036f1c0f627b6c429ac89dc138
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_street_2026_thumb.webp
+    width: 720
+    height: 540
+    bytes: 85980
+    sha256: 336fc75d1d748f21737553687990d724d636cc1bb74c3aaf677cc187fe8bbc7d
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_street_2026.jpg
+    width: 4032
+    height: 3024
+    bytes: 1379045
+    sha256: 0562028e645f28b16ceacd76d7f0f3bfff38995e40334aee9fc4ec751b6d44d2
+- id: ela_spacecraft_2026
+  theme: screen
+  show: 2026-09-12-ela-area
+  caption: Space fleet at Ela Area, September 2026.
+  alt: A white brick-built spacecraft with a transparent blue cockpit, with black-and-green
+    and red spacecraft behind it.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 50% 75%
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_spacecraft_2026.webp
+    width: 1200
+    height: 1600
+    bytes: 180176
+    sha256: 0fece94c37897fcca0872c7c6d07e9d06f9df07b518783965808826f4b2db915
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_spacecraft_2026_thumb.webp
+    width: 540
+    height: 720
+    bytes: 70390
+    sha256: db90c9dd674a56a8aef786f4274d15fd8f56687954408fab7c1a68de9c4849a0
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_spacecraft_2026.jpg
+    width: 3024
+    height: 4032
+    bytes: 1092309
+    sha256: f068fa801a2f74993b9dd9c26b601aab9d7a79454bc2dff1be4af4419ae45cba
+- id: ela_dog_2026
+  theme: creatures
+  show: 2026-09-12-ela-area
+  caption: Superhero dog at Ela Area, September 2026.
+  alt: A white brick-built dog with upright ears, a black nose, a raised tail, and
+    a red chest emblem.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 50% 45%
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_dog_2026.webp
+    width: 1529
+    height: 1600
+    bytes: 62124
+    sha256: bc047444a947cbbe1b148f81847767a94536d99f9e19fbe120ee0d827ba7a593
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_dog_2026_thumb.webp
+    width: 688
+    height: 720
+    bytes: 25028
+    sha256: cb7211ebd330d0322cfdae808540c34cf33ad9347d7680731b4d07cd67cefa91
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_dog_2026.jpg
+    width: 2686
+    height: 2811
+    bytes: 364225
+    sha256: 2d9d4282d4b554df3d0517d1fde99aea71d58ee51474af94f29a32cc0b657937
+- id: ela_characters_2026
+  theme: creatures
+  show: 2026-09-12-ela-area
+  caption: Space explorers at Ela Area, September 2026.
+  alt: Two brick-built characters with oversized round eyes and snouts, wearing blue-and-white
+    and yellow space suits.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 55% 35%
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_characters_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 92370
+    sha256: 4bd6cca0c3a43b480e98887d8e08c8e4c8f49f245a998a0bae1c2d6821f4d733
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_characters_2026_thumb.webp
+    width: 720
+    height: 540
+    bytes: 38918
+    sha256: 24abf88edc7662555d7c98dcff06b8e70d31ecad76a77303a6c33adc3a7db627
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_characters_2026.jpg
+    width: 3625
+    height: 2719
+    bytes: 632087
+    sha256: 7eeb184e5f1d05964a3d7abf9754f41628cd8ff28eaea6cf041a929da8694e99
+- id: ela_market_2026
+  theme: castle
+  show: 2026-09-12-ela-area
+  caption: Market stall at Ela Area, September 2026.
+  alt: Minifigures hold green vegetables beside a market cart beneath a dark-red-and-cream
+    striped canopy; a white chicken stands nearby.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 50% 65%
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_market_2026.webp
+    width: 1487
+    height: 1600
+    bytes: 160736
+    sha256: 9c49be2e81c1be7acc7d3bced919f072f6119932672d960733950f669a642858
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_market_2026_thumb.webp
+    width: 669
+    height: 720
+    bytes: 63720
+    sha256: 5308452b1811554b43bca0c4519d4152e0deba78bf9282dba5efebd8cfd2b5e8
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_market_2026.jpg
+    width: 3831
+    height: 4121
+    bytes: 1168005
+    sha256: 698e601eaa92e5dff85bfe60f4f7a1fb3fadb6534279406467d49a647321ff07
+- id: northbrook_boating_2026
+  theme: city
+  show: 2026-10-17-northbrook
+  caption: Boating party at Northbrook, October 2026.
+  alt: Hat-wearing minifigures with brown paddles gather beside a white doorway and
+    a tan boat on green brick terrain.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 50% 60%
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_boating_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 181010
+    sha256: 2b4a282f290a0a93e85275b109314b96b034acce556f2252148eeb48ae28e14d
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_boating_2026_thumb.webp
+    width: 720
+    height: 540
+    bytes: 67778
+    sha256: 0597d000bfc0a81c9523f06bf1e99c30cb93ccbeedbe4f165d8121e3d5d88b93
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_boating_2026.jpg
+    width: 4032
+    height: 3024
+    bytes: 1098298
+    sha256: 69afc670754d9d828f290cbf3cca53106c4b9a159c59ea20463a8b1041c128ca
+- id: ela_interior_2026
+  theme: city
+  show: 2026-09-12-ela-area
+  caption: The trophy room.
+  alt: A black-and-white brick-built room with bookcases, trophies, a checkerboard
+    floor, and a minifigure in a wheelchair.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_interior_2026.webp
+    width: 1200
+    height: 1600
+    bytes: 201346
+    sha256: 5cd3fd40c7e546532518542449a0cc8bcc277be6dc0d1ae4ce9d81343b33d300
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_interior_2026_thumb.webp
+    width: 480
+    height: 640
+    bytes: 46736
+    sha256: 60e899753844c69a46ae1279c8b0105a3dbb5011d1c91e97e6e51cbb56b062d8
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_interior_2026.jpg
+    width: 3024
+    height: 4032
+    bytes: 1249611
+    sha256: 37b141909d9ce2fdbc77a32e38b145f87c0f7d2c8a072c067d25c4e324f7f881
+- id: ela_facade_2026
+  theme: city
+  show: 2026-09-12-ela-area
+  caption: Flowers above the shop.
+  alt: A gray brick-built facade with arched windows, brown flower boxes, blue shop
+    awnings, and a sidewalk bench.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_facade_2026.webp
+    width: 1078
+    height: 1600
+    bytes: 215026
+    sha256: 7dafc745e8b97b6a345abd7ddfc54d388d0e550214703ef979e52f2a47d0bfff
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_facade_2026_thumb.webp
+    width: 431
+    height: 640
+    bytes: 52644
+    sha256: dce0d1170ec8c7f2c0d359dab97e90de7797eec6d9c8bf5eefd7ccbf39c09de9
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_facade_2026.jpg
+    width: 3595
+    height: 5335
+    bytes: 1790297
+    sha256: a8db42d432aaae0cd8b687c358f5efb6552dc63893af3829d5dfbfe2a6a3fffc
+- id: ela_aquarium_2026
+  theme: city
+  show: 2026-09-12-ela-area
+  caption: Chicago's Shedd Aquarium.
+  alt: A brick-built John G. Shedd Aquarium entrance with white columns, gray steps,
+    minifigure visitors, and an American flag.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_aquarium_2026.webp
+    width: 1006
+    height: 1600
+    bytes: 138020
+    sha256: 3e74ab5bdbb6023a420d402d177e5894351ee9018801e6801fa84799ccec6a49
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_aquarium_2026_thumb.webp
+    width: 402
+    height: 640
+    bytes: 35442
+    sha256: 85d1ab952a7d9c01daeb8f436241018a64b78c9293b908137766a468ece813b0
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_aquarium_2026.jpg
+    width: 2704
+    height: 4301
+    bytes: 1080487
+    sha256: bd667cdce5d8b1d7f76923e159f726c55a8d350f5f49692919294b06457cb775
+- id: ela_spider_riders_2026
+  theme: screen
+  show: 2026-09-12-ela-area
+  caption: Spider patrol.
+  alt: Three green-faced minifigures with crested helmets ride black spiders across
+    white terrain, carrying spears beside brick-built evergreen trees.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/ela_spider_riders_2026.webp
+    width: 1282
+    height: 1600
+    bytes: 177448
+    sha256: 3baab2b0f86d0d9d1ff504a8b19da4938bc138faba76430d8405d05375162ce4
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/ela_spider_riders_2026_thumb.webp
+    width: 513
+    height: 640
+    bytes: 47568
+    sha256: 1702ec36cc7dc614b675499b6f660fd9b10bcfcd8b8ebd2b0c30e74d407721cc
+  original:
+    path: ARTIFACTS/discord_archive_shows/ela_spider_riders_2026.jpg
+    width: 2765
+    height: 3451
+    bytes: 991244
+    sha256: 0330950f18792890cf45f2ec83a771d422486ac4ec89d9458ad01e713f281c46
+- id: northbrook_coffee_2026
+  theme: city
+  show: 2026-10-17-northbrook
+  caption: Trackside coffee.
+  alt: A white Seven Brew coffee shop with a blue roof, drive-through cars, minifigures,
+    flowering borders, and railway track.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_coffee_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 343406
+    sha256: 5d1d19127dea7e4983f69f50316cdf222048d4fd8bb5d1b72d789aae66607fe1
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_coffee_2026_thumb.webp
+    width: 640
+    height: 480
+    bytes: 72646
+    sha256: 8581a05fc3d758c8b6665ce122223db40930c51f3b643dc8c401cd112c6aba5e
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_coffee_2026.jpg
+    width: 5712
+    height: 4284
+    bytes: 2916962
+    sha256: 62ab3a8caf7220f5f376a2bea24a8ac8c922bf5eb041c2de9ca1d76d05475945
+- id: northbrook_freight_2026
+  theme: trains
+  show: 2026-10-17-northbrook
+  caption: Freight cars.
+  alt: Brick-built freight cars on parallel tracks, including a brown Hershey's Chocolate
+    and Cocoa car and a yellow Miller High Life car.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_freight_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 189670
+    sha256: aac7f3409f986fcc0cf1c84d5940e08b2585bc86b5574dc3aa249c5e5d4b6f82
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_freight_2026_thumb.webp
+    width: 480
+    height: 360
+    bytes: 28486
+    sha256: f6bd8685234dc5121526a296a47a771c0a94dab289f325d983c08aaed86bcb9d
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_freight_2026.jpg
+    width: 5573
+    height: 4180
+    bytes: 1911135
+    sha256: 560adf80e398b5086872e0b7631c8f72bd7254d049d08765047b7b54b99a6c7d
+- id: northbrook_party_2026
+  theme: creatures
+  show: 2026-10-17-northbrook
+  caption: Party on wheels.
+  alt: A colorful brick-built party vehicle with large number panels, balloon decorations,
+    and figures wearing party hats on its upper deck.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_party_2026.webp
+    width: 1600
+    height: 1190
+    bytes: 163546
+    sha256: 8ab5ff03459de226e3f169cd773378e9e49cc6505faf5e8807294a433ad58d38
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_party_2026_thumb.webp
+    width: 640
+    height: 476
+    bytes: 43996
+    sha256: 1b678a643914d28a0f76cca44451df1e1005a3b0d91bcfed4c35e0a3ee52ef3f
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_party_2026.jpg
+    width: 3392
+    height: 2522
+    bytes: 832913
+    sha256: 0a4da30d4f1f2136585e3e90b995e4c4751d3b428b1f52866f8f8ffe7b1ff1ce
+- id: northbrook_cottage_2026
+  theme: city
+  show: 2026-10-17-northbrook
+  caption: Autumn cottage.
+  alt: A brown brick-built cottage with a black tiled roof, green shutters, pumpkins,
+    flowers, trees, and costumed minifigures.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_cottage_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 349266
+    sha256: 3df5d435a003b2de524cf32f21765c7ef75fa54f6f366d8c48a9ca2159e6a2ce
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_cottage_2026_thumb.webp
+    width: 640
+    height: 480
+    bytes: 71226
+    sha256: 860aa748443b0bc0e13b4643a58cfd3b94c856c1df9eaa5bf0ea563ad081b624
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_cottage_2026.jpg
+    width: 4032
+    height: 3024
+    bytes: 1813144
+    sha256: 5bd3d1bfc261112772d4da688663be2bc6baa99590226daa582d8728026cba7f
+- id: northbrook_depot_2026
+  theme: trains
+  show: 2026-10-17-northbrook
+  caption: At the depot.
+  alt: A gray brick-built railway depot with a steep roof, dormers, open brown doors,
+    and a blue-and-white locomotive numbered 2476 on the tracks.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_depot_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 369750
+    sha256: 16d893a47067415458c474cfdefa5eef691c265a0228bf5b486acca0340d6423
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_depot_2026_thumb.webp
+    width: 480
+    height: 360
+    bytes: 49848
+    sha256: 5365fd2e6b3253202f6213d56e8586094c9fdb3115de23d9706fe2e48f4660ea
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_depot_2026.jpg
+    width: 5712
+    height: 4284
+    bytes: 3150224
+    sha256: 05a22f8c48ec3a013e14be21338046f93f4f982fb2aae5b05583fe81a7c30974
+- id: northbrook_crane_2026
+  theme: trains
+  show: 2026-10-17-northbrook
+  caption: Freight handling.
+  alt: A yellow rail-yard crane beside a red freight wagon, signal-box building, red
+    loader, and white-and-blue utility truck; a sign invites visitors to ask about
+    interior details.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_crane_2026.webp
+    width: 1600
+    height: 1257
+    bytes: 283110
+    sha256: 0c8b836057ed606301e16041ea9939a8b2be7fd0b3d3f89a090abe888718adc4
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_crane_2026_thumb.webp
+    width: 480
+    height: 377
+    bytes: 43428
+    sha256: 6a6fb9bb8f647e6399241a4351f391c68af6267278f9842d1e6f62d2a2438317
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_crane_2026.jpg
+    width: 5422
+    height: 4261
+    bytes: 2412031
+    sha256: 8ff871aa8d8687209d9671ad90d15e94927cd8133ac73280edcb3e304ba3b262
+- id: northbrook_tower_2026
+  theme: city
+  show: 2026-10-17-northbrook
+  caption: Club corner.
+  alt: A tall dark-red and black brick-built skyscraper with ornate gold panels and
+    a Northern Illinois sign above streets filled with minifigures and vehicles.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_tower_2026.webp
+    width: 1017
+    height: 1600
+    bytes: 287570
+    sha256: 9fe3d41e9a1ac636333e5848eaa7ffbe742f8fe2228b863676da17e1592bbec0
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_tower_2026_thumb.webp
+    width: 407
+    height: 640
+    bytes: 57492
+    sha256: 3040f3eb3a571d0f5d6358199febc592921822168e18cafb2f66c3a8f7b43fd6
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_tower_2026.jpg
+    width: 3255
+    height: 5123
+    bytes: 2168202
+    sha256: f486c79cc810bd6ac2f376098c55d36de084e64091e47bab2664c3150f5d8abc
+- id: arlington_dinosaurs_2025
+  theme: creatures
+  show: 2025-12-13-arlington-heights
+  caption: Dinosaur grocery run.
+  alt: Large dinosaur figures crowd a brick-built Hole Foods Market, surrounded by
+    minifigures, shopping carts, produce, and street vehicles.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_dinosaurs_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 262780
+    sha256: 189ec5fa099813d405380385dd24254ea7c4dc69b623d37f6adb742c1fb43a86
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_dinosaurs_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 71754
+    sha256: 4bb6577094b6e5309dd8fd57aad96d5d35008a250b71a3a9acc40e90c0672da5
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_dinosaurs_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 942806
+    sha256: 38e199377058c9ee93e8a74a7e12dc265366a72b773e2351fcaca939dbbc1746
+- id: arlington_winter_market_2025
+  theme: city
+  show: 2025-12-13-arlington-heights
+  caption: Winter fair.
+  alt: Red-and-white striped market stalls, crowds of minifigures, snowy trees, and
+    a red sleigh in a brick-built winter fair.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_winter_market_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 243662
+    sha256: eebe0b3fb5bfdeafeef0105e55240a75bb98d506bbfa3b57c52ae172e4bc0fc5
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_winter_market_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 70384
+    sha256: 7fe959aff6e63a53793692507c52370303973063737fa5beffedd534576ba310
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_winter_market_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 860482
+    sha256: 4e57a7610ee54c781c0cf860af0140efe7d88f2b23051782fe47a18c25c1f18e
+- id: arlington_castle_guard_2025
+  theme: castle
+  show: 2025-12-13-arlington-heights
+  caption: On the battlements.
+  alt: Blue-cloaked minifigures cross gray battlements toward a pale timber-accented
+    building, with an armored guard, trees, and a path.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_castle_guard_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 237132
+    sha256: 2d5768b538e303deda304054fc1b0034b5b2cfd24bb9d188c7c07533c3cbc773
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_castle_guard_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 65508
+    sha256: 5b271edf2eb191b57cdc60cc4edd39401a761fcac221515a5ee0956efc251b7b
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_castle_guard_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 869829
+    sha256: ccb6ea6db19fef0606c9037e7862d8019ab5e7b82cde7fb66e75a402f38ed79b
+- id: arlington_garden_2025
+  theme: castle
+  show: 2025-12-13-arlington-heights
+  caption: Medieval garden.
+  alt: Two archer minifigures stand among flowers, barrels, a wooden well frame, and
+    stone buildings in a brick-built garden.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_garden_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 240894
+    sha256: 7d55e87614b434a29a9effaaa5b0ab1ab8c5654077f6efed676ecb5d1e6a003a
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_garden_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 65188
+    sha256: 51343f075f9cf3ac8c0c3bf8b8bb339e9a79b0fa36295d1ecff3bb9fb5a0d7d2
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_garden_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 916563
+    sha256: ada5ffd291b1a644b9ae50c03ce11e1565bf2c23f47148f9a2ed9aac1fd10bff
+- id: arlington_tudor_2025
+  theme: castle
+  show: 2025-12-13-arlington-heights
+  caption: Timbered garden house.
+  alt: A brick-built medieval half-timbered house beside vegetable beds, flowers,
+    rabbits, trees, and minifigures.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_tudor_2025.webp
+    width: 1200
+    height: 1600
+    bytes: 308786
+    sha256: 2e526162ded4c51fedb30a823cdf8d5c40a0ac716b723781c0916d8f8752b703
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_tudor_2025_thumb.webp
+    width: 480
+    height: 640
+    bytes: 84330
+    sha256: 246284c90d45e6ae7af72bcd31b8f3c98ac40f051e92771766581ab4b20568a5
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_tudor_2025.jpg
+    width: 3024
+    height: 4032
+    bytes: 6681973
+    sha256: ce0114d546152005d25aed7888f095a28151159e2b2ce4bafb8b76e2c31d12a3
+- id: arlington_sailboat_2025
+  theme: city
+  show: 2025-12-13-arlington-heights
+  caption: Woodland harbor.
+  alt: A white-and-blue brick-built sailboat with a tan sail and cargo rests on blue
+    water beside a brown dock and dense green trees.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_sailboat_2025.webp
+    width: 900
+    height: 1600
+    bytes: 291914
+    sha256: 63c70a05ca4765d7e76214b9e68216c66cc9c5aa29a10f694e4387f95f4b1da1
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_sailboat_2025_thumb.webp
+    width: 360
+    height: 640
+    bytes: 73782
+    sha256: 3dfeaa703390a022533add62859e254b356cc09cf3b414e042a80f68dcecd5dc
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_sailboat_2025.jpg
+    width: 3213
+    height: 5712
+    bytes: 2317540
+    sha256: 3ec72d63c275abc1cb16b2b684737b08adc731f2e741b0974df387eaa2b6df3d
+- id: arlington_multitrack_2025
+  theme: trains
+  show: 2025-12-13-arlington-heights
+  caption: Metra on the main line at Arlington Heights, December 2025.
+  alt: A blue-and-orange Metra locomotive leads several parallel tracks of brick-built
+    trains, including a small black-and-red steam engine, silver passenger coaches,
+    and freight cars.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 45% 55%
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_multitrack_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 356534
+    sha256: 251e2ccb7aa93a4cd113bf65021f274c4bd965551da05a206123df1c733c421d
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_multitrack_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 52872
+    sha256: 18dfb6c398d064f76bd13838caa6c34b3bf11add56e2dc38b3c7043d4dc69dc3
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_multitrack_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1138222
+    sha256: 6457594e4fec094a4d8073299839415f38b0892047c50f757fe37b8e18cc8308
+- id: arlington_cnrail_8744_2025
+  theme: trains
+  show: 2025-12-13-arlington-heights
+  caption: CN Rail 8744 at Arlington Heights, December 2025.
+  alt: A blue brick-built CN Rail diesel locomotive numbered 8744 on the nearest track,
+    with other blue rail equipment and parallel tracks behind it.
+  credit: NILTC archive; uploaded by Andertoons
+  focus: 40% 50%
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_cnrail_8744_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 219976
+    sha256: adf9814ffa00963788c3b2b58354c967d8cc8a67ae540e369b7f1c87bd920257
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_cnrail_8744_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 35896
+    sha256: 0f3636eb1ae0edbcedf9fda217fac15cf011aef214c47261fa8361e953a70ee2
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_cnrail_8744_2025.jpg
+    width: 5712
+    height: 4284
+    bytes: 2274679
+    sha256: 45411376a4aa79f44f673e902b5aa7c18a119a487039a480d4f138f72aeb7cff
+- id: arlington_santa_2025
+  theme: creatures
+  show: 2025-12-13-arlington-heights
+  caption: Santa takes the high road.
+  alt: A brick-built Santa in a red sleigh pulled by brown reindeer above a black-and-white
+    Carvana tower and blue car-shaped sign.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2025-12
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/arlington_santa_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 164124
+    sha256: 8ae2d40c7e33afda32119054270975ea94b8849da1591f88aa331c03a119004e
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/arlington_santa_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 39576
+    sha256: 9035823792e5f492cd454098a9629021dccce7a34567f1a9c81689f67acd4d65
+  original:
+    path: ARTIFACTS/discord_archive_shows/arlington_santa_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1318761
+    sha256: b5ab12e333ac29b348d37030bfedb24235e63970e0778b8b9c823cf39731d1ae
+- id: oswego_spider_2025
+  theme: creatures
+  show: 2025-10-25-oswego
+  caption: Woodland spider.
+  alt: A large brown brick-built spider carrying tan spiderlings stands over a forest
+    diorama with plants, rocks, water, and a red mushroom.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2025-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/oswego_spider_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 245372
+    sha256: 62b0fcdfe94432b616634dba550b6a37b80f8d5ca2cf21319444b74b1a63a54a
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/oswego_spider_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 62466
+    sha256: 0ad67104e2d08f03285ca59b4bf3572ffd9f071a2efa7024e582d89d3eb22a42
+  original:
+    path: ARTIFACTS/discord_archive_shows/oswego_spider_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1634792
+    sha256: 2347acc94b26498a6c75bb0da364f6dbbb4511664ca14256887007c6e9348637
+- id: oswego_fortress_2025
+  theme: castle
+  show: 2025-10-25-oswego
+  caption: Castle and drawbridge.
+  alt: A large gray brick-built fantasy castle with towers, a drawbridge, dragon,
+    carts, minifigures, and landscaped ground at a public display.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2025-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/oswego_fortress_2025.webp
+    width: 1200
+    height: 1600
+    bytes: 315784
+    sha256: 211b58e00b2508b492cf044434a07ec7b1e69c416d39fbb048d3bc4f398f21a5
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/oswego_fortress_2025_thumb.webp
+    width: 480
+    height: 640
+    bytes: 79242
+    sha256: 61386800c094d91d42ed049c8c212aba4123db226ef83dca26b4a1a9bebc09c5
+  original:
+    path: ARTIFACTS/discord_archive_shows/oswego_fortress_2025.jpg
+    width: 4284
+    height: 5712
+    bytes: 14558568
+    sha256: 78767a5a45ffa77d0880cc86c827caa55b0da16ddee9b2618ed47fe0f72169b9
+- id: oswego_helicopter_2025
+  theme: screen
+  show: 2025-10-25-oswego
+  caption: Heavy lift.
+  alt: An orange brick-built helicopter suspends a large jack-o-lantern-faced cylinder
+    on a platform hanging from chains.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2025-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/oswego_helicopter_2025.webp
+    width: 1600
+    height: 1600
+    bytes: 256294
+    sha256: 8c6066e4b61efcabe51e1484effff94c8c32802921284f5d0eb2646867159a90
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/oswego_helicopter_2025_thumb.webp
+    width: 640
+    height: 640
+    bytes: 67844
+    sha256: 76deddeacf812285ece4165684bda3298099484283ffa090d406d9dec0593062
+  original:
+    path: ARTIFACTS/discord_archive_shows/oswego_helicopter_2025.jpg
+    width: 2873
+    height: 2873
+    bytes: 978680
+    sha256: 22060edb0d428551bfe4c6200877713e99763c705b84fac9145c5f40d7552567
+- id: oswego_purple_castle_2025
+  theme: castle
+  show: 2025-10-25-oswego
+  caption: Purple towers.
+  alt: A tall purple-and-lavender brick-built haunted castle with transparent turret
+    towers, pink foliage, minifigure scenes, and a black stepped base.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2025-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/oswego_purple_castle_2025.webp
+    width: 1200
+    height: 1600
+    bytes: 327652
+    sha256: 28a87a0ca48cb6efc36d125e26467d39bab8d4e68fbfd2df54723dc86d95b289
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/oswego_purple_castle_2025_thumb.webp
+    width: 480
+    height: 640
+    bytes: 67632
+    sha256: 982344a3ab3db11d4cc75eae357bd9f6f7fdc586c87ffff5bc3e22a5807f4c5a
+  original:
+    path: ARTIFACTS/discord_archive_shows/oswego_purple_castle_2025.jpg
+    width: 4284
+    height: 5712
+    bytes: 13995947
+    sha256: 9183c74b78854a598e0a859c666084b7fe44926232abd747d0c1560ddc9933ef
+- id: oswego_hippogriff_2025
+  theme: screen
+  show: 2025-10-25-oswego
+  caption: Hippogriff encounter.
+  alt: A bearded minifigure holding a lantern faces a gray hippogriff on green terrain
+    beside a dark brick wall and spider pieces.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2025-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/oswego_hippogriff_2025.webp
+    width: 1200
+    height: 1600
+    bytes: 224372
+    sha256: e27c061eda4c9d10b11d207b107fff1aaf1ddcde31c8995bdf8f5678a0e79fcd
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/oswego_hippogriff_2025_thumb.webp
+    width: 480
+    height: 640
+    bytes: 51056
+    sha256: 618d3c1068e6b2664c6c609842f8a430aece02b50b682fbfb5951e4d59013ea5
+  original:
+    path: ARTIFACTS/discord_archive_shows/oswego_hippogriff_2025.jpg
+    width: 3024
+    height: 4032
+    bytes: 6245722
+    sha256: b886d92417a32a4d58b59f2fb5babe9c5da32d778a7ed1ab1fa87c760d528a46
+- id: barrington_landscape_2025
+  theme: city
+  show: 2025-09-06-barrington
+  caption: Riverside railway.
+  alt: A brick-built rocky hill with dense green and yellow foliage, blue water, a
+    small sailboat, railway tracks, and a yellow lattice tower.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_landscape_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 444918
+    sha256: a5c802be9922cb37f63f8e5e18b05f4edbe2b2d6d21f3d9e6789e410b6934b00
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_landscape_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 98306
+    sha256: c0f6c7d8a9465db7ac75c46dc99bd60c9700a66cecae80f3537422b7e097c413
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_landscape_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1346617
+    sha256: dd051c835d3fef550a0a42b0d071de0400685085dc75f177510b40754bbd288d
+- id: barrington_harbor_2025
+  theme: creatures
+  show: 2025-09-06-barrington
+  caption: Whales in the harbor.
+  alt: A white-and-blue brick-built yacht on blue water with minifigures, an orca,
+    a gray whale, a dolphin, and a shark beside a railway and street.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_harbor_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 284842
+    sha256: 6f02512f4a950162f0717b00073b89a900ee9588e0c2f641a7c99e4d36abe599
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_harbor_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 74294
+    sha256: ec653c5e247650cd713c5c57501a1bd069859674ec52a3708d319159d094ad22
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_harbor_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 971466
+    sha256: d6a289971096b98ba2d9b3d24a635d922b7c2d1cccc7b03cd759cba50074f55a
+- id: barrington_yard_2025
+  theme: trains
+  show: 2025-09-06-barrington
+  caption: Freight yard.
+  alt: A broad brick-built rail yard with parallel and curved tracks, container trains,
+    CP and Conrail locomotives, cranes, cargo stacks, and an engine shed.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_yard_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 503898
+    sha256: 5b17a1c4c621e1ab404bfa178aee4ebaca206a0cc3d7db2e52b73040201ee3cc
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_yard_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 52042
+    sha256: 743d141eb177c22e0759598829ff05a0b38034d618b114163d4c7c3b660f4d25
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_yard_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1564177
+    sha256: 28da0e2061b0ce919e745d5a0acb37dc9e508cde8bae80261fd0b067493a2e41
+- id: barrington_aircraft_2025
+  theme: screen
+  show: 2025-09-06-barrington
+  caption: On the airfield.
+  alt: Gray, white, and green brick-built helicopters and a blue-and-white aircraft
+    on a large gray-and-black tarmac beside railway tracks.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_aircraft_2025.webp
+    width: 1600
+    height: 1200
+    bytes: 323866
+    sha256: a657bcf782d546f6c1a2428836111d8768533d3ff9dc046063c14e58052f8ffb
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_aircraft_2025_thumb.webp
+    width: 640
+    height: 480
+    bytes: 67898
+    sha256: cfb41befd1d06cdc9ce112609abd8ed303fbc8917648210ba31accf6bec59c79
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_aircraft_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1093591
+    sha256: 0c9335d4892f145f3eb13193809dd919c8740536e5247fae59fee26c9d611185
+- id: algonquin_jet_2026
+  theme: screen
+  show: 2026-05-02-algonquin
+  caption: Blue and yellow, from the nose to the tail.
+  alt: A blue-and-yellow brick-built Blue Angels jet numbered 3, with cockpit canopy
+    and landing gear, on a gray display base.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_jet_2026.webp
+    width: 1600
+    height: 1155
+    bytes: 135826
+    sha256: 6e7972061187fd820c902ceda6306a9afb10504bfc3be107df2b5f65f1587e0a
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_jet_2026_thumb.webp
+    width: 640
+    height: 462
+    bytes: 37628
+    sha256: ec09ee36743797d89dde7f317857e5df656739240e5415753607929792e58206
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_jet_2026.jpg
+    width: 5331
+    height: 3849
+    bytes: 1362338
+    sha256: 630684621a51633fd18d74517fab100b81fd0532b1ae93bab23a003282e03c35
+- id: algonquin_cyclist_2026
+  theme: city
+  show: 2026-05-02-algonquin
+  caption: A feathered passenger.
+  alt: A bearded minifigure in a straw hat rides a black bicycle with a gray bird
+    on its rear rack beside a landscaped path and blue water.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_cyclist_2026.webp
+    width: 1600
+    height: 1121
+    bytes: 175230
+    sha256: 96d33b6f22217d3fe40868aa699f1bbf0adaddc47a6d1f1a29e215a9d860b9d0
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_cyclist_2026_thumb.webp
+    width: 640
+    height: 448
+    bytes: 48244
+    sha256: 69d840cbdbde05729ef37a645ddc2066adf47ce98b12b262aceff36afac6a6c3
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_cyclist_2026.jpg
+    width: 3818
+    height: 2675
+    bytes: 955741
+    sha256: 781e935fe0dcf53900760839ee2429862e3d9a70f7dc737d61d05ab3530213e0
+- id: algonquin_cars_2026
+  theme: city
+  show: 2026-05-02-algonquin
+  caption: Sports car lineup.
+  alt: Yellow, orange, red, and maroon brick-built sports cars on a gray tiled base
+    beside a brick building; the yellow convertible has a minifigure driver.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_cars_2026.webp
+    width: 1600
+    height: 1098
+    bytes: 188434
+    sha256: 17e3226da0ff70d36263f8cf8504bdb4adaeb5d4bf556240f737fe24943b3d04
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_cars_2026_thumb.webp
+    width: 640
+    height: 439
+    bytes: 50600
+    sha256: c614599d4b11abc56cde77ee698e6ce94e9815f2fb15d0c15171815796af2f06
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_cars_2026.jpg
+    width: 4032
+    height: 2768
+    bytes: 1070850
+    sha256: def138b278dab7e7314e500156f198f794bd06467623bb281718510408873b8d
+- id: algonquin_animals_2026
+  theme: creatures
+  show: 2026-05-02-algonquin
+  caption: Animal portraits.
+  alt: Colorful brick-built animals on white stepped shelves, including a moose, giraffe,
+    zebra, purple elephant, and red-and-yellow horse.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_animals_2026.webp
+    width: 1600
+    height: 1188
+    bytes: 137898
+    sha256: c33a833f5117a0e858800fa9c0a455678172f1c4df9ba2dde1e12ef1442873d5
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_animals_2026_thumb.webp
+    width: 640
+    height: 475
+    bytes: 38988
+    sha256: 4c401214ca8ee2a0d7eaeea0ccb2206f86a77009711de008d52e667fb1c3ca64
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_animals_2026.jpg
+    width: 3957
+    height: 2937
+    bytes: 921064
+    sha256: e09fe4be2f7288e1825ff46aab5c7f3532c173b703278de95411808a4e08a809
+- id: algonquin_classic_space_2026
+  theme: screen
+  show: 2026-05-02-algonquin
+  caption: Classic Space, reimagined.
+  alt: A blue-and-gray brick-built spacecraft with swept wings, yellow cockpit canopy,
+    and twin engine cannons beside a sign reading Inspired By Classic Space 1978.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_classic_space_2026.webp
+    width: 1440
+    height: 1600
+    bytes: 187906
+    sha256: 10afcc7cf609bbaf4974b1ff85eaeede01dcf6e3351966610693fcb3cef1150a
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_classic_space_2026_thumb.webp
+    width: 576
+    height: 640
+    bytes: 50826
+    sha256: 3ecfa7a89333dba32fcf0c2436d410137033a9c05e74ed627428232403d293c5
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_classic_space_2026.jpg
+    width: 3024
+    height: 3360
+    bytes: 933590
+    sha256: 52e50b2d7baa74c26b37d5b3334a93d2b7e1939b4f35d3c50d369378e6db66c3
+- id: algonquin_food_stall_2026
+  theme: castle
+  show: 2026-05-02-algonquin
+  caption: Woodland snack stop.
+  alt: A brown brick-built food stall with a red-and-white awning, squirrel topper,
+    pretzel, croissant, rabbit, and bearded vendor among evergreen branches.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_food_stall_2026.webp
+    width: 1600
+    height: 1213
+    bytes: 192252
+    sha256: 31cf28dca55c502b34dd11bd8e628c83e89f4d74654734f6309b41611fefc632
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_food_stall_2026_thumb.webp
+    width: 640
+    height: 485
+    bytes: 54510
+    sha256: a9dd1bebb1668b95431df32934295d2b75bda5495086dedf1899610468b996e3
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_food_stall_2026.jpg
+    width: 3482
+    height: 2640
+    bytes: 930726
+    sha256: 39e1e2c47c2e4943200252cbdf9f6dcaa24806913331c48ed1d445d93f8a277f
+- id: wheaton_horses_2026
+  theme: creatures
+  show: 2026-04-11-wheaton
+  caption: Horses by the river.
+  alt: Two white horse figures stand on a landscaped riverbank with blue water, gray
+    rocks, green plants, and a forested cliff.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-04
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/wheaton_horses_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 181516
+    sha256: 78a158478e67a96f4ac6772d53d7c5735f60626d83f6229972307bfef2d2613f
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/wheaton_horses_2026_thumb.webp
+    width: 640
+    height: 480
+    bytes: 48382
+    sha256: 57cdc4c518c321b90eb4d41950def0233de2f64df16a5bc6fdd4804b0042e029
+  original:
+    path: ARTIFACTS/discord_archive_shows/wheaton_horses_2026.jpg
+    width: 4032
+    height: 3024
+    bytes: 1205873
+    sha256: f51ce8ef5ac349ec7aff71d7d335442701eab42dd09c00b8de845a60ee079240
+- id: wheaton_barn_2026
+  theme: city
+  show: 2026-04-11-wheaton
+  caption: Barn raising.
+  alt: A red brick-built barn with white doors and exposed tan roof framing, worker
+    minifigures, a gray silo, trees, and landscaped paths.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-04
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/wheaton_barn_2026.webp
+    width: 1306
+    height: 1600
+    bytes: 317402
+    sha256: d9847f75fdca9aca0001d91b5ccb98be86fc1046e45f5c2387aace6251dcb582
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/wheaton_barn_2026_thumb.webp
+    width: 522
+    height: 640
+    bytes: 74474
+    sha256: 1191c5cb494d3118061f7f548d1ddb1066abfc9c68fc43a337070368405d5f12
+  original:
+    path: ARTIFACTS/discord_archive_shows/wheaton_barn_2026.jpg
+    width: 2702
+    height: 3311
+    bytes: 1300483
+    sha256: e6f8b14ae249e9bcdd49fa7afcf93fa2fdd9d024cb711aeda5d527c7a3e6ce89
+- id: wheaton_eloise_2026
+  theme: city
+  show: 2026-04-11-wheaton
+  caption: Eloise under sail.
+  alt: A tan-and-brown brick-built sailboat named Eloise with white sails, black rigging,
+    and two minifigures on blue brick water.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-04
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/wheaton_eloise_2026.webp
+    width: 1520
+    height: 1600
+    bytes: 131860
+    sha256: f89f887255a12ab3d2bf3f4fae0fe5c29a2b91b3a3b5e735469b477ba8a258b6
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/wheaton_eloise_2026_thumb.webp
+    width: 608
+    height: 640
+    bytes: 36990
+    sha256: 05b4939774127df0c44acb49f9cb309bc6748dd1babd513c648e607847e9ce79
+  original:
+    path: ARTIFACTS/discord_archive_shows/wheaton_eloise_2026.jpg
+    width: 4071
+    height: 4284
+    bytes: 1180235
+    sha256: 4c8c11d76458efbc46d102a796803a82bd8623056581e44a79454fb68b4287cc
+- id: wheaton_carrots_2026
+  theme: castle
+  show: 2026-04-11-wheaton
+  caption: Carrot stall.
+  alt: A brown brick-built market stall with an orange-and-white canopy, carrot-filled
+    crates, a green-hatted vendor, and a white rabbit.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2026-04
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/wheaton_carrots_2026.webp
+    width: 1200
+    height: 1600
+    bytes: 141196
+    sha256: 0d7587f33a6d4efa75fae5c548db12acddd7b1b09552cfa89bb499b0239019ea
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/wheaton_carrots_2026_thumb.webp
+    width: 480
+    height: 640
+    bytes: 39700
+    sha256: e49d303220d03d5b658b0576c39b4e487f8288ea0c5abeca0e44ef68bf2ae22d
+  original:
+    path: ARTIFACTS/discord_archive_shows/wheaton_carrots_2026.jpg
+    width: 1215
+    height: 1620
+    bytes: 1222631
+    sha256: e0e344add18f11ede78c0555f7e8362ec333e1f47d09dc181f729b0a98a1fd17
+- id: club_group_2026
+  theme: club
+  caption: Guitars and vehicles.
+  alt: About a dozen smiling club members in black shirts stand behind three large
+    brick-built electric guitars and a red brick pickup truck.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/club_group_2026.webp
+    width: 958
+    height: 701
+    bytes: 83390
+    sha256: 3a6464184128ccd06ac25b63a32d55c061e9bb547c742092f0eedfa67d080efe
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/club_group_2026_thumb.webp
+    width: 720
+    height: 527
+    bytes: 58406
+    sha256: d30869188c0b89a0f51d06a047dd37bffc7798afcc9be8746bbcaf2e79aae188
+- id: brick_days_2026
+  theme: club
+  caption: Members at Nebraska Brick Days.
+  alt: Nine club members pose around a small table holding a trophy in front of a
+    Nebraska Brick Days backdrop.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/brick_days_2026.webp
+    width: 550
+    height: 338
+    bytes: 33636
+    sha256: a40610c29709cf58bff2e7427af836118023a44d46ece5112395007ee460f7b0
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/brick_days_2026_thumb.webp
+    width: 550
+    height: 338
+    bytes: 33636
+    sha256: a40610c29709cf58bff2e7427af836118023a44d46ece5112395007ee460f7b0
+- id: cantigny_group_2016
+  theme: club
+  caption: The club at Cantigny Park, December 2016.
+  alt: Roughly twenty-five members stand behind a long row of brick-built passenger
+    and freight trains, with the club banner hanging behind them.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/cantigny_group_2016.webp
+    width: 1600
+    height: 822
+    bytes: 169990
+    sha256: a5e171789b3b535704d681dc3d5fa2b63d3255c2c6156b92984a5f1132847ce0
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/cantigny_group_2016_thumb.webp
+    width: 720
+    height: 370
+    bytes: 60468
+    sha256: 984ea22cd7f9ada325922d13c20436a23a6b710ddb36761761e702ccef0673d4
+- id: library_layout
+  theme: trains
+  caption: Library show layout.
+  alt: A long table display of brick-built houses, shops, trees, and a farm, with
+    several parallel train tracks along the front edge.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/library_layout.webp
+    width: 1600
+    height: 1067
+    bytes: 311658
+    sha256: 197d54cfc12d3a4b637817f5fea602cd85dde3fc24ebf9689e764984e67e5543
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/library_layout_thumb.webp
+    width: 480
+    height: 320
+    bytes: 33430
+    sha256: 516c257155a2ead870ce9acc77fa631fbb26b68df3b68030dc92c788adab5f43
+- id: layout_2009
+  theme: trains
+  caption: Chicago skyline and rail loops, 2009.
+  alt: A brick city of tall buildings, including a black Sears Tower, surrounded by
+    several loops of track carrying trains.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/layout_2009.webp
+    width: 432
+    height: 576
+    bytes: 57420
+    sha256: 4e95f3d1b9229c7082d05c5c3cc8f9e433be60b274a9f70c322ea69b71d23fd2
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/layout_2009_thumb.webp
+    width: 360
+    height: 480
+    bytes: 32124
+    sha256: 63053dc8170feebc4531e33b271b2b24448c3d0454a23795b1d8f94799c50129
+- id: metra_locomotive
+  theme: trains
+  caption: Metra commuter locomotive.
+  alt: Close-up of a blue brick-built Metra locomotive with red and white striped
+    nose and a silver passenger car behind it.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/metra_locomotive.webp
+    width: 900
+    height: 600
+    bytes: 52912
+    sha256: d2cb075199edb26fc5d45087ab64d546e5889ff1e6831978620b1246f1e03c35
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/metra_locomotive_thumb.webp
+    width: 480
+    height: 320
+    bytes: 19280
+    sha256: 5ec2c2a93d76583b7974a1998319cb9ec14c23481bbf1951b6c38aefa301db14
+- id: caboose
+  theme: trains
+  caption: New Haven caboose.
+  alt: Side view of a bright red brick-built caboose lettered New Haven C-528 on brick
+    track.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/caboose.webp
+    width: 900
+    height: 600
+    bytes: 51722
+    sha256: 5a87bbbe18b82006541295a322bb599d5a64cd39d89a6706f580becaaac9782b
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/caboose_thumb.webp
+    width: 480
+    height: 320
+    bytes: 16460
+    sha256: 14b1b15df024040bf570f7d58d7ec5c340c91f652312afc709b48eb5befc204d
+- id: vintage_steam
+  theme: trains
+  caption: Steam locomotive.
+  alt: A black brick-built steam locomotive with red wheels sits on a short track
+    among brick grass and plants.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/vintage_steam.webp
+    width: 900
+    height: 598
+    bytes: 48680
+    sha256: 17300ca554f09f58a91b54f850d09e7ace96e86c6c62c9330a5a4806046a4a77
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/vintage_steam_thumb.webp
+    width: 480
+    height: 319
+    bytes: 13808
+    sha256: a01785f7dd58fa234c61070fc77c25e8e21833ffc119f82b7280f173191aa57b
+- id: paris_night
+  theme: city
+  caption: Paris at Brickworld 2016.
+  alt: A brick-built Eiffel Tower strung with white lights rises above a plaza of
+    Parisian buildings at night.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/paris_night.webp
+    width: 900
+    height: 600
+    bytes: 110426
+    sha256: a5d1a6378531bcb9f1dca6f35e75882f403aea964f3e73a9881df523b5b6acf6
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/paris_night_thumb.webp
+    width: 720
+    height: 480
+    bytes: 75016
+    sha256: af5af3a8af4978e5cae9b2b8b1e49f996f487379c159539b55a5c1f1243ee19b
+- id: night_skyline
+  theme: city
+  caption: Skyline after dark, June 2015.
+  alt: Brick-built skyscrapers with glowing windows and a lit billboard in a darkened
+    exhibit hall.
+  credit: NILTC / niltc.org
+  focus: 50% 88%
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/night_skyline.webp
+    width: 900
+    height: 600
+    bytes: 67578
+    sha256: d84080951492569b27aec5ac0802caa27f34ae92a5c6da2c8a6c2f7e6a5b12f4
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/night_skyline_thumb.webp
+    width: 720
+    height: 480
+    bytes: 46538
+    sha256: 0a96e3e67cc2e7e15e9614d0ca34a6a8b8eb268fceff1d09e5bbf35fcb591198
+- id: skyscrapers
+  theme: city
+  caption: Roger's nine-foot Sears Tower in the shared skyline.
+  alt: A cluster of tall white, grey, black, and red brick-built skyscrapers on modular
+    city blocks.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/skyscrapers.webp
+    width: 600
+    height: 381
+    bytes: 28310
+    sha256: da5a4568a8ab93f5e53ecbdfae233da47dfa9f849776896ef56a4a37a879b5df
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/skyscrapers_thumb.webp
+    width: 600
+    height: 381
+    bytes: 28310
+    sha256: da5a4568a8ab93f5e53ecbdfae233da47dfa9f849776896ef56a4a37a879b5df
+- id: prairie_bungalow
+  theme: city
+  caption: Prairie-style houses.
+  alt: Two tan brick-built prairie-style houses with low hipped roofs, wide eaves,
+    and landscaped front steps.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/prairie_bungalow.webp
+    width: 900
+    height: 600
+    bytes: 54068
+    sha256: 42b04fe140dc53178dece6b92306d5a91098cfcd772af9cb9ae09cf1b041ac82
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/prairie_bungalow_thumb.webp
+    width: 720
+    height: 480
+    bytes: 38964
+    sha256: 292402026f8e235ca5174b405f83e2ffddd468bfe4427dfd6cb36a831c5d8bf0
+- id: museum_replica
+  theme: city
+  caption: DuPage County Historical Museum.
+  alt: Brick-built model of a cream Victorian building with a dark red roof, a corner
+    turret, and green plantings.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/museum_replica.webp
+    width: 900
+    height: 675
+    bytes: 77142
+    sha256: 4b92560a3e7ac138281cbce6132e8ec66c077f675edb82d3b7bd86935da870fe
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/museum_replica_thumb.webp
+    width: 720
+    height: 540
+    bytes: 54828
+    sha256: 5128a7fda4fa7389ed1294ec6fe1bb77d33b179826fe5897c19d94b1dfd54e84
+- id: gazebo
+  theme: city
+  caption: The bandstand.
+  alt: A white and yellow brick-built gazebo with a domed roof and small figures standing
+    under it.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/gazebo.webp
+    width: 480
+    height: 640
+    bytes: 27226
+    sha256: 50c3d4035e9fbf9f5df42e77f0131d469ed63562856e8f87c3731bcfebcd6240
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/gazebo_thumb.webp
+    width: 480
+    height: 640
+    bytes: 27226
+    sha256: 50c3d4035e9fbf9f5df42e77f0131d469ed63562856e8f87c3731bcfebcd6240
+- id: teacup
+  theme: city
+  caption: A hidden city scene.
+  alt: A minifigure cyclist flips head over heels across a white bridge railing.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/teacup.webp
+    width: 595
+    height: 397
+    bytes: 19932
+    sha256: 5b3643716adc3803be667cda4b5590bf3b258831bc4bc979a70e73a1801618bf
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/teacup_thumb.webp
+    width: 595
+    height: 397
+    bytes: 19932
+    sha256: 5b3643716adc3803be667cda4b5590bf3b258831bc4bc979a70e73a1801618bf
+- id: springfield
+  theme: screen
+  caption: Cartoon town.
+  alt: Wide view of a brick town with brightly colored shops, parked cars, and a train
+    track along the front.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/springfield.webp
+    width: 1600
+    height: 446
+    bytes: 184006
+    sha256: 920902187da05bc202f31de2413da7370cf03f37ed5974d221e4921837b62c06
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/springfield_thumb.webp
+    width: 720
+    height: 201
+    bytes: 50848
+    sha256: 5d805a05830cadc7efb0aa8e59d72027ac9200612a25e435186d4e365937283c
+- id: falcon_bay
+  theme: screen
+  caption: Starship hangar.
+  alt: A large grey saucer-shaped starship inside a white hangar, surrounded by small
+    vehicles and figures.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/falcon_bay.webp
+    width: 595
+    height: 397
+    bytes: 61210
+    sha256: ac884fab995e228f33f411598c5a08038f1f0827ca9199f58e25235431e4c665
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/falcon_bay_thumb.webp
+    width: 595
+    height: 397
+    bytes: 61210
+    sha256: ac884fab995e228f33f411598c5a08038f1f0827ca9199f58e25235431e4c665
+- id: jet
+  theme: screen
+  caption: Red jet.
+  alt: A long red brick-built jet aircraft with swept wings mounted above a display
+    table.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/jet.webp
+    width: 1088
+    height: 444
+    bytes: 66552
+    sha256: 0d8470aa9a4cf47300421882a8cd43f076e05c5306a586c503869f9db74653a0
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/jet_thumb.webp
+    width: 720
+    height: 294
+    bytes: 36952
+    sha256: e1852df626b3759f381c1e952dd3885b296913da9279ad89aee06ec858a38af1
+- id: unikitty
+  theme: creatures
+  caption: Unikitty.
+  alt: A red and white brick-built cat-unicorn character with a striped horn and a
+    wide happy face.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/unikitty.webp
+    width: 1600
+    height: 2128
+    bytes: 82164
+    sha256: 1316fb681da7d27d5438090bbb9737589a2ab03b371945736b4ccdf22f41758c
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/unikitty_thumb.webp
+    width: 720
+    height: 957
+    bytes: 16966
+    sha256: 51cb979a292fa08526d515d7e9c9be79aa55566e32621631ce1399954fde2f1a
+- id: frog
+  theme: creatures
+  caption: Red-eyed frog.
+  alt: A lime green brick-built frog with large red eyes crouches on long legs.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/frog.webp
+    width: 900
+    height: 600
+    bytes: 49280
+    sha256: 0dda966f4db79a78e562cf2bd7a3b169aaf903df0b98f8604399ca4414537317
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/frog_thumb.webp
+    width: 720
+    height: 480
+    bytes: 35472
+    sha256: 0d4b4dbd7b79db34e58f9eea6c77bb12a94139caf0f9232c7b228a07f168a0c0
+- id: bear_woods
+  theme: creatures
+  caption: Pink bear in the pines.
+  alt: A pink bear figure stands among dense green brick pine trees near minifigures
+    on a small vehicle.
+  credit: NILTC / niltc.org
+  homepage: false
+  event_date: unknown
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/bear_woods.webp
+    width: 595
+    height: 397
+    bytes: 50192
+    sha256: fbaed154ceeffb858d1c658310fa2f5279f299621a098b913d4d327915ee95a2
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/bear_woods_thumb.webp
+    width: 595
+    height: 397
+    bytes: 50192
+    sha256: fbaed154ceeffb858d1c658310fa2f5279f299621a098b913d4d327915ee95a2
+- id: northbrook_purple_train_2026
+  theme: trains
+  show: 2026-10-17-northbrook
+  caption: Prince's Purple Rain railcar at Northbrook, October 2026.
+  alt: A purple piano-shaped railcar bearing the words Purple Rain, with a musician
+    minifigure standing on its raised keyboard.
+  credit: NILTC archive; uploaded by Kerbear
+  focus: 50% 20%
+  homepage: true
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_purple_train_2026.webp
+    width: 1600
+    height: 1173
+    bytes: 113908
+    sha256: 8f1603596aaa3fb125f59a6119acbd1a940af341cd821bbcad292f88f933f5d7
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_purple_train_2026_thumb.webp
+    width: 480
+    height: 352
+    bytes: 15066
+    sha256: 04d1fc5faf27a632a5a5666e74ad3381f2844cb3ab0feaa23fc498356bd96922
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_purple_train_2026.jpg
+    width: 4687
+    height: 3436
+    bytes: 1117700
+    sha256: ce61ee017a0b635ba5465915b4287cc253c72460ffb21b5a8d6172943d1da067
+- id: northbrook_1999_railcar_2026
+  theme: trains
+  show: 2026-10-17-northbrook
+  caption: 1999 celebration railcar at Northbrook, October 2026.
+  alt: A white railcar with large colorful 1999 numerals and party decorations, displayed
+    on track.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-10
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/northbrook_1999_railcar_2026.webp
+    width: 1600
+    height: 1190
+    bytes: 163546
+    sha256: 8ab5ff03459de226e3f169cd773378e9e49cc6505faf5e8807294a433ad58d38
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/northbrook_1999_railcar_2026_thumb.webp
+    width: 480
+    height: 357
+    bytes: 25768
+    sha256: 6aab3423a375d26ebbdabd0ceab70a78213e72de9b2a389a1243cf34b760d788
+  original:
+    path: ARTIFACTS/discord_archive_shows/northbrook_1999_railcar_2026.jpg
+    width: 3392
+    height: 2522
+    bytes: 832913
+    sha256: 0a4da30d4f1f2136585e3e90b995e4c4751d3b428b1f52866f8f8ffe7b1ff1ce
+- id: algonquin_steam_locomotive_2026
+  theme: trains
+  show: 2026-05-02-algonquin
+  caption: Steam locomotive 607 and freight cars at Algonquin, May 2026.
+  alt: A black steam locomotive numbered 607 with a United States Army tender and
+    colorful freight cars on parallel tracks.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_steam_locomotive_2026.webp
+    width: 1600
+    height: 1185
+    bytes: 260312
+    sha256: d028311f44e2eba3766b60097d566952852a600ef0d321cc637abeb4dbf45691
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_steam_locomotive_2026_thumb.webp
+    width: 480
+    height: 356
+    bytes: 35716
+    sha256: a4bde245ee919dde56832462e14133d0b465a108cf6776f32f3ab7ba2190dcd8
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_steam_locomotive_2026.jpg
+    width: 5535
+    height: 4098
+    bytes: 2342505
+    sha256: b7fb87f177130a7707829a2ee3ac5bc5cf47a56b8359514f5f36e4d4a01e06d4
+- id: algonquin_character_trains_2026
+  theme: trains
+  show: 2026-05-02-algonquin
+  caption: Character-themed engines and railcars at Algonquin, May 2026.
+  alt: A blue character locomotive beside pink and brown character-themed railcars
+    on display track.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_character_trains_2026.webp
+    width: 1480
+    height: 1600
+    bytes: 252394
+    sha256: 8414248e349ae5a2d79cf94aa2b396cf68aa24a7d627e76309f760b72cb56709
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_character_trains_2026_thumb.webp
+    width: 444
+    height: 480
+    bytes: 40388
+    sha256: 385385cddbdcfa1e5774c2308b61bedcc9a30b01b650b87faa84fce61c9e16a9
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_character_trains_2026.jpg
+    width: 3021
+    height: 3266
+    bytes: 1122414
+    sha256: 1fb2ee7414c967e8eb46d0b3562910beaca98dc87e19e823d1a3a2ab137b83e6
+- id: algonquin_industrial_freight_2026
+  theme: trains
+  show: 2026-05-02-algonquin
+  caption: Freight loading at Algonquin, May 2026.
+  alt: Black Ford-branded freight cars in front of a brick industrial building, with
+    a cream-and-brown railcar behind.
+  credit: NILTC archive; uploaded by Kerbear
+  homepage: false
+  event_date: 2026-05
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/algonquin_industrial_freight_2026.webp
+    width: 1600
+    height: 1200
+    bytes: 260776
+    sha256: 9f1912c7e6615c933ede47753b0dffa694f73233f12385b1332dffd6f477be71
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/algonquin_industrial_freight_2026_thumb.webp
+    width: 480
+    height: 360
+    bytes: 29724
+    sha256: 21a2293c895c53777a356855606ef3d497a601e5b1b1bf2e0f402bae8de75797
+  original:
+    path: ARTIFACTS/discord_archive_shows/algonquin_industrial_freight_2026.jpg
+    width: 4032
+    height: 3024
+    bytes: 1544102
+    sha256: dd970f12afa488a611f91411c7cf9bd5b77d6505b55e8c4d2f26f82fefd740f0
+- id: barrington_gantry_2025
+  theme: trains
+  show: 2025-09-06-barrington
+  caption: Intermodal gantry crane.
+  alt: An orange BNSF gantry crane above container wagons, with Metra coaches and
+    tank cars on parallel tracks.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_gantry_2025.webp
+    width: 720
+    height: 540
+    bytes: 92806
+    sha256: 288de37de75505fbe062d4fda27f7b11041cd9cf2d6eae5e0a4b13af88acdf64
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_gantry_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 42732
+    sha256: 8682d9104c70b24f5c442b72049ada27a6db8c189370d567c3c0861699252149
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_gantry_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1273626
+    sha256: c524838969bb49cf7ea0713d61561084e2d236bffc32086407dac9f79a411422
+- id: barrington_metra_2025
+  theme: trains
+  show: 2025-09-06-barrington
+  caption: Metra at the container terminal.
+  alt: Blue-and-orange Metra locomotive 162 with silver bilevel coaches beside stacked
+    containers and blue freight wagons.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_metra_2025.webp
+    width: 720
+    height: 540
+    bytes: 109344
+    sha256: b5cb699bcbb68439450e4cfe970bf98c387b31d02e0890fe6e1d2924c4f76f72
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_metra_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 48870
+    sha256: c7ec40b054d7bd5bb58fd69bfe1e0ed67f6ef143af4be0c674cab8f6b8f072ea
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_metra_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1496351
+    sha256: 577ee1b9a8526ecb7a1ca92854beaa67776f21b49921044ea56fdd8091603b2a
+- id: barrington_city_rail_2025
+  theme: trains
+  show: 2025-09-06-barrington
+  caption: City railway.
+  alt: Curving railway tracks beside a waterfront city, with red-and-gold and black
+    locomotives behind the buildings.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_city_rail_2025.webp
+    width: 720
+    height: 540
+    bytes: 107168
+    sha256: aac6b44543040cb47188fcf574d3c0d80391e685b60f33d9a23a180837c0a863
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_city_rail_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 48756
+    sha256: 239d951b9b42fcb38ccd171ac7acc47dc760bfffefddb9e45c6c4c335ece8e8b
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_city_rail_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1534711
+    sha256: d6f16c3cb48473dea1cd861958f57e0f654d71b9a61cd32c39ce1ce416562b23
+- id: barrington_containers_2025
+  theme: trains
+  show: 2025-09-06-barrington
+  caption: Container and tank trains.
+  alt: Parallel tracks with blue Conrail and red Canadian Pacific locomotives, gray
+    tank cars, lettered wagons, and stacked containers.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_containers_2025.webp
+    width: 720
+    height: 540
+    bytes: 101498
+    sha256: 8b297d403ecc54431ade9c17720bbff2124c7f47542327c3c3533b838cbefa52
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_containers_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 46332
+    sha256: 7eb7d4a8ef177381aeffb2ae84c1cac1156e894970847ee93a965cec2146b26e
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_containers_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1335852
+    sha256: b555addae20679e441f127a6d2222b30db38362c73470e2ce929572ca0c75e1a
+- id: barrington_rail_depot_2025
+  theme: trains
+  show: 2025-09-06-barrington
+  caption: Railway depot.
+  alt: Metra locomotive 162 and tank cars alongside an ACME loading depot, a control
+    tower, forklifts, and delivery trucks.
+  credit: NILTC archive; uploaded by Jason C
+  homepage: false
+  event_date: 2025-09
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/barrington_rail_depot_2025.webp
+    width: 720
+    height: 540
+    bytes: 85120
+    sha256: c41318ffdbbb263eaa64ebe77c5f755b8906cbcf1a2946df082eecc1ece48cda
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/barrington_rail_depot_2025_thumb.webp
+    width: 480
+    height: 360
+    bytes: 40250
+    sha256: 962db298812390e4716c9cdb134a70dbfddd3160f7570d157fdd7daf2f020643
+  original:
+    path: ARTIFACTS/discord_archive_shows/barrington_rail_depot_2025.jpg
+    width: 4032
+    height: 3024
+    bytes: 1271590
+    sha256: fb2ea6745a816ce19227a7b0d10dfd0e3ea6245c80790921f06a0539eea83dda
+- id: wheaton_blue_engine_2026
+  theme: trains
+  show: 2026-04-11-wheaton
+  caption: Blue engine at the station.
+  alt: A blue Thomas-style steam engine numbered 1 with a smiling gray face, red buffer
+    beam, and coal tender beside a station canopy.
+  credit: NILTC archive; uploaded by Andertoons
+  homepage: false
+  event_date: 2026-04
+  capture_date: unknown
+  full:
+    path: design_d_revised/site_src/assets/photos/wheaton_blue_engine_2026.webp
+    width: 540
+    height: 720
+    bytes: 39386
+    sha256: 1424a5728434b09f677fda0286b37d2b3ded3aceae075d054cf845a25ede3c94
+  thumbnail:
+    path: design_d_revised/site_src/assets/photos/wheaton_blue_engine_2026_thumb.webp
+    width: 360
+    height: 480
+    bytes: 23028
+    sha256: 147be924b81c44dc265017638143761946436d108358231125e472d2e3e7ce59
+  original:
+    path: ARTIFACTS/discord_archive_shows/wheaton_blue_engine_2026.jpg
+    width: 1620
+    height: 2160
+    bytes: 200078
+    sha256: fc5b8778739041d0c053880b14ab3dd0c3adbb4aa4aa701a33934b48da0d31ca

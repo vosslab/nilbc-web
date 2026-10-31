@@ -1,0 +1,42 @@
+{
+  "decision": "Six individually inspected train and rail-yard scenes selected for lightweight visitor previews. Each attachment matches an existing selected show-photo message batch. The depot view is included for railway context rather than excluded for also containing buildings and trucks.",
+  "photos": [
+    {
+      "id": "barrington_gantry_2025",
+      "attachment_id": "1415723342102528000",
+      "subject": "An orange gantry crane spans the intermodal yard.",
+      "reviewed_original": true
+    },
+    {
+      "id": "barrington_metra_2025",
+      "attachment_id": "1415723342643855541",
+      "subject": "Metra coaches pass a busy container terminal.",
+      "reviewed_original": true
+    },
+    {
+      "id": "barrington_city_rail_2025",
+      "attachment_id": "1415723416706748566",
+      "subject": "Trains wind around a city full of stories.",
+      "reviewed_original": true
+    },
+    {
+      "id": "barrington_containers_2025",
+      "attachment_id": "1415723344543879248",
+      "subject": "Containers, tank cars, and colorful freight consists.",
+      "reviewed_original": true
+    },
+    {
+      "id": "barrington_rail_depot_2025",
+      "attachment_id": "1415723341561466880",
+      "subject": "A railway depot connects trains and town.",
+      "reviewed_original": true
+    },
+    {
+      "id": "wheaton_blue_engine_2026",
+      "attachment_id": "1493344213549711483",
+      "subject": "A familiar blue engine at the station.",
+      "reviewed_original": true
+    }
+  ],
+  "duplicate_check": "IMG_2187 was already selected as barrington_yard_2025; it was removed from this batch and replaced by the distinct city/railway overview IMG_2178 from an existing verified source message."
+}

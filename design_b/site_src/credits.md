@@ -7,23 +7,9 @@ description: Sources and artwork credits for the Northern Illinois Brick Club we
 
 This is a design demonstration for Northern Illinois Brick Club, prepared October 19, 2026.
 
-## Club photography
+## Club photographs
 
-The photographs show real club work and people. They come from the public
-[NILTC website](https://niltc.org/) and are included in this club-design demo under
-the owner's assignment. Photographer and individual builder credits were not supplied;
-we do not infer authorship. Rights remain with their respective owners.
-
-- [Frog sculpture](https://niltc.org/frog)
-- [Prairie-style houses](https://niltc.org/praire-bungalow)
-- [Metra locomotive](https://niltc.org/metra-2)
-- [Illuminated skyline](https://niltc.org/night_skyline)
-- [Red jet](https://niltc.org/jet)
-- [Millennium Falcon hangar](https://niltc.org/falcon_bay_595)
-- [Club builders with brick-built guitars](https://niltc.org/wp-content/uploads/2026/06/IMG_2459.webp)
-
-Gallery titles and descriptions were written for this demo; they are not original model names.
-Archive photographs do not promise which models will appear at a particular show.
+Photographs show the club's builds and exhibitions.
 
 ## Club identity
 
@@ -33,11 +19,11 @@ Artist credit and a source parts list were not supplied. Original artwork is pre
 
 ## Information sources
 
-Club information was checked against the existing website on October 19, 2026:
+Explore club information:
 
-- [Club background and history](https://niltc.org/about)
-- [Published show listings](https://niltc.org/upcoming-shows)
-- [Membership and contact information](https://niltc.org/membership)
+- [Club background and history](about.md)
+- [Published show listings](shows.md)
+- [Membership and contact information](join.md)
 
 Event details are a dated snapshot. Confirm arrangements with the venue before traveling.
 

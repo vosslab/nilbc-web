@@ -4,7 +4,7 @@
  "folder_count": 32,
  "tile_count": 1336,
  "candidate_originals": 54,
- "published_archive_photos": 52,
+ "published_archive_photos": 58,
  "new_photos": 44,
  "sheets": [
   {
@@ -1197,5 +1197,10 @@
    "reason": "Completed train display visually confirmed in the original frame; the exact post-show photo batch has existing read-only evidence corroborating the Arlington club exhibition. This establishes show context, not builder identity.",
    "already_selected": false
   }
- ]
+ ],
+ "teaser_refinement": {
+  "additional_photos": 6,
+  "review": "train_teaser_review.json",
+  "scope": "Six full-frame-inspected train and rail-yard views from existing verified show batches; 23 train previews total."
+ }
 }

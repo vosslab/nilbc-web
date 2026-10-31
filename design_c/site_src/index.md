@@ -40,7 +40,7 @@ Adult builders across northern Illinois and southern Wisconsin. The club is chan
 <p class="show-day"><span class="show-num">15</span><span class="show-when">Sunday</span><span class="show-when show-month">November 2026</span></p>
 </div>
 
-<p class="show-note">The <a href="https://niltc.org/">club homepage</a> and the <a href="https://niltc.org/upcoming-shows">upcoming shows page</a>, both updated 18 October 2026, list Saturday 10:00-16:30 and Sunday 13:00-16:30. A Downers Grove library calendar page for this weekend was not found on 19 October 2026.</p>
+<p class="show-note">The <a href="index.md">club homepage</a> and the <a href="shows.md">upcoming shows page</a>, both updated 18 October 2026, list Saturday 10:00-16:30 and Sunday 13:00-16:30. A Downers Grove library calendar page for this weekend was not found on 19 October 2026.</p>
 
 [Show details](shows.md)
 

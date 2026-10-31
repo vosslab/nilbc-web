@@ -1,7 +1,7 @@
 /*
  * NILBC progressive enhancements.
  * 1. World filter chips on the gallery page (sections stay visible without JavaScript).
- * 2. Photo dialog: gallery links open a modal <dialog>; without JavaScript they open the image.
+ * 2. Show albums reveal static thumbnail previews; visit links lead to upcoming shows.
  * Runs once per page load (document$ fires on load and on any instant navigation).
  */
 
@@ -53,86 +53,6 @@ function nbSetupWorldFilter() {
 		const visible = document.querySelectorAll(".nb-world:not([hidden]) .nb-photo").length;
 		status.textContent = `Showing ${visible} photos`;
 	}
-}
-
-function nbSetupLightbox() {
-	const links = document.querySelectorAll(".nb-photo__link");
-	if (links.length === 0 || typeof HTMLDialogElement !== "function") return;
-	let dialog = document.querySelector(".nb-lightbox");
-	if (!dialog) {
-		dialog = document.createElement("dialog");
-		dialog.className = "nb-lightbox";
-		dialog.setAttribute("aria-label", "Photo viewer");
-		dialog.setAttribute("aria-describedby", "nb-viewer-caption");
-		dialog.innerHTML =
-			'<button type="button" class="nb-lightbox__close" aria-label="Close photo">&times;</button>' +
-			'<div class="nb-lightbox__controls">' +
-			'<button type="button" data-step="-1">Previous</button>' +
-			'<span class="nb-lightbox__status" role="status"></span>' +
-			'<button type="button" data-step="1">Next</button></div>' +
-			'<p id="nb-viewer-caption"></p>' +
-			'<a class="nb-lightbox__original">Open image directly</a>';
-		document.body.appendChild(dialog);
-	}
-	const caption = dialog.querySelector("p");
-	const status = dialog.querySelector("[role=status]");
-	let opener = null;
-	let group = [];
-	let index = 0;
-	function showPhoto(next) {
-		index = (next + group.length) % group.length;
-		const link = group[index];
-		let image = dialog.querySelector("img");
-		if (!image) {
-			image = document.createElement("img");
-			dialog.insertBefore(image, caption);
-		}
-		status.textContent = `Loading photo ${index + 1} of ${group.length}`;
-		image.onload = () => { status.textContent = `Photo ${index + 1} of ${group.length}`; };
-		image.onerror = () => { status.textContent = "Photo unavailable. Try the direct image link."; };
-		image.alt = link.querySelector("img").alt;
-		image.src = link.href;
-		caption.textContent = link.dataset.caption;
-		dialog.querySelector(".nb-lightbox__original").href = link.href;
-		dialog.querySelectorAll("[data-step]").forEach((button) => {
-			button.disabled = group.length < 2;
-		});
-	}
-	dialog.querySelector(".nb-lightbox__close").onclick = () => dialog.close();
-	dialog.querySelectorAll("[data-step]").forEach((button) => {
-		button.onclick = () => showPhoto(index + Number(button.dataset.step));
-	});
-	dialog.onkeydown = (event) => {
-		if (event.key === "Tab") {
-			const controls = Array.from(dialog.querySelectorAll("button:not([disabled]), a[href]"));
-			const first = controls[0];
-			const last = controls[controls.length - 1];
-			if (event.shiftKey && document.activeElement === first) {
-				event.preventDefault();
-				last.focus();
-			} else if (!event.shiftKey && document.activeElement === last) {
-				event.preventDefault();
-				first.focus();
-			}
-		}
-		if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
-			event.preventDefault();
-			showPhoto(index + (event.key === "ArrowRight" ? 1 : -1));
-		}
-	};
-	dialog.onclick = (event) => { if (event.target === dialog) dialog.close(); };
-	dialog.onclose = () => { if (opener && opener.isConnected) opener.focus(); };
-	links.forEach((link) => {
-		link.onclick = (event) => {
-			if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-			event.preventDefault();
-			opener = link;
-			const container = link.closest(".nb-show-gallery, .nb-gallery, .nb-mosaic");
-			group = container ? Array.from(container.querySelectorAll(".nb-photo__link")) : [link];
-			showPhoto(group.indexOf(link));
-			dialog.showModal();
-		};
-	});
 }
 
 function nbSetupAlbums() {
@@ -212,7 +132,6 @@ function nbSetupMobileDrawer() {
 function nbInit() {
 	nbSetupMobileDrawer();
 	nbSetupWorldFilter();
-	nbSetupLightbox();
 	nbSetupAlbums();
 	nbSetupTrain();
 }

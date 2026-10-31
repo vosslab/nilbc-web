@@ -20,17 +20,8 @@ Matchstick are digital renderings of the buildable model. His colors on
 
 ## Club photographs
 
-Photographs come from the club's [earlier website](https://niltc.org/) and its archived
-show collection. The show albums include photographs uploaded by Kerbear, Andertoons,
-and Jason C. An uploader credit does not identify the photographer or model builder. Discord source
-links require access to the club server. Photos are hosted locally; viewing needs no login.
-No external reuse license is implied. Did you take one of these photos or
-build one of these models? Email
-[niltc.contact@gmail.com](mailto:niltc.contact@gmail.com?subject=Photo%20credit) and we will
-add your name.
-
-/// photo-credits
-///
+Photographs show the club's builds and exhibitions. Explore the
+[show albums](../shows/index.md) and come see the displays in person.
 
 ## Show and club information
 
@@ -49,12 +40,11 @@ this site.
 ## Photo presentation
 
 Some revised designs use paper or picture frames and short editorial captions. These captions
-were written for the demo; they are not quotations from members. Clicking gallery photographs
-opens a larger, uncropped web copy. Preserved source files stay outside the deployed site.
+were written for the demo; they are not quotations from members. Gallery photographs offer a small preview of the displays you can visit in person.
 
 Handwritten captions use [Kalam](https://github.com/google/fonts/tree/main/ofl/kalam),
 Copyright 2014 Indian Type Foundry, under the SIL Open Font License. The font and its license
 are hosted with the site.
 
 The frog cutout was derived from the archive photograph with background-removal software
-and mask cleanup. The original photograph remains available in the photo viewer.
+and mask cleanup. The source photograph is preserved in the repository; the website uses lightweight previews.

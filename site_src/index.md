@@ -37,5 +37,4 @@ Which details would you keep, and which would you change? Check them on a phone 
 Try the homepage, shows, creations, and joining pages in each design. Compare them on your
 phone as well as a larger screen. Use your browser's Back button to return to this page.
 
-These are design proposals for club review. The
-[existing club website](https://niltc.org/) remains the source for current club information.
+These are replacement website designs for club review.

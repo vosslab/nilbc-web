@@ -39,9 +39,8 @@ with its own layout, navigation, and presentation. The letters identify the entr
 | C | [Open Design C](https://vosslab.github.io/nilbc-web/c/) |
 | D | [Open Design D](https://vosslab.github.io/nilbc-web/d/) |
 
-These are design proposals. Event dates and other demo content may need updating; use the
-[existing club website](https://niltc.org/) for current club information. This comparison does
-not collect votes.
+These are replacement website designs for club review. Event dates and other demo content
+may need updating. This comparison does not collect votes.
 
 ## Try the same tasks
 

@@ -60,7 +60,7 @@ build?
 
 /// worlds
 
-### [Rail yards](creations/index.md#rail-yards)
+### [Rail yards](creations/trains.md)
 
 ![](assets/photos/metra_locomotive_thumb.webp)
 

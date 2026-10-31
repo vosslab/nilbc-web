@@ -62,3 +62,8 @@
 .md-typeset .nb-gallery.nb-collection > .nb-collection__divider:first-child { margin-top: 0; }
 
 .md-typeset .nb-gallery.nb-collection .nb-photo__capture-date { color: var(--nb-ink-soft); font-size: .68rem; }
+
+/* Previews invite a visit rather than a full-screen image viewer. */
+.md-typeset .nb-photo__link { cursor: default; }
+.md-typeset .nb-gallery.nb-collection { grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr)); }
+.md-typeset .nb-show-gallery { grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); }

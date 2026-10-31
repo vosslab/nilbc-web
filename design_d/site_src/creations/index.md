@@ -21,8 +21,7 @@ layouts, but members build whatever they love, as long as it is family friendly.
 Running layouts are where the club began. Members build locomotives and rolling stock to
 shared [train standards](../join/standards.md) so everything runs on one layout.
 
-/// gallery | trains
-///
+[Explore our trains and rail yards](trains.md)
 
 ///
 

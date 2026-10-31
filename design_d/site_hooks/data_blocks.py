@@ -6,14 +6,13 @@ blocks below have no body and are swapped for HTML before the Markdown is conver
 
 - /// gallery | THEME        every photo in data/photos.yml with that theme
 - /// photos | ID ID ID      the named photos, in order
-- /// photo-credits          a credits list covering every photo
 - /// shows                  upcoming shows from the `shows:` front matter of shows/index.md
 - /// next-show              a ticket for the first upcoming show
 - /// diagram | PATH         an SVG file inlined so it follows the color scheme
 - /// castle-module          the 15 by 60 inch castle module standard drawn as a plate
 
 Each block closes with a `///` line. Keeping photo and show facts in one place means
-captions, credits, and dates cannot drift between pages. Shows whose last day has passed
+captions and dates cannot drift between pages. Shows whose last day has passed
 drop off automatically at the next build.
 """
 
@@ -34,7 +33,7 @@ SHOWS_PAGE = os.path.join(REPO_ROOT, 'site_src', 'shows', 'index.md')
 
 
 DATA_BLOCK_NAMES = (
-	'gallery', 'photos', 'photo-credits', 'shows', 'next-show', 'diagram', 'castle-module',
+	'gallery', 'photos', 'shows', 'next-show', 'diagram', 'castle-module',
 )
 # one data block: opening line with optional argument, then the closing `///` line
 DATA_BLOCK = re.compile(
@@ -132,7 +131,7 @@ def image_size(filename: str) -> tuple:
 #============================================
 def figure_html(photo: dict, prefix: str) -> str:
 	"""
-	Build one gallery figure: thumbnail linking to the large image, caption, credit.
+	Build one gallery figure: thumbnail linking to the large image, caption.
 	"""
 	photo_id = photo['id']
 	width, height = image_size(f"{photo_id}_thumb.webp")
@@ -140,7 +139,6 @@ def figure_html(photo: dict, prefix: str) -> str:
 	thumb_src = f"{prefix}assets/photos/{photo_id}_thumb.webp"
 	caption = html.escape(photo['caption'])
 	alt = html.escape(photo['alt'], quote=True)
-	credit = html.escape(photo['credit'])
 	theme_name = photo['theme_name']
 	text = f'<figure class="nb-photo" data-world="{photo["theme"]}">'
 	text += f'<a class="nb-photo__link" href="{full_src}" data-caption="{caption}">'
@@ -150,7 +148,7 @@ def figure_html(photo: dict, prefix: str) -> str:
 		text += f' style="object-position: {photo["focus"]}"'
 	text += ' loading="lazy" decoding="async"></a>'
 	text += f'<figcaption><span class="nb-photo__world">{theme_name}</span>'
-	text += f'{caption} <span class="nb-photo__credit">Photo: {credit}</span>'
+	text += caption
 	text += '</figcaption></figure>'
 	return text
 
@@ -176,24 +174,6 @@ def mosaic_html(photos: dict, ids: list, prefix: str) -> str:
 			raise ValueError(f"/// photos names '{photo_id}', which is not an id in data/photos.yml")
 	figures =[figure_html(photos[photo_id], prefix) for photo_id in ids]
 	text = '<div class="nb-mosaic">' + ''.join(figures) + '</div>'
-	return text
-
-#============================================
-def credits_html(photos: dict, prefix: str) -> str:
-	"""
-	Build a compact credits list: thumbnail, caption, world, credit, and source links.
-	"""
-	text = '<ul class="nb-credit-list">'
-	for photo in photos.values():
-		caption = html.escape(photo['caption'])
-		thumb = f"{prefix}assets/photos/{photo['id']}_thumb.webp"
-		text += f'<li><img src="{thumb}" alt="" width="64" height="48" loading="lazy">'
-		text += f'<span><strong>{caption}</strong> '
-		text += f'<span class="nb-credit-list__meta">{photo["theme_name"]}. '
-		text += f'Photo: {html.escape(photo["credit"])}. '
-		text += f'<a href="{photo["source_url"]}">Original</a> &middot; '
-		text += f'<a href="{photo["source_page"]}">Source page</a></span></span></li>'
-	text += '</ul>'
 	return text
 
 #============================================
@@ -420,8 +400,6 @@ def on_page_markdown(markdown: str, page: object, config: object, files: object)
 			block = gallery_html(photos, argument, prefix)
 		elif name == 'photos':
 			block = mosaic_html(photos, argument.split(), prefix)
-		elif name == 'photo-credits':
-			block = credits_html(photos, prefix)
 		elif name == 'shows':
 			block = shows_html(shows)
 		elif name == 'next-show':

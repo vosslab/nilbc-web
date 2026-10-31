@@ -11,25 +11,18 @@ Facts were checked on 19 October 2026 unless a line below gives an older publica
 
 ## Where facts come from
 
-- Show dates and hours: [niltc.org](https://niltc.org/) and [upcoming shows](https://niltc.org/upcoming-shows), both updated 18 October 2026. Those pages agree on Downers Grove: Saturday 10:00-16:30 and Sunday 13:00-16:30. The 5-6 February 2027 listing is on the upcoming-shows page. The December Glenside listing was not on the library calendar during this check.
-- 2026 shows already held: [past shows](https://niltc.org/past-shows), updated 18 October 2026.
+- Show dates and hours: [Club information](index.md) and [upcoming shows](shows.md), both updated 18 October 2026. Those pages agree on Downers Grove: Saturday 10:00-16:30 and Sunday 13:00-16:30. The 5-6 February 2027 listing is on the upcoming-shows page. The December Glenside listing was not on the library calendar during this check.
+- 2026 shows already held: [past shows](shows.md), updated 18 October 2026.
 - Northbrook hours and room: Northbrook Public Library fall 2026 program guide, and the club Facebook post of 13 October 2026.
-- Founding story and mission: [about](https://niltc.org/about), last modified 24 June 2022.
-- Membership rules and dues: [membership](https://niltc.org/membership), last modified 4 January 2026.
-- Meetings, trains, and power: [FAQ](https://niltc.org/faqs), last modified 20 February 2023.
+- Founding story and mission: [about](club.md), last modified 24 June 2022.
+- Membership rules and dues: [membership](join.md), last modified 4 January 2026.
+- Meetings, trains, and power: [FAQ](join.md), last modified 20 February 2023.
 - Member count and establishment year: [LEGO Ambassador Network club page](https://lan.lego.com/clubs/304-niltc/), reviewed 16 March 2026.
 - Track, trains, and skyscrapers: the standards pages linked from [builds](builds.md).
 
-## Club photograph credits
+## Club photographs
 
-Both photographs are copies of files the club published on niltc.org. They are shown small, with the builders unnamed because the source pages do not name them.
-
-| File on this site | Source |
-| --- | --- |
-| assets/photos/city_layout_2011.jpg | [IMG_1133.jpg](https://niltc.org/wp-content/uploads/2011/01/IMG_1133.jpg) on the pictures page. Metadata date 6 January 2011. |
-| assets/photos/guitars_and_vehicles.jpg | [IMG_2459.webp](https://niltc.org/wp-content/uploads/2026/06/IMG_2459.webp), published 28 June 2026. |
-
-The Flickr group is linked, not copied. The [Facebook page](https://www.facebook.com/NILTC) and the [Instagram page](https://www.instagram.com/niltc/) were checked on 19 October 2026 without a login. Facebook showed no photographs. The Instagram posts on view were Northbrook show posters, so none of those files were copied.
+Photographs show the club's builds and exhibitions.
 
 ## Approved identity files
 

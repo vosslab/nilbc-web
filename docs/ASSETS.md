@@ -63,12 +63,12 @@ or complete palette. Choose accessible color combinations for actual interface e
 
 ## Discord show photographs
 
-The current refinement checkpoint has 73 distinct manifest photos: 52 Archive Shows selections
-across seven dated shows and 21 pre-existing site photographs. The 17 train records include two
-new Arlington exhibit images; the Purple Rain railcar leads the curated homepage photo sequence.
+The current refinement checkpoint has 79 photo records: 58 Archive Shows selections
+across seven dated shows and 21 pre-existing site photographs. The 23 train records include six additional
+Barrington and Wheaton previews; the Purple Rain railcar leads the curated homepage photo sequence.
 These counts describe the current review checkpoint, not final acceptance or deployment. Earlier
 45-photo totals are historical snapshots. Consult `design_d_revised/data/photos.yml` and
-[refinement_curation.md](active_plans/reports/refinement_curation.md) for current selection
+[train_teasers.md](active_plans/reports/train_teasers.md) for current selection
 details.
 Preserved originals and hashes are in `ARTIFACTS/discord_archive_shows/provenance.json`;
 optimized local WebP copies are in the shared revised photo directory. See
@@ -134,3 +134,10 @@ The cutout was made with the installed rembg CLI, `isnet-general-use`, followed 
 cleanup and trimming in ImageMagick. No model parts were generated. The original photo stays
 unchanged and is still the gallery-link destination. The failed u2net frog and Unikitty
 experiments are not published. Build/deploy needs neither rembg nor its model weights.
+
+## Browse the photo catalog
+
+Start with [README.md](photos/README.md) for visual theme sheets and show albums covering
+all selected website photos. [inventory.yml](photos/inventory.yml) records measured asset
+sizes, dimensions, hashes, date precision, and crop focus. This catalog is generated from
+existing manifests and images; it does not create a second editable photo database.

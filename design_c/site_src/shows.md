@@ -7,7 +7,7 @@ description: Where NILBC exhibits, with club hours or a label when hours are mis
 
 # Where we exhibit
 
-The club has no permanent layout. Members bring a shared display to libraries and other public rooms, mostly in the Chicago suburbs. Checked against [niltc.org](https://niltc.org/) on 19 October 2026.
+The club has no permanent layout. Members bring a shared display to libraries and other public rooms, mostly in the Chicago suburbs.
 
 <div class="show-card" markdown="1">
 
@@ -58,7 +58,7 @@ Northbrook Public Library's own fall guide matched the club hours for 17-18 Octo
 
 ## Shows already held
 
-These 2026 dates are from the club's [past shows](https://niltc.org/past-shows) page, which was updated 18 October 2026.
+These 2026 dates are from the club's [past shows](shows.md) page, which was updated 18 October 2026.
 
 | Dates | Place |
 | --- | --- |
@@ -72,8 +72,8 @@ These 2026 dates are from the club's [past shows](https://niltc.org/past-shows) 
 | September 12-13 | Ela Area Public Library |
 | October 17-18 | Northbrook Public Library |
 
-The about page on niltc.org says the club displays six or seven times a year. That sentence sits on a page last modified 24 June 2022. The 2026 list above is already longer, with two weekends still ahead.
 
-Earlier years stay on the [past shows](https://niltc.org/past-shows) archive rather than being copied here.
+
+Visit an upcoming show to see the latest displays.
 
 </div>

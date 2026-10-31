@@ -20,15 +20,8 @@ Matchstick are digital renderings of the buildable model. His colors on
 
 ## Club photographs
 
-Every photo of member work comes from the club's photo archive on its
-[earlier website](https://niltc.org/). The archive does not record who took each photo or
-built each model, so photos are credited to the club. Did you take one of these photos or
-build one of these models? Email
-[niltc.contact@gmail.com](mailto:niltc.contact@gmail.com?subject=Photo%20credit) and we will
-add your name.
-
-/// photo-credits
-///
+Photographs show the club's builds and exhibitions. Explore the
+[show albums](../shows/index.md) and come see the displays in person.
 
 ## Show and club information
 

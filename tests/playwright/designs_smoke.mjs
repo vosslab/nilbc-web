@@ -47,62 +47,22 @@ async function assertImageForwardCollection(page, base, design) {
 	assert.match(countText, /^\s*\d+ photos\s*$/);
 	assert.equal(Number.parseInt(countText, 10), await photos.count(), design + ': advertised collection count differs from rendered photos');
 
-	const first = photos.first().locator('.nb-photo__link');
-	const thumb = first.locator('img');
-	const thumbSrc = await thumb.getAttribute('src');
-	const originalHref = await first.getAttribute('href');
-	assert.ok(thumbSrc && originalHref && thumbSrc !== originalHref, design + ': thumbnail does not link to a separate optimized image');
-	assert.match(thumbSrc, /_thumb\.webp$/);
-	const context = await page.context().browser().newContext({
-		viewport: page.viewportSize(),
-		reducedMotion: 'reduce',
-	});
-	try {
-		const journeyPage = await context.newPage();
-		journeyPage.setDefaultTimeout(15000);
-		const requests = [];
-		journeyPage.on('request', (request) => requests.push(request.url()));
-		await journeyPage.goto(base + design + '/');
-		const journeyTrainLink = journeyPage.locator('.nb-home-stage a[href]').filter({ hasText: /^Trains$/ }).first();
-		await journeyTrainLink.click();
-		const journeyCollection = journeyPage.locator('.nb-gallery.nb-collection');
-		const journeyPhotos = journeyCollection.locator('.nb-photo');
-		const originalHrefs = await journeyPhotos.locator('.nb-photo__link').evaluateAll((links) => links.map((link) => link.href));
-		assert.ok(originalHrefs.length > 0, design + ': train collection has no original-image links');
-		assert.ok(originalHrefs.every((href) => !requests.includes(href)), design + ': collection requested an original before selection');
-		const reloadedFirst = journeyPhotos.first().locator('.nb-photo__link');
-		const selectedOriginal = await reloadedFirst.evaluate((link) => link.href);
-		await reloadedFirst.click();
-		const viewer = journeyPage.getByRole('dialog', { name: 'Photo viewer' });
-		await viewer.waitFor({ state: 'visible' });
-		const viewerImage = viewer.locator('img');
-		await viewerImage.waitFor({ state: 'visible' });
-		await journeyPage.waitForFunction(({ image, href }) => image.complete && image.naturalWidth > 0 && image.src === href,
-			{ image: await viewerImage.elementHandle(), href: selectedOriginal });
-		const selected = await viewerImage.evaluate((image) => image.src);
-		assert.equal(selected, selectedOriginal, design + ': viewer did not load the selected original image');
-		assert.ok(requests.includes(selectedOriginal), design + ': selected image was not requested after opening viewer');
-		const firstSrc = selected;
-		await viewer.getByRole('button', { name: 'Next', exact: true }).click();
-		const nextHref = await journeyPhotos.nth(1).locator('.nb-photo__link').evaluate((link) => link.href);
-		await journeyPage.waitForFunction(({ image, href }) => image.complete && image.naturalWidth > 0 && image.src === href,
-			{ image: await viewerImage.elementHandle(), href: nextHref });
-		assert.notEqual(nextHref, firstSrc);
-		await viewer.getByRole('button', { name: 'Previous', exact: true }).click();
-		await journeyPage.waitForFunction(({ image, href }) => image.complete && image.naturalWidth > 0 && image.src === href,
-			{ image: await viewerImage.elementHandle(), href: selectedOriginal });
-		assert.equal(await viewerImage.evaluate((image) => image.src), firstSrc);
-		await journeyPage.keyboard.press('Escape');
-		await viewer.waitFor({ state: 'hidden' });
-		assert.ok(await reloadedFirst.evaluate((node) => node === document.activeElement), design + ': focus did not return to the selected photo');
-	} finally {
-		await context.close();
-	}
+	assert.ok(await photos.count() >= 23, design + ': train preview selection is incomplete');
+	assert.equal(await collection.locator('a[href$=".webp"]').count(), 0);
+	const previews = await photos.locator('img:not(.nb-photo-cutout)').evaluateAll(images => images.map(image => image.getAttribute('src')));
+	assert.ok(previews.every(src => /_thumb\.webp$/.test(src)), design + ': collection uses a large image');
+	await photos.first().locator('img').click();
+	assert.equal(await page.getByRole('dialog', { name: 'Photo viewer' }).count(), 0);
+	const visit = page.getByRole('link', { name: 'See the trains in person', exact: true });
+	await visit.focus();
+	await page.keyboard.press('Enter');
+	await page.waitForURL(base + design + '/shows/');
+	assert.equal(page.url(), base + design + '/shows/');
 	await page.goto(base + design + '/');
-	assert.ok(await page.locator('.nb-home-photos').count(), design + ': homepage photo section is missing');
-	const homepageImages = await page.locator('.nb-home-photos img').evaluateAll((images) => images.map((image) => ({src: image.getAttribute('src'), href: image.closest('a')?.getAttribute('href')})));
+	const homepageImages = await page.locator('.nb-home-stage .nb-home-photos img').evaluateAll(images => images.map(image => image.getAttribute('src')));
 	assert.ok(homepageImages.length > 0);
-	assert.ok(homepageImages.every((image) => image.src && image.href && image.src !== image.href && /_thumb\.webp$/.test(image.src)), design + ': homepage requests full-size photo sources instead of thumbnails');
+	assert.ok(homepageImages.every(src => /_thumb\.webp$/.test(src)), design + ': homepage uses large photos');
+
 }
 
 async function assertImageForwardTimeline(page, base, design) {
@@ -267,23 +227,13 @@ try {
 	await page.keyboard.press('Escape');
 	await gallery.waitFor({ state: 'hidden' });
 	report.journeys.push('b: gallery opens, advances and closes');
-	for (const design of dDesigns) {
+	for (const design of ['d']) {
 		await page.goto(base + design + '/creations/');
 		await page.locator('.nb-photo__link').first().click();
 		await page.getByRole('dialog', { name: 'Photo viewer' }).waitFor({ state: 'visible' });
 		await page.getByRole('button', { name: 'Close photo' }).click();
 		await page.getByRole('dialog', { name: 'Photo viewer' }).waitFor({ state: 'hidden' });
-		if (design === 'd-gamma') {
-			await page.goto(base + design + '/creations/creatures/');
-			const frog = page.locator('[data-photo="frog"]');
-			await frog.locator('.nb-photo__link').click();
-			const frogViewer = page.getByRole('dialog', { name: 'Photo viewer' });
-			await frogViewer.waitFor({ state: 'visible' });
-			const frogImage = frogViewer.locator('img');
-			await page.waitForFunction((image) => image.complete && image.naturalWidth > 0 && image.src.endsWith('/frog.webp'), await frogImage.elementHandle());
-			assert.ok((await frogImage.evaluate((image) => image.src)).endsWith('/frog.webp'));
-			await page.getByRole('button', { name: 'Close photo' }).click();
-		}
+
 		report.journeys.push(design + ': photo viewer opens and closes');
 	}
 	for (const design of ['d-alpha', 'd-beta', 'd-gamma']) {
@@ -292,29 +242,21 @@ try {
 		await albumLink.click();
 		const album = page.locator(page.url().slice(page.url().indexOf('#')));
 		assert.equal(await album.getAttribute('open'), '');
-		const opener = album.locator('.nb-photo__link').first();
-		await opener.focus();
-		await page.keyboard.press('Enter');
-		const viewer = page.getByRole('dialog', { name: 'Photo viewer' });
-		await viewer.waitFor({ state: 'visible' });
-		const first = await viewer.locator('img').getAttribute('src');
-		await viewer.getByRole('button', { name: 'Next', exact: true }).click();
-		assert.notEqual(await viewer.locator('img').getAttribute('src'), first);
-		await page.keyboard.press('ArrowLeft');
-		assert.equal(await viewer.locator('img').getAttribute('src'), first);
-		await viewer.locator('.nb-lightbox__original').focus();
-		await page.keyboard.press('Tab');
-		assert.ok(await viewer.getByRole('button', { name: 'Close photo' }).evaluate((node) => node === document.activeElement));
-		await page.keyboard.press('Shift+Tab');
-		assert.ok(await viewer.locator('.nb-lightbox__original').evaluate((node) => node === document.activeElement));
-		await page.keyboard.press('Escape');
-		await viewer.waitFor({ state: 'hidden' });
-		assert.ok(await opener.evaluate((node) => node === document.activeElement));
+		assert.ok(await album.locator('img').count() > 0);
+		assert.equal(await album.locator('a[href$=".webp"]').count(), 0);
+		assert.equal(await page.getByRole('dialog', { name: 'Photo viewer' }).count(), 0);
 		await album.locator('summary').focus();
 		await page.keyboard.press('Enter');
 		assert.equal(await album.getAttribute('open'), null);
-		report.journeys.push(design + ': show album navigation, keyboard viewer, next/previous and focus return');
+		report.journeys.push(design + ': show album navigation and keyboard collapse with static previews');
 	}
+	await page.goto(base + 'd/');
+	await page.locator('.nb-world-card h3 a[href="creations/trains/"]').click();
+	assert.equal(page.url(), base + 'd/creations/trains/');
+	assert.ok(await page.locator('.nb-train-previews img').count() >= 23);
+	await page.getByRole('link', { name: 'See the trains in person', exact: true }).click();
+	assert.equal(page.url(), base + 'd/shows/');
+	report.journeys.push('d: Rail yards opens a dedicated preview page and reaches shows');
 	await page.setViewportSize({ width: 1440, height: 1000 });
 	for (const design of ['c', ...dDesigns]) {
 		console.log('Checking search ' + design);

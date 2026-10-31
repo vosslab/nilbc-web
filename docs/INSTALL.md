@@ -159,8 +159,10 @@ verified `event_date`. The `/// featured-photos` block in `site_src/index.md` re
 curated list. It does not automatically select the newest uploads. Album listings use
 `/// show-gallery`; `/// collection | THEME` supplies a full, date-ordered theme page.
 Dedicated trains, cities, screen-and-story, castles, and creatures pages use this collection
-block. Collections are thumbnail-first; the full-image viewer is an optional enhancement, not
-a reason to load full-size images for the grid. No external API or Discord login is used at
+block. Collections and show albums display static thumbnails with visit invitations. They do not
+open a full-image viewer. Larger derivatives remain in the repository for selected editorial
+uses and source review. Original D also has a dedicated Rail yards page; its build hook reuses
+the current train selection and copies only missing thumbnails into its own output. No external API or Discord login is used at
 runtime.
 
 The shared editable timeline lives at `site_src/about/timeline.md` and is sourced from public
@@ -183,3 +185,17 @@ After the Node and Chromium setup above, run `npm run flyer`. The command reads 
 SVG in `marketing/` and writes the PDF and PNG preview to `output/pdf/`. It checks font loading
 and text margins. See [../marketing/README.md](../marketing/README.md) for editing and print details.
 The website build does not depend on the flyer export.
+
+### Refresh the repository photo catalog
+
+Browse [README.md](photos/README.md) for theme previews and ordered show albums. After editing
+photo manifests or replacing an image, regenerate the repository documentation:
+
+```bash
+source source_me.sh && python3 devel/build_photo_catalog.py
+source source_me.sh && python3 devel/build_photo_catalog.py --check
+```
+
+The catalog records dimensions, sizes, hashes, crop focus, and known event/capture dates.
+It links existing images without copying them. The private archive is not required, and
+these repository documentation files are not included in the generated website.

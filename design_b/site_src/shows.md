@@ -43,9 +43,6 @@ calendar:
   years: 2026 / 2027
   featured_label: Next public show
   source_prefix: 'Calendar checked '
-  source_connector: ' against the '
-  source_link: club's published listings
-  source_url: https://niltc.org/upcoming-shows
   source_suffix: . Dates and arrangements can change; confirm with the venue before traveling.
 visitor:
   eyebrow: Plan a little adventure

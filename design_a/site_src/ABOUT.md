@@ -13,8 +13,7 @@ Northern Illinois Brick Club.
 
 Northern Illinois LEGO Train Club (NILTC) is becoming **Northern Illinois Brick Club (NILBC)**.
 The new name removes the LEGO trademark from the club name and welcomes builders with more
-interests. You will still see the NILTC name on the [existing club website](https://niltc.org/)
-and in earlier display photographs.
+interests. You will still see the NILTC name in earlier display photographs.
 
 ---
 

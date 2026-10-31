@@ -12,8 +12,6 @@ footer:
       url: JOIN/
     - label: Sources and image credits
       url: CREDITS/
-    - label: Existing club website
-      url: https://niltc.org/
 ---
 
 Northern Illinois Brick Club

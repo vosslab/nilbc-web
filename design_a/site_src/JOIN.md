@@ -22,7 +22,7 @@ the club can confirm its current membership arrangements.
 
 2. **Find the club's public channels**
 
-    Visit the existing club website or its linked Facebook page. Introduce yourself as an adult
+    Email niltc.contact@gmail.com. Introduce yourself as an adult
     builder interested in learning more about Northern Illinois Brick Club.
 
 3. **Ask about getting involved**
@@ -34,7 +34,7 @@ the club can confirm its current membership arrangements.
 
 ## Make your introduction
 
-[Visit the existing club website](https://niltc.org/){ .club-button }
+[Contact the club](mailto:niltc.contact@gmail.com){ .club-button }
 
 The club also links to its [Facebook page](https://www.facebook.com/129326520465530).
 An account may be required to interact there.

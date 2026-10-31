@@ -11,7 +11,7 @@ Northern Illinois Brick Club is the new name for Northern Illinois LEGO Train Cl
 
 ## How it started
 
-The [about page](https://niltc.org/about) says the club began in late summer 2001, when a few builders from Illinois and Wisconsin met. One person had been showing a small train locally. A larger shared display sounded better.
+The [about page](club.md) says the club began in late summer 2001, when a few builders from Illinois and Wisconsin met. One person had been showing a small train locally. A larger shared display sounded better.
 
 The first public display was in March 2002 at the National Model Railroad Association High Wheeler show, Harper College, Palatine. Five members set up a layout of about 17 by 22 feet. The about page says guests kept asking whether LEGO made trains, and that three people joined from that weekend.
 
@@ -21,7 +21,7 @@ The LEGO Ambassador Network listing, reviewed 16 March 2026, still describes an 
 
 ## No public clubhouse
 
-The [FAQ](https://niltc.org/faqs), last modified 20 February 2023, says there is no permanent display. Members are spread across northern Illinois and southern Wisconsin. The club tries to meet once a quarter at members' homes in the western suburbs. That meeting rhythm is from the FAQ, not from a 2026 calendar.
+The [FAQ](join.md), last modified 20 February 2023, says there is no permanent display. Members are spread across northern Illinois and southern Wisconsin. The club tries to meet once a quarter at members' homes in the western suburbs. That meeting rhythm is from the FAQ, not from a 2026 calendar.
 
 The public email is [niltc.contact@gmail.com](mailto:niltc.contact@gmail.com). Do not treat any mailing address on a directory listing as a place to visit.
 

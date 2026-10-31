@@ -6,7 +6,6 @@ blocks below have no body and are swapped for HTML before the Markdown is conver
 
 - /// gallery | THEME        every photo in data/photos.yml with that theme
 - /// photos | ID ID ID      the named photos, in order
-- /// photo-credits          a credits list covering every photo
 - /// show-gallery           expandable albums from data/photo_shows.yml
 - /// shows                  upcoming shows from the `shows:` front matter of shows/index.md
 - /// next-show              a ticket for the first upcoming show
@@ -14,7 +13,7 @@ blocks below have no body and are swapped for HTML before the Markdown is conver
 - /// castle-module          the 15 by 60 inch castle module standard drawn as a plate
 
 Each block closes with a `///` line. Keeping photo and show facts in one place means
-captions, credits, and dates cannot drift between pages. Shows whose last day has passed
+captions and dates cannot drift between pages. Shows whose last day has passed
 drop off automatically at the next build.
 """
 
@@ -36,7 +35,7 @@ SHOWS_PAGE = os.path.join(REPO_ROOT, 'site_src', 'shows', 'index.md')
 
 
 DATA_BLOCK_NAMES = (
-	'gallery', 'photos', 'featured-photos', 'photo-credits', 'show-gallery', 'shows', 'next-show', 'diagram',
+	'gallery', 'photos', 'featured-photos', 'show-gallery', 'shows', 'next-show', 'diagram',
 	'castle-module', 'collection',
 )
 # one data block: opening line with optional argument, then the closing `///` line
@@ -168,30 +167,16 @@ def image_size(filename: str) -> tuple:
 #============================================
 def figure_html(photo: dict, prefix: str, album: bool = False) -> str:
 	"""
-	Build one gallery figure: thumbnail linking to the large image, caption, credit.
+	Build one static preview with descriptive text and show context.
 	"""
 	photo_id = photo['id']
 	width, height = image_size(f"{photo_id}_thumb.webp")
-	full_src = f"{prefix}assets/photos/{photo_id}.webp"
 	thumb_src = f"{prefix}assets/photos/{photo_id}_thumb.webp"
 	caption = html.escape(photo['caption'])
-	viewer_caption = ''
-	if album and photo.get('collection_context'):
-		context = photo.get('show_label', 'Club archive; date not established')
-		viewer_caption = html.escape(context) + '. '
-		if 'capture_date' in photo:
-			viewer_caption += 'Capture date: ' + html.escape(str(photo['capture_date'])) + '. '
-		viewer_caption += caption + ' '
-	elif 'show_label' in photo:
-		viewer_caption = html.escape(photo['show_label']) + '. ' + caption + ' '
-	else:
-		viewer_caption = caption + ' '
-	viewer_caption += html.escape(photo['credit']) + '.'
 	alt = html.escape(photo['alt'], quote=True)
-	credit = html.escape(photo['credit'])
 	theme_name = photo['theme_name']
 	text = f'<figure class="nb-photo" data-world="{photo["theme"]}" data-photo="{html.escape(photo_id, quote=True)}">'
-	text += f'<a class="nb-photo__link" href="{full_src}" data-caption="{viewer_caption}">'
+	text += '<div class="nb-photo__link">'
 	text += f'<img src="{thumb_src}" alt="{alt}" width="{width}" height="{height}"'
 	# optional focal point keeps the subject in frame when the card crops the photo
 	if 'focus' in photo:
@@ -201,7 +186,7 @@ def figure_html(photo: dict, prefix: str, album: bool = False) -> str:
 		cutout = html.escape(photo['cutout'], quote=True)
 		text += f'<img class="nb-photo-cutout" src="{prefix}assets/photos/{cutout}"'
 		text += f' alt="{alt}" loading="lazy" decoding="async">'
-	text += '</a>'
+	text += '</div>'
 	if album:
 		album_caption = html.escape(photo.get('album_caption', photo['caption']))
 		text += f'<figcaption>{album_caption}'
@@ -217,7 +202,6 @@ def figure_html(photo: dict, prefix: str, album: bool = False) -> str:
 		show_anchor = html.escape(photo['show'], quote=True)
 		text += f'<a class="nb-photo__show" href="{prefix}shows/gallery/#show-{show_anchor}">'
 		text += html.escape(photo['show_label']) + '</a>'
-	text += f' <span class="nb-photo__credit">Photo: {credit}</span>'
 	text += '</figcaption></figure>'
 	return text
 
@@ -285,7 +269,12 @@ def featured_photos_html(photos: dict, prefix: str) -> str:
 		if show_id not in shows or 'event_date' not in shows[show_id]:
 			raise ValueError(f"homepage photo '{photo_id}' needs a show with a verified event_date")
 		parse_event_date(shows[show_id]['event_date'], show_id)
-	return mosaic_html(photos, ids, prefix)
+	# The linked show label carries venue/date; avoid repeating it in the subject caption.
+	featured = {
+		photo_id: dict(photos[photo_id], caption=photos[photo_id].get('album_caption', photos[photo_id]['caption']))
+		for photo_id in ids
+	}
+	return mosaic_html(featured, ids, prefix)
 
 #============================================
 def collection_html(photos: dict, theme: str, prefix: str) -> str:
@@ -293,22 +282,16 @@ def collection_html(photos: dict, theme: str, prefix: str) -> str:
 	selected = collection_photos(photos, theme)
 	text = f'<p class="nb-collection-count">{len(selected)} photos</p>'
 	text += f'<div class="nb-gallery nb-collection" data-world="{html.escape(theme, quote=True)}">'
-	last_show = object()
 	for photo in selected:
-		show_id = photo.get('show')
-		if show_id != last_show:
-			last_show = show_id
-			label = photo.get('show_label', 'Club archive; date not established')
-			if show_id:
-				anchor = html.escape(show_id, quote=True)
-				label = f'<a href="{prefix}shows/gallery/#show-{anchor}">{html.escape(label)}</a>'
-			else:
-				label = html.escape(label)
-			text += f'<h2 class="nb-collection__divider">{label}</h2>'
 		compact = dict(photo)
 		compact['album_caption'] = photo.get('album_caption', photo['caption'])
 		compact['collection_context'] = True
 		figure = figure_html(compact, prefix, album=True)
+		if photo.get('show'):
+			anchor = html.escape(photo['show'], quote=True)
+			label = html.escape(photo['show_label'])
+			context = f'<a class="nb-photo__show" href="{prefix}shows/gallery/#show-{anchor}">{label}</a>'
+			figure = figure.replace('</figcaption>', context + '</figcaption>')
 		text += figure
 	text += '</div>'
 	return text
@@ -371,24 +354,6 @@ def mosaic_html(photos: dict, ids: list, prefix: str) -> str:
 			raise ValueError(f"/// photos names '{photo_id}', which is not an id in data/photos.yml")
 	figures =[figure_html(photos[photo_id], prefix) for photo_id in ids]
 	text = '<div class="nb-mosaic">' + ''.join(figures) + '</div>'
-	return text
-
-#============================================
-def credits_html(photos: dict, prefix: str) -> str:
-	"""
-	Build a compact credits list: thumbnail, caption, world, credit, and source links.
-	"""
-	text = '<ul class="nb-credit-list">'
-	for photo in photos.values():
-		caption = html.escape(photo['caption'])
-		thumb = f"{prefix}assets/photos/{photo['id']}_thumb.webp"
-		text += f'<li><img src="{thumb}" alt="" width="64" height="48" loading="lazy">'
-		text += f'<span><strong>{caption}</strong> '
-		text += f'<span class="nb-credit-list__meta">{photo["theme_name"]}. '
-		text += f'Photo: {html.escape(photo["credit"])}. '
-		text += f'<a href="{photo["source_url"]}">Original</a> &middot; '
-		text += f'<a href="{photo["source_page"]}">Source page</a></span></span></li>'
-	text += '</ul>'
 	return text
 
 #============================================
@@ -619,8 +584,6 @@ def on_page_markdown(markdown: str, page: object, config: object, files: object)
 			block = gallery_html(photos, argument, prefix)
 		elif name == 'photos':
 			block = mosaic_html(photos, argument.split(), prefix)
-		elif name == 'photo-credits':
-			block = credits_html(photos, prefix)
 		elif name == 'show-gallery':
 			block = show_gallery_html(photos, prefix)
 		elif name == 'shows':

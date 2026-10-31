@@ -274,3 +274,70 @@ failure; an outside-sandbox read-only check confirmed storage above the 20 GB bu
 
 **Owner.** `.hermes/plans/refinement-execution.md`, the three D revision stylesheets, shared
 `design_d_revised/data/`, and [refinement verification](active_plans/reports/refinement_verification.md).
+
+### Presentation polish and photo catalog
+
+**Decision.** Keep Alpha compact and traditional; give Beta a horizontal magazine opening
+  and Nunito headings; give Gamma a full-width poster opening and staggered photo strip.
+  Featured captions describe the subject, with the linked show label supplying venue/date.
+**Why.** The earlier Beta opening left a large empty column, and Beta and Gamma shared too
+  much composition. Repository photo evidence was difficult to browse in raw manifests.
+**Consequence.** A generated repository catalog organizes all selected photos by theme and
+  show. It records actual dimensions, sizes, hashes, crop focus, and explicit date uncertainty.
+  Existing manifests remain authoritative; image files are linked rather than copied.
+  The full private archive is still external and is not a website build dependency.
+**Owner.** [build_photo_catalog.py](../devel/build_photo_catalog.py),
+  [README.md](photos/README.md), and the variant layout stylesheets in
+  `design_d_revised/site_src/stylesheets/`.
+
+### Thumbnail previews invite visits
+
+**Decision.** Revised galleries use static thumbnails instead of a full-image viewer, with
+prominent show invitations. The train selection grows to 23 with six reviewed archive views.
+Original D's Rail yards card now opens a dedicated page using the same train selection.
+
+**Why.** The owner wants a teaser for visiting club shows. Original D still linked to a
+section, and the revised photo interactions emphasized image browsing rather than attendance.
+
+**Consequence.** Original D reuses shared thumbnails at build time without duplicate source
+files. Larger existing derivatives remain available for editorial use and repository review;
+new train previews use 480-pixel thumbnails and at most 720-pixel larger derivatives. Show
+and capture-date precision, credits, and unchanged archive originals remain preserved.
+
+**Owner.** [train_teasers.py](../design_d/site_hooks/train_teasers.py), the shared photo manifest,
+and `design_d_revised/site_hooks/data_blocks.py`.
+
+### Compact train preview grids
+
+**Decision.** Train thumbnails have a maximum 480-pixel edge. Revised collections keep their
+verified chronological ordering, but use a continuous grid with show links in the captions.
+
+**Why.** Thumbnail browsing should convey variety quickly. Full-width show headings previously
+left large blank rows for shows with only one selected image.
+
+**Consequence.** All 23 train thumbnails total 805,046 bytes. Browser checks verify that train
+pages load only thumbnails, retain descriptive alternatives, and reach shows with JavaScript
+both enabled and disabled. Preserved originals keep their original hashes.
+
+**Owner.** The shared photo manifest and `design_d_revised/site_hooks/data_blocks.py`.
+
+### Club photo captions
+
+**Decision.** Public photo captions describe builds and locations without source credits or
+  original-image links. Navigation uses local pages instead of the former club website.
+**Why.** The owner supplied club photography for a replacement website and wants visitors
+  to explore shows, rather than photo provenance.
+**Consequence.** Existing repository records remain preserved; public source lists are removed.
+**Owner.** `design_d_revised/site_hooks/data_blocks.py` and each design's page content.
+
+### Concise photo captions
+
+**Decision.** Captions name the subject and retain useful location or date context. Obvious
+visual details belong in descriptive image alternatives rather than repeated caption prose.
+
+**Why.** The owner wants confident, concise labels, including Prince's Purple Rain railcar.
+
+**Consequence.** Original and revised D use shorter captions in galleries and the generated
+repository catalog; image alternatives retain their accessibility detail.
+
+**Owner.** `design_d/data/photos.yml` and `design_d_revised/data/photos.yml`.

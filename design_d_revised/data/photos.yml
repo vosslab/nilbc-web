@@ -12,8 +12,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549076018784903280
   theme: castle
   credit: NILTC archive; uploaded by Kerbear
-  caption: Castle walls, a blue-roofed hall, and a busy livestock yard at Ela Area, September 2026.
-  album_caption: Castle walls, a blue-roofed hall, and a busy livestock yard.
+  caption: Castle courtyard at Ela Area, September 2026.
+  album_caption: Castle courtyard.
   alt: A blue-roofed timbered hall beside gray castle battlements, with a horse cart, townspeople, and cattle in a fenced yard.
   focus: 50% 35%
 - id: ela_locomotive_2026
@@ -22,8 +22,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
   theme: trains
   credit: NILTC archive; uploaded by Kerbear
-  caption: Canadian Pacific 7309 in close-up at Ela Area, September 2026.
-  album_caption: Canadian Pacific 7309 in close-up.
+  caption: Canadian Pacific 7309 at Ela Area, September 2026.
+  album_caption: Canadian Pacific 7309.
   alt: A red brick-built Canadian Pacific diesel locomotive numbered 7309, with gray handrails and a black underframe, on display track.
 - id: northbrook_street_2026
   show: 2026-10-17-northbrook
@@ -33,8 +33,8 @@ photos:
   theme: city
   credit: NILTC archive; uploaded by Kerbear
   note: A whole world on one street.
-  caption: A Japanese streetscape with a bookshop and flower displays at Northbrook, October 2026.
-  album_caption: A Japanese streetscape with a bookshop and flower displays.
+  caption: Japanese bookshop at Northbrook, October 2026.
+  album_caption: Japanese bookshop.
   alt: A dark red brick-built Japanese bookshop beside a white shop, with flower stands, minifigures, and a white car beneath elevated track.
 - id: ela_spacecraft_2026
   show: 2026-09-12-ela-area
@@ -42,8 +42,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
   theme: screen
   credit: NILTC archive; uploaded by Kerbear
-  caption: White-and-blue spacecraft on display stands at Ela Area, September 2026.
-  album_caption: White-and-blue spacecraft on display stands.
+  caption: Space fleet at Ela Area, September 2026.
+  album_caption: Space fleet.
   alt: A white brick-built spacecraft with a transparent blue cockpit, with black-and-green and red spacecraft behind it.
   focus: 50% 75%
 - id: ela_dog_2026
@@ -52,8 +52,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075979605901392
   theme: creatures
   credit: NILTC archive; uploaded by Kerbear
-  caption: A white dog with a red superhero emblem at Ela Area, September 2026.
-  album_caption: A white dog with a red superhero emblem.
+  caption: Superhero dog at Ela Area, September 2026.
+  album_caption: Superhero dog.
   alt: A white brick-built dog with upright ears, a black nose, a raised tail, and a red chest emblem.
   focus: 50% 45%
 - id: ela_characters_2026
@@ -62,8 +62,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
   theme: creatures
   credit: NILTC archive; uploaded by Kerbear
-  caption: Oversized eyes and colorful space suits at Ela Area, September 2026.
-  album_caption: Oversized eyes and colorful space suits.
+  caption: Space explorers at Ela Area, September 2026.
+  album_caption: Space explorers.
   alt: Two brick-built characters with oversized round eyes and snouts, wearing blue-and-white and yellow space suits.
   focus: 55% 35%
 - id: ela_market_2026
@@ -72,8 +72,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091682479673436/1549076018784903280
   theme: castle
   credit: NILTC archive; uploaded by Kerbear
-  caption: A produce stall beneath a striped awning at Ela Area, September 2026.
-  album_caption: A produce stall beneath a striped awning.
+  caption: Market stall at Ela Area, September 2026.
+  album_caption: Market stall.
   alt: Minifigures hold green vegetables beside a market cart beneath a dark-red-and-cream striped canopy; a white chicken stands nearby.
   focus: 50% 65%
 - id: northbrook_boating_2026
@@ -82,8 +82,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942
   theme: city
   credit: NILTC archive; uploaded by Kerbear
-  caption: Hats and paddles beside a small boat at Northbrook, October 2026.
-  album_caption: Hats and paddles beside a small boat.
+  caption: Boating party at Northbrook, October 2026.
+  album_caption: Boating party.
   alt: Hat-wearing minifigures with brown paddles gather beside a white doorway and a tan boat on green brick terrain.
   focus: 50% 60%
 - id: ela_interior_2026
@@ -92,7 +92,7 @@ photos:
   theme: city
   show: 2026-09-12-ela-area
   credit: NILTC archive; uploaded by Kerbear
-  caption: A room full of trophies, books, and tiny details.
+  caption: The trophy room.
   alt: A black-and-white brick-built room with bookcases, trophies, a checkerboard floor, and a minifigure in a wheelchair.
 - id: ela_facade_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075921602871426
@@ -100,7 +100,7 @@ photos:
   theme: city
   show: 2026-09-12-ela-area
   credit: NILTC archive; uploaded by Kerbear
-  caption: Arched windows and flower boxes above a blue-awning storefront.
+  caption: Flowers above the shop.
   alt: A gray brick-built facade with arched windows, brown flower boxes, blue shop awnings, and a sidewalk bench.
 - id: ela_aquarium_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075921602871426
@@ -108,7 +108,7 @@ photos:
   theme: city
   show: 2026-09-12-ela-area
   credit: NILTC archive; uploaded by Kerbear
-  caption: Chicago's Shedd Aquarium, down to its columned entrance.
+  caption: Chicago's Shedd Aquarium.
   alt: A brick-built John G. Shedd Aquarium entrance with white columns, gray steps, minifigure visitors, and an American flag.
 - id: ela_spider_riders_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091682479673436/1549075848756334642
@@ -116,7 +116,7 @@ photos:
   theme: screen
   show: 2026-09-12-ela-area
   credit: NILTC archive; uploaded by Kerbear
-  caption: A fantasy patrol crosses the snow on spider mounts.
+  caption: Spider patrol.
   alt: Three green-faced minifigures with crested helmets ride black spiders across white terrain, carrying spears beside brick-built evergreen trees.
 - id: northbrook_coffee_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047925298040942
@@ -124,7 +124,7 @@ photos:
   theme: city
   show: 2026-10-17-northbrook
   credit: NILTC archive; uploaded by Kerbear
-  caption: A drive-through coffee stop beside the railway.
+  caption: Trackside coffee.
   alt: A white Seven Brew coffee shop with a blue roof, drive-through cars, minifigures, flowering borders, and railway track.
 - id: northbrook_freight_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
@@ -132,7 +132,7 @@ photos:
   theme: trains
   show: 2026-10-17-northbrook
   credit: NILTC archive; uploaded by Kerbear
-  caption: Lettering and doors give these freight cars their character.
+  caption: Freight cars.
   alt: Brick-built freight cars on parallel tracks, including a brown Hershey's Chocolate and Cocoa car and a yellow Miller High Life car.
 - id: northbrook_party_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
@@ -140,7 +140,7 @@ photos:
   theme: creatures
   show: 2026-10-17-northbrook
   credit: NILTC archive; uploaded by Kerbear
-  caption: A party on wheels, complete with balloons and paper hats.
+  caption: Party on wheels.
   alt: A colorful brick-built party vehicle with large number panels, balloon decorations, and figures wearing party hats on its upper deck.
 - id: northbrook_cottage_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
@@ -148,7 +148,7 @@ photos:
   theme: city
   show: 2026-10-17-northbrook
   credit: NILTC archive; uploaded by Kerbear
-  caption: A steep-roofed cottage dressed for autumn.
+  caption: Autumn cottage.
   alt: A brown brick-built cottage with a black tiled roof, green shutters, pumpkins, flowers, trees, and costumed minifigures.
 - id: northbrook_depot_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
@@ -156,7 +156,7 @@ photos:
   theme: trains
   show: 2026-10-17-northbrook
   credit: NILTC archive; uploaded by Kerbear
-  caption: A blue-and-white locomotive waits outside the stone depot.
+  caption: At the depot.
   alt: A gray brick-built railway depot with a steep roof, dormers, open brown doors, and a blue-and-white locomotive numbered 2476 on the tracks.
 - id: northbrook_crane_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
@@ -164,7 +164,7 @@ photos:
   theme: trains
   show: 2026-10-17-northbrook
   credit: NILTC archive; uploaded by Kerbear
-  caption: Freight handling in miniature.
+  caption: Freight handling.
   alt: A yellow rail-yard crane beside a red freight wagon, signal-box building, red loader, and white-and-blue utility truck; a sign invites visitors to ask about interior details.
 - id: northbrook_tower_2026
   source_url: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047883283697696
@@ -172,7 +172,7 @@ photos:
   theme: city
   show: 2026-10-17-northbrook
   credit: NILTC archive; uploaded by Kerbear
-  caption: A club sign high above a busy city corner.
+  caption: Club corner.
   alt: A tall dark-red and black brick-built skyscraper with ornate gold panels and a Northern Illinois sign above streets filled with minifigures and vehicles.
 - id: arlington_dinosaurs_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178341452644392
@@ -180,7 +180,7 @@ photos:
   theme: creatures
   show: 2025-12-13-arlington-heights
   credit: NILTC archive; uploaded by Kerbear
-  caption: Dinosaurs have taken over the grocery run.
+  caption: Dinosaur grocery run.
   alt: Large dinosaur figures crowd a brick-built Hole Foods Market, surrounded by minifigures, shopping carts, produce, and street vehicles.
 - id: arlington_winter_market_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178306170421391
@@ -188,7 +188,7 @@ photos:
   theme: city
   show: 2025-12-13-arlington-heights
   credit: NILTC archive; uploaded by Kerbear
-  caption: A winter fair packed with small stories.
+  caption: Winter fair.
   alt: Red-and-white striped market stalls, crowds of minifigures, snowy trees, and a red sleigh in a brick-built winter fair.
 - id: arlington_castle_guard_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178185185722522
@@ -196,7 +196,7 @@ photos:
   theme: castle
   show: 2025-12-13-arlington-heights
   credit: NILTC archive; uploaded by Kerbear
-  caption: Blue-cloaked travelers on the castle battlements.
+  caption: On the battlements.
   alt: Blue-cloaked minifigures cross gray battlements toward a pale timber-accented building, with an armored guard, trees, and a path.
 - id: arlington_garden_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178153308885084
@@ -204,7 +204,7 @@ photos:
   theme: castle
   show: 2025-12-13-arlington-heights
   credit: NILTC archive; uploaded by Kerbear
-  caption: A medieval garden between the stone walls.
+  caption: Medieval garden.
   alt: Two archer minifigures stand among flowers, barrels, a wooden well frame, and stone buildings in a brick-built garden.
 - id: arlington_tudor_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178100410191912
@@ -212,7 +212,7 @@ photos:
   theme: castle
   show: 2025-12-13-arlington-heights
   credit: NILTC archive; uploaded by Kerbear
-  caption: A timbered house with a garden worth exploring.
+  caption: Timbered garden house.
   alt: A brick-built medieval half-timbered house beside vegetable beds, flowers, rabbits, trees, and minifigures.
 - id: arlington_sailboat_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1449994892666339500
@@ -220,7 +220,7 @@ photos:
   theme: city
   show: 2025-12-13-arlington-heights
   credit: NILTC archive; uploaded by Andertoons
-  caption: A sailboat tucked into a wooded harbor.
+  caption: Woodland harbor.
   alt: A white-and-blue brick-built sailboat with a tan sail and cargo rests on blue water beside a brown dock and dense green trees.
 - id: arlington_multitrack_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1450178341452644392
@@ -229,8 +229,8 @@ photos:
   show: 2025-12-13-arlington-heights
   focus: 45% 55%
   credit: NILTC archive; uploaded by Kerbear
-  caption: A Metra locomotive leads a multitrack rail display at Arlington Heights, December 2025.
-  album_caption: A Metra locomotive leads a multitrack rail display.
+  caption: Metra on the main line at Arlington Heights, December 2025.
+  album_caption: Metra on the main line.
   alt: A blue-and-orange Metra locomotive leads several parallel tracks of brick-built trains, including a small black-and-red steam engine, silver passenger coaches, and freight cars.
 - id: arlington_cnrail_8744_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1449994471168020511
@@ -239,8 +239,8 @@ photos:
   show: 2025-12-13-arlington-heights
   focus: 40% 50%
   credit: NILTC archive; uploaded by Andertoons
-  caption: Blue CN Rail locomotive 8744 at the Arlington Heights display, December 2025.
-  album_caption: Blue CN Rail locomotive 8744.
+  caption: CN Rail 8744 at Arlington Heights, December 2025.
+  album_caption: CN Rail 8744.
   alt: A blue brick-built CN Rail diesel locomotive numbered 8744 on the nearest track, with other blue rail equipment and parallel tracks behind it.
 - id: arlington_santa_2025
   source_url: https://discord.com/channels/1014224389300043888/1350204460584144958/1449994471168020511
@@ -256,7 +256,7 @@ photos:
   theme: creatures
   show: 2025-10-25-oswego
   credit: NILTC archive; uploaded by Andertoons
-  caption: A woodland spider and its much smaller passengers.
+  caption: Woodland spider.
   alt: A large brown brick-built spider carrying tan spiderlings stands over a forest diorama with plants, rocks, water, and a red mushroom.
 - id: oswego_fortress_2025
   source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453124177788928
@@ -264,7 +264,7 @@ photos:
   theme: castle
   show: 2025-10-25-oswego
   credit: NILTC archive; uploaded by Andertoons
-  caption: Towers, a drawbridge, and a busy castle courtyard.
+  caption: Castle and drawbridge.
   alt: A large gray brick-built fantasy castle with towers, a drawbridge, dragon, carts, minifigures, and landscaped ground at a public display.
 - id: oswego_helicopter_2025
   source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432453019345223710
@@ -272,7 +272,7 @@ photos:
   theme: screen
   show: 2025-10-25-oswego
   credit: NILTC archive; uploaded by Andertoons
-  caption: An unusual lift for a heavy-duty helicopter.
+  caption: Heavy lift.
   alt: An orange brick-built helicopter suspends a large jack-o-lantern-faced cylinder on a platform hanging from chains.
 - id: oswego_purple_castle_2025
   source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432452508378468523
@@ -280,7 +280,7 @@ photos:
   theme: castle
   show: 2025-10-25-oswego
   credit: NILTC archive; uploaded by Andertoons
-  caption: Purple towers for an October show.
+  caption: Purple towers.
   alt: A tall purple-and-lavender brick-built haunted castle with transparent turret towers, pink foliage, minifigure scenes, and a black stepped base.
 - id: oswego_hippogriff_2025
   source_url: https://discord.com/channels/1014224389300043888/1336376559774203967/1432452508378468523
@@ -288,7 +288,7 @@ photos:
   theme: screen
   show: 2025-10-25-oswego
   credit: NILTC archive; uploaded by Andertoons
-  caption: A quiet encounter with a hippogriff.
+  caption: Hippogriff encounter.
   alt: A bearded minifigure holding a lantern faces a gray hippogriff on green terrain beside a dark brick wall and spider pieces.
 - id: barrington_landscape_2025
   source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
@@ -296,7 +296,7 @@ photos:
   theme: city
   show: 2025-09-06-barrington
   credit: NILTC archive; uploaded by Jason C
-  caption: A forested riverbank beside the running tracks.
+  caption: Riverside railway.
   alt: A brick-built rocky hill with dense green and yellow foliage, blue water, a small sailboat, railway tracks, and a yellow lattice tower.
 - id: barrington_harbor_2025
   source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
@@ -304,7 +304,7 @@ photos:
   theme: creatures
   show: 2025-09-06-barrington
   credit: NILTC archive; uploaded by Jason C
-  caption: Whales, swimmers, and a yacht share the harbor.
+  caption: Whales in the harbor.
   alt: A white-and-blue brick-built yacht on blue water with minifigures, an orca, a gray whale, a dolphin, and a shark beside a railway and street.
 - id: barrington_yard_2025
   source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
@@ -312,7 +312,7 @@ photos:
   theme: trains
   show: 2025-09-06-barrington
   credit: NILTC archive; uploaded by Jason C
-  caption: A freight yard built for a busy day.
+  caption: Freight yard.
   alt: A broad brick-built rail yard with parallel and curved tracks, container trains, CP and Conrail locomotives, cranes, cargo stacks, and an engine shed.
 - id: barrington_aircraft_2025
   source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723249060417656
@@ -320,7 +320,7 @@ photos:
   theme: screen
   show: 2025-09-06-barrington
   credit: NILTC archive; uploaded by Jason C
-  caption: Helicopters and a test aircraft lined up on the apron.
+  caption: On the airfield.
   alt: Gray, white, and green brick-built helicopters and a blue-and-white aircraft on a large gray-and-black tarmac beside railway tracks.
 - id: algonquin_jet_2026
   source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630460848406629
@@ -336,7 +336,7 @@ photos:
   theme: city
   show: 2026-05-02-algonquin
   credit: NILTC archive; uploaded by Kerbear
-  caption: A bicycle ride with a feathered passenger.
+  caption: A feathered passenger.
   alt: A bearded minifigure in a straw hat rides a black bicycle with a gray bird on its rear rack beside a landscaped path and blue water.
 - id: algonquin_cars_2026
   source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
@@ -344,7 +344,7 @@ photos:
   theme: city
   show: 2026-05-02-algonquin
   credit: NILTC archive; uploaded by Kerbear
-  caption: A colorful line-up of detailed sports cars.
+  caption: Sports car lineup.
   alt: Yellow, orange, red, and maroon brick-built sports cars on a gray tiled base beside a brick building; the yellow convertible has a minifigure driver.
 - id: algonquin_animals_2026
   source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630342329958431
@@ -352,7 +352,7 @@ photos:
   theme: creatures
   show: 2026-05-02-algonquin
   credit: NILTC archive; uploaded by Kerbear
-  caption: A whole shelf of animal personalities.
+  caption: Animal portraits.
   alt: Colorful brick-built animals on white stepped shelves, including a moose, giraffe, zebra, purple elephant, and red-and-yellow horse.
 - id: algonquin_classic_space_2026
   source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630151975927998
@@ -360,7 +360,7 @@ photos:
   theme: screen
   show: 2026-05-02-algonquin
   credit: NILTC archive; uploaded by Kerbear
-  caption: A new spacecraft with a Classic Space starting point.
+  caption: Classic Space, reimagined.
   alt: A blue-and-gray brick-built spacecraft with swept wings, yellow cockpit canopy, and twin engine cannons beside a sign reading Inspired By Classic Space 1978.
 - id: algonquin_food_stall_2026
   source_url: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630151975927998
@@ -368,7 +368,7 @@ photos:
   theme: castle
   show: 2026-05-02-algonquin
   credit: NILTC archive; uploaded by Kerbear
-  caption: A woodland snack stop beneath a striped awning.
+  caption: Woodland snack stop.
   alt: A brown brick-built food stall with a red-and-white awning, squirrel topper, pretzel, croissant, rabbit, and bearded vendor among evergreen branches.
 - id: wheaton_horses_2026
   source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368795857813535
@@ -376,7 +376,7 @@ photos:
   theme: creatures
   show: 2026-04-11-wheaton
   credit: NILTC archive; uploaded by Kerbear
-  caption: Two white horses at the river's edge.
+  caption: Horses by the river.
   alt: Two white horse figures stand on a landscaped riverbank with blue water, gray rocks, green plants, and a forested cliff.
 - id: wheaton_barn_2026
   source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368691868434647
@@ -384,7 +384,7 @@ photos:
   theme: city
   show: 2026-04-11-wheaton
   credit: NILTC archive; uploaded by Kerbear
-  caption: A barn-raising scene, built in bricks.
+  caption: Barn raising.
   alt: A red brick-built barn with white doors and exposed tan roof framing, worker minifigures, a gray silo, trees, and landscaped paths.
 - id: wheaton_eloise_2026
   source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493368691868434647
@@ -400,7 +400,7 @@ photos:
   theme: castle
   show: 2026-04-11-wheaton
   credit: NILTC archive; uploaded by Andertoons
-  caption: Carrots for sale, with a rabbit keeping watch.
+  caption: Carrot stall.
   alt: A brown brick-built market stall with an orange-and-white canopy, carrot-filled crates, a green-hatted vendor, and a white rabbit.
 - id: club_group_2026
   note: Yes, those are bricks.
@@ -408,7 +408,7 @@ photos:
   source_page: https://niltc.org/
   theme: club
   credit: NILTC / niltc.org
-  caption: Club members with brick-built guitars and vehicles.
+  caption: Guitars and vehicles.
   alt: About a dozen smiling club members in black shirts stand behind three large brick-built electric guitars and a red brick pickup truck.
 - id: brick_days_2026
   source_url: https://niltc.org/wp-content/uploads/2026/06/IMG_2454.webp
@@ -422,49 +422,49 @@ photos:
   source_page: https://niltc.org/about/
   theme: club
   credit: NILTC / niltc.org
-  caption: The club behind its train layout at Cantigny Park, December 2016.
+  caption: The club at Cantigny Park, December 2016.
   alt: Roughly twenty-five members stand behind a long row of brick-built passenger and freight trains, with the club banner hanging behind them.
 - id: library_layout
   source_url: https://niltc.org/wp-content/uploads/2017/02/img_0272.jpg
   source_page: https://niltc.org/
   theme: trains
   credit: NILTC / niltc.org
-  caption: A full show layout in a library meeting room, with a village, farm, and several train lines.
+  caption: Library show layout.
   alt: A long table display of brick-built houses, shops, trees, and a farm, with several parallel train tracks along the front edge.
 - id: layout_2009
   source_url: https://niltc.org/wp-content/uploads/2011/01/IMG_1133.jpg
   source_page: https://niltc.org/
   theme: trains
   credit: NILTC / niltc.org
-  caption: A 2009 layout with stacked train loops around a brick Chicago skyline.
+  caption: Chicago skyline and rail loops, 2009.
   alt: A brick city of tall buildings, including a black Sears Tower, surrounded by several loops of track carrying trains.
 - id: metra_locomotive
   source_url: https://niltc.org/wp-content/uploads/2017/02/metra-1.jpg
   source_page: https://niltc.org/
   theme: trains
   credit: NILTC / niltc.org
-  caption: A brick-built Metra commuter locomotive, a familiar sight for Chicago-area visitors.
+  caption: Metra commuter locomotive.
   alt: Close-up of a blue brick-built Metra locomotive with red and white striped nose and a silver passenger car behind it.
 - id: caboose
   source_url: https://niltc.org/wp-content/uploads/2017/02/caboose.jpg
   source_page: https://niltc.org/
   theme: trains
   credit: NILTC / niltc.org
-  caption: A red New Haven caboose, built down to the lettering.
+  caption: New Haven caboose.
   alt: Side view of a bright red brick-built caboose lettered New Haven C-528 on brick track.
 - id: vintage_steam
   source_url: https://niltc.org/wp-content/uploads/2017/02/26293716221_5b6ae4f475_o.jpg
   source_page: https://niltc.org/
   theme: trains
   credit: NILTC / niltc.org
-  caption: A small steam locomotive on a grassy display base.
+  caption: Steam locomotive.
   alt: A black brick-built steam locomotive with red wheels sits on a short track among brick grass and plants.
 - id: paris_night
   source_url: https://niltc.org/wp-content/uploads/2017/02/Brickworld_2016_wol.jpg
   source_page: https://niltc.org/
   theme: city
   credit: NILTC / niltc.org
-  caption: A lit Eiffel Tower over a Paris street scene at Brickworld 2016.
+  caption: Paris at Brickworld 2016.
   alt: A brick-built Eiffel Tower strung with white lights rises above a plaza of Parisian buildings at night.
 - id: night_skyline
   source_url: https://niltc.org/wp-content/uploads/2017/02/night_skyline.jpg
@@ -472,70 +472,70 @@ photos:
   theme: city
   focus: 50% 88%
   credit: NILTC / niltc.org
-  caption: The skyscraper display lit for a night show, June 2015.
+  caption: Skyline after dark, June 2015.
   alt: Brick-built skyscrapers with glowing windows and a lit billboard in a darkened exhibit hall.
 - id: skyscrapers
   source_url: https://niltc.org/wp-content/uploads/2014/03/NILTC_Skyscrapers.jpg
   source_page: https://niltc.org/standards/skyscrapers/
   theme: city
   credit: NILTC / niltc.org
-  caption: The collaborative skyscraper display, built to shared city-block standards. The black tower is Roger's Sears Tower, 9 feet tall with its antenna.
+  caption: Roger's nine-foot Sears Tower in the shared skyline.
   alt: A cluster of tall white, grey, black, and red brick-built skyscrapers on modular city blocks.
 - id: prairie_bungalow
   source_url: https://niltc.org/wp-content/uploads/2017/02/praire-bungalow.jpg
   source_page: https://niltc.org/
   theme: city
   credit: NILTC / niltc.org
-  caption: Prairie-style houses with low roofs and long horizontal lines.
+  caption: Prairie-style houses.
   alt: Two tan brick-built prairie-style houses with low hipped roofs, wide eaves, and landscaped front steps.
 - id: museum_replica
   source_url: https://niltc.org/wp-content/uploads/2017/02/14619643672_993e1cb6d7_o.jpg
   source_page: https://niltc.org/
   theme: city
   credit: NILTC / niltc.org
-  caption: A brick replica of the DuPage County Historical Museum.
+  caption: DuPage County Historical Museum.
   alt: Brick-built model of a cream Victorian building with a dark red roof, a corner turret, and green plantings.
 - id: gazebo
   source_url: https://niltc.org/wp-content/uploads/2017/02/gazebo.jpg
   source_page: https://niltc.org/
   theme: city
   credit: NILTC / niltc.org
-  caption: A bandstand gazebo with minifigure musicians inside.
+  caption: The bandstand.
   alt: A white and yellow brick-built gazebo with a domed roof and small figures standing under it.
 - id: teacup
   source_url: https://niltc.org/wp-content/uploads/2017/02/head_over_teacup_595.jpg
   source_page: https://niltc.org/
   theme: city
   credit: NILTC / niltc.org
-  caption: A tiny scene hidden in a city layout. Look closely at shows for moments like this.
+  caption: A hidden city scene.
   alt: A minifigure cyclist flips head over heels across a white bridge railing.
 - id: springfield
   source_url: https://niltc.org/wp-content/uploads/2017/02/14225718238_c464489249_o.jpg
   source_page: https://niltc.org/
   theme: screen
   credit: NILTC / niltc.org
-  caption: A cartoon-town street of colorful storefronts beside the train line.
+  caption: Cartoon town.
   alt: Wide view of a brick town with brightly colored shops, parked cars, and a train track along the front.
 - id: falcon_bay
   source_url: https://niltc.org/wp-content/uploads/2017/02/falcon_bay_595.jpg
   source_page: https://niltc.org/
   theme: screen
   credit: NILTC / niltc.org
-  caption: A famous starship parked in a brick-built hangar bay.
+  caption: Starship hangar.
   alt: A large grey saucer-shaped starship inside a white hangar, surrounded by small vehicles and figures.
 - id: jet
   source_url: https://niltc.org/wp-content/uploads/2017/02/jet.jpg
   source_page: https://niltc.org/
   theme: screen
   credit: NILTC / niltc.org
-  caption: A sleek red jet displayed above a train layout.
+  caption: Red jet.
   alt: A long red brick-built jet aircraft with swept wings mounted above a display table.
 - id: unikitty
   source_url: https://niltc.org/wp-content/uploads/2017/02/IMG_9462.jpg
   source_page: https://niltc.org/
   theme: creatures
   credit: NILTC / niltc.org
-  caption: A brick-built Unikitty, all smiles.
+  caption: Unikitty.
   alt: A red and white brick-built cat-unicorn character with a striped horn and a wide happy face.
 - id: frog
   cutout: frog_cutout.webp
@@ -544,14 +544,14 @@ photos:
   source_page: https://niltc.org/
   theme: creatures
   credit: NILTC / niltc.org
-  caption: A lime-green frog with red eyes.
+  caption: Red-eyed frog.
   alt: A lime green brick-built frog with large red eyes crouches on long legs.
 - id: bear_woods
   source_url: https://niltc.org/wp-content/uploads/2017/02/bear_in_the_woods_595.jpg
   source_page: https://niltc.org/
   theme: creatures
   credit: NILTC / niltc.org
-  caption: A pink bear surprises travelers in a brick pine forest.
+  caption: Pink bear in the pines.
   alt: A pink bear figure stands among dense green brick pine trees near minifigures on a small vehicle.
 - id: northbrook_purple_train_2026
   show: 2026-10-17-northbrook
@@ -560,8 +560,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
   theme: trains
   credit: NILTC archive; uploaded by Kerbear
-  caption: A piano-shaped Purple Rain railcar with a musician figure on top at Northbrook, October 2026.
-  album_caption: A purple piano-themed railcar.
+  caption: Prince's Purple Rain railcar at Northbrook, October 2026.
+  album_caption: Prince's Purple Rain railcar.
   alt: A purple piano-shaped railcar bearing the words Purple Rain, with a musician minifigure standing on its raised keyboard.
 - id: northbrook_1999_railcar_2026
   show: 2026-10-17-northbrook
@@ -569,8 +569,8 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1344091888088514711/1561047904016404582
   theme: trains
   credit: NILTC archive; uploaded by Kerbear
-  caption: A decorated 1999 celebration railcar at Northbrook, October 2026.
-  album_caption: A decorated 1999 celebration railcar.
+  caption: 1999 celebration railcar at Northbrook, October 2026.
+  album_caption: 1999 celebration railcar.
   alt: A white railcar with large colorful 1999 numerals and party decorations, displayed on track.
 - id: algonquin_steam_locomotive_2026
   show: 2026-05-02-algonquin
@@ -596,9 +596,63 @@ photos:
   source_page: https://discord.com/channels/1014224389300043888/1331352230925959279/1500630460848406629
   theme: trains
   credit: NILTC archive; uploaded by Kerbear
-  caption: Freight cars at an industrial loading scene at Algonquin, May 2026.
+  caption: Freight loading at Algonquin, May 2026.
   album_caption: Freight cars.
   alt: Black Ford-branded freight cars in front of a brick industrial building, with a cream-and-brown railcar behind.
+- id: barrington_gantry_2025
+  show: 2025-09-06-barrington
+  source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  theme: trains
+  credit: NILTC archive; uploaded by Jason C
+  caption: Intermodal gantry crane.
+  album_caption: Intermodal gantry crane.
+  alt: An orange BNSF gantry crane above container wagons, with Metra coaches and tank cars on parallel tracks.
+- id: barrington_metra_2025
+  show: 2025-09-06-barrington
+  source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  theme: trains
+  credit: NILTC archive; uploaded by Jason C
+  caption: Metra at the container terminal.
+  album_caption: Metra at the container terminal.
+  alt: Blue-and-orange Metra locomotive 162 with silver bilevel coaches beside stacked containers and blue freight wagons.
+- id: barrington_city_rail_2025
+  show: 2025-09-06-barrington
+  source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
+  source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723420158791712
+  theme: trains
+  credit: NILTC archive; uploaded by Jason C
+  caption: City railway.
+  album_caption: City railway.
+  alt: Curving railway tracks beside a waterfront city, with red-and-gold and black locomotives behind the buildings.
+- id: barrington_containers_2025
+  show: 2025-09-06-barrington
+  source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  theme: trains
+  credit: NILTC archive; uploaded by Jason C
+  caption: Container and tank trains.
+  album_caption: Container and tank trains.
+  alt: Parallel tracks with blue Conrail and red Canadian Pacific locomotives, gray tank cars, lettered wagons, and stacked containers.
+- id: barrington_rail_depot_2025
+  show: 2025-09-06-barrington
+  source_url: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  source_page: https://discord.com/channels/1014224389300043888/1337105126984515626/1415723346053693612
+  theme: trains
+  credit: NILTC archive; uploaded by Jason C
+  caption: Railway depot.
+  album_caption: Railway depot.
+  alt: Metra locomotive 162 and tank cars alongside an ACME loading depot, a control tower, forklifts, and delivery trucks.
+- id: wheaton_blue_engine_2026
+  show: 2026-04-11-wheaton
+  source_url: https://discord.com/channels/1014224389300043888/1336379818643689562/1493344213822345276
+  source_page: https://discord.com/channels/1014224389300043888/1336379818643689562/1493344213822345276
+  theme: trains
+  credit: NILTC archive; uploaded by Andertoons
+  caption: Blue engine at the station.
+  album_caption: Blue engine at the station.
+  alt: A blue Thomas-style steam engine numbered 1 with a smiling gray face, red buffer beam, and coal tender beside a station canopy.
 homepage_photos:
 - northbrook_purple_train_2026
 - northbrook_street_2026

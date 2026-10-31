@@ -100,3 +100,14 @@ origin belongs there too. Rules: [REPO_STYLE.md](REPO_STYLE.md).
 - 2026-10-27: Approved replacing the Castles card diagram with a real club photograph,
   shortening gamma's mobile category photos, and presenting beta as the suggested direction
   with restrained alpha and playful gamma alternatives.
+- 2026-10-30: Do another polish pass before showing the designs to the club. I expected
+  more photo organization inside this repository as well.
+- 2026-10-30: Rail yards should open a dedicated page, with more than ten train images.
+  This is a teaser site, not Flickr: show thumbnails and encourage people to see the
+  displays in person because photographs cannot convey the full experience.
+
+- Club photographs need no source credits or source tracking on the website. Keep useful
+  locations. This website replaces NILTC.org; keep visitor navigation within the new site.
+
+- Keep photo captions short; omit obvious visual details. Name Prince directly in the
+  Purple Rain railcar caption rather than calling him a musician figure.

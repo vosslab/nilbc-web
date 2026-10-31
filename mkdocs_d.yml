@@ -58,7 +58,9 @@ nav:
       - shows/index.md
       - Visiting a show: shows/visiting.md
       - Show logbook: shows/logbook.md
-  - Worlds we build: creations/index.md
+  - Worlds we build:
+      - creations/index.md
+      - Rail yards: creations/trains.md
   - Join:
       - join/index.md
       - Build standards: join/standards.md
@@ -71,6 +73,7 @@ nav:
 hooks:
   - design_d/site_hooks/markdown_blocks.py
   - design_d/site_hooks/data_blocks.py
+  - design_d/site_hooks/train_teasers.py
 
 extra_css:
   - stylesheets/tokens.css

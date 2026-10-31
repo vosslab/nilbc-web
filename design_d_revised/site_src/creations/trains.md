@@ -1,19 +1,24 @@
 ---
-title: Trains
+title: Rail yards
 hide:
   - navigation
   - toc
 peek: false
 ---
 
-# Trains
+# Rail yards
 
 Locomotives, rolling stock, and railway layouts from club shows.
-Dated shows are listed newest first, followed by undated shows and archive photographs.
+These snapshots are just a taste. Photos cannot capture the scale, movement, and little
+details waiting around every corner at a club show.
 
 [Browse every world](index.md) &middot; [Browse by show](../shows/gallery.md)
+
+[See the trains in person](../shows/index.md){ .md-button .md-button--primary }
 
 /// collection | trains
 ///
 
-[Photo credits and sources](../about/credits.md)
+Come explore the builds and meet the people behind them. Displays vary from show to show.
+
+[Plan your visit](../shows/visiting.md) &middot; [Photo credits and sources](../about/credits.md)

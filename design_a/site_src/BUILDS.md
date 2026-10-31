@@ -45,7 +45,6 @@ website, places a compact multicolored display in front of a group of event atte
 
 Sharing the fun of building at an event. Photograph from the NILTC website.
 
-Both photographs come from the [existing club website](https://niltc.org/).
 See [CREDITS.md](CREDITS.md) for original files and attribution boundaries.
 
 ---

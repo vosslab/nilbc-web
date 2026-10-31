@@ -459,3 +459,11 @@ body:has(.nb-hero) .md-footer__inner {
 		display: none;
 	}
 }
+
+/* The train teaser reuses the shared selection as a compact, static preview grid. */
+.nb-train-previews { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr)); gap: 1rem; }
+.md-typeset .nb-train-previews figure { margin: 0; min-width: 0; }
+.nb-train-previews img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--nb-paper-sunk); }
+.md-typeset .nb-train-previews figcaption { font-size: .72rem; text-align: left; }
+.nb-train-previews small { display: block; margin-top: .4rem; color: var(--nb-ink-soft); }
+@media (max-width: 44em) { .nb-train-previews { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

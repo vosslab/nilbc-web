@@ -55,6 +55,7 @@
   - wheaton_horses_2026
   - wheaton_barn_2026
   - wheaton_carrots_2026
+  - wheaton_blue_engine_2026
   event_date: 2026-04
 2025-12-13-arlington-heights:
   title: Arlington Heights Memorial Library
@@ -91,4 +92,9 @@
   - barrington_harbor_2025
   - barrington_yard_2025
   - barrington_aircraft_2025
+  - barrington_gantry_2025
+  - barrington_metra_2025
+  - barrington_city_rail_2025
+  - barrington_containers_2025
+  - barrington_rail_depot_2025
   event_date: 2025-09
